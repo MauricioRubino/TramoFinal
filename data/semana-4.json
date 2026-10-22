@@ -1,0 +1,1181 @@
+{
+ "semana": 4,
+ "days": [
+  {
+   "id": "s4-mar",
+   "label": "Mar 10/11",
+   "fecha": "2026-11-10",
+   "titulo": "Martes 10/11 · Geometría, la célula y dos posturas",
+   "nota": "Para geometría, hacé siempre un dibujo antes de calcular, aunque sea a mano alzada.",
+   "areas": {
+    "mat": {
+     "titulo": "Pitágoras, perímetros y áreas",
+     "intro": "Triángulos rectángulos en situaciones reales, figuras compuestas y problemas de pintura y baldosas.",
+     "minutos": 50,
+     "items": [
+      {
+       "t": "num",
+       "q": "La pantalla de un televisor mide 40 pulgadas de diagonal y 32 pulgadas de ancho. ¿Cuántas pulgadas mide de alto?",
+       "a": 24,
+       "unidad": "pulgadas",
+       "exp": "Ancho, alto y diagonal forman un triángulo rectángulo: alto² = 40² − 32² = 1.600 − 1.024 = 576, alto = 24."
+      },
+      {
+       "t": "num",
+       "q": "Una rampa sube 1 m de altura a lo largo de 12 m horizontales. ¿Cuánto mide la rampa? Redondeá a los centésimos.",
+       "a": 12.04,
+       "tol": 0.01,
+       "unidad": "m",
+       "exp": "Rampa² = 12² + 1² = 145, rampa = √145 ≈ 12,04 m."
+      },
+      {
+       "t": "num",
+       "ctx": "<p>Un terreno tiene forma de L: es un rectángulo de 20 m × 15 m al que le falta, en una esquina, un rectángulo de 8 m × 6 m.</p>",
+       "q": "¿Cuál es el área del terreno?",
+       "a": 252,
+       "unidad": "m²",
+       "exp": "Área del rectángulo grande menos el que falta: 20 × 15 − 8 × 6 = 300 − 48 = 252 m²."
+      },
+      {
+       "t": "num",
+       "q": "¿Cuántos metros de alambre hacen falta para rodear ese terreno en L?",
+       "a": 70,
+       "unidad": "m",
+       "exp": "Al quitar una esquina, los dos lados que se pierden se reemplazan por dos lados de la misma longitud total. El perímetro es igual al del rectángulo completo: 2 × (20 + 15) = 70 m. Podés comprobarlo sumando los 6 lados: 20 + 9 + 8 + 6 + 12 + 15 = 70."
+      },
+      {
+       "t": "num",
+       "q": "¿Cuál es el área de un círculo de 3 m de radio? Usá π ≈ 3,14.",
+       "a": 28.26,
+       "tol": 0.05,
+       "unidad": "m²",
+       "exp": "Área = π × r² = 3,14 × 9 = 28,26 m²."
+      },
+      {
+       "t": "num",
+       "ctx": "<p>Una pared mide 4 m de largo y 2,7 m de alto, y tiene una ventana de 1,2 m × 1 m que no se pinta. Un litro de pintura alcanza para 8 m² y hay que dar dos manos.</p>",
+       "q": "¿Cuántos litros de pintura se necesitan?",
+       "a": 2.4,
+       "unidad": "L",
+       "exp": "Superficie: 4 × 2,7 − 1,2 × 1 = 10,8 − 1,2 = 9,6 m². Con dos manos: 19,2 m². Litros: 19,2 ÷ 8 = 2,4 L."
+      },
+      {
+       "t": "single",
+       "q": "¿Un triángulo con lados de 5, 12 y 13 cm es rectángulo?",
+       "opts": [
+        "Sí, porque 5² + 12² = 13².",
+        "No, porque los lados no son iguales.",
+        "Sí, porque 5 + 12 > 13.",
+        "No se puede saber sin medir los ángulos."
+       ],
+       "a": 0,
+       "exp": "25 + 144 = 169 = 13². Si se cumple Pitágoras, el triángulo es rectángulo. Que 5 + 12 > 13 solo dice que el triángulo existe."
+      },
+      {
+       "t": "num",
+       "q": "En un plano, tu casa está en el punto (0, 0) y el almacén en (6, 8), medido en cuadras. ¿A cuántas cuadras está en línea recta?",
+       "a": 10,
+       "unidad": "cuadras",
+       "exp": "Distancia = √(6² + 8²) = √100 = 10 cuadras. Caminando por las calles serían 14, porque no se puede ir en diagonal."
+      },
+      {
+       "t": "vf",
+       "q": "Indicá si cada afirmación es verdadera o falsa.",
+       "stmts": [
+        {
+         "s": "Dos figuras con el mismo perímetro tienen la misma área.",
+         "a": false
+        },
+        {
+         "s": "Si se duplica el lado de un cuadrado, su área se multiplica por 4.",
+         "a": true
+        },
+        {
+         "s": "En un triángulo rectángulo, la hipotenusa es el lado más largo.",
+         "a": true
+        },
+        {
+         "s": "El perímetro se mide en metros cuadrados.",
+         "a": false
+        }
+       ],
+       "exp": "Un rectángulo de 1 × 9 y un cuadrado de 5 × 5 tienen perímetro 20, pero áreas 9 y 25. El perímetro es una longitud (m) y el área una superficie (m²)."
+      },
+      {
+       "t": "open",
+       "q": "Hay que cubrir un piso de 3,6 m × 2,4 m con baldosas cuadradas de 30 cm de lado. ¿Cuántas baldosas hacen falta? Si se compra un 10 % extra por cortes y roturas, ¿cuántas hay que comprar?",
+       "modelo": "En el largo entran 360 ÷ 30 = 12 baldosas y en el ancho 240 ÷ 30 = 8, en total 12 × 8 = 96 baldosas. Con un 10 % extra: 96 × 1,1 = 105,6, que se redondea hacia arriba: hay que comprar 106. (También se puede hacer por áreas: 8,64 m² ÷ 0,09 m² = 96.)"
+      }
+     ]
+    },
+    "cie": {
+     "titulo": "La célula y la herencia",
+     "intro": "Estructuras de la célula, funciones vitales, fotosíntesis, genes y cruzamientos simples.",
+     "minutos": 45,
+     "items": [
+      {
+       "t": "single",
+       "q": "¿Cuál es la unidad básica de todos los seres vivos?",
+       "opts": [
+        "La célula",
+        "El átomo",
+        "El órgano",
+        "El ADN"
+       ],
+       "a": 0,
+       "exp": "Todos los seres vivos están formados por una o más células. Los átomos forman también la materia no viva, y el ADN es una molécula que está dentro de la célula."
+      },
+      {
+       "t": "match",
+       "q": "Relacioná cada parte de la célula con su función.",
+       "left": [
+        "Núcleo",
+        "Membrana celular",
+        "Mitocondria",
+        "Cloroplasto"
+       ],
+       "right": [
+        "Contiene el material genético (ADN)",
+        "Controla qué entra y qué sale de la célula",
+        "Obtiene energía de los nutrientes (respiración celular)",
+        "Realiza la fotosíntesis (solo en plantas y algas)"
+       ],
+       "a": [
+        0,
+        1,
+        2,
+        3
+       ],
+       "exp": "Las células animales no tienen cloroplastos: por eso los animales no hacen fotosíntesis y tienen que alimentarse de otros seres vivos."
+      },
+      {
+       "t": "single",
+       "q": "¿Qué necesita una planta para hacer la fotosíntesis y qué produce?",
+       "opts": [
+        "Usa luz, agua y dióxido de carbono; produce glucosa y oxígeno.",
+        "Usa oxígeno y glucosa; produce dióxido de carbono.",
+        "Usa tierra y abono; produce agua.",
+        "Usa solo luz; produce dióxido de carbono."
+       ],
+       "a": 0,
+       "exp": "La opción «usa oxígeno y glucosa; produce dióxido de carbono» describe la respiración celular, que es el proceso inverso. Las plantas hacen las dos cosas: fotosíntesis con luz y respiración siempre."
+      },
+      {
+       "t": "single",
+       "q": "Un girasol orienta su flor hacia el sol. ¿Qué función vital muestra?",
+       "opts": [
+        "Relación",
+        "Nutrición",
+        "Reproducción",
+        "Ninguna: las plantas no tienen funciones vitales"
+       ],
+       "a": 0,
+       "exp": "La función de relación es la capacidad de percibir estímulos del ambiente (la luz) y responder a ellos."
+      },
+      {
+       "t": "num",
+       "ctx": "<p>En las arvejas, la semilla lisa (L) es dominante sobre la rugosa (l). Una planta Ll tiene semillas lisas, porque alcanza con un alelo L. Solo las plantas ll tienen semillas rugosas.</p>",
+       "q": "Si se cruzan dos plantas Ll, ¿qué porcentaje de los descendientes se espera que tenga semillas rugosas?",
+       "a": 25,
+       "unidad": "%",
+       "exp": "Combinaciones posibles: LL, Ll, lL, ll. Solo una de cuatro es ll: 25 %. El 75 % restante tiene semillas lisas."
+      },
+      {
+       "t": "single",
+       "q": "Si se cruza una planta Ll con una ll, ¿qué proporción de semillas lisas se espera?",
+       "opts": [
+        "50 %",
+        "25 %",
+        "75 %",
+        "100 %"
+       ],
+       "a": 0,
+       "exp": "Combinaciones: Ll, Ll, ll, ll. La mitad tiene al menos un L: 50 % lisas y 50 % rugosas."
+      },
+      {
+       "t": "vf",
+       "q": "Indicá si cada afirmación es verdadera o falsa.",
+       "stmts": [
+        {
+         "s": "Los hijos heredan genes de los dos progenitores.",
+         "a": true
+        },
+        {
+         "s": "Todas las características de una persona dependen solo de sus genes.",
+         "a": false
+        },
+        {
+         "s": "Los gemelos idénticos tienen el mismo ADN.",
+         "a": true
+        },
+        {
+         "s": "Un rasgo recesivo puede aparecer en un hijo aunque ninguno de sus padres lo muestre.",
+         "a": true
+        }
+       ],
+       "exp": "Muchas características dependen también del ambiente: la altura, por ejemplo, depende de los genes y de la alimentación. El último caso es el de dos padres Ll que tienen un hijo ll."
+      },
+      {
+       "t": "open",
+       "q": "Explicá por qué dos hermanos que tienen los mismos padres pueden ser bastante distintos.",
+       "modelo": "Porque cada hijo recibe la mitad de sus genes de cada progenitor, pero esa mitad es una combinación al azar distinta en cada hijo. Así, dos hermanos pueden heredar alelos diferentes del mismo padre. Además, el ambiente (alimentación, actividades, experiencias) también influye en muchas características."
+      }
+     ]
+    },
+    "lec": {
+     "titulo": "Lectura crítica: dos posturas sobre el mismo tema",
+     "intro": "Dos textos breves que opinan distinto. Comparalos: qué sostiene cada autor, con qué argumentos y qué tan sólidos son.",
+     "minutos": 40,
+     "textos": [
+      {
+       "tipo": "Carta de lectores",
+       "titulo": "Las veredas son de los peatones",
+       "autor": "Texto escrito para esta práctica",
+       "parrafos": [
+        "Tengo 74 años y camino todos los días por el centro. En el último año, tres veces estuvo a punto de chocarme un monopatín eléctrico que venía por la vereda a toda velocidad. La última vez, una vecina mía no tuvo tanta suerte: se cayó y se fracturó la muñeca.",
+        "Las veredas son de los peatones. Por ellas caminan personas mayores, niños, gente con bastón o con cochecitos de bebé, que no pueden esquivar a un vehículo que se acerca en silencio. Los monopatines son vehículos y tienen que circular por la calle o por las ciclovías, como las bicicletas.",
+        "Pido a las autoridades que controlen y multen. Nadie está en contra de los monopatines, pero sí de que nos quiten el último espacio donde podíamos caminar tranquilos."
+       ]
+      },
+      {
+       "tipo": "Columna de opinión",
+       "titulo": "No somos el enemigo",
+       "autor": "Texto escrito para esta práctica",
+       "parrafos": [
+        "Uso el monopatín eléctrico para ir a trabajar. Tardo 15 minutos en lugar de los 45 que me lleva el ómnibus, no contamino y no ocupo lugar para estacionar. Sin embargo, cada vez que se habla de nosotros es para pedir multas.",
+        "Es verdad que algunos usuarios circulan por la vereda, y está mal. Pero lo hacen porque en la calle los autos nos pasan a centímetros y casi no hay ciclovías. Nadie elige arriesgar su vida por gusto. Si la ciudad tuviera carriles seguros, el problema de las veredas desaparecería solo.",
+        "Multar sin dar alternativas no resuelve nada: solo empuja a la gente a volver al auto. Lo que necesitamos son más ciclovías y una campaña para enseñar a convivir a peatones, ciclistas, monopatines y autos."
+       ]
+      }
+     ],
+     "items": [
+      {
+       "t": "single",
+       "q": "¿Qué solución propone el autor de la carta (texto 1)?",
+       "opts": [
+        "Que las autoridades controlen y multen a quienes circulen por la vereda.",
+        "Que se prohíban los monopatines.",
+        "Que se construyan más ciclovías.",
+        "Que los peatones caminen por la calle."
+       ],
+       "a": 0,
+       "exp": "Párrafo 3 del texto 1. Aclara que «nadie está en contra de los monopatines», así que no pide prohibirlos."
+      },
+      {
+       "t": "single",
+       "q": "¿Qué solución propone el autor de la columna (texto 2)?",
+       "opts": [
+        "Más ciclovías y una campaña de convivencia.",
+        "Más multas.",
+        "Permitir los monopatines en la vereda.",
+        "Bajar el precio de los monopatines."
+       ],
+       "a": 0,
+       "exp": "Párrafo 3 del texto 2."
+      },
+      {
+       "t": "single",
+       "q": "¿En qué coinciden los dos autores?",
+       "opts": [
+        "En que los monopatines no deberían circular por la vereda.",
+        "En que hay que multar a los usuarios.",
+        "En que los monopatines son peligrosos.",
+        "En que el ómnibus es lento."
+       ],
+       "a": 0,
+       "exp": "El autor del texto 2 admite: «algunos usuarios circulan por la vereda, y está mal». Difieren en la causa y en la solución, no en eso."
+      },
+      {
+       "t": "single",
+       "q": "El autor de la carta cuenta que una vecina se fracturó la muñeca. ¿Qué tipo de argumento es?",
+       "opts": [
+        "Un caso concreto que conmueve, pero no prueba cuán frecuente es el problema.",
+        "Una estadística confiable.",
+        "La opinión de un especialista.",
+        "Una definición."
+       ],
+       "a": 0,
+       "exp": "Lectura crítica: los casos personales son persuasivos, pero un solo caso no muestra si el problema es frecuente. No por eso es un mal argumento: hay que saber qué alcance tiene."
+      },
+      {
+       "t": "single",
+       "q": "¿Qué recurso usa el autor del texto 2 en el párrafo 2?",
+       "opts": [
+        "Reconoce en parte la crítica y explica sus causas.",
+        "Niega que haya monopatines en la vereda.",
+        "Ataca personalmente a los peatones.",
+        "Cita una ley."
+       ],
+       "a": 0,
+       "exp": "Es una concesión («Es verdad que… y está mal») seguida de una explicación («Pero lo hacen porque…»). Es una forma eficaz de responder a la postura contraria."
+      },
+      {
+       "t": "match",
+       "q": "Clasificá cada enunciado como hecho comprobable u opinión.",
+       "left": [
+        "Tardo 15 minutos en lugar de los 45 que me lleva el ómnibus.",
+        "Las veredas son de los peatones.",
+        "Multar sin dar alternativas no resuelve nada.",
+        "Mi vecina se cayó y se fracturó la muñeca."
+       ],
+       "right": [
+        "Hecho comprobable",
+        "Opinión o valoración"
+       ],
+       "a": [
+        0,
+        1,
+        1,
+        0
+       ],
+       "exp": "Un hecho se puede verificar (midiendo un tiempo, con un parte médico). Una opinión expresa cómo debería ser algo o lo valora; se puede fundamentar, pero no comprobar."
+      },
+      {
+       "t": "open",
+       "q": "¿Cuál de los dos textos te parece mejor fundamentado? Justificá comparando al menos un argumento de cada uno.",
+       "modelo": "Me parece mejor fundamentado el texto 2, porque no solo da su postura sino que explica la causa del problema (falta de ciclovías y autos que pasan muy cerca) y propone una solución que la ataca. El texto 1 se apoya sobre todo en casos personales, que conmueven pero no explican por qué los usuarios van por la vereda. De todos modos, el texto 1 tiene un punto fuerte: recuerda que hay personas que no pueden esquivar un vehículo."
+      }
+     ]
+    },
+    "esc": {
+     "titulo": "Contraargumento y refutación",
+     "intro": "Incluir la postura contraria y responderla hace que tu texto sea más convincente, y es algo que los correctores valoran.",
+     "minutos": 35,
+     "items": [
+      {
+       "t": "single",
+       "q": "Tu postura es «Las tareas domiciliarias deberían reducirse». ¿Cuál de estos es un contraargumento, es decir, un argumento de la postura contraria?",
+       "opts": [
+        "Las tareas ayudan a fijar lo que se aprendió en clase.",
+        "Muchos estudiantes trabajan después del liceo.",
+        "Los estudiantes necesitan tiempo para descansar.",
+        "Hay tareas que se pueden hacer en clase."
+       ],
+       "a": 0,
+       "exp": "Las otras tres apoyan tu postura. El contraargumento es lo que diría alguien que defiende las tareas."
+      },
+      {
+       "t": "single",
+       "q": "¿Cuál de estas respuestas refuta mejor el contraargumento anterior?",
+       "opts": [
+        "Es cierto que la práctica ayuda a fijar lo aprendido, pero esa práctica puede hacerse en clase, con el docente presente para resolver dudas.",
+        "Eso es mentira.",
+        "Cada uno piensa lo que quiere.",
+        "Las tareas son aburridas."
+       ],
+       "a": 0,
+       "exp": "Una buena refutación primero concede lo que es razonable («Es cierto que…») y después muestra por qué eso no invalida tu postura («pero…»). Descalificar o cambiar de tema no convence."
+      },
+      {
+       "t": "single",
+       "q": "¿Qué conector es adecuado para introducir una concesión?",
+       "opts": [
+        "Si bien",
+        "Por lo tanto",
+        "Además",
+        "Por ejemplo"
+       ],
+       "a": 0,
+       "exp": "«Si bien», «aunque», «es cierto que» y «puede que» sirven para conceder. Después viene la refutación con «sin embargo», «pero» o «no obstante»."
+      },
+      {
+       "t": "single",
+       "q": "¿Dónde conviene ubicar el párrafo con el contraargumento en una columna de opinión?",
+       "opts": [
+        "Después de los propios argumentos y antes del cierre.",
+        "En el título.",
+        "En la primera oración del texto.",
+        "Después de la firma."
+       ],
+       "a": 0,
+       "exp": "Primero se presentan y desarrollan los propios argumentos; después se responde a la objeción, y el cierre retoma la postura ya reforzada. Es la estructura de los textos modelo de esta app."
+      },
+      {
+       "t": "open",
+       "q": "Tu postura: «Debería ampliarse el horario de los liceos públicos a tiempo completo». Escribí un párrafo que presente un contraargumento y lo refute.",
+       "modelo": "Algunos sostienen que el tiempo completo es demasiado caro, porque exige más docentes, comedores y edificios. Si bien es cierto que requiere una inversión importante, también lo es que el costo de que un joven abandone el liceo es mucho mayor, para él y para la sociedad. Más horas en el centro educativo significan más apoyo, alimentación asegurada y menos tiempo en la calle: por eso es una inversión y no un gasto."
+      },
+      {
+       "t": "open",
+       "q": "Tu postura: «Los menores de 16 años no deberían tener redes sociales». Escribí un párrafo que presente un contraargumento y lo refute.",
+       "modelo": "Quienes se oponen dicen que las redes sociales son la forma en que los adolescentes se comunican hoy y que prohibirlas los aislaría de sus amigos. Es cierto que forman parte de su vida social; sin embargo, existen otras formas de comunicarse, como la mensajería, que no exponen a los chicos a desconocidos ni a algoritmos diseñados para retenerlos. Postergar las redes no es aislarlos, sino protegerlos hasta que tengan más herramientas."
+      }
+     ]
+    }
+   }
+  },
+  {
+   "id": "s4-mie",
+   "label": "Mié 11/11",
+   "fecha": "2026-11-11",
+   "titulo": "Miércoles 11/11 · Volúmenes, ecosistemas y textos con gráficos",
+   "nota": "Tené a mano las equivalencias: 1 L = 1 dm³ = 1.000 cm³, y 1 m³ = 1.000 L.",
+   "areas": {
+    "mat": {
+     "titulo": "Volumen, unidades, escalas y semejanza",
+     "intro": "Capacidades, conversiones, planos, maquetas, sombras y estimaciones.",
+     "minutos": 50,
+     "items": [
+      {
+       "t": "num",
+       "q": "Una pecera mide 60 cm de largo, 30 cm de ancho y 40 cm de alto. ¿Cuántos litros de agua le entran?",
+       "a": 72,
+       "unidad": "L",
+       "exp": "Volumen = 60 × 30 × 40 = 72.000 cm³. Como 1 L = 1.000 cm³, son 72 L."
+      },
+      {
+       "t": "num",
+       "q": "Un vaso cilíndrico mide 8 cm de diámetro y 10 cm de alto. ¿Cuántos mililitros le entran? Redondeá a las unidades.",
+       "a": 503,
+       "tol": 2,
+       "unidad": "mL",
+       "exp": "El radio es la mitad del diámetro: 4 cm. Volumen = π × 4² × 10 ≈ 502,7 cm³ ≈ 503 mL (1 cm³ = 1 mL). Error frecuente: usar el diámetro como radio."
+      },
+      {
+       "t": "num",
+       "q": "¿Cuántos litros son 1,5 m³?",
+       "a": 1500,
+       "unidad": "L",
+       "exp": "1 m³ = 1.000 L, entonces 1,5 m³ = 1.500 L."
+      },
+      {
+       "t": "num",
+       "q": "Un auto va a 72 km/h. ¿Cuál es su velocidad en metros por segundo?",
+       "a": 20,
+       "unidad": "m/s",
+       "exp": "72 km/h = 72.000 m en 3.600 s = 20 m/s. Atajo: dividir entre 3,6."
+      },
+      {
+       "t": "num",
+       "q": "A la misma hora, un poste da una sombra de 6 m y una persona de 1,8 m de altura da una sombra de 2,4 m. ¿Cuánto mide el poste?",
+       "a": 4.5,
+       "unidad": "m",
+       "exp": "Los triángulos que forman objeto y sombra son semejantes (teorema de Thales): altura ÷ sombra es igual para los dos. 1,8 ÷ 2,4 = 0,75, y 6 × 0,75 = 4,5 m."
+      },
+      {
+       "t": "num",
+       "q": "En un plano a escala 1:100, una habitación mide 4 cm × 3,5 cm. ¿Cuál es su área real en m²?",
+       "a": 14,
+       "unidad": "m²",
+       "exp": "A escala 1:100, 1 cm del plano son 100 cm = 1 m. La habitación mide 4 m × 3,5 m = 14 m²."
+      },
+      {
+       "t": "single",
+       "q": "Dos triángulos son semejantes y los lados del grande miden el doble que los del chico. ¿Qué relación hay entre sus áreas?",
+       "opts": [
+        "El área del grande es 4 veces la del chico.",
+        "El área del grande es el doble.",
+        "Las áreas son iguales.",
+        "El área del grande es 8 veces la del chico."
+       ],
+       "a": 0,
+       "exp": "Si las longitudes se multiplican por k, las áreas se multiplican por k² (2² = 4) y los volúmenes por k³ (2³ = 8)."
+      },
+      {
+       "t": "num",
+       "q": "Una maqueta a escala 1:50 representa un edificio de 20 m de alto. ¿Cuántos centímetros mide de alto la maqueta?",
+       "a": 40,
+       "unidad": "cm",
+       "exp": "20 m = 2.000 cm. 2.000 ÷ 50 = 40 cm."
+      },
+      {
+       "t": "num",
+       "q": "Una canilla gotea una gota por segundo y 20 gotas equivalen a 1 mL. ¿Cuántos litros se pierden en un día?",
+       "a": 4.32,
+       "unidad": "L",
+       "exp": "Un día tiene 24 × 3.600 = 86.400 segundos, o sea 86.400 gotas. 86.400 ÷ 20 = 4.320 mL = 4,32 L por día. ¡Más de 1.500 litros por año!"
+      },
+      {
+       "t": "vf",
+       "q": "Indicá si cada afirmación es verdadera o falsa.",
+       "stmts": [
+        {
+         "s": "1 L equivale a 1 dm³.",
+         "a": true
+        },
+        {
+         "s": "1 m² equivale a 100 cm².",
+         "a": false
+        },
+        {
+         "s": "Una hectárea equivale a 10.000 m².",
+         "a": true
+        },
+        {
+         "s": "1 kg de agua ocupa aproximadamente 1 litro.",
+         "a": true
+        }
+       ],
+       "exp": "1 m = 100 cm, entonces 1 m² = 100 × 100 = 10.000 cm². Las unidades de superficie se elevan al cuadrado."
+      },
+      {
+       "t": "open",
+       "q": "Una ducha usa 8 litros de agua por minuto. En una casa viven 3 personas y cada una se ducha 10 minutos por día. ¿Cuántos litros usan en un mes de 30 días? Si cada uno reduce su ducha a 6 minutos, ¿cuánto ahorran?",
+       "modelo": "Por ducha: 8 × 10 = 80 L. Por día, 3 personas: 240 L. En un mes: 240 × 30 = 7.200 L. Con duchas de 6 minutos: 8 × 6 × 3 × 30 = 4.320 L. Ahorran 7.200 − 4.320 = 2.880 L por mes, un 40 %."
+      }
+     ]
+    },
+    "cie": {
+     "titulo": "Ecosistemas, biodiversidad y evolución",
+     "intro": "Cadenas tróficas, flujo de energía, selección natural y especies invasoras.",
+     "minutos": 45,
+     "items": [
+      {
+       "t": "match",
+       "ctx": "<p>Una cadena trófica de la pradera: pasto → liebre → zorro. Los hongos y bacterias del suelo descomponen los restos de todos.</p>",
+       "q": "Relacioná cada organismo con su papel en el ecosistema.",
+       "left": [
+        "Pasto",
+        "Liebre",
+        "Zorro",
+        "Hongos y bacterias del suelo"
+       ],
+       "right": [
+        "Productor",
+        "Consumidor primario",
+        "Consumidor secundario",
+        "Descomponedor"
+       ],
+       "a": [
+        0,
+        1,
+        2,
+        3
+       ],
+       "exp": "Los productores fabrican su propio alimento con la fotosíntesis. Los consumidores se alimentan de otros seres vivos. Los descomponedores transforman los restos en nutrientes para el suelo."
+      },
+      {
+       "t": "single",
+       "q": "Si en esa pradera desaparecen los zorros, ¿qué es lo primero que se espera que pase?",
+       "opts": [
+        "Que aumente la población de liebres.",
+        "Que disminuya la población de liebres.",
+        "Que el pasto crezca más.",
+        "Que no cambie nada."
+       ],
+       "a": 0,
+       "exp": "Sin su depredador, las liebres sobreviven más y aumentan. Después, al haber más liebres, se come más pasto, y eso puede terminar afectando a las propias liebres."
+      },
+      {
+       "t": "num",
+       "q": "En cada nivel de una cadena trófica pasa, en promedio, solo el 10 % de la energía al nivel siguiente. Si los productores tienen 10.000 kcal, ¿cuántas kcal llegan a los consumidores secundarios?",
+       "a": 100,
+       "unidad": "kcal",
+       "exp": "Productores: 10.000. Consumidores primarios: 10 % = 1.000. Consumidores secundarios: 10 % de 1.000 = 100 kcal. Por eso las cadenas tróficas tienen pocos niveles."
+      },
+      {
+       "t": "single",
+       "q": "¿Qué afirma la teoría de la evolución por selección natural?",
+       "opts": [
+        "Los individuos con características ventajosas para su ambiente sobreviven y se reproducen más, y transmiten esas características.",
+        "Los individuos cambian porque lo necesitan o lo desean.",
+        "Las especies fueron siempre iguales.",
+        "Solo sobreviven los animales más grandes."
+       ],
+       "a": 0,
+       "exp": "Los individuos no cambian por voluntad. Dentro de una población ya hay variedad; el ambiente favorece a algunos, que dejan más descendencia, y así la población cambia de generación en generación."
+      },
+      {
+       "t": "single",
+       "q": "¿Por qué el uso excesivo de antibióticos genera bacterias resistentes?",
+       "opts": [
+        "Porque mueren las bacterias sensibles y sobreviven y se multiplican las pocas resistentes.",
+        "Porque las bacterias aprenden a defenderse.",
+        "Porque el antibiótico se transforma en alimento para las bacterias.",
+        "Porque los antibióticos crean bacterias nuevas."
+       ],
+       "a": 0,
+       "exp": "Es selección natural en acción: el antibiótico elimina a las sensibles y deja el camino libre a las que ya eran resistentes por variación genética."
+      },
+      {
+       "t": "single",
+       "q": "El jabalí fue introducido en Uruguay y hoy se considera una plaga. ¿Por qué una especie introducida puede convertirse en plaga?",
+       "opts": [
+        "Porque en el nuevo ambiente puede no tener depredadores naturales que controlen su población.",
+        "Porque las especies introducidas son siempre más grandes.",
+        "Porque come solo plantas.",
+        "Porque vive menos años."
+       ],
+       "a": 0,
+       "exp": "Sin depredadores ni enfermedades que la limiten, su población crece sin control y compite con las especies nativas o daña cultivos."
+      },
+      {
+       "t": "vf",
+       "q": "Indicá si cada afirmación es verdadera o falsa.",
+       "stmts": [
+        {
+         "s": "La biodiversidad incluye la variedad de especies, de genes y de ecosistemas.",
+         "a": true
+        },
+        {
+         "s": "Los descomponedores devuelven nutrientes al suelo.",
+         "a": true
+        },
+        {
+         "s": "Las jirafas tienen el cuello largo porque se esforzaron por alcanzar las hojas altas.",
+         "a": false
+        },
+        {
+         "s": "Las especies actuales no cambiaron desde que aparecieron.",
+         "a": false
+        }
+       ],
+       "exp": "La idea de que un esfuerzo durante la vida se hereda (la jirafa que estira el cuello) es un error frecuente. Lo que se hereda son los genes, no lo que el individuo logró durante su vida."
+      },
+      {
+       "t": "open",
+       "q": "¿Por qué es importante conservar los humedales, como los bañados del este de Uruguay? Mencioná al menos dos razones.",
+       "modelo": "Porque albergan una gran biodiversidad, incluidas muchas aves, algunas migratorias que dependen de ellos para descansar y alimentarse. Además regulan el agua: absorben el exceso en épocas de lluvia y reducen las inundaciones, y filtran contaminantes. Si se secan para cultivar o construir, esas funciones se pierden."
+      }
+     ]
+    },
+    "lec": {
+     "titulo": "Textos discontinuos: un gráfico y un formulario",
+     "intro": "Información repartida en barras, notas al pie y requisitos. Leé también lo que está en letra chica.",
+     "minutos": 35,
+     "textos": [
+      {
+       "tipo": "Infografía",
+       "titulo": "¿Cómo se informan los estudiantes?",
+       "autor": "Datos inventados para esta práctica",
+       "numerar": false,
+       "parrafos": [
+        "Encuesta a 400 estudiantes de un liceo de Canelones. Pregunta: «¿Cuál es tu principal fuente de noticias?» (una sola respuesta)."
+       ],
+       "html": "<div style='display:grid;gap:8px;font-family:var(--f-body);font-size:15px'><div style='display:grid;grid-template-columns:150px 1fr;gap:10px;align-items:center'><span>Redes sociales</span><span style='display:flex;align-items:center;gap:8px'><i style='display:block;height:16px;width:62%;background:var(--lec);border-radius:3px'></i>62 %</span></div><div style='display:grid;grid-template-columns:150px 1fr;gap:10px;align-items:center'><span>Televisión</span><span style='display:flex;align-items:center;gap:8px'><i style='display:block;height:16px;width:18%;background:var(--lec);border-radius:3px'></i>18 %</span></div><div style='display:grid;grid-template-columns:150px 1fr;gap:10px;align-items:center'><span>Portales de noticias</span><span style='display:flex;align-items:center;gap:8px'><i style='display:block;height:16px;width:12%;background:var(--lec);border-radius:3px'></i>12 %</span></div><div style='display:grid;grid-template-columns:150px 1fr;gap:10px;align-items:center'><span>Radio</span><span style='display:flex;align-items:center;gap:8px'><i style='display:block;height:16px;width:5%;background:var(--lec);border-radius:3px'></i>5 %</span></div><div style='display:grid;grid-template-columns:150px 1fr;gap:10px;align-items:center'><span>Diarios en papel</span><span style='display:flex;align-items:center;gap:8px'><i style='display:block;height:16px;width:3%;background:var(--lec);border-radius:3px'></i>3 %</span></div></div><p style='font-size:14.5px;margin-top:12px'><b>Además:</b> solo el 24 % dice que verifica una noticia en otra fuente antes de compartirla.</p>"
+      },
+      {
+       "tipo": "Formulario",
+       "titulo": "Beca de transporte para estudiantes 2027",
+       "autor": "Texto inventado para esta práctica",
+       "numerar": false,
+       "parrafos": [
+        "La beca cubre el boleto entre el hogar y el centro educativo durante el año lectivo."
+       ],
+       "html": "<p><b>Pueden solicitarla</b> estudiantes de educación media que vivan a más de 2 km de su centro educativo y cuyo hogar tenga ingresos menores a los indicados en las bases.</p><p><b>No pueden solicitarla</b> quienes ya reciban otra beca de transporte nacional o departamental.</p><p><b>Documentación:</b> cédula del estudiante, constancia de inscripción y constancia de domicilio. Los menores de 18 años deben presentar además la firma de un adulto responsable.</p><p><b>Plazo:</b> del 1 al 28 de febrero. Las solicitudes incompletas no serán consideradas. Los resultados se publican el 20 de marzo.</p>"
+      }
+     ],
+     "items": [
+      {
+       "t": "num",
+       "q": "Texto 1. ¿Cuántos de los 400 estudiantes se informan principalmente por redes sociales?",
+       "a": 248,
+       "unidad": "estudiantes",
+       "exp": "62 % de 400 = 0,62 × 400 = 248."
+      },
+      {
+       "t": "single",
+       "q": "Texto 1. ¿Qué fuentes eligieron, sumadas, el 20 % de los estudiantes?",
+       "opts": [
+        "Portales de noticias, radio y diarios en papel",
+        "Televisión y radio",
+        "Redes sociales y televisión",
+        "Radio y diarios en papel"
+       ],
+       "a": 0,
+       "exp": "12 + 5 + 3 = 20 %. Televisión y radio suman 23 %."
+      },
+      {
+       "t": "single",
+       "q": "Texto 1. ¿Qué conclusión se puede sacar de la infografía?",
+       "opts": [
+        "La mayoría de los estudiantes encuestados se informa principalmente por redes y pocos verifican lo que comparten.",
+        "Los estudiantes no leen noticias.",
+        "Las redes sociales tienen información falsa.",
+        "Los jóvenes uruguayos no miran televisión."
+       ],
+       "a": 0,
+       "exp": "Hay que quedarse en lo que muestran los datos. La infografía no dice nada sobre la calidad de la información en redes, y no se puede generalizar a todos los jóvenes del país."
+      },
+      {
+       "t": "single",
+       "q": "Texto 1. ¿Cuál es la principal limitación de esta encuesta?",
+       "opts": [
+        "Se hizo en un solo liceo, así que no se puede generalizar a todos los estudiantes del país.",
+        "Tiene demasiadas opciones.",
+        "Los porcentajes no suman 100.",
+        "Se hizo con preguntas cerradas."
+       ],
+       "a": 0,
+       "exp": "Lectura crítica. Los porcentajes sí suman 100 (62 + 18 + 12 + 5 + 3). Una muestra de un solo liceo puede no representar a otros lugares."
+      },
+      {
+       "t": "single",
+       "q": "Texto 2. Lucía tiene 16 años, vive a 5 km del liceo y ya tiene la beca de transporte de su intendencia. ¿Puede pedir esta beca?",
+       "opts": [
+        "No, porque ya recibe otra beca de transporte departamental.",
+        "Sí, porque vive a más de 2 km.",
+        "Sí, si la firma un adulto.",
+        "No, porque es menor de 18."
+       ],
+       "a": 0,
+       "exp": "Hay que cruzar requisitos: cumple la distancia, pero el párrafo «No pueden solicitarla» la excluye. Ser menor no impide pedirla: solo exige la firma de un adulto."
+      },
+      {
+       "t": "multi",
+       "q": "Texto 2. ¿Qué documentos tiene que presentar un estudiante de 17 años?",
+       "opts": [
+        "Cédula del estudiante",
+        "Constancia de inscripción",
+        "Constancia de domicilio",
+        "Firma de un adulto responsable",
+        "Carné de salud"
+       ],
+       "a": [
+        0,
+        1,
+        2,
+        3
+       ],
+       "exp": "Los tres documentos generales, más la firma de un adulto por ser menor de 18. El carné de salud no se pide."
+      },
+      {
+       "t": "single",
+       "q": "Texto 2. Si alguien presenta la solicitud el 25 de febrero sin la constancia de domicilio, ¿qué pasa?",
+       "opts": [
+        "No se considera, porque está incompleta.",
+        "Se acepta y puede traer la constancia después.",
+        "Se publica el 20 de marzo.",
+        "Se pasa al año siguiente."
+       ],
+       "a": 0,
+       "exp": "Está en plazo, pero «las solicitudes incompletas no serán consideradas»."
+      }
+     ]
+    },
+    "esc": {
+     "titulo": "Adecuación: quién escribe, a quién y para qué",
+     "intro": "La dimensión discursiva evalúa si el texto se adecua a la situación: el mismo contenido se escribe distinto para un diario, para una autoridad o para un amigo.",
+     "minutos": 35,
+     "items": [
+      {
+       "t": "match",
+       "q": "Clasificá cada expresión según su registro.",
+       "left": [
+        "Me dirijo a usted para solicitar…",
+        "Re mal lo que pasó, una vergüenza.",
+        "Considero que esta medida resulta insuficiente.",
+        "Posta que no da para más.",
+        "Lo saluda atentamente,"
+       ],
+       "right": [
+        "Formal",
+        "Informal"
+       ],
+       "a": [
+        0,
+        1,
+        0,
+        1,
+        0
+       ],
+       "exp": "En la prueba los textos van a un público general o a una autoridad: el registro tiene que ser formal o, al menos, neutro. Expresiones como «re», «posta» o «no da para más» se evitan."
+      },
+      {
+       "t": "single",
+       "q": "¿Cuál es la versión más adecuada para una carta al director de un diario?",
+       "opts": [
+        "Considero inaceptable que el barrio lleve tres semanas sin recolección de residuos.",
+        "Es una vergüenza, hace tres semanas que nadie levanta la basura, ¡¿qué esperan?!",
+        "Ta, no sé, la basura está ahí hace como tres semanas.",
+        "Basura: tres semanas. Nadie hace nada."
+       ],
+       "a": 0,
+       "exp": "Expresa la misma queja con firmeza, pero en un registro formal y con una oración completa. La versión con «¡¿qué esperan?!» transmite enojo, pero los signos múltiples y el tono de reproche restan credibilidad."
+      },
+      {
+       "t": "single",
+       "q": "Una consigna pide una columna de opinión para una revista digital dirigida a jóvenes. ¿Qué es lo más adecuado?",
+       "opts": [
+        "Lenguaje claro y cercano, sin vulgaridades, con ejemplos de la vida de los jóvenes.",
+        "Lenguaje técnico y muchas citas académicas.",
+        "Escribir como en un chat, con abreviaturas.",
+        "Escribir en primera persona del plural solamente."
+       ],
+       "a": 0,
+       "exp": "Adecuarse al destinatario no es imitar cómo habla: es elegir ejemplos y un lenguaje que entienda, manteniendo la corrección. Las abreviaturas de chat nunca son adecuadas en la prueba."
+      },
+      {
+       "t": "open",
+       "q": "Reescribí este párrafo en registro formal para una carta a la intendencia: «Hola, les escribo porque la plaza del barrio está re abandonada, los juegos están todos rotos y los gurises no tienen dónde jugar. Hagan algo porfa.»",
+       "modelo": "Señores de la Intendencia: me dirijo a ustedes para informarles sobre el estado de abandono de la plaza de nuestro barrio. La mayoría de los juegos se encuentran rotos, lo que impide que los niños puedan utilizarla de forma segura. Por este motivo, solicito que se realicen las reparaciones necesarias a la brevedad."
+      },
+      {
+       "t": "open",
+       "q": "Ahora escribí la misma idea como un comentario breve (2 o 3 oraciones) para el grupo de WhatsApp de los vecinos, invitándolos a firmar el pedido.",
+       "modelo": "Vecinos, mandamos una carta a la intendencia para que arreglen los juegos de la plaza, que están rotos hace meses. Si quieren sumarse, pueden firmar el pedido el sábado de 10 a 12 en el almacén. ¡Cuantas más firmas, mejor!"
+      }
+     ]
+    }
+   }
+  },
+  {
+   "id": "s4-jue",
+   "label": "Jue 12/11",
+   "fecha": "2026-11-12",
+   "titulo": "Jueves 12/11 · Conteo, salud y una reseña",
+   "nota": "Hoy el texto 3 es una reseña crítica: además de opinar, hay que describir la obra para que el lector la conozca.",
+   "areas": {
+    "mat": {
+     "titulo": "Divisibilidad, conteo y patrones",
+     "intro": "Mínimo común múltiplo y máximo común divisor en problemas, principio multiplicativo y generalización de patrones.",
+     "minutos": 50,
+     "items": [
+      {
+       "t": "num",
+       "q": "Dos ómnibus salen juntos de la terminal. Uno sale cada 12 minutos y el otro cada 18. ¿Dentro de cuántos minutos vuelven a salir juntos?",
+       "a": 36,
+       "unidad": "minutos",
+       "exp": "Es el mínimo común múltiplo de 12 y 18. Múltiplos de 12: 12, 24, 36… Múltiplos de 18: 18, 36… El primero común es 36."
+      },
+      {
+       "t": "num",
+       "q": "Se quieren cortar dos cintas de 24 cm y 36 cm en trozos iguales, lo más largos posible y sin que sobre nada. ¿Cuánto mide cada trozo?",
+       "a": 12,
+       "unidad": "cm",
+       "exp": "Es el máximo común divisor de 24 y 36: 12 cm. Salen 2 trozos de la primera y 3 de la segunda."
+      },
+      {
+       "t": "num",
+       "q": "¿Cuántas contraseñas distintas de 4 dígitos (del 0 al 9) se pueden formar, si los dígitos se pueden repetir?",
+       "a": 10000,
+       "unidad": "contraseñas",
+       "exp": "Principio multiplicativo: 10 opciones para cada uno de los 4 lugares: 10 × 10 × 10 × 10 = 10.000 (del 0000 al 9999)."
+      },
+      {
+       "t": "num",
+       "q": "Un menú ofrece 3 entradas, 4 platos principales y 2 postres. ¿Cuántos menús distintos de entrada, plato y postre se pueden armar?",
+       "a": 24,
+       "unidad": "menús",
+       "exp": "3 × 4 × 2 = 24."
+      },
+      {
+       "t": "num",
+       "q": "¿De cuántas formas distintas se pueden ordenar 4 personas en una fila?",
+       "a": 24,
+       "unidad": "formas",
+       "exp": "Para el primer lugar hay 4 opciones, para el segundo 3, para el tercero 2 y para el último 1: 4 × 3 × 2 × 1 = 24."
+      },
+      {
+       "t": "num",
+       "ctx": "<p>En un salón de fiestas juntan mesas cuadradas en una fila larga. Con 1 mesa se sientan 4 personas; con 2 mesas, 6; con 3 mesas, 8.</p>",
+       "q": "¿Cuántas personas se pueden sentar con 15 mesas en fila?",
+       "a": 32,
+       "unidad": "personas",
+       "exp": "Cada mesa nueva agrega 2 lugares. Con n mesas hay 2n + 2 lugares (2 por cada mesa a los costados, más 1 en cada punta). Con 15 mesas: 2 × 15 + 2 = 32."
+      },
+      {
+       "t": "single",
+       "q": "¿Qué expresión da la cantidad de personas para n mesas?",
+       "opts": [
+        "2n + 2",
+        "4n",
+        "n + 3",
+        "2n + 4"
+       ],
+       "a": 0,
+       "exp": "Comprobá con los datos: n = 1 da 4, n = 2 da 6, n = 3 da 8. 4n da 4, 8 y 12: no sirve, porque al juntar mesas se pierden los lugares de las uniones."
+      },
+      {
+       "t": "single",
+       "q": "¿Cuál de estos números es divisible por 3?",
+       "opts": [
+        "2.457",
+        "1.003",
+        "2.510",
+        "4.441"
+       ],
+       "a": 0,
+       "exp": "Un número es divisible por 3 si la suma de sus cifras lo es. 2 + 4 + 5 + 7 = 18, divisible por 3. Las otras suman 4, 8 y 13."
+      },
+      {
+       "t": "vf",
+       "q": "Indicá si cada afirmación es verdadera o falsa.",
+       "stmts": [
+        {
+         "s": "Todo número par es divisible por 2.",
+         "a": true
+        },
+        {
+         "s": "El 1 es un número primo.",
+         "a": false
+        },
+        {
+         "s": "El 91 es un número primo.",
+         "a": false
+        },
+        {
+         "s": "Todo número que termina en 0 es divisible por 5 y por 10.",
+         "a": true
+        }
+       ],
+       "exp": "El 1 no es primo, porque un primo tiene exactamente dos divisores. El 91 = 7 × 13, así que es compuesto."
+      },
+      {
+       "t": "open",
+       "q": "Federico quiere armar bolsitas de cumpleaños iguales con 60 caramelos y 48 chupetines, sin que sobre nada, y con la mayor cantidad de bolsitas posible. ¿Cuántas bolsitas arma y qué lleva cada una?",
+       "modelo": "La cantidad de bolsitas tiene que dividir a 60 y a 48, y ser la mayor posible: es el MCD(60, 48) = 12. Arma 12 bolsitas, cada una con 60 ÷ 12 = 5 caramelos y 48 ÷ 12 = 4 chupetines."
+      }
+     ]
+    },
+    "cie": {
+     "titulo": "Salud individual y colectiva",
+     "intro": "Vacunas, medicamentos, enfermedades transmisibles, alimentación, primeros auxilios y cómo leer información de salud.",
+     "minutos": 45,
+     "items": [
+      {
+       "t": "single",
+       "q": "¿Cómo protege una vacuna?",
+       "opts": [
+        "Prepara al sistema inmune para reconocer un microorganismo y responder rápido si aparece.",
+        "Mata los virus que ya están en el cuerpo.",
+        "Reemplaza al sistema inmune.",
+        "Funciona como un antibiótico."
+       ],
+       "a": 0,
+       "exp": "La vacuna presenta al sistema inmune una parte o una versión inofensiva del microorganismo. El cuerpo genera memoria inmunológica y, si después aparece el microorganismo real, lo reconoce enseguida."
+      },
+      {
+       "t": "single",
+       "q": "¿Por qué se dice que vacunarse protege también a otras personas?",
+       "opts": [
+        "Porque si la mayoría está vacunada, el microorganismo circula menos y protege a quienes no pueden vacunarse.",
+        "Porque la vacuna se contagia.",
+        "Porque los vacunados no pueden enfermarse de nada.",
+        "Porque las vacunas curan a los enfermos que están cerca."
+       ],
+       "a": 0,
+       "exp": "Es la inmunidad colectiva o «de rebaño»: protege a bebés, personas con defensas bajas o alérgicas a algún componente."
+      },
+      {
+       "t": "match",
+       "q": "Relacioná cada enfermedad con su forma principal de transmisión.",
+       "left": [
+        "Gripe",
+        "Dengue",
+        "Hepatitis A",
+        "Tétanos"
+       ],
+       "right": [
+        "Gotitas en el aire al toser o estornudar",
+        "Picadura del mosquito Aedes aegypti",
+        "Agua o alimentos contaminados",
+        "Heridas en contacto con tierra u objetos contaminados"
+       ],
+       "a": [
+        0,
+        1,
+        2,
+        3
+       ],
+       "exp": "Conocer cómo se transmite cada enfermedad indica cómo prevenirla: taparse al toser, eliminar recipientes con agua, lavar alimentos y vacunarse contra el tétanos."
+      },
+      {
+       "t": "single",
+       "q": "¿Cuál es la medida más eficaz para prevenir el dengue en una casa?",
+       "opts": [
+        "Eliminar recipientes con agua estancada donde el mosquito pone sus huevos.",
+        "Tomar antibióticos.",
+        "Cerrar las ventanas en invierno.",
+        "Comer frutas cítricas."
+       ],
+       "a": 0,
+       "exp": "El Aedes aegypti se reproduce en agua quieta y limpia: baldes, cubiertas, floreros, tapitas. Sin criaderos no hay mosquitos."
+      },
+      {
+       "t": "num",
+       "q": "La Organización Mundial de la Salud recomienda no superar los 50 g de azúcares libres por día. Un refresco tiene 26 g de azúcar cada 250 mL. ¿Qué porcentaje de ese límite aporta una botella de 500 mL?",
+       "a": 104,
+       "unidad": "%",
+       "exp": "500 mL tienen 52 g de azúcar. 52 ÷ 50 = 1,04 = 104 %: una sola botella supera el límite diario."
+      },
+      {
+       "t": "single",
+       "q": "¿Qué hay que hacer ante una quemadura leve en la mano?",
+       "opts": [
+        "Poner la zona bajo agua fría corriente durante varios minutos.",
+        "Poner hielo directo sobre la piel.",
+        "Untar manteca o pasta de dientes.",
+        "Reventar las ampollas."
+       ],
+       "a": 0,
+       "exp": "El agua fría corriente (no helada), durante 10 a 20 minutos, baja la temperatura de la piel y reduce el daño. El hielo, la manteca y reventar ampollas pueden empeorar la lesión o infectarla."
+      },
+      {
+       "t": "vf",
+       "q": "Indicá si cada afirmación es verdadera o falsa.",
+       "stmts": [
+        {
+         "s": "Se puede tomar un antibiótico que sobró de un tratamiento anterior sin consultar al médico.",
+         "a": false
+        },
+        {
+         "s": "Automedicarse puede ocultar síntomas de una enfermedad.",
+         "a": true
+        },
+        {
+         "s": "Lavarse las manos reduce la transmisión de infecciones.",
+         "a": true
+        },
+        {
+         "s": "Hay que dejar el antibiótico apenas uno se siente mejor.",
+         "a": false
+        }
+       ],
+       "exp": "El antibiótico se toma completo, como lo indicó el médico: dejarlo antes puede dejar vivas a las bacterias más resistentes."
+      },
+      {
+       "t": "single",
+       "q": "Un sitio web vende un suplemento que «cura la diabetes en 7 días, sin dietas ni medicamentos». ¿Cuál es la principal señal de alerta?",
+       "opts": [
+        "Promete una cura rápida y total sin mostrar evidencia científica.",
+        "Que se vende por internet.",
+        "Que es un suplemento.",
+        "Que habla de la diabetes."
+       ],
+       "a": 0,
+       "exp": "Las promesas de curas milagrosas, rápidas y sin esfuerzo, sin estudios ni fuentes verificables, son la señal más clara de información de salud engañosa."
+      },
+      {
+       "t": "open",
+       "q": "¿Por qué es importante seguir vacunando contra enfermedades que hoy casi no se ven, como el sarampión?",
+       "modelo": "Porque si se ven poco es justamente gracias a la vacunación. Si muchas personas dejan de vacunarse, baja la inmunidad colectiva y el microorganismo, que sigue circulando en otras partes del mundo, puede volver a provocar brotes. Por eso, cuando bajó la vacunación, el sarampión reapareció en varios países."
+      }
+     ]
+    },
+    "lec": {
+     "titulo": "Lectura crítica: evaluar argumentos",
+     "intro": "Un texto con argumentos de calidad dispareja. Distinguí los sólidos de los débiles.",
+     "minutos": 40,
+     "textos": [
+      {
+       "tipo": "Columna de opinión",
+       "titulo": "Que vuelva el horario de verano",
+       "autor": "Texto escrito para esta práctica",
+       "parrafos": [
+        "Uruguay dejó de aplicar el horario de verano en 2015. Desde entonces, cada noviembre amanece a las cinco y media de la mañana, cuando casi todos dormimos, y oscurece antes de que podamos disfrutar la tarde. Creo que es hora de volver a adelantar los relojes.",
+        "El primer argumento es sencillo: la luz de la mañana temprano se desperdicia. Con el horario de verano, esa hora de sol pasaría a la tarde, cuando la gente sale del trabajo y puede usarla para hacer deporte, pasear o estar con su familia. Las tardes largas mejoran la calidad de vida.",
+        "Además, todo el mundo extraña el horario de verano. Basta con hablar con cualquiera en la feria o en el ómnibus: nadie está contento con que oscurezca temprano.",
+        "También se beneficiaría el turismo. Si el sol se pone más tarde, los turistas se quedan más tiempo en la playa y en los bares, y gastan más. Para un país donde el turismo es una actividad importante, no es un detalle menor.",
+        "Quienes se oponen dicen que el ahorro de energía, que fue la razón original del cambio de hora, hoy es muy pequeño. Puede ser. Pero el ahorro de energía nunca fue lo más importante: lo importante es cómo vivimos.",
+        "Los países que mantienen el cambio de hora no lo hacen por capricho. Volvamos a adelantar los relojes y recuperemos las tardes."
+       ]
+      }
+     ],
+     "items": [
+      {
+       "t": "single",
+       "q": "¿Cuál es la postura del autor?",
+       "opts": [
+        "Que Uruguay vuelva a aplicar el horario de verano.",
+        "Que se elimine el cambio de hora en todo el mundo.",
+        "Que se ahorre energía.",
+        "Que se amplíe el horario de los comercios."
+       ],
+       "a": 0,
+       "exp": "Está al final del párrafo 1 y se repite en el cierre."
+      },
+      {
+       "t": "single",
+       "q": "¿Cuál es el argumento más débil del texto?",
+       "opts": [
+        "«Todo el mundo extraña el horario de verano» (párrafo 3).",
+        "El uso de la luz de la tarde para actividades (párrafo 2).",
+        "El beneficio para el turismo (párrafo 4).",
+        "La respuesta sobre el ahorro de energía (párrafo 5)."
+       ],
+       "a": 0,
+       "exp": "Generaliza («todo el mundo», «nadie») a partir de charlas informales. Es una falacia de generalización: no hay ningún dato que respalde que la mayoría piensa así."
+      },
+      {
+       "t": "single",
+       "q": "El argumento del turismo (párrafo 4) sería más convincente si el autor…",
+       "opts": [
+        "incluyera datos sobre el gasto de los turistas en los veranos con y sin cambio de hora.",
+        "usara más signos de exclamación.",
+        "contara una anécdota de sus vacaciones.",
+        "repitiera la idea con otras palabras."
+       ],
+       "a": 0,
+       "exp": "Es un argumento razonable, pero se basa en una suposición. Con datos comparativos pasaría de ser una hipótesis a ser una evidencia."
+      },
+      {
+       "t": "single",
+       "q": "¿Cómo responde el autor al contraargumento del ahorro de energía?",
+       "opts": [
+        "Lo admite a medias y le quita importancia, sin dar datos.",
+        "Lo refuta con cifras de consumo.",
+        "Lo ignora completamente.",
+        "Cambia de postura."
+       ],
+       "a": 0,
+       "exp": "«Puede ser» concede, y después cambia el criterio: lo importante no es la energía sino «cómo vivimos». Es una respuesta válida, pero breve y sin pruebas."
+      },
+      {
+       "t": "single",
+       "q": "¿Qué perspectiva NO tiene en cuenta el autor?",
+       "opts": [
+        "La de quienes tienen que levantarse muy temprano y saldrían de casa con oscuridad.",
+        "La de los turistas.",
+        "La de quienes salen tarde del trabajo.",
+        "La de quienes quieren hacer deporte de tarde."
+       ],
+       "a": 0,
+       "exp": "Lectura crítica: con el horario de verano amanece más tarde, y quienes empiezan a trabajar o estudiar muy temprano saldrían de noche. Esa es una objeción fuerte que el texto no menciona."
+      },
+      {
+       "t": "single",
+       "q": "En el cierre, el autor dice que «los países que mantienen el cambio de hora no lo hacen por capricho». ¿Qué problema tiene esa afirmación?",
+       "opts": [
+        "No dice qué países son ni por qué lo hacen, así que no prueba nada.",
+        "Es falsa porque ningún país cambia la hora.",
+        "Está mal escrita.",
+        "Contradice la postura del autor."
+       ],
+       "a": 0,
+       "exp": "Apela a lo que hacen otros sin dar ejemplos ni razones. Además, hay países que también dejaron de cambiar la hora: la afirmación necesitaría más desarrollo."
+      },
+      {
+       "t": "open",
+       "q": "Escribí un párrafo breve que responda a esta columna desde la postura contraria, usando al menos un argumento que el autor no tuvo en cuenta.",
+       "modelo": "Aunque las tardes largas son agradables, el horario de verano obliga a muchos trabajadores y estudiantes a salir de su casa de noche, con más inseguridad y más riesgo en el tránsito. Además, cambiar la hora dos veces por año altera el sueño durante varios días. Si el ahorro de energía es mínimo, como admite el propio autor, no parece justificado imponer esos costos a toda la población."
+      }
+     ]
+    },
+    "esc": {
+     "titulo": "Texto 3: reseña crítica",
+     "intro": "Una reseña crítica describe la obra (de qué trata, quién la hizo) y la valora con argumentos. No cuenta el final.",
+     "tarea": {
+      "consigna": [
+       "La sección de cultura de una revista digital invita a sus lectores a escribir reseñas. Escribí una reseña crítica de una película o serie que hayas visto (puede ser reciente o un clásico).",
+       "Presentá brevemente la obra para quien no la vio, valorala con argumentos (actuaciones, historia, ritmo, mensaje) y terminá recomendándola o no.",
+       "El texto se dirige a los lectores de la revista: usá un lenguaje claro y no reveles el final."
+      ],
+      "genero": "Reseña crítica",
+      "min": 250,
+      "max": 300,
+      "minutos": 45,
+      "revision": [
+       "Presenté la obra: título, director o creador, año y de qué trata.",
+       "Mi valoración general se entiende desde el principio.",
+       "Fundamenté la valoración con aspectos concretos de la obra.",
+       "Mencioné al menos un punto débil o una posible crítica.",
+       "No conté el final.",
+       "Cerré con una recomendación clara.",
+       "Revisé tildes, mayúsculas y puntuación.",
+       "El texto tiene entre 250 y 300 palabras."
+      ],
+      "modelo": [
+       "<b>«Tiempos modernos»: la máquina que nos sigue apretando</b>",
+       "Noventa años después de su estreno, «Tiempos modernos» (1936), de Charles Chaplin, sigue siendo una de las películas más actuales que se pueden ver. Su tema, la relación entre las personas y las máquinas que prometen hacernos la vida más fácil, parece escrito para nuestra época.",
+       "Chaplin interpreta a un obrero que aprieta tuercas en una línea de montaje a un ritmo cada vez más rápido, hasta que su cuerpo y su cabeza no dan más. A partir de ahí, la película lo sigue en una serie de desventuras, en las que conoce a una joven huérfana que, como él, intenta sobrevivir en una ciudad que no tiene lugar para ellos.",
+       "Lo más admirable es cómo combina humor y crítica. La escena de la máquina que alimenta a los trabajadores para que no pierdan tiempo en el almuerzo provoca carcajadas, pero también deja pensando. Chaplin no necesita diálogos: casi toda la película es muda, y aun así se entiende todo con gestos y música.",
+       "Es cierto que algunos espectadores actuales pueden encontrar lento su ritmo o extrañar los diálogos. Sin embargo, vale la pena el esfuerzo: pocas películas logran ser tan divertidas y, al mismo tiempo, decir tanto sobre el trabajo, la pobreza y la dignidad.",
+       "En tiempos de inteligencia artificial y automatización, la pregunta de Chaplin sigue abierta: ¿quién está al servicio de quién? Por eso la recomiendo sin dudar, tanto a quienes nunca vieron una película muda como a quienes creen que el cine viejo no tiene nada que decirnos."
+      ]
+     }
+    }
+   }
+  }
+ ]
+}

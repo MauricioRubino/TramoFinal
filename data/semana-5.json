@@ -1,0 +1,1257 @@
+{
+ "semana": 5,
+ "days": [
+  {
+   "id": "s5-mar",
+   "label": "Mar 17/11",
+   "fecha": "2026-11-17",
+   "titulo": "Martes 17/11 · Estadística, el universo y un texto largo",
+   "nota": "Esta semana los textos de Lectora son largos, como los de la prueba. Respetá el cronómetro.",
+   "areas": {
+    "mat": {
+     "titulo": "Estadística descriptiva",
+     "intro": "Media, mediana, moda, rango y dispersión. Cuándo un promedio engaña.",
+     "minutos": 50,
+     "items": [
+      {
+       "t": "num",
+       "ctx": "<p>Edades de las 9 personas que se inscribieron en un taller de carpintería: 18, 22, 22, 25, 30, 34, 41, 45, 68.</p>",
+       "q": "¿Cuál es la media (promedio) de las edades? Redondeá a los centésimos.",
+       "a": 33.89,
+       "tol": 0.01,
+       "unidad": "años",
+       "exp": "Suma: 305. Media: 305 ÷ 9 ≈ 33,89 años."
+      },
+      {
+       "t": "num",
+       "q": "¿Cuál es la mediana de esas edades?",
+       "a": 30,
+       "unidad": "años",
+       "exp": "Los datos ya están ordenados y son 9: la mediana es el del medio, el quinto: 30."
+      },
+      {
+       "t": "num",
+       "q": "¿Cuál es la moda?",
+       "a": 22,
+       "unidad": "años",
+       "exp": "Es el valor que más se repite: 22 aparece dos veces."
+      },
+      {
+       "t": "num",
+       "q": "¿Cuál es el rango de las edades?",
+       "a": 50,
+       "unidad": "años",
+       "exp": "Rango = mayor − menor = 68 − 18 = 50. Es la medida de dispersión más simple."
+      },
+      {
+       "t": "single",
+       "q": "¿Por qué en este caso la mediana representa mejor a la persona «típica» del taller que la media?",
+       "opts": [
+        "Porque la edad de 68 es un valor extremo que sube el promedio.",
+        "Porque la mediana siempre es mejor.",
+        "Porque la media no se puede calcular con edades.",
+        "Porque la moda es 22."
+       ],
+       "a": 0,
+       "exp": "La media se ve afectada por los valores extremos; la mediana no. Siete de las nueve personas tienen menos de 33,89 años."
+      },
+      {
+       "t": "num",
+       "ctx": "<p>Cantidad de hijos en 20 hogares de un barrio:</p><table class='data'><tr><th>Hijos</th><td>0</td><td>1</td><td>2</td><td>3</td><td>4</td></tr><tr><th>Hogares</th><td>4</td><td>6</td><td>7</td><td>2</td><td>1</td></tr></table>",
+       "q": "¿Cuál es el promedio de hijos por hogar?",
+       "a": 1.5,
+       "unidad": "hijos",
+       "exp": "Se multiplica cada valor por su frecuencia: 0×4 + 1×6 + 2×7 + 3×2 + 4×1 = 0 + 6 + 14 + 6 + 4 = 30 hijos. Promedio: 30 ÷ 20 = 1,5."
+      },
+      {
+       "t": "num",
+       "q": "¿Qué porcentaje de esos hogares tiene 2 hijos o más?",
+       "a": 50,
+       "unidad": "%",
+       "exp": "Hogares con 2, 3 o 4 hijos: 7 + 2 + 1 = 10 de 20 = 50 %."
+      },
+      {
+       "t": "single",
+       "ctx": "<p>Notas de dos grupos en una prueba:<br>Grupo A: 6, 6, 7, 7, 8<br>Grupo B: 2, 4, 7, 10, 11</p>",
+       "q": "Los dos grupos tienen la misma media (6,8). ¿Qué diferencia hay entre ellos?",
+       "opts": [
+        "Las notas del grupo B están más dispersas.",
+        "El grupo A tiene notas más altas.",
+        "El grupo B tiene peor rendimiento en todo.",
+        "No hay ninguna diferencia."
+       ],
+       "a": 0,
+       "exp": "El grupo A tiene un rango de 2 (de 6 a 8) y el B de 9 (de 2 a 11). La media sola no alcanza para describir un conjunto de datos: hace falta una medida de dispersión."
+      },
+      {
+       "t": "single",
+       "q": "Para mostrar cómo cambió el precio del boleto entre 2015 y 2025, año a año, ¿qué gráfico conviene?",
+       "opts": [
+        "Un gráfico de líneas",
+        "Un gráfico circular",
+        "Una tabla de una sola fila",
+        "Un diagrama de Venn"
+       ],
+       "a": 0,
+       "exp": "El gráfico de líneas muestra la evolución en el tiempo. El circular sirve para mostrar partes de un total."
+      },
+      {
+       "t": "vf",
+       "q": "Indicá si cada afirmación es verdadera o falsa.",
+       "stmts": [
+        {
+         "s": "La media siempre coincide con alguno de los datos.",
+         "a": false
+        },
+        {
+         "s": "La mediana deja la mitad de los datos por debajo y la mitad por encima.",
+         "a": true
+        },
+        {
+         "s": "Si a todos los datos se les suma 5, la media aumenta 5.",
+         "a": true
+        },
+        {
+         "s": "El rango es una medida de dispersión.",
+         "a": true
+        }
+       ],
+       "exp": "La media puede no ser ninguno de los datos: en el ejercicio de las edades fue 33,89 y nadie tenía esa edad."
+      },
+      {
+       "t": "open",
+       "q": "Una empresa publica: «El sueldo promedio de nuestros empleados es $95.000». Tiene 10 empleados: 9 ganan $40.000 y el gerente gana $590.000. ¿El anuncio es verdadero? ¿Es engañoso? Justificá.",
+       "modelo": "Es verdadero: (9 × 40.000 + 590.000) ÷ 10 = 950.000 ÷ 10 = 95.000. Pero es engañoso, porque 9 de los 10 empleados ganan menos de la mitad de ese promedio. El sueldo del gerente, un valor extremo, infla la media. La mediana ($40.000) representa mucho mejor lo que gana un empleado típico."
+      }
+     ]
+    },
+    "cie": {
+     "titulo": "La Tierra y el universo",
+     "intro": "Estaciones, fases de la Luna, eclipses, capas de la Tierra, tiempo y clima.",
+     "minutos": 45,
+     "items": [
+      {
+       "t": "single",
+       "q": "¿Por qué hay estaciones en la Tierra?",
+       "opts": [
+        "Porque el eje de la Tierra está inclinado y los rayos del sol llegan con distinto ángulo a lo largo del año.",
+        "Porque en verano la Tierra está más cerca del Sol.",
+        "Porque el Sol cambia de temperatura.",
+        "Porque la Luna tapa al Sol en invierno."
+       ],
+       "a": 0,
+       "exp": "Es un error muy frecuente pensar que es por la distancia. Si fuera así, sería verano al mismo tiempo en los dos hemisferios, y no lo es: cuando en Uruguay es verano, en España es invierno."
+      },
+      {
+       "t": "open",
+       "q": "Usando tu respuesta anterior, explicá por qué cuando en Uruguay es invierno, en España es verano.",
+       "modelo": "Porque, por la inclinación del eje, durante una parte del año el hemisferio norte está más inclinado hacia el Sol y recibe los rayos más directos y durante más horas (verano allí), mientras el hemisferio sur, donde está Uruguay, los recibe más oblicuos y durante menos horas (invierno). Seis meses después la situación se invierte."
+      },
+      {
+       "t": "single",
+       "q": "¿Por qué la Luna tiene fases?",
+       "opts": [
+        "Porque desde la Tierra vemos una parte distinta de su cara iluminada por el Sol según dónde está en su órbita.",
+        "Porque la sombra de la Tierra la tapa cada noche.",
+        "Porque la Luna produce luz que se apaga y se prende.",
+        "Porque las nubes la cubren."
+       ],
+       "a": 0,
+       "exp": "La Luna no tiene luz propia: refleja la del Sol. Siempre tiene la mitad iluminada, pero según su posición vemos más o menos de esa mitad. La sombra de la Tierra solo aparece en los eclipses de Luna."
+      },
+      {
+       "t": "single",
+       "q": "¿Qué ocurre en un eclipse de Sol?",
+       "opts": [
+        "La Luna se interpone entre el Sol y la Tierra.",
+        "La Tierra se interpone entre el Sol y la Luna.",
+        "El Sol se apaga unos minutos.",
+        "La Luna se aleja de la Tierra."
+       ],
+       "a": 0,
+       "exp": "En un eclipse de Sol, la Luna proyecta su sombra sobre la Tierra. En un eclipse de Luna es al revés: la Tierra proyecta su sombra sobre la Luna."
+      },
+      {
+       "t": "single",
+       "q": "¿Cuál de estas frases describe el clima y no el tiempo atmosférico?",
+       "opts": [
+        "Uruguay tiene un clima templado, con lluvias repartidas durante todo el año.",
+        "Mañana va a llover en Maldonado.",
+        "Hoy hace 30 grados.",
+        "Esta semana hubo mucho viento."
+       ],
+       "a": 0,
+       "exp": "El tiempo atmosférico es el estado de la atmósfera en un momento y lugar. El clima es el comportamiento promedio durante muchos años (en general, 30 o más)."
+      },
+      {
+       "t": "match",
+       "q": "Relacioná cada capa con su descripción.",
+       "left": [
+        "Corteza",
+        "Manto",
+        "Núcleo",
+        "Atmósfera"
+       ],
+       "right": [
+        "Capa externa sólida, donde vivimos",
+        "Capa intermedia de roca muy caliente que fluye lentamente",
+        "Parte central, formada sobre todo por hierro y níquel",
+        "Capa de gases que rodea al planeta"
+       ],
+       "a": [
+        0,
+        1,
+        2,
+        3
+       ],
+       "exp": "Los movimientos del manto desplazan las placas de la corteza y causan terremotos y volcanes."
+      },
+      {
+       "t": "num",
+       "q": "La Luna está a unos 384.000 km de la Tierra y la luz viaja a unos 300.000 km/s. ¿Cuántos segundos tarda la luz reflejada por la Luna en llegar a la Tierra?",
+       "a": 1.28,
+       "unidad": "s",
+       "exp": "384.000 ÷ 300.000 = 1,28 segundos."
+      },
+      {
+       "t": "single",
+       "q": "¿Alrededor de qué fecha es el día con más horas de luz del año en Uruguay?",
+       "opts": [
+        "21 de diciembre",
+        "21 de junio",
+        "1 de enero",
+        "21 de marzo"
+       ],
+       "a": 0,
+       "exp": "Es el solsticio de verano del hemisferio sur. El 21 de junio es el día más corto, y alrededor del 21 de marzo y del 23 de setiembre (equinoccios) el día y la noche duran casi lo mismo."
+      },
+      {
+       "t": "vf",
+       "q": "Indicá si cada afirmación es verdadera o falsa.",
+       "stmts": [
+        {
+         "s": "El Sol es una estrella.",
+         "a": true
+        },
+        {
+         "s": "La Luna tiene luz propia.",
+         "a": false
+        },
+        {
+         "s": "La Tierra tarda aproximadamente un año en dar una vuelta alrededor del Sol.",
+         "a": true
+        },
+        {
+         "s": "Sin el efecto invernadero natural, la Tierra sería mucho más fría.",
+         "a": true
+        }
+       ],
+       "exp": "El efecto invernadero natural es necesario para la vida: mantiene la temperatura media del planeta unos 33 °C más alta. El problema es que las actividades humanas lo intensifican."
+      }
+     ]
+    },
+    "lec": {
+     "titulo": "Texto largo: un artículo explicativo",
+     "intro": "Un texto de más de 600 palabras, el más largo hasta ahora. Leelo de corrido una vez y después volvé a los párrafos que pida cada pregunta.",
+     "minutos": 45,
+     "textos": [
+      {
+       "tipo": "Artículo de divulgación",
+       "titulo": "Islas de calor: por qué las ciudades se calientan más",
+       "autor": "Texto escrito para esta práctica",
+       "parrafos": [
+        "En una noche de enero, mientras en el campo el termómetro baja hasta los 18 grados, en el centro de una ciudad cercana puede seguir marcando 25. No es una exageración ni un error del aparato: es un fenómeno conocido como «isla de calor urbana», y afecta, en mayor o menor medida, a casi todas las ciudades del mundo.",
+        "La explicación está en los materiales con que construimos. El asfalto, el hormigón y los techos oscuros absorben durante el día gran parte de la radiación del sol y la liberan lentamente durante la noche. A diferencia del suelo con vegetación, que retiene agua y se enfría al evaporarla, las superficies urbanas son impermeables: la lluvia se va por los desagües y casi no queda humedad que ayude a refrescar.",
+        "A eso se suma la forma de la ciudad. Los edificios altos y las calles angostas funcionan como cañones donde el viento circula con dificultad y el calor queda atrapado. El tránsito, los aires acondicionados y la actividad industrial agregan su propio calor, que en algunas zonas céntricas puede ser una fuente importante.",
+        "Las consecuencias no se limitan a la incomodidad. Durante las olas de calor, las noches calurosas impiden que el cuerpo se recupere de las altas temperaturas del día. Las personas mayores, los bebés y quienes tienen enfermedades crónicas son los más vulnerables, sobre todo si viven en viviendas con poca ventilación. Estudios realizados en ciudades de distintos continentes mostraron que la mortalidad aumenta durante las olas de calor, y que el aumento es mayor en los barrios con menos árboles.",
+        "El calor urbano también tiene un costo energético. Cuanto más calor hace, más se usan los equipos de aire acondicionado, que a su vez expulsan aire caliente hacia la calle. Se forma así un círculo difícil de romper: para refrescar el interior, calentamos el exterior.",
+        "Hay, sin embargo, soluciones conocidas, y muchas son sencillas. La más eficaz es la vegetación. Un árbol grande da sombra, que evita que el sol llegue a las superficies, y además transpira: libera vapor de agua por sus hojas, lo que enfría el aire a su alrededor. Las mediciones muestran que, en un día de verano, la temperatura bajo la copa de un árbol puede ser varios grados menor que en una calle sin sombra.",
+        "Otra estrategia es cambiar el color de las superficies. Los techos y pavimentos claros reflejan una parte mayor de la radiación y se calientan menos. En algunas ciudades se pintan los techos de blanco y se usan pavimentos permeables, que dejan pasar el agua de lluvia al suelo. Los techos verdes, cubiertos de plantas, combinan las dos ventajas, aunque son más caros de construir y mantener.",
+        "El diseño de los barrios también importa. Plazas, parques y corredores verdes que conecten la ciudad con espacios abiertos, como la costa o el campo, facilitan la circulación de aire fresco. En las ciudades costeras, la brisa del mar es un aliado natural, siempre que una muralla de edificios no la bloquee.",
+        "Ninguna de estas medidas es nueva, pero muchas veces quedan relegadas frente a otras prioridades. Plantar árboles exige planificar con años de anticipación, regarlos y cuidarlos, y a veces compiten con el espacio para estacionar o con el cableado. Sin embargo, a medida que los veranos se vuelven más calurosos, la pregunta deja de ser si podemos permitirnos invertir en sombra y pasa a ser si podemos permitirnos no hacerlo.",
+        "Las ciudades no van a dejar de ser más cálidas que el campo: eso forma parte de su naturaleza. Pero la diferencia entre una isla de calor moderada y una sofocante depende, en buena medida, de decisiones humanas. Cada calle arbolada, cada techo claro y cada plaza que reemplaza a un estacionamiento es una forma de bajar, aunque sea un poco, la temperatura de nuestras noches de verano."
+       ]
+      }
+     ],
+     "items": [
+      {
+       "t": "single",
+       "q": "Según el texto, ¿qué es una «isla de calor urbana»?",
+       "opts": [
+        "El fenómeno por el cual una ciudad está más caliente que el campo que la rodea.",
+        "Una zona de la ciudad sin árboles.",
+        "Una ola de calor que dura varios días.",
+        "Una ciudad construida en una isla."
+       ],
+       "a": 0,
+       "exp": "Lectura literal: el párrafo 1 lo presenta con el ejemplo de los 18 y 25 grados."
+      },
+      {
+       "t": "multi",
+       "q": "¿Qué causas de la isla de calor menciona el texto?",
+       "opts": [
+        "Materiales que absorben el calor de día y lo liberan de noche",
+        "Superficies impermeables que no retienen humedad",
+        "Edificios y calles angostas que dificultan el viento",
+        "Calor generado por el tránsito y los aires acondicionados",
+        "La contaminación del aire por humo",
+        "La cercanía del mar"
+       ],
+       "a": [
+        0,
+        1,
+        2,
+        3
+       ],
+       "exp": "Párrafos 2 y 3. El texto no menciona el humo, y el mar aparece como un aliado, no como una causa."
+      },
+      {
+       "t": "single",
+       "q": "¿Qué significa «para refrescar el interior, calentamos el exterior» (párrafo 5)?",
+       "opts": [
+        "Que los aires acondicionados enfrían las casas pero expulsan calor a la calle, y eso aumenta la necesidad de usarlos.",
+        "Que hay que abrir las ventanas para refrescar.",
+        "Que la calle es más fresca que las casas.",
+        "Que los aires acondicionados no funcionan."
+       ],
+       "a": 0,
+       "exp": "El texto habla de un «círculo difícil de romper»: más calor afuera, más aire acondicionado, más calor afuera."
+      },
+      {
+       "t": "single",
+       "q": "¿Por qué, según el texto, la mortalidad en olas de calor es mayor en barrios con menos árboles?",
+       "opts": [
+        "Porque sin árboles hay menos sombra y menos enfriamiento del aire, y las temperaturas son más altas.",
+        "Porque en esos barrios vive más gente mayor.",
+        "Porque los árboles producen medicamentos.",
+        "Porque en esos barrios no hay aires acondicionados."
+       ],
+       "a": 0,
+       "exp": "Lectura inferencial: hay que relacionar el párrafo 4 (más muertes donde hay menos árboles) con el 6 (los árboles dan sombra y enfrían el aire)."
+      },
+      {
+       "t": "multi",
+       "q": "¿De qué dos maneras un árbol ayuda a bajar la temperatura?",
+       "opts": [
+        "Da sombra y evita que el sol llegue a las superficies.",
+        "Transpira vapor de agua, que enfría el aire.",
+        "Absorbe el calor del asfalto por sus raíces.",
+        "Bloquea el viento caliente."
+       ],
+       "a": [
+        0,
+        1
+       ],
+       "exp": "Párrafo 6."
+      },
+      {
+       "t": "single",
+       "q": "En el párrafo 9, ¿qué significa que las medidas «quedan relegadas»?",
+       "opts": [
+        "Que se dejan en segundo plano frente a otras prioridades.",
+        "Que están prohibidas por ley.",
+        "Que se aplican de forma exagerada.",
+        "Que son medidas muy antiguas."
+       ],
+       "a": 0,
+       "exp": "El contexto lo aclara: quedan relegadas «frente a otras prioridades», como estacionar o el cableado."
+      },
+      {
+       "t": "single",
+       "q": "¿Qué función cumplen los párrafos 6, 7 y 8 dentro del texto?",
+       "opts": [
+        "Presentan soluciones al problema descrito antes.",
+        "Explican las causas del fenómeno.",
+        "Narran una historia personal.",
+        "Refutan la existencia de las islas de calor."
+       ],
+       "a": 0,
+       "exp": "El texto sigue una estructura problema-solución: los párrafos 1 a 5 presentan el problema (qué es, causas, consecuencias) y los 6 a 8, las soluciones."
+      },
+      {
+       "t": "single",
+       "q": "«La pregunta deja de ser si podemos permitirnos invertir en sombra y pasa a ser si podemos permitirnos no hacerlo». ¿Qué quiere transmitir el autor?",
+       "opts": [
+        "Que no invertir en árboles y sombra termina saliendo más caro.",
+        "Que la sombra es demasiado cara.",
+        "Que no se sabe si los árboles sirven.",
+        "Que hay que dejar de hacerse preguntas."
+       ],
+       "a": 0,
+       "exp": "Es un juego de palabras que invierte la pregunta habitual (¿nos alcanza el dinero?) para mostrar que lo costoso es no actuar."
+      },
+      {
+       "t": "single",
+       "q": "¿Cuál es la intención del texto?",
+       "opts": [
+        "Explicar un fenómeno y, al final, convencer de que se puede reducir con decisiones humanas.",
+        "Solo entretener con una historia.",
+        "Vender techos verdes.",
+        "Criticar a quienes usan aire acondicionado."
+       ],
+       "a": 0,
+       "exp": "Es mayormente explicativo, pero el último párrafo toma posición: la diferencia «depende de decisiones humanas». Muchos textos combinan intenciones."
+      },
+      {
+       "t": "open",
+       "q": "Elegí una de las soluciones del texto y explicá cómo podría aplicarse en tu barrio y qué dificultades tendría.",
+       "modelo": "Plantaría árboles en la avenida principal del barrio, donde casi no hay sombra y en verano el asfalto quema. Según el texto, un árbol grande puede bajar varios grados la temperatura. La dificultad es que, como dice el párrafo 9, hay que planificar con años de anticipación y cuidarlos; además, algunos comerciantes podrían oponerse si se pierden lugares para estacionar."
+      }
+     ]
+    },
+    "esc": {
+     "titulo": "Texto 4: artículo de opinión",
+     "intro": "Escribilo en la computadora, sin corrector, en 45 minutos. Revisá con la lista antes de pedir la devolución.",
+     "tarea": {
+      "consigna": [
+       "La revista de una asociación de madres y padres de un jardín de infantes publica artículos de opinión de la comunidad. Escribí un artículo de opinión sobre el siguiente tema:",
+       "¿Hay que limitar el uso de pantallas (celulares, tablets, televisión) en niños menores de seis años?",
+       "Los lectores son familias con hijos pequeños: tomá una postura clara y fundamentala para convencerlos."
+      ],
+      "genero": "Artículo de opinión",
+      "min": 250,
+      "max": 300,
+      "minutos": 45,
+      "revision": [
+       "Mi postura se entiende desde el primer párrafo.",
+       "Desarrollé al menos dos argumentos con ejemplos, datos, explicaciones o experiencias.",
+       "Respondí a una postura contraria.",
+       "El cierre retoma la postura con una idea o propuesta final.",
+       "El tono es adecuado para familias: respetuoso, sin culpar ni dar órdenes.",
+       "Usé conectores para unir las ideas.",
+       "Revisé tildes, mayúsculas y puntuación.",
+       "El texto tiene entre 250 y 300 palabras."
+      ],
+      "modelo": [
+       "<b>Menos pantalla, más mundo</b>",
+       "Basta con mirar alrededor en una sala de espera o en un restaurante: cada vez más niños pequeños pasan el tiempo mirando un celular. Entiendo por qué ocurre, pero creo que en los primeros años de vida es necesario limitar las pantallas y reservarlas para momentos puntuales.",
+       "En primer lugar, un niño menor de seis años aprende con el cuerpo y en relación con otros. Aprende a hablar conversando, a calcular distancias saltando, a esperar su turno jugando con otros chicos. Cada hora frente a una pantalla es una hora menos de esas experiencias, que ningún video puede reemplazar.",
+       "Además, el uso de pantallas antes de dormir suele afectar el descanso. Muchas familias notamos que, después de un rato con la tablet, a los chicos les cuesta más calmarse y conciliar el sueño, y un niño que duerme mal está más irritable y aprende peor.",
+       "Es cierto que hay contenidos educativos de calidad y que, a veces, la pantalla es la única forma de que un adulto cansado pueda cocinar o atender una llamada. No se trata de culpar a nadie ni de prohibir por completo. Se trata de que la pantalla sea la excepción y no la niñera de todos los días.",
+       "Por eso propongo algunos acuerdos simples: nada de pantallas en las comidas ni en la hora antes de dormir, y siempre que se pueda, mirar junto con ellos y conversar sobre lo que vieron. Los primeros años no vuelven: vale la pena que los chicos los pasen descubriendo el mundo, y no solo mirándolo."
+      ]
+     }
+    }
+   }
+  },
+  {
+   "id": "s5-mie",
+   "label": "Mié 18/11",
+   "fecha": "2026-11-18",
+   "titulo": "Miércoles 18/11 · Probabilidad, ambiente y un cuento",
+   "nota": "En probabilidad, antes de calcular, preguntate: ¿cuántos casos posibles hay y cuántos favorables?",
+   "areas": {
+    "mat": {
+     "titulo": "Probabilidad",
+     "intro": "Probabilidad clásica, sucesos compuestos, tablas de doble entrada y probabilidad condicional.",
+     "minutos": 50,
+     "items": [
+      {
+       "t": "num",
+       "q": "Se tira un dado común. ¿Cuál es la probabilidad de sacar un número par? Respondé en porcentaje.",
+       "a": 50,
+       "unidad": "%",
+       "exp": "Casos favorables: 2, 4 y 6 (3 casos) de 6 posibles: 3/6 = 50 %."
+      },
+      {
+       "t": "num",
+       "q": "Se tiran dos dados. ¿Cuál es la probabilidad de que la suma sea 7? Respondé en porcentaje con un decimal.",
+       "a": 16.7,
+       "tol": 0.1,
+       "unidad": "%",
+       "exp": "Hay 6 × 6 = 36 resultados posibles. Suman 7: (1,6), (2,5), (3,4), (4,3), (5,2), (6,1): 6 casos. 6/36 = 1/6 ≈ 16,7 %. El 7 es la suma más probable."
+      },
+      {
+       "t": "num",
+       "q": "Se tira una moneda 3 veces. ¿Cuál es la probabilidad de que salgan 3 caras? Respondé en porcentaje.",
+       "a": 12.5,
+       "unidad": "%",
+       "exp": "Cada tirada es independiente: 1/2 × 1/2 × 1/2 = 1/8 = 12,5 %."
+      },
+      {
+       "t": "num",
+       "ctx": "<p>Durante un invierno se registró si 200 personas se enfermaron de gripe, según si se habían vacunado o no.</p><table class='data'><tr><th></th><th>Se enfermó</th><th>No se enfermó</th><th>Total</th></tr><tr><th>Vacunadas</th><td>6</td><td>114</td><td>120</td></tr><tr><th>No vacunadas</th><td>20</td><td>60</td><td>80</td></tr><tr><th>Total</th><td>26</td><td>174</td><td>200</td></tr></table>",
+       "q": "Si se elige una persona al azar de las 200, ¿cuál es la probabilidad de que se haya enfermado? Respondé en porcentaje.",
+       "a": 13,
+       "unidad": "%",
+       "exp": "26 de 200 = 0,13 = 13 %."
+      },
+      {
+       "t": "num",
+       "q": "Entre las personas vacunadas, ¿qué porcentaje se enfermó?",
+       "a": 5,
+       "unidad": "%",
+       "exp": "Ahora el total son solo las vacunadas: 6 de 120 = 5 %. Es una probabilidad condicional: la probabilidad de enfermarse sabiendo que estaba vacunada."
+      },
+      {
+       "t": "num",
+       "q": "Entre las personas no vacunadas, ¿qué porcentaje se enfermó?",
+       "a": 25,
+       "unidad": "%",
+       "exp": "20 de 80 = 25 %."
+      },
+      {
+       "t": "single",
+       "q": "¿Qué conclusión se puede sacar de la tabla?",
+       "opts": [
+        "Entre los no vacunados, la proporción de enfermos fue cinco veces mayor que entre los vacunados.",
+        "La vacuna protege al 100 %.",
+        "Se enfermaron más vacunados que no vacunados.",
+        "La vacuna no tuvo ningún efecto."
+       ],
+       "a": 0,
+       "exp": "25 % ÷ 5 % = 5. La vacuna no protege al 100 % (6 vacunados se enfermaron), pero la diferencia entre los grupos es grande."
+      },
+      {
+       "t": "num",
+       "q": "Una urna tiene 3 bolitas rojas y 2 azules. Se sacan 2 bolitas sin devolver la primera. ¿Cuál es la probabilidad de que las dos sean rojas? Respondé en porcentaje.",
+       "a": 30,
+       "unidad": "%",
+       "exp": "Primera roja: 3/5. Si salió roja, quedan 2 rojas de 4: 2/4. Las dos rojas: 3/5 × 2/4 = 6/20 = 30 %."
+      },
+      {
+       "t": "vf",
+       "q": "Indicá si cada afirmación es verdadera o falsa.",
+       "stmts": [
+        {
+         "s": "Si una moneda salió cara 5 veces seguidas, es más probable que la próxima salga cruz.",
+         "a": false
+        },
+        {
+         "s": "Una probabilidad nunca puede ser mayor que 1 (o que 100 %).",
+         "a": true
+        },
+        {
+         "s": "La probabilidad de que algo ocurra más la de que no ocurra suman 1.",
+         "a": true
+        },
+        {
+         "s": "Un suceso imposible tiene probabilidad 0.",
+         "a": true
+        }
+       ],
+       "exp": "La moneda no tiene memoria: cada tirada sigue siendo 50 % y 50 %. Creer lo contrario se llama «falacia del jugador»."
+      },
+      {
+       "t": "single",
+       "q": "Si se tira una moneda 1.000 veces, ¿qué es lo más esperable?",
+       "opts": [
+        "Que la proporción de caras esté cerca del 50 %.",
+        "Que salgan exactamente 500 caras.",
+        "Que salgan muchas más caras que cruces.",
+        "Que no se pueda predecir nada."
+       ],
+       "a": 0,
+       "exp": "Es la ley de los grandes números: cuantas más veces se repite el experimento, más se acerca la frecuencia a la probabilidad teórica, aunque no sea exacta."
+      },
+      {
+       "t": "open",
+       "q": "Una rifa vende 500 números a $100 cada uno y tiene un solo premio de $20.000. ¿Conviene comprar un número desde el punto de vista matemático? Justificá.",
+       "modelo": "La probabilidad de ganar es 1/500. En promedio, cada número «vale» 20.000 ÷ 500 = $40, pero cuesta $100. Matemáticamente no conviene: quien organiza la rifa recauda 50.000 y paga 20.000. Comprar puede tener sentido si es para colaborar con una causa, pero no como inversión."
+      }
+     ]
+    },
+    "cie": {
+     "titulo": "Ambiente y sostenibilidad",
+     "intro": "Cambio climático, calidad del agua, residuos e impacto de las actividades humanas.",
+     "minutos": 45,
+     "items": [
+      {
+       "t": "single",
+       "q": "¿Cuál es la principal actividad humana que aumenta los gases de efecto invernadero?",
+       "opts": [
+        "La quema de combustibles fósiles (petróleo, gas, carbón).",
+        "El uso de aerosoles.",
+        "La energía eólica.",
+        "El reciclaje."
+       ],
+       "a": 0,
+       "exp": "Al quemarlos se libera dióxido de carbono que estuvo guardado bajo tierra durante millones de años. La deforestación y la ganadería también aportan gases de efecto invernadero."
+      },
+      {
+       "t": "single",
+       "q": "Cada verano, en algunas playas del Río de la Plata aparecen floraciones de cianobacterias. ¿Qué condiciones las favorecen?",
+       "opts": [
+        "El exceso de nutrientes en el agua, como el fósforo de fertilizantes y efluentes, junto con altas temperaturas.",
+        "El agua fría y limpia.",
+        "La falta de luz solar.",
+        "La presencia de muchos bañistas."
+       ],
+       "a": 0,
+       "exp": "El exceso de nutrientes, sumado al calor y al agua quieta, permite que estas bacterias se multipliquen. Algunas producen toxinas: por eso se recomienda no bañarse cuando hay floración."
+      },
+      {
+       "t": "num",
+       "q": "Un hogar genera 1,2 kg de residuos por día, y el 40 % son restos orgánicos. Si los composta, ¿cuántos kg deja de mandar al contenedor en 30 días?",
+       "a": 14.4,
+       "unidad": "kg",
+       "exp": "1,2 × 0,4 = 0,48 kg por día. En 30 días: 0,48 × 30 = 14,4 kg."
+      },
+      {
+       "t": "single",
+       "q": "Según la jerarquía de manejo de residuos, ¿cuál es la mejor opción?",
+       "opts": [
+        "Reducir lo que se consume",
+        "Reciclar",
+        "Enterrar en un relleno sanitario",
+        "Quemar los residuos"
+       ],
+       "a": 0,
+       "exp": "El orden es: reducir, reutilizar, reciclar y, como última opción, disponer. El residuo que no se genera es el que no hay que tratar."
+      },
+      {
+       "t": "match",
+       "q": "Relacioná cada actividad con su impacto principal.",
+       "left": [
+        "Uso excesivo de fertilizantes",
+        "Quema de combustibles fósiles",
+        "Deforestación",
+        "Plásticos que llegan al mar"
+       ],
+       "right": [
+        "Contaminación del agua con nutrientes",
+        "Aumento del CO₂ en la atmósfera",
+        "Pérdida de hábitat para muchas especies",
+        "Daño a la fauna marina"
+       ],
+       "a": [
+        0,
+        1,
+        2,
+        3
+       ],
+       "exp": "Muchas actividades tienen varios impactos. La deforestación, por ejemplo, también libera CO₂."
+      },
+      {
+       "t": "single",
+       "q": "Un grupo quiere saber si una fábrica contamina un arroyo. ¿Qué diseño de investigación es mejor?",
+       "opts": [
+        "Tomar muestras aguas arriba y aguas abajo de la fábrica, en varias fechas, y compararlas.",
+        "Tomar una muestra aguas abajo un solo día.",
+        "Preguntar a los vecinos si el agua huele mal.",
+        "Analizar el agua de otro arroyo lejano."
+       ],
+       "a": 0,
+       "exp": "Las muestras aguas arriba son el grupo de referencia (cómo es el agua antes de pasar por la fábrica). Repetir en varias fechas evita conclusiones basadas en un día atípico."
+      },
+      {
+       "t": "vf",
+       "q": "Indicá si cada afirmación es verdadera o falsa.",
+       "stmts": [
+        {
+         "s": "El agujero de la capa de ozono es la principal causa del calentamiento global.",
+         "a": false
+        },
+        {
+         "s": "Los océanos absorben parte del CO₂ que emitimos.",
+         "a": true
+        },
+        {
+         "s": "El aumento del nivel del mar se relaciona con el derretimiento de hielos y la expansión del agua al calentarse.",
+         "a": true
+        },
+        {
+         "s": "Un invierno muy frío demuestra que el cambio climático no existe.",
+         "a": false
+        }
+       ],
+       "exp": "El ozono y el calentamiento global son problemas distintos que se suelen confundir. Y el clima se mide en promedios de muchos años: un invierno frío es tiempo atmosférico, no clima."
+      },
+      {
+       "t": "open",
+       "q": "Proponé dos acciones concretas para reducir los residuos en tu lugar de trabajo o estudio, y explicá por qué cada una funcionaría.",
+       "modelo": "1) Poner un bidón de agua y pedir que cada uno use su botella o vaso reutilizable: elimina decenas de botellas plásticas por semana. 2) Separar los restos orgánicos de la cocina en un contenedor para compostar: según el ejercicio anterior, son una parte importante de lo que se tira, y el compost se puede usar en las plantas del lugar."
+      }
+     ]
+    },
+    "lec": {
+     "titulo": "Texto largo: un cuento",
+     "intro": "En los textos narrativos se pregunta mucho por lo que no se dice: qué sienten los personajes, qué sugiere un detalle, cuál es el tema.",
+     "minutos": 45,
+     "textos": [
+      {
+       "tipo": "Cuento",
+       "titulo": "La radio del abuelo",
+       "autor": "Texto escrito para esta práctica",
+       "parrafos": [
+        "La radio estaba en la cocina, sobre la heladera, desde antes de que yo naciera. Era una caja de madera oscura con una perilla dorada para el volumen y otra para buscar las estaciones, y una tela gastada adelante, por donde salía el sonido. Mi abuelo la encendía todas las mañanas a las seis, antes de poner el agua para el mate, y no la apagaba hasta la noche.",
+        "Durante años pensé que la radio era suya como lo eran su gorra y su silla, una especie de extensión de su cuerpo. Nadie más la tocaba. Si mi madre bajaba el volumen para hablar por teléfono, al rato él lo volvía a subir sin decir nada, como quien acomoda un cuadro torcido.",
+        "Escuchaba de todo: el informativo, el pronóstico para los productores, los partidos del domingo, unos programas de tangos que a mí me parecían tristísimos. A veces se quedaba quieto en medio de una tarea, con la pava en la mano, escuchando una noticia, y después seguía como si nada. Nunca comentaba lo que oía. Yo creía que la radio le hacía compañía como el ruido del viento o de la lluvia: algo que estaba ahí y no hacía falta mirar.",
+        "Cuando cumplí once años me regalaron un teléfono usado, y con él descubrí que podía escuchar cualquier canción, en cualquier momento, sin esperar a que la pasaran. Le mostré a mi abuelo cómo funcionaba. Lo miró con cortesía, me dijo «qué bárbaro» y volvió a la cocina. Esa tarde le pregunté por qué no se compraba uno, si total podía escuchar las mismas radios ahí adentro.<br>—No es lo mismo —me dijo.<br>—Es exactamente lo mismo, abuelo. Es la misma señal.<br>Se rió y no insistió. Yo me fui convencido de que era una de esas cosas de viejos que no tenían explicación.",
+        "El invierno en que murió la abuela, la radio estuvo callada por primera vez. Durante una semana la cocina se llenó de gente, de tazas, de voces bajas, y nadie se acordó de prenderla. Cuando los parientes se fueron, encontré al abuelo sentado frente a la heladera, mirándola. No la prendió. Esa noche, cuando todos dormían, bajé a tomar agua y lo vi en la oscuridad, con la mano apoyada en la madera, como si le tomara la temperatura.",
+        "A la mañana siguiente, a las seis, la radio volvió a sonar.",
+        "Muchos años después, ya viviendo en Montevideo, supe por mi madre que el abuelo se había quedado sordo de un oído y que la radio, a ese volumen que a todos nos molestaba, era la única forma que tenía de escucharla bien. Me contó también algo que yo no sabía: que la había comprado con su primer sueldo, a los diecisiete años, para que su madre, que no sabía leer, pudiera enterarse de las noticias. Y que durante cuarenta años, todas las mañanas, mientras él y la abuela tomaban mate, la habían escuchado juntos.",
+        "Entonces entendí por qué la había vuelto a prender después de aquella semana de silencio. No buscaba las noticias ni los tangos. Buscaba la mañana tal como había sido siempre: el agua calentándose, el olor a yerba, la voz del locutor llenando la cocina. Buscaba, quizás, que algo siguiera en su lugar.",
+        "Cuando él murió, nadie en la familia quiso quedarse con la radio, porque ya casi no funcionaba y sonaba con una fritura constante. La traje conmigo. Está en mi cocina, sobre la heladera, y no la prendo nunca. No hace falta. A veces, a las seis de la mañana, cuando pongo el agua para el mate, me parece oírla igual."
+       ]
+      }
+     ],
+     "items": [
+      {
+       "t": "single",
+       "q": "¿Quién cuenta la historia?",
+       "opts": [
+        "El nieto, ya adulto, que recuerda su infancia.",
+        "El abuelo.",
+        "Un narrador que no participa de la historia.",
+        "La madre del protagonista."
+       ],
+       "a": 0,
+       "exp": "Es un narrador en primera persona («yo», «mi abuelo») que cuenta desde el presente («muchos años después, ya viviendo en Montevideo») hechos de su infancia."
+      },
+      {
+       "t": "single",
+       "q": "«Al rato él lo volvía a subir sin decir nada, como quien acomoda un cuadro torcido». ¿Qué sugiere la comparación?",
+       "opts": [
+        "Que lo hacía con naturalidad, sin enojarse, como quien pone algo en su lugar.",
+        "Que estaba muy enojado con la madre.",
+        "Que le gustaba decorar la casa.",
+        "Que no escuchaba bien lo que decía la madre."
+       ],
+       "a": 0,
+       "exp": "Acomodar un cuadro torcido es un gesto automático y tranquilo. La comparación muestra que, para el abuelo, la radio fuerte era el orden natural de las cosas."
+      },
+      {
+       "t": "single",
+       "q": "Al principio, ¿qué pensaba el narrador sobre la relación de su abuelo con la radio?",
+       "opts": [
+        "Que era un ruido de fondo, como el viento o la lluvia, que no tenía importancia especial.",
+        "Que su abuelo estaba obsesionado con las noticias.",
+        "Que la radio era de la abuela.",
+        "Que su abuelo quería venderla."
+       ],
+       "a": 0,
+       "exp": "Párrafo 3: «algo que estaba ahí y no hacía falta mirar». El cuento muestra cómo esa idea cambia."
+      },
+      {
+       "t": "single",
+       "q": "Cuando el abuelo dice «No es lo mismo», ¿qué quiere decir, según lo que sabemos al final del cuento?",
+       "opts": [
+        "Que la radio tiene un valor afectivo e historia que un teléfono no tiene.",
+        "Que el teléfono suena peor.",
+        "Que no sabe usar el teléfono.",
+        "Que las emisoras son diferentes."
+       ],
+       "a": 0,
+       "exp": "El nieto tenía razón técnicamente (es la misma señal), pero el abuelo hablaba de otra cosa: la radio era su primer sueldo, su madre, cuarenta años de mañanas con la abuela."
+      },
+      {
+       "t": "single",
+       "q": "¿Qué sugiere la imagen del abuelo en la oscuridad, «con la mano apoyada en la madera, como si le tomara la temperatura»?",
+       "opts": [
+        "Que dudaba si volver a prenderla, porque la radio estaba unida al recuerdo de su esposa.",
+        "Que tenía frío.",
+        "Que la radio estaba rota.",
+        "Que estaba buscando una emisora."
+       ],
+       "a": 0,
+       "exp": "Lectura inferencial: la radio estuvo callada desde la muerte de la abuela. Tocarla en silencio, de noche, muestra un momento íntimo de duelo antes de decidir seguir con la rutina."
+      },
+      {
+       "t": "multi",
+       "q": "¿Qué información nueva recibe el narrador muchos años después?",
+       "opts": [
+        "El abuelo era sordo de un oído.",
+        "La compró con su primer sueldo.",
+        "La compró para que su madre, que no sabía leer, se enterara de las noticias.",
+        "La escuchaba todas las mañanas con la abuela.",
+        "La radio se la había regalado la abuela."
+       ],
+       "a": [
+        0,
+        1,
+        2,
+        3
+       ],
+       "exp": "Lectura literal del párrafo 7. Que la radio fuera un regalo de la abuela no aparece en el texto."
+      },
+      {
+       "t": "single",
+       "q": "¿Cuál es el tema principal del cuento?",
+       "opts": [
+        "Cómo los objetos guardan recuerdos y vínculos, y ayudan a sostener la memoria de las personas.",
+        "La evolución de la tecnología, de la radio al celular.",
+        "La historia de la radio en Uruguay.",
+        "Las discusiones entre generaciones por el volumen de la música."
+       ],
+       "a": 0,
+       "exp": "El celular aparece para marcar el contraste, pero el centro del cuento es lo que la radio significaba para el abuelo y lo que llega a significar para el nieto."
+      },
+      {
+       "t": "single",
+       "q": "Al final, el narrador nunca prende la radio y dice: «No hace falta». ¿Por qué?",
+       "opts": [
+        "Porque lo que importa de la radio es lo que recuerda, no lo que suena.",
+        "Porque está rota y no se puede arreglar.",
+        "Porque prefiere escuchar música en el celular.",
+        "Porque a su familia le molesta el ruido."
+       ],
+       "a": 0,
+       "exp": "El narrador ahora entiende lo que su abuelo quiso decir: la radio es memoria. A las seis de la mañana, «me parece oírla igual»."
+      },
+      {
+       "t": "open",
+       "q": "¿Cómo cambia, a lo largo del cuento, la forma en que el narrador ve a su abuelo? Justificá con dos momentos del texto.",
+       "modelo": "Al principio lo ve como un hombre de costumbres que no tienen explicación: cree que la radio es solo un ruido de fondo y que su respuesta «No es lo mismo» es «una de esas cosas de viejos». Al final, cuando se entera de su historia, entiende que la radio estaba unida a su madre y a su esposa, y que prenderla de nuevo después de la muerte de la abuela fue una forma de seguir adelante. Pasa de no entenderlo a compartir su manera de sentir: él mismo guarda la radio."
+      }
+     ]
+    },
+    "esc": {
+     "titulo": "Analizar un debate antes de escribir",
+     "intro": "Antes de tomar postura, conviene conocer los argumentos de los dos lados. Así podés anticipar y responder las objeciones.",
+     "minutos": 35,
+     "textos": [
+      {
+       "tipo": "Debate",
+       "titulo": "¿Deberían ser gratuitos todos los museos públicos?",
+       "autor": "Textos escritos para esta práctica",
+       "parrafos": [
+        "<b>A favor.</b> La cultura es un derecho y no debería depender del bolsillo. Cuando un museo cobra entrada, aunque sea poco, una familia con tres hijos lo piensa dos veces. En los museos que ya son gratuitos se ven grupos escolares, jubilados y turistas que quizás nunca habrían entrado. Además, los museos públicos ya se financian con los impuestos de todos: cobrar entrada es hacer pagar dos veces.",
+        "<b>En contra.</b> Mantener un museo cuesta: conservación, seguridad, personal, nuevas exposiciones. Si no cobran nada, dependen por completo del presupuesto público, que siempre es escaso, y terminan deteriorándose. Una entrada accesible, con días gratuitos y descuentos para estudiantes y jubilados, permite cuidar el patrimonio sin dejar a nadie afuera. Además, lo que no cuesta nada a veces se valora menos."
+       ]
+      }
+     ],
+     "items": [
+      {
+       "t": "match",
+       "q": "Relacioná cada argumento con la postura que lo usa.",
+       "left": [
+        "La cultura es un derecho.",
+        "Mantener un museo tiene costos altos.",
+        "Los museos públicos ya se pagan con impuestos.",
+        "Lo gratuito a veces se valora menos.",
+        "Una entrada paga puede excluir a familias numerosas."
+       ],
+       "right": [
+        "A favor de la gratuidad",
+        "En contra de la gratuidad"
+       ],
+       "a": [
+        0,
+        1,
+        0,
+        1,
+        0
+       ],
+       "exp": "Identificar los argumentos de cada lado te ayuda a elegir cuál responder en tu texto."
+      },
+      {
+       "t": "single",
+       "q": "¿Cómo responde el texto «En contra» al problema de que una entrada excluya a algunas personas?",
+       "opts": [
+        "Propone días gratuitos y descuentos para algunos grupos.",
+        "Niega que alguien quede excluido.",
+        "Dice que no le importa.",
+        "Propone cerrar los museos."
+       ],
+       "a": 0,
+       "exp": "Es una forma de responder a la objeción principal de la otra postura: reconoce el problema y propone una solución intermedia."
+      },
+      {
+       "t": "single",
+       "q": "¿Cuál de los argumentos te parece más débil, desde el punto de vista lógico?",
+       "opts": [
+        "«Lo que no cuesta nada a veces se valora menos», porque no presenta ninguna prueba.",
+        "«Mantener un museo cuesta».",
+        "«La cultura es un derecho».",
+        "«Los museos ya se financian con impuestos»."
+       ],
+       "a": 0,
+       "exp": "Es una generalización sobre el comportamiento de las personas sin ningún ejemplo ni dato. Puede ser cierta en algunos casos, pero así planteada es fácil de refutar."
+      },
+      {
+       "t": "open",
+       "q": "Elegí tu postura y escribí la introducción de un texto argumentativo sobre este tema (entre 50 y 80 palabras). Tiene que presentar el tema y tu postura.",
+       "modelo": "Cada vez que se discute el presupuesto de cultura, vuelve la misma pregunta: ¿deberían los museos públicos abrir sus puertas sin cobrar? Algunos temen que la gratuidad los deje sin recursos; otros creen que cobrar entrada aleja a quienes más los necesitan. Creo que los museos públicos deben ser gratuitos, porque el acceso a la cultura es un derecho que ya pagamos entre todos."
+      },
+      {
+       "t": "open",
+       "q": "Escribí el párrafo en el que respondés al mejor argumento de la postura contraria a la tuya.",
+       "modelo": "(Si defendés la gratuidad.) Es cierto que mantener un museo cuesta, y que el presupuesto público es limitado. Sin embargo, lo que se recauda con las entradas suele ser una parte pequeña de ese costo, mientras que el efecto de cobrarlas es grande: deja afuera a quienes menos tienen. Hay otras formas de financiar los museos, como las donaciones, los socios o las actividades especiales, que no ponen una barrera en la puerta."
+      }
+     ]
+    }
+   }
+  },
+  {
+   "id": "s5-jue",
+   "label": "Jue 19/11",
+   "fecha": "2026-11-19",
+   "titulo": "Jueves 19/11 · Repaso mezclado y texto 5",
+   "nota": "Último día con temas nuevos. La semana que viene son simulacros con el tiempo real de la prueba.",
+   "areas": {
+    "mat": {
+     "titulo": "Problemas mezclados (con reloj)",
+     "intro": "Un ejercicio de cada tema, como en la prueba. Intentá hacerlo en 40 minutos.",
+     "minutos": 40,
+     "items": [
+      {
+       "t": "num",
+       "q": "Un producto cuesta $1.000 sin IVA. Se le suma el 22 % de IVA y después, sobre ese total, se hace un 10 % de descuento. ¿Cuánto se paga?",
+       "a": 1098,
+       "unidad": "$",
+       "exp": "1.000 × 1,22 = 1.220. Con el descuento: 1.220 × 0,90 = 1.098. Como son multiplicaciones, el orden no cambia el resultado."
+      },
+      {
+       "t": "num",
+       "q": "En un liceo, 3 de cada 8 estudiantes van en ómnibus. Si hay 240 estudiantes, ¿cuántos van en ómnibus?",
+       "a": 90,
+       "unidad": "estudiantes",
+       "exp": "240 ÷ 8 × 3 = 90."
+      },
+      {
+       "t": "num",
+       "q": "Una cancha de fútbol mide 100 m × 60 m. ¿Cuánto mide su diagonal? Redondeá a los centésimos.",
+       "a": 116.62,
+       "tol": 0.01,
+       "unidad": "m",
+       "exp": "√(100² + 60²) = √13.600 ≈ 116,62 m."
+      },
+      {
+       "t": "num",
+       "q": "Un plan de celular cuesta $400 fijos más $15 por minuto. ¿Cuántos minutos se pueden usar con $1.000?",
+       "a": 40,
+       "unidad": "minutos",
+       "exp": "400 + 15m = 1.000 → 15m = 600 → m = 40."
+      },
+      {
+       "t": "num",
+       "q": "Juan tiene tres notas: 7, 8 y 6. ¿Qué nota necesita en la cuarta prueba para que su promedio sea 7,5?",
+       "a": 9,
+       "exp": "Para promediar 7,5 en 4 pruebas, la suma tiene que ser 7,5 × 4 = 30. Ya tiene 21, así que necesita 9."
+      },
+      {
+       "t": "num",
+       "q": "La probabilidad de lluvia es del 30 % cada día, y los días son independientes. ¿Cuál es la probabilidad de que no llueva en dos días seguidos? Respondé en porcentaje.",
+       "a": 49,
+       "unidad": "%",
+       "exp": "No llover un día: 70 %. Dos días seguidos: 0,7 × 0,7 = 0,49 = 49 %."
+      },
+      {
+       "t": "num",
+       "q": "Un contenedor mide 2 m × 1,5 m × 0,8 m. ¿Cuál es su volumen en m³?",
+       "a": 2.4,
+       "unidad": "m³",
+       "exp": "2 × 1,5 × 0,8 = 2,4 m³ (2.400 litros)."
+      },
+      {
+       "t": "num",
+       "q": "Se invierten $5.000 al 10 % anual de interés compuesto. ¿Cuánto hay al cabo de 2 años?",
+       "a": 6050,
+       "unidad": "$",
+       "exp": "5.000 × 1,1² = 5.000 × 1,21 = 6.050."
+      },
+      {
+       "t": "single",
+       "q": "¿Qué expresión da el término n de la secuencia 1, 4, 9, 16, 25, …?",
+       "opts": [
+        "n²",
+        "3n − 2",
+        "n + 3",
+        "2n − 1"
+       ],
+       "a": 0,
+       "exp": "Son los cuadrados: 1², 2², 3², 4², 5². Las diferencias (3, 5, 7, 9) no son constantes, así que no es lineal."
+      },
+      {
+       "t": "num",
+       "q": "Un auto hace 120 km a 60 km/h y vuelve los mismos 120 km a 40 km/h. ¿Cuál es la velocidad media de todo el viaje?",
+       "a": 48,
+       "unidad": "km/h",
+       "exp": "La ida dura 2 h y la vuelta 3 h. En total: 240 km en 5 h = 48 km/h. ¡No es 50! El promedio de las velocidades no sirve porque pasó más tiempo yendo despacio."
+      },
+      {
+       "t": "open",
+       "q": "Para internet te ofrecen: A) $1.200 por mes sin costo de instalación; B) $950 por mes más $2.500 de instalación. Si vas a mantener el servicio un año, ¿cuál conviene? ¿Y desde cuántos meses conviene la B?",
+       "modelo": "En un año: A = 1.200 × 12 = $14.400; B = 2.500 + 950 × 12 = $13.900. Conviene B. B empieza a convenir cuando 2.500 + 950m < 1.200m, o sea 2.500 < 250m, m > 10. A partir del mes 11 la B es más barata; con exactamente 10 meses cuestan lo mismo ($12.000)."
+      }
+     ]
+    },
+    "cie": {
+     "titulo": "Ciencia, tecnología y sociedad",
+     "intro": "Decisiones con consecuencias sociales, ambientales y éticas, y cómo evaluar la información que circula.",
+     "minutos": 45,
+     "items": [
+      {
+       "t": "match",
+       "ctx": "<p>Un pueblo del interior debate si aceptar la instalación de un parque eólico en campos cercanos.</p>",
+       "q": "Clasificá cada pregunta según cómo se puede responder.",
+       "left": [
+        "¿Cuánto ruido produce un aerogenerador a 500 m de distancia?",
+        "¿Es justo que el pueblo cargue con molestias para que otros tengan energía?",
+        "¿Los aerogeneradores afectan a las aves de la zona?",
+        "¿Vale la pena cambiar el paisaje a cambio de energía limpia?"
+       ],
+       "right": [
+        "Se puede investigar científicamente",
+        "Depende de valores y prioridades"
+       ],
+       "a": [
+        0,
+        1,
+        0,
+        1
+       ],
+       "exp": "La ciencia puede medir el ruido o contar las aves afectadas, pero decidir qué es justo o qué vale más requiere también valores. Las buenas decisiones usan las dos cosas."
+      },
+      {
+       "t": "match",
+       "q": "Relacioná cada argumento del debate con su dimensión principal.",
+       "left": [
+        "Generará empleos durante la construcción.",
+        "Reduce las emisiones de CO₂ del país.",
+        "Cambia el paisaje con el que el pueblo se identifica.",
+        "Los dueños de los campos cobrarán un alquiler."
+       ],
+       "right": [
+        "Económica",
+        "Ambiental",
+        "Social y cultural"
+       ],
+       "a": [
+        0,
+        1,
+        2,
+        0
+       ],
+       "exp": "Los problemas complejos tienen varias dimensiones a la vez. La prueba pide reconocerlas."
+      },
+      {
+       "t": "single",
+       "q": "Para saber cuánto ruido hacen realmente los aerogeneradores, ¿qué fuente es más confiable?",
+       "opts": [
+        "Un estudio independiente con mediciones en otros parques eólicos, que explique cómo se midió.",
+        "El folleto de la empresa que quiere instalar el parque.",
+        "Un video viral de un vecino de otro país.",
+        "La opinión del intendente."
+       ],
+       "a": 0,
+       "exp": "Una fuente confiable explica su método, puede ser verificada y no tiene interés directo en el resultado. El folleto puede ser cierto, pero la empresa tiene un interés evidente."
+      },
+      {
+       "t": "single",
+       "q": "Te llega un mensaje: «Un estudio demostró que el agua con limón en ayunas cura el cáncer. ¡Compartilo!». ¿Qué conviene hacer?",
+       "opts": [
+        "Buscar si existe ese estudio y qué dicen fuentes de salud reconocidas antes de compartir.",
+        "Compartirlo, porque si es natural no hace mal.",
+        "Creerlo, porque menciona un estudio.",
+        "Mandarlo solo a los familiares enfermos."
+       ],
+       "a": 0,
+       "exp": "Mencionar «un estudio» sin decir cuál, quién lo hizo o dónde se publicó es una señal de alerta. Las promesas de cura milagrosa, también."
+      },
+      {
+       "t": "single",
+       "q": "Alguien dice: «Los científicos no se ponen de acuerdo sobre todo, así que cualquier opinión vale lo mismo». ¿Qué problema tiene este razonamiento?",
+       "opts": [
+        "Que haya debates en algunos temas no significa que todas las opiniones tengan el mismo respaldo de evidencia.",
+        "Ninguno: es correcto.",
+        "Que los científicos siempre están de acuerdo.",
+        "Que solo los científicos pueden opinar."
+       ],
+       "a": 0,
+       "exp": "La ciencia discute y revisa sus conclusiones, pero hay explicaciones con mucha evidencia y otras con muy poca. Ponerlas al mismo nivel es una técnica de manipulación frecuente."
+      },
+      {
+       "t": "single",
+       "q": "Un estudio con 10 personas mostró que quienes tomaron un suplemento durmieron mejor. ¿Qué conclusión es adecuada?",
+       "opts": [
+        "Es un resultado preliminar: hace falta un estudio con más personas y con un grupo de control.",
+        "El suplemento cura el insomnio.",
+        "El suplemento no sirve.",
+        "Todas las personas deberían tomarlo."
+       ],
+       "a": 0,
+       "exp": "Con 10 personas y sin grupo de control (que tome un placebo), el resultado puede deberse al azar o a que los participantes esperaban dormir mejor."
+      },
+      {
+       "t": "vf",
+       "q": "Indicá si cada afirmación es verdadera o falsa.",
+       "stmts": [
+        {
+         "s": "La ciencia puede cambiar sus explicaciones cuando aparecen nuevas evidencias.",
+         "a": true
+        },
+        {
+         "s": "Que algo sea natural garantiza que es inofensivo.",
+         "a": false
+        },
+        {
+         "s": "Un experto en un área es una autoridad en todos los temas.",
+         "a": false
+        },
+        {
+         "s": "Las decisiones tecnológicas pueden tener consecuencias éticas.",
+         "a": true
+        }
+       ],
+       "exp": "Muchas sustancias naturales son tóxicas, y que alguien sea médico no lo hace experto en energía. Que la ciencia se revise es una fortaleza, no una debilidad."
+      },
+      {
+       "t": "open",
+       "q": "Si vivieras en ese pueblo, ¿qué información pedirías antes de decidir si aceptar el parque eólico? Mencioná al menos tres datos y explicá para qué te sirve cada uno.",
+       "modelo": "Pediría: 1) mediciones del ruido a la distancia a la que estarían las casas, para saber si afectaría el descanso; 2) un estudio de las aves y murciélagos de la zona, para conocer el impacto ambiental local; 3) cuántos empleos permanentes (no solo durante la obra) generaría y si habría algún beneficio para el pueblo, como un fondo para obras. Con eso podría comparar beneficios y costos de forma informada."
+      }
+     ]
+    },
+    "lec": {
+     "titulo": "Un ensayo breve: las tres lecturas juntas",
+     "intro": "Un ensayo con preguntas literales, inferenciales y críticas mezcladas, como en la prueba.",
+     "minutos": 40,
+     "textos": [
+      {
+       "tipo": "Ensayo breve",
+       "titulo": "¿Sigue valiendo la pena escribir a mano?",
+       "autor": "Texto escrito para esta práctica",
+       "parrafos": [
+        "Hace unos años, algunos países decidieron dejar de exigir la letra cursiva en las escuelas para dedicar más tiempo al teclado. La noticia generó indignación en algunos y alivio en otros, y abrió una pregunta que parecía impensable hace una generación: ¿todavía tiene sentido aprender a escribir a mano?",
+        "La decisión parece lógica. Hoy escribimos sobre todo en pantallas: mensajes, correos, trabajos, formularios. Fuera de la lista del supermercado o de alguna firma, son pocos los adultos que escriben a mano más de un párrafo por semana. ¿Para qué dedicar horas de clase a una habilidad que se usa cada vez menos?",
+        "Sin embargo, la pregunta esconde una trampa: supone que escribir a mano sirve solo para producir un texto. Y no es así. Varios estudios sobre el aprendizaje sugieren que tomar apuntes a mano ayuda a recordar mejor que tipearlos. La explicación más aceptada es que, como la mano es más lenta que el teclado, quien escribe a mano no puede copiar todo: tiene que elegir, resumir y reformular con sus propias palabras. Ese esfuerzo es, justamente, el que fija el conocimiento.",
+        "Algo parecido ocurre con los niños que aprenden a leer. Trazar una letra obliga a prestar atención a su forma, a diferenciar la «b» de la «d», a sentir con el cuerpo lo que después se reconoce con la vista. Muchos docentes observan que los chicos que escriben a mano reconocen antes las letras que quienes solo las tocan en una pantalla.",
+        "Hay también un argumento menos medible, pero no menos real. La escritura a mano es lenta, y la lentitud tiene sus ventajas. Una carta escrita a mano no se borra con una tecla: obliga a pensar antes de escribir. Quien llena un cuaderno de ideas sueltas, flechas y tachones está pensando de una manera distinta a quien ordena párrafos en un procesador de texto. Ninguna es mejor que la otra; son herramientas distintas para momentos distintos.",
+        "Nada de esto significa que haya que dar la espalda al teclado. Sería absurdo formar a los estudiantes para un mundo que ya no existe. Escribir rápido y bien en una computadora es indispensable para estudiar y para trabajar, y para algunas personas el teclado es, además, una herramienta de inclusión: quienes tienen dificultades motrices o dislexia pueden expresarse mejor con él.",
+        "La pregunta, entonces, no debería ser «mano o teclado», sino «para qué cada uno». Tal vez la letra cursiva perfecta ya no sea un objetivo razonable. Pero la capacidad de tomar un lápiz y ordenar las ideas en un papel, de hacer un esquema, de escribir una nota sin depender de una batería, sigue siendo valiosa.",
+        "Abandonar la escritura a mano por completo sería confundir la herramienta con la habilidad. Lo que importa no es la letra ni el soporte, sino lo que pasa en la cabeza de quien escribe. Y en eso, por ahora, el lápiz todavía tiene algo que enseñarnos."
+       ]
+      }
+     ],
+     "items": [
+      {
+       "t": "single",
+       "q": "¿Cuál es la postura del autor?",
+       "opts": [
+        "Hay que seguir enseñando a escribir a mano, junto con el teclado, porque cada uno sirve para cosas distintas.",
+        "Hay que dejar de enseñar a escribir a mano.",
+        "Hay que prohibir el teclado en las escuelas.",
+        "La letra cursiva es indispensable."
+       ],
+       "a": 0,
+       "exp": "El párrafo 7 lo resume: no «mano o teclado», sino «para qué cada uno». El autor incluso dice que la cursiva perfecta ya no es un objetivo razonable."
+      },
+      {
+       "t": "single",
+       "q": "Según el párrafo 3, ¿por qué tomar apuntes a mano ayudaría a recordar mejor?",
+       "opts": [
+        "Porque, como es más lento, obliga a seleccionar y reformular con las propias palabras.",
+        "Porque el papel es más cómodo que la pantalla.",
+        "Porque se escribe más que con el teclado.",
+        "Porque la letra queda más linda."
+       ],
+       "a": 0,
+       "exp": "Lectura literal: «tiene que elegir, resumir y reformular con sus propias palabras. Ese esfuerzo es el que fija el conocimiento»."
+      },
+      {
+       "t": "single",
+       "q": "¿Qué quiere decir el autor con que la pregunta «esconde una trampa»?",
+       "opts": [
+        "Que da por supuesto que escribir a mano sirve solo para producir textos.",
+        "Que es una pregunta imposible de responder.",
+        "Que quienes la hacen quieren engañar a los docentes.",
+        "Que la respuesta correcta es siempre sí."
+       ],
+       "a": 0,
+       "exp": "Lectura inferencial: lo dice a continuación: «supone que escribir a mano sirve solo para producir un texto. Y no es así»."
+      },
+      {
+       "t": "single",
+       "q": "¿Qué función cumple el párrafo 6?",
+       "opts": [
+        "Hace una concesión: reconoce el valor del teclado para no parecer extremo.",
+        "Presenta la postura principal del autor.",
+        "Cuenta una anécdota.",
+        "Contradice todo lo que se dijo antes."
+       ],
+       "a": 0,
+       "exp": "«Nada de esto significa que…» anticipa una objeción posible (que el autor está en contra de la tecnología) y la responde."
+      },
+      {
+       "t": "single",
+       "q": "El argumento del párrafo 4 se basa en «lo que observan muchos docentes». ¿Qué se puede decir de este tipo de evidencia?",
+       "opts": [
+        "Es valiosa, pero menos sólida que un estudio sistemático.",
+        "Es la evidencia más fuerte posible.",
+        "No tiene ningún valor.",
+        "Es una estadística oficial."
+       ],
+       "a": 0,
+       "exp": "Lectura crítica: la experiencia de los docentes es relevante, pero no es lo mismo que un estudio controlado. El autor usa palabras más firmes («estudios») en el párrafo 3 que en el 4 («observan»)."
+      },
+      {
+       "t": "single",
+       "q": "¿Qué significa «confundir la herramienta con la habilidad» en el último párrafo?",
+       "opts": [
+        "Creer que lo importante es el lápiz o el teclado, cuando lo importante es el pensamiento.",
+        "Usar mal las herramientas.",
+        "No saber escribir con el teclado.",
+        "Pensar que la letra cursiva es una herramienta."
+       ],
+       "a": 0,
+       "exp": "La oración siguiente lo explica: «Lo que importa no es la letra ni el soporte, sino lo que pasa en la cabeza de quien escribe»."
+      },
+      {
+       "t": "vf",
+       "q": "Según el texto, indicá si cada afirmación es verdadera o falsa.",
+       "stmts": [
+        {
+         "s": "El autor propone dejar de enseñar a usar el teclado.",
+         "a": false
+        },
+        {
+         "s": "La lentitud de la escritura a mano puede ser una ventaja.",
+         "a": true
+        },
+        {
+         "s": "Escribir a mano es mejor que escribir en computadora en todos los casos.",
+         "a": false
+        },
+        {
+         "s": "El teclado puede ayudar a personas con dislexia.",
+         "a": true
+        }
+       ],
+       "exp": "Párrafos 5 y 6. El autor dice expresamente que «ninguna es mejor que la otra»."
+      },
+      {
+       "t": "open",
+       "q": "¿Qué argumento del texto te parece más convincente y cuál menos? Justificá tu elección.",
+       "modelo": "El más convincente es el de los apuntes (párrafo 3), porque se apoya en estudios y da una explicación clara de por qué funciona: obliga a resumir. El menos convincente es el de la lentitud (párrafo 5), porque el propio autor reconoce que es «menos medible» y se basa en una impresión general sobre cómo pensamos; alguien podría decir que en un procesador de texto también se puede pensar antes de escribir."
+      }
+     ]
+    },
+    "esc": {
+     "titulo": "Texto 5: ensayo breve",
+     "intro": "Un ensayo es más reflexivo que una columna: puede analizar ventajas y desventajas antes de tomar posición, pero igual tiene que llegar a una postura clara.",
+     "tarea": {
+      "consigna": [
+       "Una biblioteca pública organiza un concurso de ensayos breves sobre el mundo del trabajo. Escribí un ensayo sobre el siguiente tema:",
+       "¿El teletrabajo mejora la vida de los trabajadores?",
+       "El jurado y los lectores son público general. Tomá una postura y fundamentala, considerando también los argumentos de quienes piensan distinto."
+      ],
+      "genero": "Ensayo breve",
+      "min": 250,
+      "max": 300,
+      "minutos": 45,
+      "revision": [
+       "El título anticipa el tema o la postura.",
+       "La introducción presenta el problema y mi postura.",
+       "Desarrollé al menos dos argumentos con ejemplos, datos o experiencias.",
+       "Analicé los argumentos de la postura contraria y los respondí.",
+       "El cierre retoma la postura y deja una reflexión final.",
+       "Usé un registro formal y claro.",
+       "Revisé tildes, mayúsculas y puntuación.",
+       "El texto tiene entre 250 y 300 palabras."
+      ],
+      "modelo": [
+       "<b>Trabajar en casa: libertad con condiciones</b>",
+       "Durante la pandemia, millones de personas descubrieron que podían hacer su trabajo desde la mesa de la cocina. Hoy, el teletrabajo dejó de ser una emergencia para convertirse en una opción. ¿Mejora la vida de los trabajadores? Creo que sí, siempre que se cumplan algunas condiciones que hoy no siempre están garantizadas.",
+       "Su principal ventaja es el tiempo. Quien vive lejos de su trabajo puede pasar dos o tres horas por día en el ómnibus. Recuperar ese tiempo para descansar, cocinar o estar con la familia es una mejora concreta en la calidad de vida, y también reduce gastos y tránsito.",
+       "Además, el teletrabajo abre oportunidades. Una persona que vive en el interior puede trabajar para una empresa de la capital sin mudarse, y alguien que cuida a un familiar puede organizar mejor sus horarios.",
+       "Sin embargo, sus críticos señalan problemas reales: la soledad, la dificultad para desconectarse y los gastos de luz e internet que pasan a pagar los trabajadores. Muchas personas sienten que nunca terminan de trabajar, porque la oficina está a dos metros de la cama. Estas objeciones no anulan las ventajas, pero muestran que el teletrabajo sin reglas puede volverse una trampa.",
+       "Por eso, la clave está en las condiciones: derecho a desconectarse fuera del horario, que la empresa cubra parte de los gastos y la posibilidad de combinar días en casa con días en la oficina. Con esas reglas, el teletrabajo puede ser lo que prometía: más tiempo para vivir y no solo para trabajar."
+      ]
+     }
+    }
+   }
+  }
+ ]
+}

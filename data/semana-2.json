@@ -1,0 +1,1308 @@
+{
+ "semana": 2,
+ "days": [
+  {
+   "id": "s2-mar",
+   "label": "Mar 27/10",
+   "fecha": "2026-10-27",
+   "titulo": "Martes 27/10 · Números y método científico",
+   "nota": "Después de cada área, pasá al cuaderno de errores lo que te salió mal.",
+   "areas": {
+    "mat": {
+     "titulo": "Números y operaciones",
+     "intro": "Fracciones, decimales, potencias y notación científica, con problemas de la vida cotidiana.",
+     "minutos": 50,
+     "items": [
+      {
+       "t": "num",
+       "q": "Calculá 3/4 + 2/3 y escribí el resultado como número decimal, redondeado a dos cifras.",
+       "a": 1.42,
+       "tol": 0.01,
+       "exp": "Denominador común 12: 9/12 + 8/12 = 17/12 ≈ 1,42."
+      },
+      {
+       "t": "single",
+       "q": "Juan comió 2/5 de una pizza y Ana comió 1/4. ¿Qué fracción de la pizza quedó?",
+       "opts": [
+        "7/20",
+        "3/9",
+        "13/20",
+        "1/3"
+       ],
+       "a": 0,
+       "exp": "Entre los dos comieron 2/5 + 1/4 = 8/20 + 5/20 = 13/20. Queda 1 − 13/20 = 7/20. Ojo con 13/20: es lo que comieron, no lo que quedó."
+      },
+      {
+       "t": "num",
+       "q": "Calculá 2,5 × 0,4.",
+       "a": 1,
+       "exp": "2,5 × 0,4 = 1. Truco: 2,5 × 4 = 10, y como 0,4 es 4 ÷ 10, el resultado es 10 ÷ 10 = 1."
+      },
+      {
+       "t": "num",
+       "q": "Calculá (−3)² − 2³.",
+       "a": 1,
+       "exp": "(−3)² = 9, porque menos por menos da más. 2³ = 8. Entonces 9 − 8 = 1."
+      },
+      {
+       "t": "single",
+       "q": "¿Cómo se escribe 0,00045 en notación científica?",
+       "opts": [
+        "4,5 × 10⁻⁴",
+        "4,5 × 10⁴",
+        "45 × 10⁻⁵",
+        "4,5 × 10⁻³"
+       ],
+       "a": 0,
+       "exp": "Hay que correr la coma 4 lugares a la derecha para llegar a 4,5, por eso el exponente es −4. 45 × 10⁻⁵ vale lo mismo, pero no está en notación científica: el primer número tiene que estar entre 1 y 10."
+      },
+      {
+       "t": "num",
+       "q": "La distancia de la Tierra al Sol es de unos 1,5 × 10⁸ km, y la luz viaja a unos 3 × 10⁵ km por segundo. ¿Cuántos segundos tarda la luz del Sol en llegar a la Tierra?",
+       "a": 500,
+       "unidad": "segundos",
+       "exp": "Tiempo = distancia ÷ velocidad = 1,5 × 10⁸ ÷ 3 × 10⁵ = 0,5 × 10³ = 500 segundos, unos 8 minutos y 20 segundos."
+      },
+      {
+       "t": "single",
+       "q": "¿Cuál de estos números es el mayor?",
+       "opts": [
+        "0,7",
+        "2/3",
+        "0,65",
+        "5/8"
+       ],
+       "a": 0,
+       "exp": "Pasando todo a decimal: 2/3 ≈ 0,667 y 5/8 = 0,625. El mayor es 0,7."
+      },
+      {
+       "t": "num",
+       "q": "Un tanque de agua de 240 litros está lleno hasta los 3/8. ¿Cuántos litros faltan para llenarlo?",
+       "a": 150,
+       "unidad": "L",
+       "exp": "Falta llenar 5/8 del tanque: 240 × 5 ÷ 8 = 150 litros. También se puede calcular lo que tiene (90 L) y restarlo de 240."
+      },
+      {
+       "t": "vf",
+       "q": "Indicá si cada afirmación es verdadera o falsa.",
+       "stmts": [
+        {
+         "s": "√16 + √9 = √25",
+         "a": false
+        },
+        {
+         "s": "2⁵ = 32",
+         "a": true
+        },
+        {
+         "s": "0,1 × 0,1 = 0,01",
+         "a": true
+        },
+        {
+         "s": "−5 es mayor que −2",
+         "a": false
+        }
+       ],
+       "exp": "1) √16 + √9 = 4 + 3 = 7, y √25 = 5: la raíz de una suma no es la suma de las raíces. 4) En los negativos, el que está más lejos del cero es el menor: −5 < −2."
+      },
+      {
+       "t": "num",
+       "q": "Cuatro personas comparten una factura de luz de $3.480. Una de ellas paga el doble que cada una de las otras tres, que pagan lo mismo. ¿Cuánto paga la que paga el doble?",
+       "a": 1392,
+       "unidad": "$",
+       "exp": "Si cada una de las tres paga x, la cuarta paga 2x. En total son 5x = 3.480, entonces x = 696 y el doble es 1.392."
+      },
+      {
+       "t": "open",
+       "q": "Un compañero dice que 1/3 + 1/3 = 2/6. Explicá cuál es su error y cuál es el resultado correcto.",
+       "modelo": "Sumó los numeradores y también los denominadores. Para sumar fracciones con el mismo denominador se suman solo los numeradores y el denominador se mantiene: 1/3 + 1/3 = 2/3. Se ve que 2/6 es incorrecto porque 2/6 = 1/3, y la suma no puede dar lo mismo que uno de los sumandos."
+      }
+     ]
+    },
+    "cie": {
+     "titulo": "Cómo se investiga en ciencias",
+     "intro": "Preguntas investigables, hipótesis, variables y grupo de control. Es lo que más se repite en la prueba.",
+     "minutos": 45,
+     "items": [
+      {
+       "t": "single",
+       "ctx": "<p>Un grupo de estudiantes de una escuela agraria quiere saber si el fertilizante X ayuda a que las lechugas crezcan más.</p>",
+       "q": "¿Cuál de estas es una pregunta investigable para su estudio?",
+       "opts": [
+        "¿El fertilizante X aumenta la altura de las plantas de lechuga en 30 días?",
+        "¿Es bueno el fertilizante X?",
+        "¿Por qué crecen las plantas?",
+        "¿Las lechugas son más ricas que la rúcula?"
+       ],
+       "a": 0,
+       "exp": "Una pregunta investigable se puede responder con un experimento o con mediciones: dice qué se cambia (fertilizante), qué se mide (altura) y en qué condiciones (30 días). «¿Es bueno?» es vaga y la de las lechugas ricas es una opinión."
+      },
+      {
+       "t": "single",
+       "q": "¿Cuál es una hipótesis adecuada para esa pregunta?",
+       "opts": [
+        "Si se agrega fertilizante X, las lechugas alcanzarán mayor altura que sin fertilizante.",
+        "Las lechugas necesitan agua.",
+        "Vamos a medir las lechugas cada 10 días.",
+        "El fertilizante X es caro."
+       ],
+       "a": 0,
+       "exp": "Una hipótesis es una respuesta posible a la pregunta, que se puede comprobar o descartar. Las otras opciones son un hecho conocido, un procedimiento y un dato que no responde la pregunta."
+      },
+      {
+       "t": "single",
+       "q": "¿Cuál sería el grupo de control de este experimento?",
+       "opts": [
+        "Plantas de lechuga sin fertilizante, en las mismas condiciones de luz, agua y suelo.",
+        "Plantas de lechuga con el doble de fertilizante.",
+        "Plantas de tomate con fertilizante.",
+        "Plantas de lechuga con fertilizante, pero con menos agua."
+       ],
+       "a": 0,
+       "exp": "El grupo de control es igual en todo al grupo experimental, salvo en lo que se está probando. Sirve para comparar: si las plantas con fertilizante crecen más que las de control, la diferencia se puede atribuir al fertilizante."
+      },
+      {
+       "t": "match",
+       "q": "Relacioná cada variable del experimento con su papel.",
+       "left": [
+        "Cantidad de fertilizante",
+        "Altura de las plantas",
+        "Horas de luz por día",
+        "Tipo de suelo"
+       ],
+       "right": [
+        "Variable independiente",
+        "Variable dependiente",
+        "Variable controlada"
+       ],
+       "a": [
+        0,
+        1,
+        2,
+        2
+       ],
+       "exp": "La independiente es la que se cambia a propósito, la dependiente es la que se mide y las controladas son las que se mantienen iguales para que la comparación sea justa."
+      },
+      {
+       "t": "num",
+       "ctx": "<p>Resultados: altura media de las plantas (en cm).</p><table class='data'><tr><th>Día</th><th>0</th><th>10</th><th>20</th><th>30</th></tr><tr><th>Con fertilizante</th><td>2</td><td>6</td><td>13</td><td>21</td></tr><tr><th>Sin fertilizante</th><td>2</td><td>5</td><td>9</td><td>14</td></tr></table>",
+       "q": "¿Cuántos centímetros más medían en promedio las plantas con fertilizante el día 30?",
+       "a": 7,
+       "unidad": "cm",
+       "exp": "21 − 14 = 7 cm."
+      },
+      {
+       "t": "single",
+       "q": "Con los resultados de la tabla, ¿qué conclusión es válida?",
+       "opts": [
+        "En este experimento, las plantas con fertilizante crecieron más en promedio.",
+        "El fertilizante X hace crecer más a todas las plantas.",
+        "El fertilizante X contamina el suelo.",
+        "Sin fertilizante las lechugas no crecen."
+       ],
+       "a": 0,
+       "exp": "La conclusión no puede ir más allá de lo que se probó: lechugas, en estas condiciones. No se estudiaron otras plantas ni el suelo, y las plantas sin fertilizante sí crecieron (de 2 a 14 cm)."
+      },
+      {
+       "t": "vf",
+       "q": "Indicá si cada afirmación es verdadera o falsa.",
+       "stmts": [
+        {
+         "s": "Si se usaron solo 2 plantas por grupo, la conclusión es poco confiable.",
+         "a": true
+        },
+        {
+         "s": "Una hipótesis siempre tiene que resultar verdadera.",
+         "a": false
+        },
+        {
+         "s": "Repetir un experimento ayuda a detectar errores.",
+         "a": true
+        },
+        {
+         "s": "Una opinión puede reemplazar a los datos en una conclusión científica.",
+         "a": false
+        }
+       ],
+       "exp": "Una hipótesis puede quedar descartada, y eso también es un resultado útil. Con pocas muestras el azar pesa mucho, por eso se usan muchas plantas y se repite el experimento."
+      },
+      {
+       "t": "open",
+       "q": "Un aviso dice: «9 de cada 10 personas que probaron nuestro té adelgazaron». Nombrá dos datos que necesitarías para saber si eso es una evidencia confiable.",
+       "modelo": "Por ejemplo: cuántas personas participaron en total (no es lo mismo 10 que 1.000); si hubo un grupo de control que no tomó el té; si las personas cambiaron también su alimentación o hicieron ejercicio; quién hizo el estudio (si fue la misma empresa que vende el té); durante cuánto tiempo y cuántos kilos bajaron."
+      }
+     ]
+    },
+    "lec": {
+     "titulo": "Lectura literal: textos cortos",
+     "intro": "Dos textos breves. En la lectura literal la respuesta está escrita en el texto: ubicá el párrafo antes de responder.",
+     "minutos": 35,
+     "textos": [
+      {
+       "tipo": "Noticia",
+       "titulo": "Villa Arazá estrena su primer tramo de ciclovía",
+       "autor": "Texto escrito para esta práctica (la ciudad es inventada)",
+       "parrafos": [
+        "La intendencia de Villa Arazá inauguró el sábado el primer tramo de ciclovía de la ciudad: 3,2 kilómetros que unen la terminal de ómnibus con el liceo y el polideportivo. La obra demoró ocho meses y fue financiada en partes iguales por el gobierno departamental y un fondo nacional de movilidad.",
+        "El nuevo carril, separado de los autos por un cordón de hormigón, tiene dos sentidos de circulación, iluminación led y siete puntos de estacionamiento para bicicletas. Según la directora de Tránsito, «la idea es que quienes viven en los barrios del norte puedan llegar al centro sin depender del ómnibus ni arriesgarse en la ruta».",
+        "No todos están conformes. La asociación de comerciantes del centro reclamó que la obra eliminó 40 lugares de estacionamiento para autos sobre la avenida principal y teme que eso reduzca las ventas. La intendencia respondió que habilitará un estacionamiento a una cuadra.",
+        "El plan prevé construir otros dos tramos en los próximos dos años, hasta completar 10 kilómetros. Mientras tanto, los domingos de noviembre habrá recorridos guiados en bicicleta para familias, con salida a las 10 desde la plaza principal."
+       ]
+      },
+      {
+       "tipo": "Texto explicativo",
+       "titulo": "¿Por qué el mate no se ceba con agua hirviendo?",
+       "autor": "Texto escrito para esta práctica",
+       "parrafos": [
+        "Quien ceba mate sabe que hay una regla casi sagrada: el agua no tiene que hervir. Lejos de ser una manía, la recomendación tiene explicación.",
+        "La yerba contiene sustancias que le dan su sabor característico, entre ellas compuestos amargos llamados taninos. Cuando el agua está demasiado caliente, esas sustancias se extraen muy rápido y en gran cantidad: el mate resulta más amargo y la yerba «se lava» antes, es decir, pierde sabor en pocas cebadas.",
+        "La temperatura recomendada suele ubicarse entre 70 y 80 °C. A esa temperatura la extracción es más pareja y el mate rinde más. Por eso muchas pavas eléctricas tienen un botón especial para el mate, que corta antes de llegar a los 100 °C.",
+        "Hay también una razón de salud. La Agencia Internacional para la Investigación del Cáncer clasificó el consumo de bebidas «muy calientes», por encima de 65 °C, como probablemente cancerígeno para el esófago. La advertencia no se refiere a la yerba en sí, sino a la temperatura a la que se toma.",
+        "¿Y si el agua hirvió por descuido? Basta con dejarla reposar unos minutos o agregarle un chorrito de agua fría antes de cebar."
+       ]
+      }
+     ],
+     "items": [
+      {
+       "t": "single",
+       "q": "Texto 1. ¿Qué lugares une el primer tramo de la ciclovía?",
+       "opts": [
+        "La terminal de ómnibus con el liceo y el polideportivo",
+        "Los barrios del norte con la ruta",
+        "La plaza principal con la avenida",
+        "El centro con el puerto"
+       ],
+       "a": 0,
+       "exp": "Párrafo 1 del texto 1."
+      },
+      {
+       "t": "single",
+       "q": "Texto 1. ¿Quién financió la obra?",
+       "opts": [
+        "El gobierno departamental y un fondo nacional, en partes iguales",
+        "Solo la intendencia",
+        "La asociación de comerciantes",
+        "Un banco privado"
+       ],
+       "a": 0,
+       "exp": "Párrafo 1: «financiada en partes iguales por el gobierno departamental y un fondo nacional de movilidad»."
+      },
+      {
+       "t": "single",
+       "q": "Texto 1. ¿Por qué protestan los comerciantes?",
+       "opts": [
+        "Porque la obra eliminó 40 lugares de estacionamiento para autos",
+        "Porque la obra demoró ocho meses",
+        "Porque la ciclovía no tiene iluminación",
+        "Porque no los invitaron a la inauguración"
+       ],
+       "a": 0,
+       "exp": "Párrafo 3. Las otras opciones mezclan datos del texto con situaciones que no se dicen (la ciclovía sí tiene iluminación led)."
+      },
+      {
+       "t": "num",
+       "q": "Texto 1. ¿Cuántos kilómetros de ciclovía faltan construir para completar el plan?",
+       "a": 6.8,
+       "unidad": "km",
+       "exp": "El plan completo tiene 10 km y ya se hicieron 3,2 km: 10 − 3,2 = 6,8 km. Hay que cruzar datos de los párrafos 1 y 4."
+      },
+      {
+       "t": "single",
+       "q": "Texto 1. ¿Cuál es la intención principal del texto?",
+       "opts": [
+        "Informar sobre un hecho reciente",
+        "Convencer a los lectores de usar bicicleta",
+        "Contar una historia inventada para entretener",
+        "Explicar cómo se construye una ciclovía"
+       ],
+       "a": 0,
+       "exp": "Es una noticia: informa qué pasó, dónde, quién lo hizo y qué opinan los involucrados. Aunque cita opiniones, no toma partido."
+      },
+      {
+       "t": "single",
+       "q": "Texto 2. ¿A qué temperatura se recomienda cebar el mate?",
+       "opts": [
+        "Entre 70 y 80 °C",
+        "A 100 °C",
+        "Por debajo de 65 °C",
+        "Entre 80 y 90 °C"
+       ],
+       "a": 0,
+       "exp": "Párrafo 3. El 65 °C aparece en el párrafo 4, pero como el límite de las bebidas «muy calientes», no como la temperatura recomendada para cebar."
+      },
+      {
+       "t": "single",
+       "q": "Texto 2. Según el texto, ¿qué significa que la yerba «se lava»?",
+       "opts": [
+        "Que pierde sabor en pocas cebadas",
+        "Que se limpia de impurezas",
+        "Que se vuelve más amarga con el tiempo",
+        "Que absorbe demasiada agua"
+       ],
+       "a": 0,
+       "exp": "El mismo texto lo define en el párrafo 2: «es decir, pierde sabor en pocas cebadas». La expresión «es decir» suele anunciar una explicación."
+      },
+      {
+       "t": "multi",
+       "q": "Texto 2. ¿Qué razones da el texto para no cebar con agua hirviendo?",
+       "opts": [
+        "El mate queda más amargo",
+        "La yerba pierde sabor más rápido",
+        "Tomar bebidas muy calientes puede afectar la salud",
+        "El agua hervida tiene más bacterias",
+        "La yerba se vuelve tóxica al hervir"
+       ],
+       "a": [
+        0,
+        1,
+        2
+       ],
+       "exp": "El mate más amargo, la pérdida de sabor y el riesgo para la salud están en los párrafos 2 y 4. El texto aclara que el riesgo es por la temperatura y no por la yerba, así que la opción de la yerba tóxica es falsa; la de las bacterias no aparece."
+      }
+     ]
+    },
+    "esc": {
+     "titulo": "Cómo está armada una columna de opinión",
+     "intro": "Antes de escribir, hay que reconocer la estructura: postura, argumentos, respuesta a la postura contraria y cierre.",
+     "minutos": 35,
+     "textos": [
+      {
+       "tipo": "Columna de opinión",
+       "titulo": "Celulares en el aula: ni prohibición total ni libertad absoluta",
+       "autor": "Texto escrito para esta práctica",
+       "parrafos": [
+        "Cada año, al empezar las clases, vuelve el mismo debate: ¿hay que prohibir los celulares en los liceos? Varios países ya lo hicieron. Creo que una prohibición total es un error, pero también lo es dejar que el celular entre al aula sin ninguna regla.",
+        "Las distracciones son reales. En los cursos que doy, cuando pedimos dejar los teléfonos en una caja durante la primera hora, los estudiantes hacen más preguntas y siguen mejor la explicación. Cada notificación corta el hilo, y recuperar la concentración lleva varios minutos.",
+        "Sin embargo, el celular también es una herramienta de estudio. Sirve como diccionario, calculadora, cámara para registrar un experimento o acceso a información que la biblioteca del liceo no tiene. Si la escuela no enseña a usarlo con criterio, ¿dónde se va a aprender?",
+        "Quienes defienden la prohibición total sostienen que es la única forma de frenar el ciberacoso y la dependencia. Es una preocupación legítima, pero el acoso no termina al salir del liceo, y prohibir no enseña a convivir con la tecnología: solo traslada el problema afuera del aula.",
+        "Por eso propongo reglas claras y compartidas: celulares guardados por defecto, y usados cuando la actividad lo requiera. El objetivo no es sacar el teléfono de la vida de los adolescentes, sino enseñarles a usarlo bien."
+       ]
+      }
+     ],
+     "items": [
+      {
+       "t": "single",
+       "q": "¿Cuál es la postura de la autora?",
+       "opts": [
+        "Ni prohibir totalmente el celular ni permitirlo sin reglas",
+        "Prohibir el celular en todos los liceos",
+        "Permitir el celular sin restricciones",
+        "Que cada estudiante decida si usa el celular"
+       ],
+       "a": 0,
+       "exp": "La postura está en la última oración del párrafo 1, como suele pasar en las columnas bien armadas. El título también la anticipa."
+      },
+      {
+       "t": "match",
+       "q": "Relacioná cada párrafo con la función que cumple en la columna.",
+       "left": [
+        "Párrafo 3",
+        "Párrafo 1",
+        "Párrafo 5",
+        "Párrafo 2",
+        "Párrafo 4"
+       ],
+       "right": [
+        "Introducción: presenta el tema y la postura",
+        "Argumento apoyado en la experiencia propia",
+        "Argumento apoyado en una explicación",
+        "Respuesta a una postura contraria",
+        "Cierre con una propuesta"
+       ],
+       "a": [
+        2,
+        0,
+        4,
+        1,
+        3
+       ],
+       "exp": "Esta es la estructura que conviene usar en la prueba: introducción con postura, dos argumentos desarrollados, respuesta a la postura contraria y cierre que retoma la postura."
+      },
+      {
+       "t": "single",
+       "q": "En el párrafo 3, ¿qué relación marca el conector «Sin embargo»?",
+       "opts": [
+        "Oposición con lo que se dijo antes",
+        "Una consecuencia",
+        "Un ejemplo",
+        "Una conclusión"
+       ],
+       "a": 0,
+       "exp": "El párrafo 2 habla de los problemas del celular y el 3 de sus ventajas. «Sin embargo», «pero» y «no obstante» introducen una idea que se opone a la anterior."
+      },
+      {
+       "t": "single",
+       "q": "¿Qué recurso usa la autora en el párrafo 4 para reforzar su postura?",
+       "opts": [
+        "Presenta un argumento contrario y lo responde",
+        "Da una estadística",
+        "Cuenta una anécdota personal",
+        "Cita a un especialista"
+       ],
+       "a": 0,
+       "exp": "Primero reconoce la postura contraria («Quienes defienden la prohibición total sostienen…»), admite que es legítima y después la responde. Esto fortalece la argumentación y es algo que los correctores valoran."
+      },
+      {
+       "t": "single",
+       "q": "¿Para qué termina el párrafo 3 con una pregunta?",
+       "opts": [
+        "Para que el lector reflexione y llegue a la misma conclusión que la autora",
+        "Porque la autora no sabe la respuesta",
+        "Para pedir información a los lectores",
+        "Para cambiar de tema"
+       ],
+       "a": 0,
+       "exp": "Es una pregunta retórica: no espera respuesta, sino que lleva al lector a pensar «en la escuela». Es un recurso de persuasión."
+      },
+      {
+       "t": "open",
+       "q": "Escribí otro cierre posible para esta columna (2 o 3 oraciones). Tiene que retomar la postura sin repetir el párrafo 5.",
+       "modelo": "En definitiva, prohibir es más fácil que enseñar, pero no da mejores resultados. Si queremos estudiantes que usen la tecnología con responsabilidad, el aula tiene que ser el lugar donde aprendan cuándo guardar el teléfono y cuándo sacarle provecho."
+      }
+     ]
+    }
+   }
+  },
+  {
+   "id": "s2-mie",
+   "label": "Mié 28/10",
+   "fecha": "2026-10-28",
+   "titulo": "Miércoles 28/10 · Porcentajes y datos científicos",
+   "nota": "Hoy hay muchas cuentas con porcentajes: practicá pensar el porcentaje como un multiplicador (+22 % es × 1,22).",
+   "areas": {
+    "mat": {
+     "titulo": "Proporcionalidad y porcentajes",
+     "intro": "Regla de tres, proporcionalidad directa e inversa, IVA, aumentos y descuentos sucesivos, escalas y velocidad.",
+     "minutos": 50,
+     "items": [
+      {
+       "t": "num",
+       "q": "4 kg de papas cuestan $180. ¿Cuánto cuestan 7 kg?",
+       "a": 315,
+       "unidad": "$",
+       "exp": "Precio por kilo: 180 ÷ 4 = 45. Por 7 kg: 45 × 7 = 315."
+      },
+      {
+       "t": "num",
+       "q": "6 obreros terminan una obra en 10 días. ¿En cuántos días la terminarían 15 obreros trabajando al mismo ritmo?",
+       "a": 4,
+       "unidad": "días",
+       "exp": "Es proporcionalidad inversa: más obreros, menos días. El trabajo total es 6 × 10 = 60 «días-obrero». Con 15 obreros: 60 ÷ 15 = 4 días."
+      },
+      {
+       "t": "num",
+       "q": "Un producto cuesta $850 con el IVA del 22 % incluido. ¿Cuál es su precio sin IVA? Redondeá a los centésimos.",
+       "a": 696.72,
+       "tol": 0.05,
+       "unidad": "$",
+       "exp": "Precio con IVA = precio sin IVA × 1,22. Entonces precio sin IVA = 850 ÷ 1,22 ≈ 696,72. Error frecuente: restar el 22 % de 850, que da 663, y está mal porque el 22 % se calculó sobre el precio sin IVA."
+      },
+      {
+       "t": "num",
+       "q": "Un precio aumenta un 10 % y al mes siguiente aumenta un 20 % más. ¿Cuál fue el aumento total en porcentaje?",
+       "a": 32,
+       "unidad": "%",
+       "exp": "Los aumentos sucesivos se multiplican: 1,10 × 1,20 = 1,32, o sea un aumento del 32 %, no del 30 %."
+      },
+      {
+       "t": "single",
+       "q": "Un producto bajó de $1.200 a $900. ¿Qué porcentaje bajó?",
+       "opts": [
+        "25 %",
+        "30 %",
+        "33 %",
+        "75 %"
+       ],
+       "a": 0,
+       "exp": "Bajó $300. Comparado con el precio original: 300 ÷ 1.200 = 0,25 = 25 %. Siempre se divide entre el valor inicial."
+      },
+      {
+       "t": "num",
+       "q": "En un mapa de escala 1:50.000, dos pueblos están a 4 cm. ¿Cuál es la distancia real en kilómetros?",
+       "a": 2,
+       "unidad": "km",
+       "exp": "Cada centímetro del mapa son 50.000 cm reales. 4 × 50.000 = 200.000 cm = 2.000 m = 2 km."
+      },
+      {
+       "t": "num",
+       "q": "Un ómnibus recorre 180 km en 2 horas y 15 minutos. ¿Cuál es su velocidad media en km/h?",
+       "a": 80,
+       "unidad": "km/h",
+       "exp": "2 horas y 15 minutos son 2,25 horas (15 minutos = 1/4 de hora). 180 ÷ 2,25 = 80 km/h. Error frecuente: usar 2,15 horas."
+      },
+      {
+       "t": "num",
+       "ctx": "<p>Un supermercado tiene dos ofertas para el mismo yogur, que cuesta $60:</p><p><b>Oferta A:</b> 3×2 (llevás 3 y pagás 2).<br><b>Oferta B:</b> 40 % de descuento en la segunda unidad.</p>",
+       "q": "Si comprás 6 yogures con la oferta A, ¿cuánto pagás?",
+       "a": 240,
+       "unidad": "$",
+       "exp": "6 yogures son dos grupos de 3; en cada grupo pagás 2. Pagás 4 yogures: 4 × 60 = 240."
+      },
+      {
+       "t": "single",
+       "q": "¿Con qué oferta sale más barata cada unidad de yogur?",
+       "opts": [
+        "Con la oferta A",
+        "Con la oferta B",
+        "Las dos dan el mismo precio por unidad",
+        "No se puede saber"
+       ],
+       "a": 0,
+       "exp": "A: 120 por 3 yogures = $40 cada uno. B: 60 + 36 = 96 por 2 yogures = $48 cada uno. La oferta A es más barata."
+      },
+      {
+       "t": "num",
+       "q": "Un pueblo tiene 2.400 habitantes y el 35 % es menor de 18 años. ¿Cuántos menores de 18 hay?",
+       "a": 840,
+       "unidad": "personas",
+       "exp": "2.400 × 0,35 = 840."
+      },
+      {
+       "t": "vf",
+       "q": "Indicá si cada afirmación es verdadera o falsa.",
+       "stmts": [
+        {
+         "s": "Si dos magnitudes son directamente proporcionales, al duplicar una se duplica la otra.",
+         "a": true
+        },
+        {
+         "s": "Para un viaje de distancia fija, la velocidad y el tiempo son directamente proporcionales.",
+         "a": false
+        },
+        {
+         "s": "Un aumento del 100 % triplica el precio.",
+         "a": false
+        },
+        {
+         "s": "Calcular el 15 % de un número es lo mismo que multiplicarlo por 0,15.",
+         "a": true
+        }
+       ],
+       "exp": "2) Son inversamente proporcionales: a más velocidad, menos tiempo. 3) Un aumento del 100 % duplica el precio (× 2); triplicar sería un aumento del 200 %."
+      },
+      {
+       "t": "open",
+       "q": "A Marcela le aumentaron el sueldo un 8 % en el año, pero los precios subieron un 10 % en el mismo período. ¿Mejoró su poder de compra? Justificá con cálculos.",
+       "modelo": "No mejoró. Su sueldo se multiplicó por 1,08 y los precios por 1,10. Su poder de compra cambió en 1,08 ÷ 1,10 ≈ 0,982, es decir, puede comprar aproximadamente un 1,8 % menos que antes. Aunque cobra más pesos, esos pesos alcanzan para menos cosas."
+      }
+     ]
+    },
+    "cie": {
+     "titulo": "Leer datos y separar evidencia de opinión",
+     "intro": "Tablas y gráficos con datos reales o realistas. La prueba pide sacar conclusiones que no vayan más allá de los datos.",
+     "minutos": 45,
+     "items": [
+      {
+       "t": "single",
+       "ctx": "<p>Datos de una estación meteorológica del sur de Uruguay (valores aproximados).</p><table class='data'><tr><th>Mes</th><th>Enero</th><th>Abril</th><th>Julio</th><th>Octubre</th></tr><tr><th>Temperatura media (°C)</th><td>23</td><td>17</td><td>11</td><td>16</td></tr><tr><th>Lluvia (mm)</th><td>80</td><td>100</td><td>90</td><td>105</td></tr></table>",
+       "q": "¿Cuál es el mes más frío de los que muestra la tabla?",
+       "opts": [
+        "Julio",
+        "Abril",
+        "Octubre",
+        "Enero"
+       ],
+       "a": 0,
+       "exp": "Julio tiene la menor temperatura media: 11 °C. En el hemisferio sur es invierno."
+      },
+      {
+       "t": "num",
+       "q": "¿Cuál es la diferencia de temperatura media entre el mes más cálido y el más frío de la tabla?",
+       "a": 12,
+       "unidad": "°C",
+       "exp": "23 − 11 = 12 °C."
+      },
+      {
+       "t": "single",
+       "q": "¿Qué afirmación se puede sostener con estos datos?",
+       "opts": [
+        "No se ve una relación clara entre la temperatura media y la cantidad de lluvia.",
+        "Cuanto más calor hace, más llueve.",
+        "En invierno no llueve.",
+        "Octubre es el mes más cálido."
+       ],
+       "a": 0,
+       "exp": "El mes más cálido (enero) es el que menos llueve, pero el más frío (julio) tampoco es el que más llueve. Con cuatro datos no hay una relación clara. En julio llovió 90 mm, así que «En invierno no llueve» es falsa."
+      },
+      {
+       "t": "num",
+       "ctx": "<p>Concentración media de dióxido de carbono (CO₂) en la atmósfera, medida en una estación en Hawái, en partes por millón (ppm). Valores redondeados.</p><table class='data'><tr><th>Año</th><th>1960</th><th>1980</th><th>2000</th><th>2020</th></tr><tr><th>CO₂ (ppm)</th><td>317</td><td>339</td><td>370</td><td>414</td></tr></table>",
+       "q": "¿Cuántas ppm aumentó la concentración de CO₂ entre 1960 y 2020?",
+       "a": 97,
+       "unidad": "ppm",
+       "exp": "414 − 317 = 97 ppm."
+      },
+      {
+       "t": "single",
+       "q": "¿Qué muestran los datos sobre el ritmo del aumento?",
+       "opts": [
+        "El aumento se aceleró: cada período de 20 años subió más que el anterior.",
+        "El CO₂ aumentó siempre la misma cantidad cada 20 años.",
+        "El CO₂ bajó entre 1980 y 2000.",
+        "El aumento se frenó después del año 2000."
+       ],
+       "a": 0,
+       "exp": "De 1960 a 1980 subió 22 ppm; de 1980 a 2000, 31 ppm; de 2000 a 2020, 44 ppm. Cada período aumentó más que el anterior."
+      },
+      {
+       "t": "match",
+       "q": "Clasificá cada enunciado.",
+       "left": [
+        "En 2020 la concentración de CO₂ fue de 414 ppm.",
+        "Es terrible lo que le estamos haciendo al planeta.",
+        "Si se reducen las emisiones, la concentración crecerá más despacio.",
+        "Las mediciones se hicieron en una estación en Hawái."
+       ],
+       "right": [
+        "Dato",
+        "Opinión",
+        "Hipótesis o predicción"
+       ],
+       "a": [
+        0,
+        1,
+        2,
+        0
+       ],
+       "exp": "Un dato se puede comprobar midiendo. Una opinión expresa una valoración personal («terrible»). Una hipótesis o predicción plantea qué pasaría si se da una condición («si se reducen…»)."
+      },
+      {
+       "t": "single",
+       "ctx": "<p>Un titular dice «¡El consumo de agua se disparó!». Lo acompaña un gráfico de barras: el consumo pasó de 100 a 103 litros por persona, pero el eje vertical empieza en 98, así que la segunda barra se ve el triple de alta que la primera.</p>",
+       "q": "¿Cuál es el problema de ese gráfico?",
+       "opts": [
+        "Exagera una diferencia pequeña porque el eje no empieza en cero.",
+        "Los datos son falsos.",
+        "Las barras deberían ser de colores distintos.",
+        "Debería ser un gráfico circular."
+       ],
+       "a": 0,
+       "exp": "El aumento real es del 3 %. Cortar el eje vertical hace que una diferencia chica parezca enorme. Es una técnica de manipulación frecuente: siempre mirá dónde empiezan los ejes."
+      },
+      {
+       "t": "open",
+       "q": "Una nota dice: «Las personas que toman café viven más años». ¿Prueba esto que el café hace vivir más? Explicá.",
+       "modelo": "No necesariamente. Que dos cosas aparezcan juntas (correlación) no prueba que una cause la otra. Puede haber otros factores: por ejemplo, quienes toman café pueden tener otros hábitos o mejores ingresos y acceso a la salud. Para probar la causa habría que comparar grupos parecidos en todo excepto el café, o tener en cuenta esos factores."
+      }
+     ]
+    },
+    "lec": {
+     "titulo": "Lectura literal e inferencial: un instructivo y un cuento",
+     "intro": "Dos textos de intención distinta: uno da instrucciones y el otro narra. En el cuento aparecen las primeras preguntas inferenciales.",
+     "minutos": 40,
+     "textos": [
+      {
+       "tipo": "Texto instructivo",
+       "titulo": "Biblioteca municipal: cómo funcionan los préstamos",
+       "autor": "Texto escrito para esta práctica",
+       "numerar": false,
+       "parrafos": [
+        "Para retirar libros es necesario estar inscripto como socio y presentar la cédula de identidad. La inscripción es gratuita y se hace en el mostrador de entrada."
+       ],
+       "html": "<ul style='margin:0 0 12px;padding-left:22px'><li><b>Cantidad:</b> hasta 3 libros por vez.</li><li><b>Plazo:</b> 14 días.</li><li><b>Renovación:</b> una sola vez, por 7 días más, siempre que el libro no tenga reservas de otros socios.</li><li><b>Atrasos:</b> por cada día de atraso, el socio no podrá retirar libros durante un día.</li><li><b>Diccionarios y enciclopedias:</b> solo para consulta en sala.</li><li><b>Horario:</b> lunes a viernes de 9 a 19; sábados de 9 a 13.</li></ul>"
+      },
+      {
+       "tipo": "Cuento",
+       "titulo": "El último ómnibus",
+       "autor": "Texto escrito para esta práctica",
+       "parrafos": [
+        "Rosa llegó a la parada a las once y diez, con la certeza de haber perdido el último ómnibus. La calle estaba vacía y el cartel de horarios, despintado por el sol, no aclaraba nada.",
+        "Se sentó en el banco de hormigón y sacó el celular: dos por ciento de batería. Lo guardó sin llamar a nadie. Pensó en su hija, que la esperaba despierta para que le contara cómo le había ido en la prueba, y en los doce kilómetros que la separaban de su casa.",
+        "Un hombre mayor se acercó arrastrando un carrito de feria. Se sentó en la otra punta del banco y, sin mirarla, dijo:<br>—Hoy pasa tarde. Los jueves el chofer para a tomar un café en la estación.",
+        "Rosa no supo si creerle. Hablaron del frío, de los precios, de un perro que cruzaba la calle con la cola en alto como si fuera dueño del barrio. El hombre le contó que hacía treinta años que vendía verduras en la feria del domingo y que nunca había faltado.",
+        "—Ni cuando nació mi nieta —dijo—. Fui a la feria a la mañana y al hospital a la tarde. Ella todavía me lo reprocha.",
+        "A las once y media aparecieron dos luces redondas al fondo de la avenida. Rosa se puso de pie de un salto. El hombre siguió sentado.<br>—¿No sube? —le preguntó ella.<br>—No, yo vivo acá a la vuelta. Pero los jueves me gusta esperarlo, por si alguien piensa que ya pasó.",
+        "Desde la ventanilla, Rosa lo vio levantar la mano para despedirse. Recién entonces se dio cuenta de que el carrito estaba vacío."
+       ]
+      }
+     ],
+     "items": [
+      {
+       "t": "num",
+       "q": "Texto 1. Si retirás un libro y lo renovás, ¿cuál es la cantidad máxima de días que podés tenerlo sin atrasarte?",
+       "a": 21,
+       "unidad": "días",
+       "exp": "14 días de plazo más una renovación de 7 días: 21 días."
+      },
+      {
+       "t": "single",
+       "q": "Texto 1. Devolviste un libro con 5 días de atraso. ¿Qué pasa?",
+       "opts": [
+        "No podés retirar libros durante 5 días.",
+        "Tenés que pagar una multa.",
+        "Te dan de baja como socio.",
+        "No pasa nada si es la primera vez."
+       ],
+       "a": 0,
+       "exp": "La regla de atrasos dice: un día sin retirar libros por cada día de atraso. El texto no menciona multas ni bajas."
+      },
+      {
+       "t": "vf",
+       "q": "Texto 1. Indicá si cada afirmación es verdadera o falsa según el reglamento.",
+       "stmts": [
+        {
+         "s": "Hay que pagar para hacerse socio.",
+         "a": false
+        },
+        {
+         "s": "Se puede renovar un libro aunque otro socio lo haya reservado.",
+         "a": false
+        },
+        {
+         "s": "Los sábados la biblioteca cierra a las 13.",
+         "a": true
+        },
+        {
+         "s": "Se puede llevar un diccionario a casa por 14 días.",
+         "a": false
+        }
+       ],
+       "exp": "La inscripción es gratuita, la renovación solo vale si no hay reservas, y diccionarios y enciclopedias son solo para consulta en sala."
+      },
+      {
+       "t": "single",
+       "q": "Texto 2. ¿Por qué Rosa no llamó a nadie desde la parada?",
+       "opts": [
+        "Porque al celular le quedaba muy poca batería.",
+        "Porque no tenía saldo.",
+        "Porque no quería despertar a su hija.",
+        "Porque el hombre le pidió que no lo hiciera."
+       ],
+       "a": 0,
+       "exp": "El texto no lo dice con todas las letras, pero lo deja claro: justo después de ver «dos por ciento de batería», lo guarda sin llamar. Además, la hija estaba despierta."
+      },
+      {
+       "t": "single",
+       "q": "Texto 2. Según el hombre, ¿por qué el ómnibus pasa tarde los jueves?",
+       "opts": [
+        "Porque el chofer para a tomar un café en la estación.",
+        "Porque hay feria.",
+        "Porque cambia el recorrido.",
+        "Porque hay menos pasajeros."
+       ],
+       "a": 0,
+       "exp": "Lectura literal: párrafo 3."
+      },
+      {
+       "t": "single",
+       "q": "Texto 2. ¿Por qué el hombre espera el ómnibus los jueves si no lo toma?",
+       "opts": [
+        "Para acompañar y tranquilizar a quien crea que el ómnibus ya pasó.",
+        "Porque espera a su nieta.",
+        "Porque es el chofer de reemplazo.",
+        "Porque vuelve de la feria."
+       ],
+       "a": 0,
+       "exp": "Él mismo lo dice: «por si alguien piensa que ya pasó». Lo inferimos de su respuesta y de cómo actuó con Rosa."
+      },
+      {
+       "t": "single",
+       "q": "Texto 2. ¿Qué sugiere el detalle final del carrito vacío?",
+       "opts": [
+        "Que el hombre no venía de hacer compras: había ido a la parada a propósito.",
+        "Que le habían robado la mercadería.",
+        "Que había vendido todas las verduras en la feria.",
+        "Que Rosa se había equivocado de parada."
+       ],
+       "a": 0,
+       "exp": "El carrito parecía explicar por qué estaba ahí. Al estar vacío, el lector entiende que era una excusa: el hombre fue a la parada a esperar, como dijo. Además era jueves y la feria es el domingo."
+      },
+      {
+       "t": "open",
+       "q": "Texto 2. ¿Qué rasgo de la personalidad del hombre muestra la anécdota del nacimiento de su nieta? Justificá.",
+       "modelo": "Muestra que es muy constante y fiel a sus rutinas y compromisos: no faltó a la feria ni el día que nació su nieta. Ese mismo rasgo explica por qué todos los jueves va a la parada a esperar el ómnibus aunque no lo tome."
+      }
+     ]
+    },
+    "esc": {
+     "titulo": "Tildes y ortografía",
+     "intro": "La ortografía es una de las tres dimensiones que se evalúan en Escritura, y en la prueba no hay corrector automático.",
+     "minutos": 35,
+     "items": [
+      {
+       "t": "match",
+       "q": "Clasificá cada palabra según dónde está su sílaba tónica.",
+       "left": [
+        "canción",
+        "árbol",
+        "teléfono",
+        "reloj",
+        "examen"
+       ],
+       "right": [
+        "Aguda",
+        "Grave",
+        "Esdrújula"
+       ],
+       "a": [
+        0,
+        1,
+        2,
+        0,
+        1
+       ],
+       "exp": "Aguda: tónica en la última sílaba (can-CIÓN, re-LOJ). Grave: en la penúltima (ÁR-bol, e-XA-men). Esdrújula: en la antepenúltima (te-LÉ-fo-no)."
+      },
+      {
+       "t": "vf",
+       "q": "Indicá si cada regla es verdadera o falsa.",
+       "stmts": [
+        {
+         "s": "Las palabras agudas llevan tilde cuando terminan en n, s o vocal.",
+         "a": true
+        },
+        {
+         "s": "Las palabras graves llevan tilde cuando terminan en n, s o vocal.",
+         "a": false
+        },
+        {
+         "s": "Las esdrújulas llevan tilde siempre.",
+         "a": true
+        },
+        {
+         "s": "Los monosílabos nunca llevan tilde.",
+         "a": false
+        }
+       ],
+       "exp": "Las graves llevan tilde cuando NO terminan en n, s o vocal (árbol, lápiz). Los monosílabos no llevan tilde salvo la tilde diacrítica, que distingue palabras iguales: él/el, sé/se, té/te, más/mas."
+      },
+      {
+       "t": "multi",
+       "q": "¿Cuáles de estas palabras deben llevar tilde?",
+       "opts": [
+        "cafe",
+        "examen",
+        "lapiz",
+        "rapido",
+        "joven",
+        "volvio"
+       ],
+       "a": [
+        0,
+        2,
+        3,
+        5
+       ],
+       "exp": "café (aguda terminada en vocal), lápiz (grave terminada en z), rápido (esdrújula), volvió (aguda terminada en vocal). Examen y joven son graves terminadas en n: no llevan tilde."
+      },
+      {
+       "t": "single",
+       "q": "¿Qué oración está bien escrita?",
+       "opts": [
+        "No sé si te gusta el té.",
+        "No se si te gusta el te.",
+        "No sé si té gusta el te.",
+        "No se si te gusta el té."
+       ],
+       "a": 0,
+       "exp": "«Sé» (del verbo saber) lleva tilde para diferenciarse de «se» (pronombre). «Té» (la bebida) lleva tilde para diferenciarse de «te» (pronombre)."
+      },
+      {
+       "t": "single",
+       "q": "¿Qué oración está bien escrita?",
+       "opts": [
+        "No sé dónde dejé las llaves.",
+        "No sé donde deje las llaves.",
+        "No se dónde dejé las llaves.",
+        "No sé dónde deje las llaves."
+       ],
+       "a": 0,
+       "exp": "«Dónde» lleva tilde porque introduce una pregunta indirecta. «Dejé» es aguda terminada en vocal (pasado del verbo dejar)."
+      },
+      {
+       "t": "single",
+       "q": "¿En cuál de estas oraciones está bien usado «por qué»?",
+       "opts": [
+        "¿Por qué no viniste a la reunión?",
+        "No vine por qué estaba enfermo.",
+        "No sé el por qué de su enojo.",
+        "Por qué llovía, nos quedamos en casa."
+       ],
+       "a": 0,
+       "exp": "«Por qué» (separado y con tilde) se usa para preguntar. «Porque» (junto y sin tilde) explica una causa: «no vine porque estaba enfermo». «El porqué» (junto y con tilde) es un sustantivo: «no sé el porqué de su enojo»."
+      },
+      {
+       "t": "single",
+       "q": "¿Por qué lleva tilde la palabra «país»?",
+       "opts": [
+        "Porque la i y la a están en sílabas distintas (pa-ís) y la i es la vocal tónica.",
+        "Porque es una palabra aguda terminada en s.",
+        "Porque es un monosílabo.",
+        "Porque es una palabra esdrújula."
+       ],
+       "a": 0,
+       "exp": "Es un hiato: cuando una vocal cerrada (i, u) tónica está junto a una abierta, lleva tilde siempre, aunque no lo pidan las reglas generales. Pasa lo mismo en María, día, baúl y reír."
+      },
+      {
+       "t": "open",
+       "q": "Corregí todos los errores de esta oración: «El examen fue facil, pero la ultima pregunta era mas dificil de lo que pense.»",
+       "modelo": "El examen fue fácil, pero la última pregunta era más difícil de lo que pensé. (Son 5 tildes: fácil y difícil son graves terminadas en l; última es esdrújula; más lleva tilde diacrítica cuando significa cantidad; pensé es aguda terminada en vocal.)"
+      },
+      {
+       "t": "single",
+       "q": "¿Cuál de estas oraciones tiene bien puesta la puntuación?",
+       "opts": [
+        "Sin embargo, la propuesta tiene un problema.",
+        "Sin embargo la propuesta, tiene un problema.",
+        "Sin embargo la propuesta tiene, un problema.",
+        "Sin, embargo la propuesta tiene un problema."
+       ],
+       "a": 0,
+       "exp": "Los conectores al comienzo de la oración (sin embargo, por lo tanto, además, en primer lugar) van seguidos de coma. No se pone coma entre el sujeto y el verbo."
+      }
+     ]
+    }
+   }
+  },
+  {
+   "id": "s2-jue",
+   "label": "Jue 29/10",
+   "fecha": "2026-10-29",
+   "titulo": "Jueves 29/10 · Ecuaciones, materia y tu primera columna",
+   "nota": "Hoy escribís tu primer texto completo. Hacelo con el cronómetro y en la computadora.",
+   "areas": {
+    "mat": {
+     "titulo": "Ecuaciones y sistemas",
+     "intro": "Ecuaciones de primer grado, sistemas de dos ecuaciones y, sobre todo, pasar un enunciado a una ecuación.",
+     "minutos": 50,
+     "items": [
+      {
+       "t": "num",
+       "q": "Resolvé 5(x − 2) = 3x + 4. ¿Cuánto vale x?",
+       "a": 7,
+       "exp": "Aplicamos la propiedad distributiva: 5x − 10 = 3x + 4. Entonces 2x = 14, x = 7."
+      },
+      {
+       "t": "num",
+       "q": "Resolvé x/3 + 4 = 10. ¿Cuánto vale x?",
+       "a": 18,
+       "exp": "x/3 = 6, entonces x = 18."
+      },
+      {
+       "t": "num",
+       "q": "La suma de tres números enteros consecutivos es 87. ¿Cuál es el mayor de los tres?",
+       "a": 30,
+       "exp": "Si el primero es n: n + (n + 1) + (n + 2) = 87, entonces 3n + 3 = 87 y n = 28. Los números son 28, 29 y 30."
+      },
+      {
+       "t": "num",
+       "q": "Resolvé el sistema: x + y = 20 y x − y = 6. ¿Cuánto vale x?",
+       "a": 13,
+       "exp": "Sumando las dos ecuaciones: 2x = 26, x = 13. Entonces y = 7. Verificación: 13 + 7 = 20 y 13 − 7 = 6."
+      },
+      {
+       "t": "num",
+       "q": "En un cine, 3 entradas de adulto y 2 de niño cuestan $1.300, y 1 de adulto y 4 de niño cuestan $1.100. ¿Cuánto cuesta una entrada de niño?",
+       "a": 200,
+       "unidad": "$",
+       "exp": "3a + 2n = 1.300 y a + 4n = 1.100. De la segunda: a = 1.100 − 4n. Reemplazando: 3(1.100 − 4n) + 2n = 1.300, entonces 3.300 − 10n = 1.300, n = 200. El adulto cuesta 300."
+      },
+      {
+       "t": "single",
+       "q": "«El doble de un número, disminuido en 5, es 17». ¿Qué ecuación representa esta frase?",
+       "opts": [
+        "2x − 5 = 17",
+        "2(x − 5) = 17",
+        "x² − 5 = 17",
+        "5 − 2x = 17"
+       ],
+       "a": 0,
+       "exp": "Primero se toma el doble del número (2x) y después a ese resultado se le restan 5: 2x − 5. La expresión 2(x − 5) sería «el doble de un número disminuido en 5», es decir, restar primero y duplicar después."
+      },
+      {
+       "t": "num",
+       "q": "El perímetro de un rectángulo es 54 cm y el largo es el doble del ancho. ¿Cuánto mide el ancho?",
+       "a": 9,
+       "unidad": "cm",
+       "exp": "Si el ancho es a, el largo es 2a. Perímetro: 2(a + 2a) = 6a = 54, entonces a = 9 cm (y el largo, 18 cm)."
+      },
+      {
+       "t": "num",
+       "q": "Un gimnasio cobra $800 de inscripción y $1.200 por mes. Pagaste $8.000 en total. ¿Cuántos meses fuiste?",
+       "a": 6,
+       "unidad": "meses",
+       "exp": "800 + 1.200m = 8.000, entonces 1.200m = 7.200 y m = 6."
+      },
+      {
+       "t": "vf",
+       "q": "Indicá si cada afirmación es verdadera o falsa.",
+       "stmts": [
+        {
+         "s": "x = 2 es solución de x² = 4.",
+         "a": true
+        },
+        {
+         "s": "x = −2 también es solución de x² = 4.",
+         "a": true
+        },
+        {
+         "s": "La ecuación 2x + 3 = 2x + 5 tiene solución.",
+         "a": false
+        },
+        {
+         "s": "Si las dos ecuaciones de un sistema son rectas paralelas distintas, el sistema no tiene solución.",
+         "a": true
+        }
+       ],
+       "exp": "2) (−2)² = 4, así que −2 también es solución. 3) Restando 2x de los dos lados queda 3 = 5, que es imposible: no tiene solución. 4) Dos rectas paralelas distintas no se cortan nunca, así que no hay ningún punto que cumpla las dos ecuaciones (sistema incompatible)."
+      },
+      {
+       "t": "open",
+       "q": "Ana tiene el triple de la edad de su hijo. Dentro de 10 años tendrá el doble. Planteá la ecuación, resolvela y decí qué edad tiene cada uno.",
+       "modelo": "Si el hijo tiene h años, Ana tiene 3h. Dentro de 10 años: 3h + 10 = 2(h + 10). Entonces 3h + 10 = 2h + 20, h = 10. El hijo tiene 10 años y Ana 30. Verificación: en 10 años tendrán 20 y 40, y 40 es el doble de 20."
+      }
+     ]
+    },
+    "cie": {
+     "titulo": "Materia y materiales",
+     "intro": "Sustancias y mezclas, métodos de separación, soluciones, cambios de estado y propiedades de los materiales.",
+     "minutos": 45,
+     "items": [
+      {
+       "t": "match",
+       "q": "Clasificá cada material.",
+       "left": [
+        "Agua destilada",
+        "Aire",
+        "Agua con arena",
+        "Sal de mesa (cloruro de sodio)",
+        "Agua de mar"
+       ],
+       "right": [
+        "Sustancia pura",
+        "Mezcla homogénea",
+        "Mezcla heterogénea"
+       ],
+       "a": [
+        0,
+        1,
+        2,
+        0,
+        1
+       ],
+       "exp": "Una mezcla homogénea se ve uniforme aunque tenga varios componentes (aire, agua de mar). En una heterogénea se distinguen los componentes a simple vista (agua con arena)."
+      },
+      {
+       "t": "single",
+       "q": "¿Qué método conviene para separar la arena del agua?",
+       "opts": [
+        "Filtración",
+        "Evaporación",
+        "Imantación",
+        "Destilación"
+       ],
+       "a": 0,
+       "exp": "La arena no se disuelve: el filtro la retiene y deja pasar el agua. La imantación solo sirve para materiales atraídos por imanes, como el hierro."
+      },
+      {
+       "t": "single",
+       "q": "¿Cómo se puede obtener sal a partir de agua de mar?",
+       "opts": [
+        "Evaporando el agua",
+        "Filtrando el agua",
+        "Decantando el agua",
+        "Con un imán"
+       ],
+       "a": 0,
+       "exp": "La sal está disuelta: no la retiene un filtro. Al evaporarse el agua, la sal queda en el recipiente. Así funcionan las salinas."
+      },
+      {
+       "t": "num",
+       "q": "Se disuelven 20 g de azúcar en agua hasta formar 250 mL de solución. ¿Cuál es la concentración en gramos por litro?",
+       "a": 80,
+       "unidad": "g/L",
+       "exp": "250 mL = 0,25 L. Concentración = 20 g ÷ 0,25 L = 80 g/L."
+      },
+      {
+       "t": "num",
+       "q": "Un suero casero lleva 9 g de sal por litro. ¿Cuántos gramos de sal hay en 300 mL de ese suero?",
+       "a": 2.7,
+       "unidad": "g",
+       "exp": "300 mL = 0,3 L. 9 × 0,3 = 2,7 g."
+      },
+      {
+       "t": "single",
+       "q": "La ropa mojada se seca colgada al sol. ¿Qué cambio de estado ocurre?",
+       "opts": [
+        "Evaporación",
+        "Condensación",
+        "Fusión",
+        "Solidificación"
+       ],
+       "a": 0,
+       "exp": "El agua pasa de líquido a gas. La condensación es al revés (gas a líquido, como el vapor que empaña un vidrio frío) y la fusión es de sólido a líquido."
+      },
+      {
+       "t": "vf",
+       "q": "Indicá si cada afirmación es verdadera o falsa.",
+       "stmts": [
+        {
+         "s": "Cuando el agua hierve, se transforma en otra sustancia.",
+         "a": false
+        },
+        {
+         "s": "En un cambio químico se forman sustancias nuevas.",
+         "a": true
+        },
+        {
+         "s": "En una reacción química en un recipiente cerrado, la masa total se conserva.",
+         "a": true
+        },
+        {
+         "s": "La fusión es el pasaje de sólido a líquido.",
+         "a": true
+        }
+       ],
+       "exp": "El vapor de agua sigue siendo agua: hervir es un cambio físico. La conservación de la masa (Lavoisier) dice que en una reacción los átomos se reacomodan, pero no se crean ni se destruyen."
+      },
+      {
+       "t": "single",
+       "ctx": "<p>Se preparan dos vasos con 100 mL de agua, uno a 20 °C y otro a 60 °C. A los dos se les agrega azúcar de a una cucharadita, revolviendo, hasta que ya no se disuelve más.</p>",
+       "q": "¿Qué resultado es esperable?",
+       "opts": [
+        "En el vaso a 60 °C se disuelve más azúcar.",
+        "En el vaso a 20 °C se disuelve más azúcar.",
+        "Se disuelve la misma cantidad en los dos.",
+        "En el vaso a 60 °C el azúcar no se disuelve."
+       ],
+       "a": 0,
+       "exp": "La solubilidad de la mayoría de los sólidos aumenta con la temperatura: el agua caliente admite más soluto disuelto antes de saturarse."
+      },
+      {
+       "t": "single",
+       "q": "¿Qué propiedad hace que el cobre se use en los cables eléctricos?",
+       "opts": [
+        "Es buen conductor de la electricidad.",
+        "Es muy duro.",
+        "Es transparente.",
+        "Es un mal conductor del calor."
+       ],
+       "a": 0,
+       "exp": "Los metales, y el cobre en especial, conducen muy bien la electricidad. Además es dúctil: se puede estirar en hilos."
+      },
+      {
+       "t": "open",
+       "q": "¿Por qué una botella de vidrio llena de agua y bien tapada puede romperse en el freezer?",
+       "modelo": "Porque el agua, al congelarse, aumenta su volumen (el hielo ocupa más lugar que el agua líquida; por eso flota). Como la botella está llena y tapada, el hielo no tiene espacio para expandirse y empuja el vidrio hasta romperlo."
+      }
+     ]
+    },
+    "lec": {
+     "titulo": "Un texto discontinuo: la etiqueta de los alimentos",
+     "intro": "En la prueba hay textos con tablas, gráficos e infografías. La información está repartida: hay que cruzar datos.",
+     "minutos": 35,
+     "textos": [
+      {
+       "tipo": "Texto discontinuo",
+       "titulo": "¿Qué dicen las etiquetas de tu desayuno?",
+       "autor": "Texto escrito para esta práctica (las marcas son inventadas)",
+       "numerar": false,
+       "parrafos": [
+        "Desde 2021, en Uruguay los alimentos envasados que superan ciertos límites de sodio, azúcares, grasas o grasas saturadas deben llevar al frente un octógono negro con la palabra EXCESO. Así se puede comparar de un vistazo, sin leer la tabla nutricional. Abajo, la información de dos cereales para el desayuno."
+       ],
+       "html": "<div style='overflow-x:auto'><table class='data'><tr><th>Cada 100 g</th><th>Copos Dorados</th><th>Granola Campo</th></tr><tr><td>Energía</td><td>390 kcal</td><td>450 kcal</td></tr><tr><td>Azúcares</td><td>32 g</td><td>18 g</td></tr><tr><td>Grasas totales</td><td>2 g</td><td>16 g</td></tr><tr><td>Grasas saturadas</td><td>0,5 g</td><td>6 g</td></tr><tr><td>Sodio</td><td>450 mg</td><td>60 mg</td></tr><tr><td>Fibra</td><td>3 g</td><td>8 g</td></tr><tr><td>Octógonos en el envase</td><td>EXCESO AZÚCARES<br>EXCESO SODIO</td><td>EXCESO GRASAS<br>EXCESO GRASAS SATURADAS</td></tr></table></div><p style='font-size:15px'>Porción sugerida en los dos envases: 30 g. En el frente de la granola se lee: «100 % natural. Ideal para una vida saludable».</p>"
+      }
+     ],
+     "items": [
+      {
+       "t": "single",
+       "q": "¿Qué cereal tiene más fibra cada 100 g?",
+       "opts": [
+        "Granola Campo",
+        "Copos Dorados",
+        "Tienen la misma cantidad",
+        "La tabla no lo dice"
+       ],
+       "a": 0,
+       "exp": "8 g contra 3 g."
+      },
+      {
+       "t": "num",
+       "q": "¿Cuántos gramos de azúcares tiene una porción de Copos Dorados?",
+       "a": 9.6,
+       "unidad": "g",
+       "exp": "La tabla da los valores cada 100 g y la porción es de 30 g: 32 × 0,3 = 9,6 g."
+      },
+      {
+       "t": "multi",
+       "q": "¿Qué octógonos tiene el envase de Copos Dorados?",
+       "opts": [
+        "Exceso azúcares",
+        "Exceso sodio",
+        "Exceso grasas",
+        "Exceso grasas saturadas"
+       ],
+       "a": [
+        0,
+        1
+       ],
+       "exp": "Está en la última fila de la tabla."
+      },
+      {
+       "t": "single",
+       "q": "Una persona que tiene que reducir la sal en su dieta, ¿qué cereal debería elegir?",
+       "opts": [
+        "Granola Campo",
+        "Copos Dorados",
+        "Cualquiera de los dos",
+        "Ninguno, porque los dos tienen exceso de sodio"
+       ],
+       "a": 0,
+       "exp": "Hay que inferir que la sal aporta sodio. Granola Campo tiene 60 mg de sodio contra 450 mg de Copos Dorados, y no lleva el octógono de sodio."
+      },
+      {
+       "t": "single",
+       "q": "El envase de la granola dice «Ideal para una vida saludable». ¿Qué información del texto relativiza esa frase?",
+       "opts": [
+        "Lleva octógonos de exceso de grasas y de grasas saturadas.",
+        "Tiene más fibra que el otro cereal.",
+        "Su porción es de 30 g.",
+        "Tiene menos azúcar que el otro cereal."
+       ],
+       "a": 0,
+       "exp": "Lectura crítica: la frase publicitaria destaca lo positivo, pero el mismo envase advierte excesos de grasas. Las otras opciones apoyan la frase en lugar de cuestionarla."
+      },
+      {
+       "t": "open",
+       "q": "¿Por qué la tabla presenta los valores «cada 100 g» y no por envase? Explicá para qué sirve.",
+       "modelo": "Porque así se pueden comparar productos distintos con la misma base, aunque los envases sean de tamaños diferentes. Si se diera por envase, uno de 500 g parecería tener más azúcar que uno de 250 g aunque, en proporción, tuviera menos."
+      }
+     ]
+    },
+    "esc": {
+     "titulo": "Texto 1: columna de opinión",
+     "intro": "Aplicá la estructura que viste el martes. Escribí en la computadora, sin corrector, en 45 minutos. Después pedí la devolución y compará con el modelo.",
+     "tarea": {
+      "consigna": [
+       "Un portal de noticias uruguayo abre una sección de opinión para sus lectores. Escribí una columna de opinión para publicar en esa sección sobre el siguiente tema:",
+       "¿Debería implementarse en Uruguay una semana laboral de cuatro días?",
+       "Tu texto se dirige al público general del portal: tomá una postura clara y fundamentala con argumentos para convencer a los lectores."
+      ],
+      "genero": "Columna de opinión",
+      "min": 250,
+      "max": 300,
+      "minutos": 45,
+      "revision": [
+       "Mi postura se entiende desde el primer párrafo.",
+       "Desarrollé al menos dos argumentos con ejemplos, datos, explicaciones o experiencias.",
+       "Respondí a una postura contraria a la mía.",
+       "El cierre retoma y refuerza mi postura.",
+       "El tono y el lenguaje son adecuados para los lectores de un portal de noticias.",
+       "Usé conectores para unir las ideas.",
+       "Revisé tildes, mayúsculas y puntuación.",
+       "El texto tiene entre 250 y 300 palabras."
+      ],
+      "modelo": [
+       "<b>Trabajar menos días para trabajar mejor</b>",
+       "La idea de trabajar cuatro días a la semana suena, para muchos, a un lujo imposible. Sin embargo, varias empresas de otros países ya la probaron con buenos resultados. Creo que Uruguay debería avanzar hacia ese modelo, de forma gradual y empezando por los sectores donde es posible.",
+       "En primer lugar, más días de descanso no significan menos trabajo hecho. Las personas cansadas cometen más errores y rinden menos. Quien tiene tiempo para descansar, hacer deporte o compartir con su familia vuelve al trabajo con más energía y concentración, y eso se nota en la calidad de lo que hace. Las pruebas hechas en otros países indican que la productividad se mantuvo o incluso mejoró.",
+       "Además, la semana de cuatro días podría mejorar la vida fuera del trabajo. Un día libre extra permite hacer trámites, estudiar o cuidar a un familiar sin pedir licencia. También reduciría los traslados: menos ómnibus llenos y menos autos en la calle un día por semana. Para muchas familias, ese día extra podría marcar la diferencia entre llegar o no llegar a todo.",
+       "Es cierto que no todos los trabajos pueden reorganizarse igual. Un hospital o un comercio necesitan personal todos los días, y algunos empresarios temen que aumenten los costos. Pero eso no es un argumento para descartar la idea, sino para aplicarla con turnos rotativos y con pruebas piloto que muestren qué funciona en cada sector.",
+       "En definitiva, la semana de cuatro días no es una fantasía, sino una forma distinta de organizar el tiempo. Si otros países pudieron probarla, Uruguay también puede animarse a dar el primer paso."
+      ]
+     }
+    }
+   }
+  }
+ ]
+}

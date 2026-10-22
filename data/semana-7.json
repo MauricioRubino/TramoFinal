@@ -1,0 +1,985 @@
+{
+ "semana": 7,
+ "days": [
+  {
+   "id": "s7-mar",
+   "label": "Mar 1/12",
+   "fecha": "2026-12-01",
+   "titulo": "Martes 1/12 · Simulacro de la 2ª jornada (1)",
+   "nota": "Como el sábado: primero Lectora (2 horas), una pausa corta y después Escritura (1 hora). En la computadora, sin corrector.",
+   "areas": {
+    "lec": {
+     "titulo": "Simulacro 1: Comprensión Lectora",
+     "intro": "Tres textos: uno discontinuo, un cuento y un ensayo largo, uno debajo del otro en la columna de lectura. 24 actividades en 2 horas.",
+     "minutos": 120,
+     "textos": [
+      {
+       "tipo": "Texto 1 · Discontinuo",
+       "titulo": "¿Cuánto tiempo pasamos con el celular?",
+       "autor": "Datos inventados para esta práctica",
+       "numerar": false,
+       "parrafos": [
+        "Encuesta en línea a 1.200 personas de todo el país. Cada participante informó cuánto tiempo usa el celular en un día típico y cuál es su uso principal."
+       ],
+       "html": "<div style='overflow-x:auto'><table class='data'><tr><th>Edad</th><th>Tiempo diario promedio</th><th>Uso principal</th></tr><tr><td>14 a 17 años</td><td>6 h 10 min</td><td>Redes sociales</td></tr><tr><td>18 a 29 años</td><td>5 h 20 min</td><td>Redes sociales</td></tr><tr><td>30 a 44 años</td><td>3 h 50 min</td><td>Mensajería</td></tr><tr><td>45 a 59 años</td><td>2 h 40 min</td><td>Mensajería</td></tr><tr><td>60 años o más</td><td>1 h 55 min</td><td>Llamadas</td></tr></table></div><p style='font-size:14.5px'><i>Nota metodológica: los tiempos fueron informados por los propios participantes, no medidos por el dispositivo. La encuesta se respondió por internet.</i></p>"
+      },
+      {
+       "tipo": "Texto 2 · Cuento",
+       "titulo": "La entrevista",
+       "autor": "Texto escrito para esta práctica",
+       "parrafos": [
+        "Graciela llegó veinte minutos antes y se quedó en la vereda, mirando su reflejo en la vidriera de una farmacia. Se había planchado la camisa dos veces. Tenía cuarenta y seis años y hacía diecinueve que no iba a una entrevista de trabajo.",
+        "Durante esos diecinueve años había hecho de todo: criar tres hijos, llevar las cuentas del almacén de su marido, cuidar a su suegra en sus últimos años, organizar la cooperativa de vivienda del barrio. Pero cuando el almacén cerró y la empleada de la agencia le preguntó por su «experiencia laboral», Graciela sintió que no tenía nada para decir.<br>—¿Trabajo formal? —había insistido la chica, con la lapicera suspendida sobre el formulario.<br>—Formal, formal… no.<br>La chica escribió algo corto. Graciela no alcanzó a leerlo.",
+        "Ahora, en la sala de espera de la empresa de logística, había otras cuatro personas. Todas bastante más jóvenes, todas mirando el celular. Un muchacho de traje repasaba en voz baja algo que parecía un discurso. Graciela sacó de la cartera una hoja doblada en cuatro: la lista que había escrito la noche anterior, con letra apretada, de todo lo que sabía hacer. La leyó una vez y la volvió a guardar.",
+        "Cuando dijeron su nombre, se levantó demasiado rápido y se golpeó la rodilla con la mesa baja. Nadie se rió, lo cual fue peor.",
+        "La entrevistadora era una mujer de su edad, de anteojos rojos. Le pidió que le contara de ella. Graciela empezó por el almacén, pidió disculpas por no tener título, explicó que había dejado el liceo en cuarto año porque nació su primer hijo. Hablaba rápido, como quien quiere terminar de cruzar una calle.<br>—Acá dice que fue tesorera de una cooperativa —la interrumpió la mujer, mirando el formulario.<br>—Sí, bueno, de vivienda. Veintiocho familias.<br>—¿Y qué hacía exactamente?",
+        "Graciela dudó. Después, casi sin darse cuenta, empezó a contar. Contó cómo había conseguido que el banco aceptara refinanciar el préstamo cuando tres familias se atrasaron. Cómo armó una planilla para controlar los pagos, aprendiendo sola con videos de internet. Cómo había tenido que convencer, en una asamblea de tres horas, a los vecinos que querían comprar los materiales más baratos.<br>—¿Y los convenció?<br>—Al final, sí. Las casas siguen paradas —dijo, y por primera vez sonrió.",
+        "La entrevistadora anotó algo largo. Después se sacó los anteojos y la miró.<br>—Nosotros coordinamos entregas con proveedores que siempre se atrasan, clientes que siempre están apurados y choferes que nunca están de acuerdo. ¿Le suena?<br>Graciela pensó en la asamblea, en el banco, en su suegra.<br>—Me suena bastante —dijo.",
+        "Al salir, el muchacho de traje seguía repasando su discurso. Graciela pasó a su lado, sacó la hoja doblada de la cartera y, antes de tirarla en un cesto, la volvió a leer. Esta vez le pareció que faltaban cosas."
+       ]
+      },
+      {
+       "tipo": "Texto 3 · Ensayo",
+       "titulo": "Nunca es tarde: aprender de grande",
+       "autor": "Texto escrito para esta práctica",
+       "parrafos": [
+        "Durante mucho tiempo se pensó la educación como una etapa de la vida: se estudia de chico, se trabaja de grande y se descansa de viejo. Quien no completaba los estudios en el tiempo «correcto» quedaba, en cierta forma, fuera del sistema. Esa idea, que todavía pesa en muchas cabezas, no resiste el contacto con la realidad del mundo actual.",
+        "En primer lugar, porque el conocimiento cambia demasiado rápido. Un técnico que aprendió su oficio hace veinte años trabaja hoy con máquinas que no existían cuando se formó. Una empleada administrativa que dominaba el papel y el sello hoy tiene que manejar sistemas informáticos que se actualizan cada pocos meses. Nadie puede vivir de lo que aprendió a los dieciocho años. Aprender a lo largo de la vida dejó de ser una opción para convertirse en una necesidad.",
+        "En segundo lugar, porque las trayectorias de las personas son mucho más diversas de lo que suponía el modelo tradicional. Hay quienes dejaron el liceo para trabajar y ayudar en su casa, quienes fueron padres o madres muy jóvenes, quienes migraron, quienes atravesaron una enfermedad. Ninguna de esas razones habla de falta de capacidad. Hablan de circunstancias. Y las circunstancias cambian.",
+        "Los adultos que vuelven a estudiar suelen cargar con una mochila particular. Muchos sienten vergüenza, como si tuvieran que explicar por qué no terminaron antes. Otros temen no poder seguir el ritmo, o creen que «ya no les da la cabeza». Sin embargo, la investigación sobre el aprendizaje adulto muestra algo distinto: aunque algunas habilidades, como la velocidad para memorizar datos aislados, pueden ser menores que en la juventud, los adultos tienen ventajas importantes. Relacionan lo nuevo con lo que ya saben, entienden para qué sirve lo que aprenden y suelen tener una motivación más clara.",
+        "Hay, además, un saber que no figura en ningún certificado. Quien organizó durante años el presupuesto de su hogar sabe de porcentajes y de planificación aunque nunca haya dado un examen de matemática. Quien atendió un comercio sabe leer a las personas, negociar y resolver problemas imprevistos. Quien cuidó a un familiar enfermo aprendió sobre salud, medicamentos y paciencia. Durante mucho tiempo, los sistemas educativos ignoraron ese saber; hoy, cada vez más, buscan formas de reconocerlo.",
+        "Las pruebas de acreditación de saberes van en esa dirección. En lugar de exigir que todos recorran el mismo camino, evalúan lo que la persona efectivamente sabe hacer, sin importar dónde lo aprendió. Es una idea sencilla, pero que cambia la pregunta: ya no se trata de cuántos años pasó alguien sentado en un aula, sino de qué es capaz de comprender, resolver y comunicar.",
+        "Algunos críticos sostienen que estas pruebas abaratan los títulos, que permiten «saltearse» años de formación con un examen de unas pocas horas. La objeción merece una respuesta seria. Un título vale por lo que certifica, y si una prueba es exigente y está bien diseñada, certifica lo mismo que un recorrido tradicional: que la persona alcanzó los aprendizajes esperados. Lo que se ahorra no es el aprendizaje, sino la obligación de repetir lo que ya se sabe. Por otra parte, nadie llega a estas pruebas sin esfuerzo: detrás de cada postulante suele haber meses de estudio robados al cansancio, después de la jornada de trabajo.",
+        "Nada de esto significa que el liceo sea prescindible. Para los adolescentes, la escuela es mucho más que un lugar donde se adquieren conocimientos: es un espacio de encuentro, de construcción de la identidad, de vida en común. Lo que está en discusión no es reemplazar ese camino, sino abrir otros para quienes, por distintos motivos, no pudieron recorrerlo.",
+        "Al final, la pregunta de fondo es qué tipo de sociedad queremos: una que clasifique a las personas según lo que lograron a los dieciocho años, o una que les dé, a lo largo de toda la vida, oportunidades reales de demostrar lo que saben y de seguir aprendiendo. La segunda opción es más exigente para las instituciones, pero mucho más justa. Y, sobre todo, se parece más a cómo somos realmente las personas: seres que nunca terminamos de aprender."
+       ]
+      }
+     ],
+     "items": [
+      {
+       "t": "single",
+       "q": "Texto 1. ¿Qué grupo informó usar más tiempo el celular?",
+       "opts": [
+        "14 a 17 años",
+        "18 a 29 años",
+        "30 a 44 años",
+        "60 años o más"
+       ],
+       "a": 0,
+       "exp": "6 h 10 min, el mayor de la tabla."
+      },
+      {
+       "t": "num",
+       "q": "Texto 1. ¿Cuántos minutos más por día usa el celular el grupo de 18 a 29 años que el de 60 años o más?",
+       "a": 205,
+       "unidad": "minutos",
+       "exp": "5 h 20 min = 320 min; 1 h 55 min = 115 min. 320 − 115 = 205 minutos (3 h 25 min)."
+      },
+      {
+       "t": "single",
+       "q": "Texto 1. ¿Para qué usa principalmente el celular el grupo de 45 a 59 años?",
+       "opts": [
+        "Mensajería",
+        "Redes sociales",
+        "Llamadas",
+        "No se informa"
+       ],
+       "a": 0,
+       "exp": "Lectura literal de la tabla."
+      },
+      {
+       "t": "single",
+       "q": "Texto 1. ¿Qué conclusión se puede sostener con estos datos?",
+       "opts": [
+        "En esta encuesta, el tiempo de uso informado disminuye a medida que aumenta la edad.",
+        "Los jóvenes son adictos al celular.",
+        "Las personas mayores no saben usar el celular.",
+        "El celular hace daño a la salud."
+       ],
+       "a": 0,
+       "exp": "Es lo único que muestran los datos. Las otras opciones agregan juicios o información que la tabla no tiene."
+      },
+      {
+       "t": "single",
+       "q": "Texto 1. Según la nota metodológica, ¿qué limitación tiene la encuesta?",
+       "opts": [
+        "Los tiempos son informados por las personas, que pueden equivocarse, y quien no usa internet no pudo responder.",
+        "Tiene muy pocas personas.",
+        "No incluye a adolescentes.",
+        "Los tiempos fueron medidos por los celulares."
+       ],
+       "a": 0,
+       "exp": "Lectura crítica: las personas suelen calcular mal su propio tiempo de pantalla, y una encuesta por internet deja afuera a quienes no la usan, que pueden ser sobre todo mayores."
+      },
+      {
+       "t": "single",
+       "q": "Texto 2. ¿Por qué Graciela sintió en la agencia que no tenía nada para decir?",
+       "opts": [
+        "Porque creía que solo valía la experiencia en trabajos formales.",
+        "Porque nunca había trabajado.",
+        "Porque la empleada fue grosera.",
+        "Porque no se acordaba de su historia."
+       ],
+       "a": 0,
+       "exp": "Lectura inferencial: el diálogo «¿Trabajo formal?» / «Formal, formal… no» muestra que ella misma descartó todo lo que había hecho."
+      },
+      {
+       "t": "single",
+       "q": "Texto 2. «Nadie se rió, lo cual fue peor». ¿Qué sugiere esta frase?",
+       "opts": [
+        "Que el silencio hizo más evidente su torpeza y aumentó su vergüenza.",
+        "Que Graciela quería que se rieran de ella.",
+        "Que los demás eran antipáticos.",
+        "Que no le dolió el golpe."
+       ],
+       "a": 0,
+       "exp": "Una risa podría haber aflojado la situación; el silencio la dejó expuesta. El narrador transmite cómo se siente ella."
+      },
+      {
+       "t": "single",
+       "q": "Texto 2. «Hablaba rápido, como quien quiere terminar de cruzar una calle». ¿Qué muestra la comparación?",
+       "opts": [
+        "Que estaba nerviosa y quería terminar cuanto antes.",
+        "Que tenía apuro por irse a otro lugar.",
+        "Que hablaba con seguridad.",
+        "Que la entrevista era en la calle."
+       ],
+       "a": 0,
+       "exp": "Cruzar una calle rápido es querer salir de una situación de riesgo. Ella hablaba de lo que creía sus debilidades (no tener título)."
+      },
+      {
+       "t": "single",
+       "q": "Texto 2. ¿Qué cambia a partir de la pregunta sobre la cooperativa?",
+       "opts": [
+        "Graciela empieza a contar sus logros con más seguridad.",
+        "La entrevistadora pierde el interés.",
+        "Graciela se pone más nerviosa.",
+        "La entrevista termina."
+       ],
+       "a": 0,
+       "exp": "Primero duda; después cuenta con detalle y «por primera vez sonrió». La pregunta concreta la ayuda a ver el valor de lo que hizo."
+      },
+      {
+       "t": "single",
+       "q": "Texto 2. ¿Qué quiere decir la entrevistadora con «¿Le suena?»?",
+       "opts": [
+        "Que la experiencia de Graciela en la cooperativa se parece a lo que exige el puesto.",
+        "Que no la escuchó bien.",
+        "Que le está haciendo una broma.",
+        "Que conoce a sus vecinos."
+       ],
+       "a": 0,
+       "exp": "Describe el trabajo con problemas parecidos a los que Graciela resolvió: gente atrasada, apurada o en desacuerdo."
+      },
+      {
+       "t": "single",
+       "q": "Texto 2. Al final, «le pareció que faltaban cosas» en la lista. ¿Qué indica?",
+       "opts": [
+        "Que ahora reconoce más habilidades propias de las que había anotado.",
+        "Que perdió parte de la hoja.",
+        "Que se olvidó de decir algo importante en la entrevista.",
+        "Que la lista estaba mal escrita."
+       ],
+       "a": 0,
+       "exp": "Es el cambio del personaje: la noche anterior anotó lo que creía saber; después de la entrevista se valora más."
+      },
+      {
+       "t": "single",
+       "q": "Texto 2. ¿Qué función cumple el muchacho de traje en el cuento?",
+       "opts": [
+        "Contrasta con Graciela: él se prepara con un discurso, mientras que a ella la ayuda contar su experiencia real.",
+        "Es el jefe de la empresa.",
+        "Es el hijo de Graciela.",
+        "Representa a la entrevistadora."
+       ],
+       "a": 0,
+       "exp": "Aparece al principio y al final, «repasando su discurso». El cuento sugiere que lo valioso de Graciela no estaba en un discurso preparado."
+      },
+      {
+       "t": "single",
+       "q": "Texto 2. ¿Cuál es el tema central del cuento?",
+       "opts": [
+        "El valor de los saberes adquiridos fuera del trabajo formal y de los títulos.",
+        "Las dificultades de las empresas de logística.",
+        "La competencia entre jóvenes y adultos por el empleo.",
+        "La vida en una cooperativa de vivienda."
+       ],
+       "a": 0,
+       "exp": "El cuento muestra cómo Graciela pasa de pensar que «no tenía nada para decir» a reconocer lo que sabe hacer."
+      },
+      {
+       "t": "single",
+       "q": "Texto 3. ¿Cuál es la postura del autor?",
+       "opts": [
+        "Aprender a lo largo de la vida es necesario, y la sociedad debe reconocer los saberes de los adultos sin importar dónde los adquirieron.",
+        "El liceo ya no es necesario.",
+        "Los adultos aprenden peor que los jóvenes.",
+        "Las pruebas de acreditación abaratan los títulos."
+       ],
+       "a": 0,
+       "exp": "El autor aclara expresamente que el liceo no es prescindible (párrafo 8), y discute la idea de que las pruebas abaratan los títulos (párrafo 7)."
+      },
+      {
+       "t": "multi",
+       "q": "Texto 3. ¿Qué dos razones da el autor, en los párrafos 2 y 3, para decir que la idea tradicional de la educación «no resiste el contacto con la realidad»?",
+       "opts": [
+        "El conocimiento cambia muy rápido.",
+        "Las trayectorias de las personas son muy diversas.",
+        "Los adultos tienen más tiempo libre.",
+        "Los liceos son demasiado caros."
+       ],
+       "a": [
+        0,
+        1
+       ],
+       "exp": "Los párrafos empiezan con «En primer lugar» y «En segundo lugar»: los ordenadores ayudan a encontrar los argumentos."
+      },
+      {
+       "t": "single",
+       "q": "Texto 3. En el párrafo 4, ¿qué significa que los adultos «cargan con una mochila particular»?",
+       "opts": [
+        "Que llevan temores y vergüenzas que influyen en cómo viven el estudio.",
+        "Que llevan muchos libros.",
+        "Que tienen más responsabilidades económicas.",
+        "Que tienen más conocimientos que los jóvenes."
+       ],
+       "a": 0,
+       "exp": "Es una metáfora: la oración siguiente explica qué hay en esa «mochila» (vergüenza, miedo a no seguir el ritmo)."
+      },
+      {
+       "t": "multi",
+       "q": "Texto 3. Según la investigación que menciona el autor, ¿qué ventajas tienen los adultos al aprender?",
+       "opts": [
+        "Relacionan lo nuevo con lo que ya saben.",
+        "Entienden para qué sirve lo que aprenden.",
+        "Suelen tener una motivación más clara.",
+        "Memorizan datos aislados más rápido."
+       ],
+       "a": [
+        0,
+        1,
+        2
+       ],
+       "exp": "El texto dice lo contrario sobre la velocidad para memorizar datos aislados: puede ser menor que en la juventud."
+      },
+      {
+       "t": "single",
+       "q": "Texto 3. ¿Para qué sirven los ejemplos del párrafo 5 (el presupuesto del hogar, el comercio, el cuidado de un familiar)?",
+       "opts": [
+        "Para mostrar saberes reales que no figuran en ningún certificado.",
+        "Para describir trabajos mal pagos.",
+        "Para criticar a quienes no terminaron el liceo.",
+        "Para explicar cómo funciona una prueba de acreditación."
+       ],
+       "a": 0,
+       "exp": "Cada ejemplo concreta la idea abstracta del inicio del párrafo: «un saber que no figura en ningún certificado»."
+      },
+      {
+       "t": "single",
+       "q": "Texto 3. ¿Qué quiere decir que la acreditación «cambia la pregunta» (párrafo 6)?",
+       "opts": [
+        "Que importa lo que la persona sabe hacer, no cuántos años estuvo en un aula.",
+        "Que las preguntas del examen son distintas a las del liceo.",
+        "Que hay que preguntar más en clase.",
+        "Que la prueba no tiene preguntas."
+       ],
+       "a": 0,
+       "exp": "La misma oración lo explica con la estructura «ya no se trata de… sino de…»."
+      },
+      {
+       "t": "single",
+       "q": "Texto 3. ¿Qué hace el autor en el párrafo 7?",
+       "opts": [
+        "Presenta una crítica a las pruebas de acreditación y la responde.",
+        "Cambia de postura.",
+        "Cuenta su experiencia personal.",
+        "Da estadísticas sobre los títulos."
+       ],
+       "a": 0,
+       "exp": "«Algunos críticos sostienen…», «La objeción merece una respuesta seria» y después la respuesta: es la estructura de concesión y refutación."
+      },
+      {
+       "t": "single",
+       "q": "Texto 3. ¿Por qué el autor incluye el párrafo 8?",
+       "opts": [
+        "Para evitar que se interprete que propone reemplazar el liceo.",
+        "Para criticar a los adolescentes.",
+        "Para cambiar de tema.",
+        "Para decir que el liceo debería ser optativo."
+       ],
+       "a": 0,
+       "exp": "Es una aclaración que anticipa un malentendido. Fortalece la argumentación porque muestra que el autor no tiene una postura extrema."
+      },
+      {
+       "t": "vf",
+       "q": "Texto 3. Según el autor, indicá si cada afirmación es verdadera o falsa.",
+       "stmts": [
+        {
+         "s": "Dejar el liceo por circunstancias de la vida no indica falta de capacidad.",
+         "a": true
+        },
+        {
+         "s": "Las pruebas de acreditación permiten aprobar sin ningún esfuerzo.",
+         "a": false
+        },
+        {
+         "s": "Una sociedad que da oportunidades a lo largo de toda la vida es más justa.",
+         "a": true
+        },
+        {
+         "s": "Lo que se aprende a los dieciocho años alcanza para toda la vida laboral.",
+         "a": false
+        }
+       ],
+       "exp": "Párrafos 3, 7, 9 y 2, respectivamente."
+      },
+      {
+       "t": "single",
+       "q": "¿Qué tienen en común el texto 2 y el texto 3?",
+       "opts": [
+        "Los dos valoran los saberes que las personas adquieren fuera de la educación formal.",
+        "Los dos son textos argumentativos.",
+        "Los dos tratan sobre el uso del celular.",
+        "Los dos critican a las empresas."
+       ],
+       "a": 0,
+       "exp": "Graciela es casi un ejemplo del párrafo 5 del ensayo. Pero los textos son de tipos distintos: uno narra y el otro argumenta."
+      },
+      {
+       "t": "open",
+       "q": "Texto 3. ¿Te parece convincente la respuesta del autor a los críticos en el párrafo 7? Justificá con elementos del texto.",
+       "modelo": "En parte. Es convincente cuando dice que un título vale por lo que certifica y que, si la prueba es exigente, certifica los mismos aprendizajes; además, aclara que lo que se ahorra es repetir lo que ya se sabe. Pero el argumento depende de una condición («si una prueba es exigente y está bien diseñada») que el autor no demuestra: no da datos sobre cómo son esas pruebas. Y la frase de los «meses de estudio robados al cansancio» apela a la emoción más que a la evidencia."
+      }
+     ]
+    },
+    "esc": {
+     "titulo": "Simulacro 1: Escritura Argumentativa",
+     "intro": "1 hora, como en la prueba. Leé la consigna dos veces antes de empezar y dejá 10 minutos para revisar.",
+     "tarea": {
+      "consigna": [
+       "Una revista digital de educación invita a sus lectores a opinar. Escribí una columna de opinión para publicar en esa revista sobre el siguiente tema:",
+       "¿Deberían los liceos enseñar habilidades para la vida cotidiana, como cocinar, hacer trámites, manejar un presupuesto o hacer reparaciones básicas?",
+       "El texto se dirige a docentes, familias y estudiantes. Tomá una postura y fundamentala para convencerlos."
+      ],
+      "genero": "Columna de opinión",
+      "min": 250,
+      "max": 300,
+      "minutos": 60,
+      "revision": [
+       "Leí bien la consigna: género, destinatario y tema.",
+       "Mi postura se entiende desde el primer párrafo.",
+       "Desarrollé al menos dos argumentos con ejemplos, datos, explicaciones o experiencias.",
+       "Respondí a una postura contraria.",
+       "El cierre retoma la postura.",
+       "El tono es adecuado para docentes, familias y estudiantes.",
+       "Revisé tildes, mayúsculas y puntuación.",
+       "El texto tiene entre 250 y 300 palabras."
+      ],
+      "modelo": [
+       "<b>Aprender a vivir también se enseña</b>",
+       "Muchos jóvenes terminan el liceo sabiendo resolver ecuaciones, pero sin saber leer una factura, preparar una comida sencilla o cambiar el cuerito de una canilla. Creo que los liceos deberían enseñar estas habilidades para la vida cotidiana, integradas con las materias de siempre.",
+       "En primer lugar, porque son conocimientos que todos vamos a necesitar. Tarde o temprano, cada persona tiene que alquilar una vivienda, firmar un contrato o administrar su sueldo. Quien no aprendió a hacerlo suele aprender a los golpes: con deudas, recargos o engaños que podrían haberse evitado. Saber hacer estas cosas da autonomía y también seguridad para tomar decisiones.",
+       "Además, no todas las familias pueden enseñar estas cosas. Algunos padres trabajan muchas horas y otros nunca tuvieron la oportunidad de aprenderlas. Si el liceo las incluye, todos los estudiantes salen con las mismas herramientas, sin depender de la suerte de su casa.",
+       "Es cierto que el horario ya está cargado y que algunos temen que estos contenidos desplacen a las materias tradicionales. Sin embargo, no se trata de reemplazar la matemática por la cocina, sino de enseñar matemática a partir de un presupuesto real, o química a partir de una receta. Así, los contenidos tradicionales ganan sentido en lugar de perderlo.",
+       "En definitiva, el liceo prepara para la vida, y la vida incluye tanto entender un texto como saber pagar una cuenta. Enseñar las dos cosas no es bajar la exigencia: es formar personas más autónomas y mejor preparadas para el mundo real."
+      ]
+     }
+    }
+   }
+  },
+  {
+   "id": "s7-mie",
+   "label": "Mié 2/12",
+   "fecha": "2026-12-02",
+   "titulo": "Miércoles 2/12 · Simulacro de la 2ª jornada (2)",
+   "nota": "Segundo simulacro completo. Compará el resultado con el de ayer y anotá en qué tipo de pregunta fallaste más.",
+   "areas": {
+    "lec": {
+     "titulo": "Simulacro 2: Comprensión Lectora",
+     "intro": "Tres textos: una factura, un artículo de divulgación y un ensayo. 22 actividades en 2 horas.",
+     "minutos": 120,
+     "textos": [
+      {
+       "tipo": "Texto 1 · Discontinuo",
+       "titulo": "Factura de energía eléctrica · Noviembre",
+       "autor": "Documento inventado para esta práctica",
+       "numerar": false,
+       "parrafos": [
+        "Cliente residencial. Período: 1 al 30 de noviembre. Consumo del período: 200 kWh."
+       ],
+       "html": "<p><b>Tarifa residencial simple</b> (valores sin impuestos)</p><ul style='margin:0 0 12px;padding-left:22px'><li>Cargo fijo mensual: $350</li><li>Primeros 100 kWh: $6,50 por kWh</li><li>Del kWh 101 al 600: $8,20 por kWh</li><li>Más de 600 kWh: $10,10 por kWh</li></ul><p><b>Historial de consumo (kWh)</b></p><div style='overflow-x:auto'><table class='data'><tr><th>Jun</th><th>Jul</th><th>Ago</th><th>Set</th><th>Oct</th><th>Nov</th></tr><tr><td>310</td><td>380</td><td>360</td><td>290</td><td>240</td><td>200</td></tr></table></div><p style='font-size:14.5px'><i>Consejo del mes: un calefón a 60 °C en lugar de 70 °C puede reducir su consumo. Revise también los aparatos que quedan en espera (stand-by).</i></p>"
+      },
+      {
+       "tipo": "Texto 2 · Divulgación",
+       "titulo": "Hongos: la red que nadie ve",
+       "autor": "Texto escrito para esta práctica",
+       "parrafos": [
+        "Si uno camina por un bosque después de la lluvia, es fácil encontrar hongos: sombreritos marrones al pie de un árbol, manchas anaranjadas sobre un tronco caído. Pero lo que vemos es apenas una pequeña parte del organismo, algo así como la fruta de un árbol que está enterrado. La mayor parte del hongo vive bajo tierra, en forma de filamentos finísimos que se extienden por metros y metros. Esa red se llama micelio.",
+        "Durante siglos, los hongos se clasificaron junto con las plantas. Parecía lógico: no se mueven y crecen en el suelo. Sin embargo, hoy sabemos que son un reino aparte, y que en algunos aspectos se parecen más a los animales que a las plantas. Como nosotros, no pueden fabricar su propio alimento con la luz del sol: tienen que obtenerlo de otros seres vivos o de sus restos.",
+        "Esa forma de alimentarse los convierte en protagonistas silenciosos de los ecosistemas. Los hongos descomponedores desarman hojas, troncos y animales muertos, y devuelven sus nutrientes al suelo. Sin ellos, los bosques estarían cubiertos de restos que no se descompondrían, y las plantas no tendrían de dónde obtener muchos de los nutrientes que necesitan.",
+        "Pero quizás su papel más sorprendente sea otro. La mayoría de las plantas terrestres viven asociadas a hongos que se conectan con sus raíces. El hongo, con su red de filamentos, llega a lugares del suelo a los que la raíz no llega, y le aporta agua y minerales como el fósforo. A cambio, la planta le da azúcares que fabrica con la fotosíntesis. Esta alianza, llamada micorriza, es tan antigua que muchos científicos creen que fue clave para que las plantas pudieran colonizar la tierra firme hace cientos de millones de años.",
+        "Algunos investigadores fueron más lejos y propusieron que, a través de esas redes, los árboles de un bosque podrían intercambiar sustancias entre sí. La idea, popularizada como «el internet del bosque», despertó mucho entusiasmo. Otros científicos, sin embargo, advierten que las evidencias todavía son limitadas y que algunas de esas afirmaciones se difundieron más rápido de lo que la investigación permite sostener. El debate sigue abierto, y es un buen ejemplo de cómo funciona la ciencia: las hipótesis atractivas también tienen que demostrarse.",
+        "La relación de los humanos con los hongos es antigua. Usamos levaduras, que son hongos microscópicos, para hacer pan, vino y cerveza. En 1928, el científico Alexander Fleming observó que un moho había impedido el crecimiento de bacterias en uno de sus cultivos: ese hallazgo llevó al desarrollo de la penicilina, el primer antibiótico de uso masivo, que salvó millones de vidas.",
+        "También hay hongos que causan problemas: enfermedades en cultivos, infecciones en la piel, alimentos arruinados. Y algunos hongos silvestres son muy tóxicos; por eso nunca hay que comer uno que no haya sido identificado con seguridad por alguien que sepa.",
+        "Hoy se investigan nuevos usos: materiales de construcción y envases hechos con micelio, hongos capaces de degradar ciertos plásticos o contaminantes. Todavía falta mucho para saber cuáles de esas ideas llegarán a aplicarse a gran escala. Mientras tanto, la próxima vez que veamos un hongo al pie de un árbol, vale la pena recordar que estamos viendo apenas la punta de una red enorme e invisible."
+       ]
+      },
+      {
+       "tipo": "Texto 3 · Ensayo",
+       "titulo": "Elogio del aburrimiento",
+       "autor": "Texto escrito para esta práctica",
+       "parrafos": [
+        "¿Cuándo fue la última vez que te aburriste de verdad? No hablo de esos minutos en la fila del banco que llenamos mirando el celular, sino del aburrimiento completo: una tarde larga, sin nada que hacer y sin nada que mirar. Para muchos adultos, la respuesta está en la infancia. Para muchos niños de hoy, quizás no haya respuesta.",
+        "Vivimos en una época que le declaró la guerra al aburrimiento. Cada espacio vacío del día puede llenarse con un video, un mensaje, una notificación. Las aplicaciones están diseñadas, con enorme inteligencia, para que nunca tengamos que enfrentarnos a un momento sin estímulos. Y lo consiguen: es posible pasar un día entero sin un solo minuto de silencio interior.",
+        "A primera vista, parece una buena noticia. ¿Quién quiere aburrirse? El aburrimiento es incómodo, a veces angustiante. Sin embargo, me gustaría defender aquí una idea que puede sonar extraña: que el aburrimiento es valioso, y que al eliminarlo estamos perdiendo algo importante.",
+        "El primer argumento tiene que ver con la creatividad. Cuando la mente no tiene nada que hacer, empieza a divagar: recuerda, imagina, combina ideas que no parecían relacionadas. Muchos escritores, artistas e inventores contaron que sus mejores ideas les llegaron en momentos muertos: caminando, en la ducha, mirando por la ventana. No es casualidad. Algunas investigaciones en psicología sugieren que, después de una tarea aburrida, las personas producen ideas más originales que quienes estuvieron entretenidos. El aburrimiento, en ese sentido, funciona como un terreno baldío donde puede crecer algo nuevo.",
+        "El segundo argumento es más íntimo. El aburrimiento nos obliga a quedarnos con nosotros mismos. En el silencio aparecen preguntas que el ruido tapa: si estamos conformes con nuestra vida, qué extrañamos, qué queremos cambiar. Es cierto que no siempre son preguntas agradables. Pero evitarlas sistemáticamente tiene un costo: nos vuelve extraños para nosotros mismos.",
+        "El tercer argumento tiene que ver con la atención. Quien nunca tolera un momento sin estímulos se acostumbra a cambiar de foco constantemente. Leer un libro largo, escuchar a alguien sin interrumpir o concentrarse en un problema difícil requiere, justamente, la capacidad de soportar cierto grado de aburrimiento. Es una capacidad que se entrena, y que se pierde si no se usa.",
+        "Alguien podría responder que esta defensa del aburrimiento es fácil para quien tiene tiempo libre, y que para la mayoría de las personas, que trabajan muchas horas, el celular es el único descanso posible. La objeción es justa. Nadie debería sentirse culpable por mirar un video después de una jornada agotadora. No se trata de demonizar la tecnología ni de convertir el aburrimiento en un nuevo deber. Se trata de no perder del todo esos momentos vacíos que, sin que nos demos cuenta, también nos alimentan.",
+        "Tampoco se trata de idealizar el pasado. Las tardes de domingo de antes no eran necesariamente más felices; muchas veces eran simplemente tediosas. Pero en ese tedio había un espacio que hoy cuesta encontrar: el de no estar ocupados por nada ni por nadie.",
+        "Quizás el desafío sea recuperar ese espacio de manera deliberada. Dejar el celular en otra habitación durante una hora. Caminar sin auriculares. Permitir que los chicos se aburran sin correr a entretenerlos. Pequeños gestos que, al principio, se sienten como una pérdida, y que con el tiempo pueden revelarse como una ganancia.",
+        "El aburrimiento no es un enemigo a vencer. Es, muchas veces, la sala de espera de las buenas ideas. Y como toda sala de espera, solo funciona si estamos dispuestos a quedarnos un rato sentados, sin hacer nada, hasta que nos llamen."
+       ]
+      }
+     ],
+     "items": [
+      {
+       "t": "single",
+       "q": "Texto 1. ¿En qué mes del historial se consumió más energía?",
+       "opts": [
+        "Julio",
+        "Junio",
+        "Agosto",
+        "Noviembre"
+       ],
+       "a": 0,
+       "exp": "380 kWh."
+      },
+      {
+       "t": "num",
+       "q": "Texto 1. ¿Cuánto cuesta, sin impuestos, el consumo de 200 kWh de noviembre, incluido el cargo fijo?",
+       "a": 1820,
+       "unidad": "$",
+       "exp": "Cargo fijo 350 + primeros 100 kWh a 6,50 (650) + los otros 100 kWh a 8,20 (820) = 1.820. Error frecuente: cobrar los 200 kWh al mismo precio."
+      },
+      {
+       "t": "single",
+       "q": "Texto 1. ¿Cuál es la explicación más probable de que el consumo haya sido mayor en julio?",
+       "opts": [
+        "Es invierno, y se usa más calefacción y agua caliente.",
+        "En julio la tarifa es más barata.",
+        "En julio hay más horas de luz.",
+        "Hubo un error en la medición."
+       ],
+       "a": 0,
+       "exp": "Lectura inferencial: hay que relacionar los meses con las estaciones. El texto no lo dice."
+      },
+      {
+       "t": "num",
+       "q": "Texto 1. ¿En qué porcentaje bajó el consumo de julio a noviembre? Redondeá a las unidades.",
+       "a": 47,
+       "tol": 0.6,
+       "unidad": "%",
+       "exp": "Bajó 380 − 200 = 180 kWh. 180 ÷ 380 ≈ 0,47 = 47 %."
+      },
+      {
+       "t": "single",
+       "q": "Texto 1. ¿Por qué el «consejo del mes» menciona especialmente el calefón?",
+       "opts": [
+        "Porque suele ser uno de los aparatos que más energía consume en una casa.",
+        "Porque es el único aparato que consume energía.",
+        "Porque en noviembre se rompen los calefones.",
+        "Porque la factura lo obliga."
+       ],
+       "a": 0,
+       "exp": "Lectura inferencial con conocimientos previos: lo viste en el simulacro de Ciencias."
+      },
+      {
+       "t": "single",
+       "q": "Texto 2. Según el texto, ¿qué es el micelio?",
+       "opts": [
+        "La red de filamentos subterráneos que forma la mayor parte del hongo.",
+        "El sombrerito que se ve sobre la tierra.",
+        "Un tipo de raíz de los árboles.",
+        "Una enfermedad de las plantas."
+       ],
+       "a": 0,
+       "exp": "Lectura literal, párrafo 1."
+      },
+      {
+       "t": "single",
+       "q": "Texto 2. ¿Qué quiere decir la comparación con «la fruta de un árbol que está enterrado»?",
+       "opts": [
+        "Que lo que vemos del hongo es solo una pequeña parte; el resto está bajo tierra.",
+        "Que los hongos son frutas.",
+        "Que los hongos crecen en los árboles frutales.",
+        "Que los hongos se comen como frutas."
+       ],
+       "a": 0,
+       "exp": "Así como la fruta es una parte pequeña del árbol, el hongo visible es una parte pequeña del organismo."
+      },
+      {
+       "t": "single",
+       "q": "Texto 2. ¿En qué se parecen los hongos a los animales, según el texto?",
+       "opts": [
+        "En que no pueden fabricar su propio alimento con la luz del sol.",
+        "En que se mueven.",
+        "En que tienen huesos.",
+        "En que respiran por pulmones."
+       ],
+       "a": 0,
+       "exp": "Párrafo 2."
+      },
+      {
+       "t": "match",
+       "q": "Texto 2. En la micorriza, ¿qué aporta cada uno?",
+       "left": [
+        "El hongo aporta a la planta…",
+        "La planta aporta al hongo…"
+       ],
+       "right": [
+        "agua y minerales como el fósforo",
+        "azúcares fabricados con la fotosíntesis",
+        "luz solar",
+        "oxígeno"
+       ],
+       "a": [
+        0,
+        1
+       ],
+       "exp": "Párrafo 4. Es una relación en la que los dos se benefician."
+      },
+      {
+       "t": "single",
+       "q": "Texto 2. ¿Por qué el autor dice que el debate sobre «el internet del bosque» es «un buen ejemplo de cómo funciona la ciencia»?",
+       "opts": [
+        "Porque muestra que una hipótesis atractiva necesita evidencias antes de aceptarse.",
+        "Porque prueba que los árboles se comunican.",
+        "Porque muestra que los científicos nunca se equivocan.",
+        "Porque la idea es muy popular."
+       ],
+       "a": 0,
+       "exp": "La última oración del párrafo 5 lo dice. Es una idea que también se evalúa en Cultura Científica."
+      },
+      {
+       "t": "single",
+       "q": "Texto 2. ¿Qué actitud muestra el autor frente a la idea del «internet del bosque»?",
+       "opts": [
+        "Prudente: presenta la idea y las críticas sin darla por probada.",
+        "Entusiasta: la presenta como un hecho comprobado.",
+        "Burlona: la considera ridícula.",
+        "Indiferente: no la menciona."
+       ],
+       "a": 0,
+       "exp": "Lectura crítica: usa verbos de cautela («propusieron», «podrían», «advierten») y presenta las dos posiciones."
+      },
+      {
+       "t": "vf",
+       "q": "Texto 2. Según el texto, indicá si cada afirmación es verdadera o falsa.",
+       "stmts": [
+        {
+         "s": "La penicilina se desarrolló a partir de una observación de Fleming sobre un moho.",
+         "a": true
+        },
+        {
+         "s": "Las levaduras son hongos microscópicos.",
+         "a": true
+        },
+        {
+         "s": "Todos los hongos silvestres se pueden comer.",
+         "a": false
+        },
+        {
+         "s": "Ya se usan a gran escala envases hechos con micelio en todo el mundo.",
+         "a": false
+        }
+       ],
+       "exp": "El párrafo 8 dice que esos usos «se investigan» y que falta mucho para saber cuáles se aplicarán a gran escala."
+      },
+      {
+       "t": "single",
+       "q": "Texto 3. ¿Cuál es la tesis del autor?",
+       "opts": [
+        "El aburrimiento es valioso y al eliminarlo perdemos algo importante.",
+        "Hay que prohibir los celulares.",
+        "El aburrimiento es siempre negativo.",
+        "Las tardes de antes eran más felices."
+       ],
+       "a": 0,
+       "exp": "La presenta en el párrafo 3: «me gustaría defender aquí una idea que puede sonar extraña»."
+      },
+      {
+       "t": "multi",
+       "q": "Texto 3. ¿Qué tres argumentos desarrolla el autor?",
+       "opts": [
+        "El aburrimiento favorece la creatividad.",
+        "Nos obliga a quedarnos con nosotros mismos.",
+        "Entrena la capacidad de atención.",
+        "Mejora la salud física.",
+        "Aumenta la productividad en el trabajo."
+       ],
+       "a": [
+        0,
+        1,
+        2
+       ],
+       "exp": "Párrafos 4, 5 y 6, introducidos con «el primer», «el segundo» y «el tercer argumento»."
+      },
+      {
+       "t": "single",
+       "q": "Texto 3. «Vivimos en una época que le declaró la guerra al aburrimiento». ¿Qué significa?",
+       "opts": [
+        "Que hoy se busca llenar todos los momentos vacíos con estímulos.",
+        "Que hay conflictos armados por el tiempo libre.",
+        "Que la gente está más aburrida que antes.",
+        "Que el aburrimiento está prohibido por ley."
+       ],
+       "a": 0,
+       "exp": "Es una metáfora. Las oraciones siguientes la explican: cada espacio vacío se llena con un video, un mensaje o una notificación."
+      },
+      {
+       "t": "single",
+       "q": "Texto 3. ¿Qué significa que el aburrimiento funciona como «un terreno baldío donde puede crecer algo nuevo»?",
+       "opts": [
+        "Que en un espacio sin ocupar pueden surgir ideas originales.",
+        "Que el aburrimiento es inútil.",
+        "Que hay que plantar árboles para no aburrirse.",
+        "Que el aburrimiento ocurre en lugares abandonados."
+       ],
+       "a": 0,
+       "exp": "El terreno baldío está vacío, pero ahí crecen plantas sin que nadie las siembre: así surgen las ideas cuando la mente divaga."
+      },
+      {
+       "t": "single",
+       "q": "Texto 3. ¿Cómo responde el autor a la objeción del párrafo 7?",
+       "opts": [
+        "La considera justa y aclara que no se trata de culpar a nadie ni de demonizar la tecnología.",
+        "La rechaza por completo.",
+        "No la responde.",
+        "Cambia de postura y defiende el uso del celular."
+       ],
+       "a": 0,
+       "exp": "Es una concesión («La objeción es justa») seguida de una precisión de su postura («No se trata de… Se trata de…»)."
+      },
+      {
+       "t": "single",
+       "q": "Texto 3. ¿Para qué sirve el párrafo 8?",
+       "opts": [
+        "Para aclarar que no idealiza el pasado.",
+        "Para contar una anécdota de su infancia.",
+        "Para dar un nuevo argumento.",
+        "Para concluir el texto."
+       ],
+       "a": 0,
+       "exp": "Anticipa otra objeción posible: que es una nostalgia de «todo tiempo pasado fue mejor»."
+      },
+      {
+       "t": "single",
+       "q": "Texto 3. El argumento del párrafo 4 se apoya en testimonios de artistas y en «algunas investigaciones». ¿Qué se puede decir de esa evidencia?",
+       "opts": [
+        "Le da respaldo, aunque no se indica qué investigaciones son ni quién las hizo.",
+        "Es una prueba definitiva.",
+        "No tiene ninguna relación con el argumento.",
+        "Contradice la tesis del autor."
+       ],
+       "a": 0,
+       "exp": "Lectura crítica: mencionar investigaciones sin identificarlas no permite verificarlas. Es habitual en ensayos, pero es una debilidad."
+      },
+      {
+       "t": "single",
+       "q": "Texto 3. ¿Qué tipo de texto es y cuál es su intención principal?",
+       "opts": [
+        "Un ensayo que busca hacer reflexionar al lector y convencerlo de una idea.",
+        "Una noticia que informa un hecho reciente.",
+        "Un instructivo para no aburrirse.",
+        "Un cuento sobre un niño aburrido."
+       ],
+       "a": 0,
+       "exp": "Tiene tesis, argumentos, objeciones y cierre: es argumentativo. Su tono personal y reflexivo es típico del ensayo."
+      },
+      {
+       "t": "single",
+       "q": "Texto 3. «El aburrimiento es la sala de espera de las buenas ideas». ¿Qué sugiere la imagen?",
+       "opts": [
+        "Que las ideas llegan si uno tolera un tiempo sin hacer nada.",
+        "Que las buenas ideas aparecen en los consultorios.",
+        "Que hay que esperar mucho para aburrirse.",
+        "Que el aburrimiento es una pérdida de tiempo."
+       ],
+       "a": 0,
+       "exp": "La oración que sigue completa la imagen: solo funciona si estamos dispuestos a quedarnos un rato sentados «hasta que nos llamen»."
+      },
+      {
+       "t": "open",
+       "q": "Texto 3. ¿Estás de acuerdo con el autor? Tomá posición y fundamentala con al menos un elemento del texto y uno de tu experiencia.",
+       "modelo": "Estoy de acuerdo en parte. Me convence el argumento de la atención (párrafo 6): en mi experiencia, cuando paso mucho tiempo saltando de un video a otro, después me cuesta leer algo largo, como me pasó al preparar esta prueba. Pero creo que el autor subestima que hay formas de usar la tecnología que también estimulan la creatividad, como escuchar un audiolibro mientras se camina. Aun así, comparto su propuesta de recuperar momentos sin pantalla de forma deliberada."
+      }
+     ]
+    },
+    "esc": {
+     "titulo": "Simulacro 2: Escritura Argumentativa",
+     "intro": "1 hora. Otro género: un ensayo breve.",
+     "tarea": {
+      "consigna": [
+       "Un centro cultural organiza un concurso de ensayos breves sobre la vida en la era digital. Escribí un ensayo sobre el siguiente tema:",
+       "¿Las redes sociales nos acercan o nos alejan de las demás personas?",
+       "El jurado y los lectores son público general. Tomá una postura y fundamentala, considerando también otras miradas."
+      ],
+      "genero": "Ensayo breve",
+      "min": 250,
+      "max": 300,
+      "minutos": 60,
+      "revision": [
+       "Leí bien la consigna: género, destinatario y tema.",
+       "El título anticipa el tema o la postura.",
+       "La introducción presenta el problema y mi postura.",
+       "Desarrollé al menos dos argumentos con ejemplos, datos o experiencias.",
+       "Analicé una postura distinta y la respondí.",
+       "El cierre retoma la postura con una reflexión final.",
+       "Revisé tildes, mayúsculas y puntuación.",
+       "El texto tiene entre 250 y 300 palabras."
+      ],
+      "modelo": [
+       "<b>Cerca de todos, lejos de quien tenemos al lado</b>",
+       "Las redes sociales prometieron acercarnos. En parte cumplieron: nunca fue tan fácil hablar con alguien que vive en otro país o reencontrar a un compañero de escuela. Sin embargo, creo que, tal como las usamos hoy, nos acercan a muchas personas de forma superficial y nos alejan de las que están más cerca.",
+       "Por un lado, las redes reemplazan con frecuencia el encuentro por la mirada. Sabemos qué comió un conocido, dónde fue de vacaciones y qué opina de un partido, pero eso no es lo mismo que conversar con él. Seguir la vida de alguien no es compartirla.",
+       "Por otro lado, las redes compiten con la atención que les damos a quienes tenemos al lado. Basta mirar una mesa familiar en la que cada uno revisa su teléfono: están juntos, pero cada uno está en otra parte. Las aplicaciones están diseñadas para retenernos, y lo logran a costa del tiempo que antes dedicábamos a otros.",
+       "Es cierto que para muchas personas las redes son un salvavidas: migrantes que mantienen el vínculo con su familia, personas aisladas que encuentran una comunidad, jóvenes que descubren a otros con sus mismos intereses. Estos casos son reales e importantes. Pero muestran que las redes acercan cuando se usan como puente hacia un vínculo, no cuando reemplazan al vínculo mismo.",
+       "Las redes, en definitiva, no nos acercan ni nos alejan por sí solas: depende de cómo las usemos. El desafío es que sirvan para encontrarnos, y no para quedarnos mirando cómo viven los demás."
+      ]
+     }
+    }
+   }
+  },
+  {
+   "id": "s7-jue",
+   "label": "Jue 3/12",
+   "fecha": "2026-12-03",
+   "titulo": "Jueves 3/12 · Repaso final de la 2ª jornada",
+   "nota": "Día liviano. Repasá ortografía y releé tus textos corregidos. El viernes, descanso. ¡El sábado, a cerrar esta etapa!",
+   "areas": {
+    "lec": {
+     "titulo": "Un texto breve para mantener el ritmo",
+     "intro": "Un microrrelato y cinco preguntas. 15 minutos.",
+     "minutos": 15,
+     "textos": [
+      {
+       "tipo": "Microrrelato",
+       "titulo": "La mesa",
+       "autor": "Texto escrito para esta práctica",
+       "parrafos": [
+        "Cuando vaciamos la casa de mamá, lo último que quedó fue la mesa de la cocina. Nadie la quería: era demasiado grande para los apartamentos de ahora, tenía una pata más corta que las otras y la madera estaba marcada por cuarenta años de ollas calientes.",
+        "Mi hermano propuso venderla. Mi hermana, regalarla. Yo no dije nada. Me puse a pasar la mano por las marcas: el círculo oscuro de la olla del puchero de los domingos, las rayas del cuchillo con que papá cortaba el pan sin tabla, unas letras torcidas que alguien había grabado con un compás.",
+        "Las letras eran mías. Las había hecho a los nueve años, la tarde en que me dejaron en penitencia por no hacer los deberes, y mamá nunca las lijó.",
+        "La mesa está ahora en mi casa. No entra por la puerta de la cocina, así que vive en el living, ocupando casi todo. Las visitas preguntan por qué no compro una más chica. Les digo que ya la voy a cambiar. No es verdad."
+       ]
+      }
+     ],
+     "items": [
+      {
+       "t": "single",
+       "q": "¿Por qué nadie quería la mesa?",
+       "opts": [
+        "Era muy grande, tenía una pata más corta y estaba marcada.",
+        "Era muy cara.",
+        "Era de la abuela.",
+        "Estaba rota en dos partes."
+       ],
+       "a": 0,
+       "exp": "Lectura literal, párrafo 1."
+      },
+      {
+       "t": "single",
+       "q": "¿Qué tienen en común las marcas que el narrador recorre con la mano?",
+       "opts": [
+        "Cada una guarda un recuerdo de la familia.",
+        "Todas las hizo la madre.",
+        "Son defectos que hay que reparar.",
+        "Las hicieron las visitas."
+       ],
+       "a": 0,
+       "exp": "El puchero de los domingos, el pan que cortaba el padre, las letras de su infancia: las marcas son la historia de la familia."
+      },
+      {
+       "t": "single",
+       "q": "¿Qué sugiere que la madre «nunca las lijó»?",
+       "opts": [
+        "Que quiso conservar ese recuerdo del hijo, aunque fuera una travesura.",
+        "Que no tenía tiempo.",
+        "Que no se dio cuenta.",
+        "Que no sabía lijar."
+       ],
+       "a": 0,
+       "exp": "Lectura inferencial: el texto no lo dice, pero el detalle muestra el cariño de la madre."
+      },
+      {
+       "t": "single",
+       "q": "Cuando el narrador dice a las visitas que va a cambiar la mesa, «No es verdad». ¿Por qué?",
+       "opts": [
+        "Porque la mesa tiene para él un valor afectivo que no quiere perder.",
+        "Porque no tiene dinero para otra.",
+        "Porque no encontró una mesa más chica.",
+        "Porque la mesa es muy cómoda."
+       ],
+       "a": 0,
+       "exp": "El final cierra el sentido del texto: lo que para otros es un mueble incómodo, para él es la memoria de su familia."
+      },
+      {
+       "t": "single",
+       "q": "¿Qué tema comparte este microrrelato con «La radio del abuelo»?",
+       "opts": [
+        "Los objetos que conservan la memoria de las personas queridas.",
+        "La tecnología del pasado.",
+        "Las peleas entre hermanos.",
+        "La vida en el campo."
+       ],
+       "a": 0,
+       "exp": "Comparar textos que comparten un tema es una habilidad que puede aparecer en la prueba."
+      }
+     ]
+    },
+    "esc": {
+     "titulo": "Repaso de ortografía y puntuación",
+     "intro": "Los errores que más se repiten en los textos de la prueba.",
+     "minutos": 30,
+     "items": [
+      {
+       "t": "multi",
+       "q": "¿Cuáles de estas palabras están bien escritas?",
+       "opts": [
+        "también",
+        "examen",
+        "jóven",
+        "razón",
+        "exámenes",
+        "volúmen"
+       ],
+       "a": [
+        0,
+        1,
+        3,
+        4
+       ],
+       "exp": "Joven y volumen son graves terminadas en n: no llevan tilde. Pero en plural cambia la sílaba: exámenes y volúmenes son esdrújulas y sí llevan."
+      },
+      {
+       "t": "single",
+       "q": "¿Qué oración está bien escrita?",
+       "opts": [
+        "Si no estudiás, no vas a aprobar; no es difícil, sino constante.",
+        "Sino estudiás, no vas a aprobar; no es difícil, si no constante.",
+        "Si no estudiás, no vas a aprobar; no es difícil, si no constante.",
+        "Sino estudiás, no vas a aprobar; no es difícil, sino constante."
+       ],
+       "a": 0,
+       "exp": "«Si no» (separado) es condicional: si no estudiás. «Sino» (junto) opone dos ideas después de una negación: no es esto, sino aquello."
+      },
+      {
+       "t": "single",
+       "q": "¿Qué oración está bien escrita?",
+       "opts": [
+        "Ahí hay un problema, ¡ay, qué lío!",
+        "Hay ahí un problema, ¡ahí, qué lío!",
+        "Ay hay un problema, ¡hay, qué lío!",
+        "Ahí ay un problema, ¡hay, qué lío!"
+       ],
+       "a": 0,
+       "exp": "Ahí: lugar. Hay: del verbo haber. Ay: exclamación de dolor o sorpresa."
+      },
+      {
+       "t": "single",
+       "q": "¿Qué oración está bien escrita?",
+       "opts": [
+        "Vamos a ver si hay que volver a haber la película.",
+        "Vamos a ver si hay que volver a ver la película.",
+        "Vamos haber si hay que volver a ver la película.",
+        "Vamos a haber si ay que volver a ver la película."
+       ],
+       "a": 1,
+       "exp": "«Ver» (mirar) se escribe sin h, y «a ver» va separado: «vamos a ver». «Haber» es otro verbo: «va a haber más gente», «tiene que haber una solución»."
+      },
+      {
+       "t": "single",
+       "q": "¿Qué oración usa bien las mayúsculas?",
+       "opts": [
+        "El lunes 7 de diciembre viajo a Salto con mi hermana.",
+        "El Lunes 7 de Diciembre viajo a Salto con mi hermana.",
+        "El lunes 7 de diciembre viajo a salto con mi hermana.",
+        "el lunes 7 de Diciembre viajo a Salto con mi Hermana."
+       ],
+       "a": 0,
+       "exp": "En español, los días de la semana y los meses van con minúscula. Los nombres de lugares, con mayúscula."
+      },
+      {
+       "t": "single",
+       "q": "¿Qué oración tiene bien puesta la coma?",
+       "opts": [
+        "Montevideo, la capital del país, concentra casi la mitad de la población.",
+        "Montevideo la capital del país, concentra casi la mitad de la población.",
+        "Montevideo, la capital del país concentra, casi la mitad de la población.",
+        "Montevideo la capital, del país concentra casi la mitad de la población."
+       ],
+       "a": 0,
+       "exp": "«La capital del país» es una aclaración (aposición): va entre dos comas. Se puede sacar y la oración sigue teniendo sentido."
+      },
+      {
+       "t": "single",
+       "q": "¿Qué oración tiene un error de concordancia?",
+       "opts": [
+        "La gente estaban contentos con la propuesta.",
+        "La gente estaba contenta con la propuesta.",
+        "Los vecinos estaban contentos con la propuesta.",
+        "El grupo protestó frente a la intendencia."
+       ],
+       "a": 0,
+       "exp": "«Gente» es un sustantivo singular (y femenino), aunque nombre a muchas personas: «la gente estaba contenta». Pasa lo mismo con «el grupo», «el público» o «la familia»."
+      },
+      {
+       "t": "match",
+       "q": "Elegí el conector adecuado para cada relación.",
+       "left": [
+        "Para agregar un argumento",
+        "Para presentar una objeción",
+        "Para concluir",
+        "Para dar un ejemplo",
+        "Para conceder"
+       ],
+       "right": [
+        "Además",
+        "Sin embargo",
+        "En definitiva",
+        "Por ejemplo",
+        "Si bien"
+       ],
+       "a": [
+        0,
+        1,
+        2,
+        3,
+        4
+       ],
+       "exp": "Variar los conectores muestra dominio de la dimensión textual. Evitá repetir siempre «y» o «pero»."
+      },
+      {
+       "t": "single",
+       "q": "¿Cuál es la forma correcta?",
+       "opts": [
+        "Hubo muchas personas en la reunión.",
+        "Hubieron muchas personas en la reunión.",
+        "Habían muchas personas en la reunión.",
+        "Hubieran muchas personas en la reunión."
+       ],
+       "a": 0,
+       "exp": "El verbo haber, cuando indica existencia, va siempre en singular: hubo, había, habrá (muchas personas)."
+      },
+      {
+       "t": "open",
+       "q": "Corregí todos los errores de este párrafo: «Muchos jovenes piensan que estudiar no sirve, sin embargo es la unica forma de progresar. Ademas hay que tener en cuenta que, el mercado laboral cambia muy rapido.»",
+       "modelo": "Muchos jóvenes piensan que estudiar no sirve; sin embargo, es la única forma de progresar. Además, hay que tener en cuenta que el mercado laboral cambia muy rápido. (Tildes: jóvenes, única, además, rápido. Puntuación: punto y coma o punto antes de «sin embargo» y coma después; coma después de «Además»; sin coma entre «que» y «el mercado».)"
+      }
+     ]
+    }
+   }
+  }
+ ]
+}

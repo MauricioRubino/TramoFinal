@@ -1,0 +1,971 @@
+<!doctype html><html lang="es"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1,viewport-fit=cover"><meta name="description" content="Plan de práctica gratuito para preparar la prueba de bachillerato en Uruguay: ejercicios de Matemática, Cultura Científica, Comprensión Lectora y Escritura."><title>Tramo Final</title>
+<meta name="claude:viewport-fit-sides" content="cover">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Source+Sans+3:ital,wght@0,400;0,600;0,700;0,800;1,400&family=Source+Serif+4:opsz,wght@8..60,400;8..60,600&display=swap">
+<style>
+
+/* Layout: banda institucional azul + franja de 5 colores; secciones blancas y grises claras; tarjetas con borde superior de color por área */
+:root{
+  --navy:#0a3388; --navy-2:#082a6e; --navy-ink:#0d2a66; --navy-soft:#e8eef8;
+  --band:#f1f4f9; --line:#d9e1ee; --ink:#1d2433; --ink-2:#4b5566; --white:#ffffff;
+  --s1:#14a3dc; --s2:#8cc63f; --s3:#f7941d; --s4:#e5097f; --s5:#8a3f98;
+  --mat:#f7941d; --mat-ink:#a85a00; --mat-soft:#fff3e4;
+  --cie:#8cc63f; --cie-ink:#4c7a10; --cie-soft:#eff7e3;
+  --lec:#14a3dc; --lec-ink:#0b6f99; --lec-soft:#e4f4fb;
+  --esc:#e5097f; --esc-ink:#b0005e; --esc-soft:#fde6f1;
+  --ok:#1e7d3c; --ok-soft:#e6f4ea; --bad:#c2321b; --bad-soft:#fbe8e4;
+  --note:#fdf0e1; --note-ink:#6b3900;
+  --f:"Source Sans 3","Segoe UI",system-ui,-apple-system,sans-serif;
+  --f-read:"Source Serif 4",Georgia,"Times New Roman",serif;
+  --r:14px; color-scheme:light;
+}
+*{box-sizing:border-box}
+[hidden]{display:none!important}
+html,body{background:var(--white)}
+body{color:var(--ink);font-family:var(--f);font-size:16.5px;line-height:1.55}
+body::before{content:"";position:fixed;inset:0 0 auto;height:env(safe-area-inset-top,0px);z-index:10;background:var(--navy)}
+h1,h2,h3,h4{margin:0;line-height:1.15;text-wrap:balance}
+button{font:inherit;color:inherit;cursor:pointer}
+:focus-visible{outline:3px solid var(--s1);outline-offset:2px}
+.wrap{max-width:1200px;margin:0 auto;padding-left:max(16px,env(safe-area-inset-left,0px));padding-right:max(16px,env(safe-area-inset-right,0px))}
+
+/* header */
+.top{background:var(--navy);color:var(--white)}
+.top .wrap{display:flex;align-items:center;justify-content:space-between;gap:16px;padding-block:16px}
+.mark{display:flex;align-items:center;gap:12px;text-decoration:none;color:inherit}
+.mark svg{flex:0 0 auto}
+.mark b{font-size:24px;font-weight:800;letter-spacing:-.01em;display:block;line-height:1}
+.mark small{display:block;font-size:11px;letter-spacing:.08em;text-transform:uppercase;opacity:.85;margin-top:3px}
+.top .today{font-size:14px;opacity:.9;text-align:right}
+@media (max-width:560px){.top .today{display:none}}
+.stripe{display:grid;grid-template-columns:repeat(5,1fr);height:6px}
+.stripe i:nth-child(1){background:var(--s1)} .stripe i:nth-child(2){background:var(--s2)} .stripe i:nth-child(3){background:var(--s3)} .stripe i:nth-child(4){background:var(--s4)} .stripe i:nth-child(5){background:var(--s5)}
+
+/* hero */
+.hero{text-align:center;padding-block:44px 34px}
+.hero h1{color:var(--navy);font-size:clamp(32px,5vw,46px);font-weight:800;letter-spacing:-.015em}
+.hero p{margin:12px auto 0;max-width:62ch;color:var(--ink-2);font-size:18px}
+
+/* band */
+.band{background:var(--band);padding-block:34px}
+.band .wrap{display:grid;grid-template-columns:minmax(0,1fr) minmax(0,1fr);gap:40px}
+@media (max-width:880px){.band .wrap{grid-template-columns:minmax(0,1fr);gap:28px}}
+.sec-title{font-size:22px;font-weight:700;color:var(--navy-ink);margin-bottom:14px}
+.dates{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:14px;max-width:520px}
+.date{background:var(--white);border-radius:var(--r);border-top:7px solid var(--s3);padding:16px 12px 14px;text-align:center}
+.date .dow{font-size:12.5px;font-weight:700;letter-spacing:.08em;color:var(--ink-2)}
+.date .day{font-size:44px;font-weight:800;color:var(--navy);line-height:1.05}
+.date .mon{font-weight:700;font-size:17px}
+.date .what{font-size:13.5px;color:var(--ink-2);margin-top:6px}
+.date .left{display:inline-block;margin-top:8px;font-size:13px;font-weight:700;color:var(--navy);background:var(--navy-soft);border-radius:999px;padding:2px 10px}
+.note{margin-top:14px;max-width:520px;background:var(--note);color:var(--note-ink);border-radius:12px;padding:12px 16px;font-size:15.5px}
+.prog{background:var(--white);border-radius:var(--r);padding:18px 20px;display:grid;gap:14px}
+.prog .big{display:flex;flex-wrap:wrap;align-items:baseline;gap:4px 10px}
+.prog .big b{white-space:nowrap;font-size:38px;font-weight:800;color:var(--navy);font-variant-numeric:tabular-nums}
+.prog .big span{color:var(--ink-2)}
+.bar{height:8px;background:var(--band);border-radius:6px;overflow:hidden}
+.bar i{display:block;height:100%;width:0;background:var(--c,var(--navy));border-radius:6px}
+.arows{display:grid;gap:10px}
+.arow{display:grid;grid-template-columns:150px minmax(0,1fr) 54px;gap:12px;align-items:center;font-size:15px}
+.arow span:last-child{text-align:right;font-variant-numeric:tabular-nums;color:var(--ink-2)}
+@media (max-width:480px){.arow{grid-template-columns:110px minmax(0,1fr) 46px}}
+.btn{display:inline-flex;align-items:center;justify-content:center;gap:8px;border:0;border-radius:8px;padding:11px 18px;font-weight:700;font-size:16px;background:var(--navy);color:var(--white);text-decoration:none}
+.btn:hover{background:var(--navy-2)}
+.btn.line{background:var(--white);color:var(--navy);border:1.5px solid var(--navy)}
+.btn.line:hover{background:var(--navy-soft)}
+.btn.small{padding:7px 14px;font-size:14.5px}
+.btn[disabled]{opacity:.5;cursor:not-allowed}
+
+/* main */
+main.wrap{padding-block:36px 56px;display:grid;gap:30px}
+.weeks{display:flex;gap:6px;overflow-x:auto;border-bottom:2px solid var(--line);scrollbar-width:thin}
+.wk{flex:0 0 auto;background:none;border:0;border-bottom:3px solid transparent;margin-bottom:-2px;padding:10px 14px 9px;text-align:left}
+.wk b{display:block;font-size:15.5px;color:var(--navy-ink)}
+.wk small{display:block;font-size:12.5px;color:var(--ink-2);white-space:nowrap}
+.wk[aria-selected="true"]{border-bottom-color:var(--navy)}
+.wk[aria-selected="true"] b{color:var(--navy)}
+.days{display:grid;grid-template-columns:repeat(auto-fill,minmax(250px,1fr));gap:14px}
+.dcard{display:flex;align-items:center;gap:14px;background:var(--white);border:1.5px solid var(--line);border-radius:12px;padding:14px 16px;text-align:left}
+.dcard .num{flex:0 0 40px;height:40px;border-radius:50%;background:var(--navy);color:var(--white);display:grid;place-items:center;font-weight:800;font-size:15px}
+.dcard .num.done{background:var(--ok)}
+.dcard small{display:block;font-size:13px;color:var(--ink-2)}
+.dcard b{display:block;font-size:16.5px;color:var(--navy-ink)}
+.dcard .pct{margin-left:auto;font-size:13px;font-weight:700;color:var(--ink-2);font-variant-numeric:tabular-nums}
+.dcard[aria-pressed="true"]{border-color:var(--navy);background:var(--navy-soft)}
+.dhead h2{font-size:28px;font-weight:800;color:var(--navy)}
+.dhead p{margin:6px 0 0;color:var(--ink-2);max-width:80ch}
+
+.areas{display:grid;grid-template-columns:repeat(4,minmax(0,1fr));gap:14px}
+@media (max-width:900px){.areas{grid-template-columns:repeat(2,minmax(0,1fr))}}
+.acard{background:var(--white);border:1.5px solid var(--line);border-top:7px solid var(--c);border-radius:var(--r);padding:14px 16px;text-align:left;display:grid;gap:10px}
+.acard .h{display:flex;align-items:center;gap:8px;font-weight:700;font-size:17px;color:var(--navy-ink)}
+.acard .h svg{color:var(--navy);flex:0 0 auto}
+.badge{display:inline-block;background:var(--navy);color:var(--white);border-radius:999px;font-size:12px;font-weight:700;padding:2px 9px;justify-self:start}
+.acard .meta{font-size:13.5px;color:var(--ink-2);font-variant-numeric:tabular-nums}
+.acard[aria-selected="true"]{border-color:var(--c);background:var(--cs);box-shadow:0 0 0 1.5px var(--c) inset}
+.acard[disabled]{opacity:.5;cursor:default}
+.acard[disabled] .badge{background:var(--ink-2)}
+
+.helpers{display:grid;grid-template-columns:minmax(0,1.6fr) minmax(0,1fr);gap:16px}
+@media (max-width:820px){.helpers{grid-template-columns:minmax(0,1fr)}}
+.tips{background:var(--band);border-radius:var(--r);padding:18px 22px}
+.tips h3{font-size:18px;color:var(--navy-ink);margin-bottom:10px}
+.tips ul{list-style:none;margin:0;padding:0;display:grid;gap:8px}
+.tips li{display:flex;gap:10px;align-items:flex-start;font-size:15.5px}
+.tips li svg{flex:0 0 auto;margin-top:4px;color:var(--navy)}
+.clock{background:var(--navy);color:var(--white);border-radius:var(--r);padding:18px 22px;display:grid;gap:10px;align-content:start}
+.clock h3{font-size:18px}
+.clock .t{font-size:42px;font-weight:800;font-variant-numeric:tabular-nums;letter-spacing:.01em;line-height:1}
+.clock .t.low{color:#ffc4b5}
+.clock p{margin:0;font-size:14.5px;opacity:.9}
+.clock .btn{background:var(--white);color:var(--navy);justify-self:start}
+.clock .btn:hover{background:var(--navy-soft)}
+
+/* sheet */
+.sheet{border:1.5px solid var(--line);border-top:8px solid var(--c);border-radius:var(--r);padding:24px clamp(16px,3vw,32px) 30px;display:grid;gap:22px;background:var(--white)}
+.shead{display:flex;flex-wrap:wrap;gap:12px 20px;justify-content:space-between;align-items:flex-start}
+.shead .eyebrow{font-size:12.5px;font-weight:700;letter-spacing:.08em;text-transform:uppercase;color:var(--ci)}
+.shead h3{font-size:26px;font-weight:800;color:var(--navy);margin-top:4px}
+.shead p{margin:6px 0 0;color:var(--ink-2);max-width:68ch}
+.stools{display:flex;gap:10px;align-items:center;flex-wrap:wrap}
+.score{font-weight:700;color:var(--ok);background:var(--ok-soft);border-radius:999px;padding:5px 12px;font-size:14.5px}
+.split{display:grid;grid-template-columns:minmax(0,1fr);gap:26px}
+@media (min-width:1000px){.split.has-text{grid-template-columns:minmax(0,1.05fr) minmax(0,1fr)} .split.has-text .reading{position:sticky;top:12px;max-height:calc(100vh - 24px);overflow:auto}}
+.reading{background:var(--band);border-radius:12px;padding:22px 24px;font-family:var(--f-read);font-size:17.5px;line-height:1.68}
+.reading .kicker{font-family:var(--f);font-size:12.5px;font-weight:700;letter-spacing:.08em;text-transform:uppercase;color:var(--ci)}
+.reading h4{font-family:var(--f);font-size:23px;font-weight:800;color:var(--navy-ink);margin:4px 0 2px}
+.reading .by{font-family:var(--f);font-style:italic;color:var(--ink-2);margin:0 0 14px;font-size:14.5px}
+.reading p{margin:0 0 12px;max-width:68ch}
+.reading p .n{font-family:var(--f);font-size:11.5px;font-weight:700;color:var(--ink-2);margin-right:6px;vertical-align:2px}
+.reading article + article{border-top:1px solid var(--line);margin-top:10px;padding-top:16px}
+
+.items{display:grid;gap:16px;counter-reset:q;align-content:start}
+.item{border:1.5px solid var(--line);border-radius:12px;padding:16px 18px;display:grid;gap:12px;background:var(--white)}
+.item.ok{border-color:var(--ok);background:linear-gradient(var(--ok-soft),var(--ok-soft)) top/100% 4px no-repeat,var(--white)}
+.item.bad{border-color:var(--bad);background:linear-gradient(var(--bad-soft),var(--bad-soft)) top/100% 4px no-repeat,var(--white)}
+.qhead{display:flex;gap:12px;align-items:flex-start}
+.qn{counter-increment:q;flex:0 0 32px;height:32px;border-radius:50%;background:var(--navy);color:var(--white);display:grid;place-items:center;font-weight:800;font-size:14px}
+.qn::before{content:counter(q)}
+.q{margin:4px 0 0;font-weight:600;font-size:17px;flex:1}
+.qtype{flex:0 0 auto;font-size:11.5px;font-weight:700;letter-spacing:.06em;text-transform:uppercase;color:var(--ink-2);background:var(--band);border-radius:999px;padding:3px 9px;margin-top:4px}
+@media (max-width:560px){.qtype{display:none}}
+.ctx{background:var(--band);border-radius:10px;padding:12px 14px;font-size:15.5px;overflow-x:auto}
+.ctx p{margin:0 0 8px}.ctx p:last-child{margin:0}
+table.data{border-collapse:collapse;font-size:15px;font-variant-numeric:tabular-nums;margin:6px 0;background:var(--white)}
+table.data th,table.data td{border:1px solid var(--line);padding:6px 10px;text-align:left}
+table.data th{background:var(--navy-soft);color:var(--navy-ink);font-weight:700}
+.opts{display:grid;gap:8px}
+.opt{display:flex;gap:12px;align-items:flex-start;border:1.5px solid var(--line);border-radius:10px;padding:10px 14px;cursor:pointer;background:var(--white)}
+.opt:hover{border-color:var(--navy)}
+.opt input{margin-top:5px;accent-color:var(--navy);width:17px;height:17px}
+.opt:has(input:checked){border-color:var(--navy);background:var(--navy-soft)}
+.opt.right{background:var(--ok-soft);border-color:var(--ok)}
+.opt.wrong{background:var(--bad-soft);border-color:var(--bad)}
+.vf{display:grid;gap:8px}
+.vfrow{display:grid;grid-template-columns:minmax(0,1fr) auto;gap:12px;align-items:center;border-bottom:1px dashed var(--line);padding-bottom:8px}
+@media (max-width:520px){.vfrow{grid-template-columns:minmax(0,1fr)}}
+select,input[type=text],textarea{font:inherit;color:var(--ink);background:var(--white);border:1.5px solid var(--line);border-radius:8px;padding:8px 10px}
+select{max-width:100%}
+select:focus,input:focus,textarea:focus{border-color:var(--navy)}
+.vfrow.right select{border-color:var(--ok);background:var(--ok-soft)} .vfrow.wrong select{border-color:var(--bad);background:var(--bad-soft)}
+.numrow{display:flex;gap:10px;align-items:center;flex-wrap:wrap}
+.numrow input{width:170px;font-variant-numeric:tabular-nums;font-weight:600}
+.qfoot{display:flex;gap:10px;flex-wrap:wrap;align-items:center}
+.verdict{font-weight:700}
+.verdict.ok{color:var(--ok)} .verdict.bad{color:var(--bad)}
+.exp{background:var(--navy-soft);border-radius:10px;padding:12px 16px;font-size:15.5px}
+.exp p{margin:0}
+.exp::before{content:"Explicación";display:block;font-size:12px;font-weight:700;letter-spacing:.08em;text-transform:uppercase;color:var(--navy);margin-bottom:4px}
+textarea{width:100%;min-height:120px;resize:vertical;line-height:1.55}
+.model{background:var(--band);border-left:4px solid var(--navy);border-radius:0 10px 10px 0;padding:12px 16px;font-size:15.5px}
+.ai{border:1.5px dashed var(--navy);border-radius:10px;padding:12px 16px;font-size:15.5px;white-space:pre-wrap}
+.hint{font-size:14px;color:var(--ink-2)}
+
+/* writing */
+.task{display:grid;gap:16px}
+.consigna{background:var(--note);border-radius:12px;padding:18px 20px;color:var(--ink)}
+.consigna h4{font-size:13px;font-weight:700;letter-spacing:.08em;text-transform:uppercase;color:var(--note-ink);margin-bottom:8px}
+.consigna p{margin:0 0 8px}.consigna p:last-of-type{margin-bottom:12px}
+.tags{display:flex;flex-wrap:wrap;gap:8px}
+.tag{font-size:13.5px;font-weight:600;background:var(--white);border-radius:999px;padding:3px 11px;color:var(--note-ink)}
+.editor textarea{min-height:360px;font-family:var(--f-read);font-size:17.5px}
+.wc{font-size:14.5px;font-weight:700;font-variant-numeric:tabular-nums;margin:6px 0 0}
+.wc.ok{color:var(--ok)} .wc.bad{color:var(--bad)}
+.checklist{list-style:none;margin:8px 0 0;padding:0;display:grid;gap:6px}
+.checklist label{display:flex;gap:10px;align-items:flex-start;cursor:pointer}
+.checklist input{margin-top:5px;accent-color:var(--navy);width:17px;height:17px}
+.fb{display:grid;gap:10px}
+.fb .lvl{font-size:21px;font-weight:800}
+.fb .dim{border:1.5px solid var(--line);border-radius:10px;padding:10px 14px}
+.fb .dim b{display:block;color:var(--navy-ink)}
+.fb ul{margin:4px 0 0;padding-left:20px}
+.soon{padding:40px 10px;text-align:center;color:var(--ink-2)}
+.soon h3{color:var(--navy);margin-bottom:6px}
+
+/* footer */
+footer{background:var(--navy-2);color:var(--white)}
+footer .wrap{display:grid;grid-template-columns:minmax(0,1fr) minmax(0,1.4fr);gap:24px;padding-block:34px calc(34px + env(safe-area-inset-bottom,0px))}
+@media (max-width:720px){footer .wrap{grid-template-columns:minmax(0,1fr)}}
+footer p{margin:0 0 6px;font-size:15px;opacity:.92}
+footer .rule{width:48px;height:3px;background:var(--s1);margin-top:12px;border-radius:2px}
+@media (prefers-reduced-motion:no-preference){.opt,.dcard,.acard,.btn{transition:border-color .15s,background .15s}}
+
+/* ---- v3: configuración del plan ---- */
+.setup{border:1.5px solid var(--line);border-top:8px solid var(--navy);border-radius:var(--r);padding:26px clamp(16px,3vw,34px) 30px;display:grid;gap:24px;background:var(--white)}
+.setup h2{font-size:28px;font-weight:800;color:var(--navy)}
+.setup .lead{margin:6px 0 0;color:var(--ink-2);max-width:70ch}
+.fgrid{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:22px 28px}
+@media (max-width:760px){.fgrid{grid-template-columns:minmax(0,1fr)}}
+.field{display:grid;gap:8px;align-content:start}
+.field>label,.field>.lbl{font-weight:700;color:var(--navy-ink)}
+.field .help{font-size:14px;color:var(--ink-2);margin:0}
+input[type=date],input[type=number]{font:inherit;color:var(--ink);background:var(--white);border:1.5px solid var(--line);border-radius:8px;padding:8px 10px;max-width:240px}
+.dows{display:flex;flex-wrap:wrap;gap:8px}
+.dowbtn{min-width:52px;border:1.5px solid var(--line);background:var(--white);border-radius:10px;padding:8px 10px;font-weight:700;color:var(--navy-ink)}
+.dowbtn[aria-pressed="true"]{background:var(--navy);border-color:var(--navy);color:var(--white)}
+.range{display:flex;align-items:center;gap:14px}
+.range input{flex:1;accent-color:var(--navy);min-width:0}
+.range output{font-size:22px;font-weight:800;color:var(--navy);min-width:86px;font-variant-numeric:tabular-nums}
+.levels{display:grid;gap:10px}
+.lvrow{display:grid;grid-template-columns:170px minmax(0,1fr);gap:12px;align-items:center}
+@media (max-width:520px){.lvrow{grid-template-columns:minmax(0,1fr)}}
+.lvrow .nm{display:flex;align-items:center;gap:8px;font-weight:600}
+.lvrow .nm i{width:12px;height:12px;border-radius:3px;background:var(--c)}
+.seg{display:inline-grid;grid-template-columns:repeat(3,minmax(0,1fr));border:1.5px solid var(--line);border-radius:10px;overflow:hidden}
+.seg button{border:0;background:var(--white);padding:7px 10px;font-size:14.5px;font-weight:600;color:var(--ink-2)}
+.seg button+button{border-left:1.5px solid var(--line)}
+.seg button[aria-pressed="true"]{background:var(--navy-soft);color:var(--navy);box-shadow:inset 0 -3px 0 var(--navy)}
+.check{display:flex;gap:10px;align-items:flex-start;cursor:pointer}
+.check input{margin-top:4px;width:17px;height:17px;accent-color:var(--navy)}
+.preview{background:var(--band);border-radius:12px;padding:16px 20px;display:grid;gap:8px}
+.preview .nums{display:flex;flex-wrap:wrap;gap:10px 28px}
+.preview .nums div b{display:block;font-size:26px;font-weight:800;color:var(--navy);font-variant-numeric:tabular-nums;line-height:1.1}
+.preview .nums div span{font-size:13.5px;color:var(--ink-2)}
+.preview p{margin:0;font-size:15.5px}
+.warn{background:var(--note);color:var(--note-ink);border-radius:10px;padding:10px 14px;font-size:15px}
+.err{background:var(--bad-soft);color:var(--bad);border-radius:10px;padding:10px 14px;font-size:15px;font-weight:600}
+.actions{display:flex;gap:10px;flex-wrap:wrap}
+.planbar{display:flex;flex-wrap:wrap;gap:10px 18px;align-items:center;justify-content:space-between;background:var(--band);border-radius:12px;padding:12px 18px}
+.planbar .chips{display:flex;flex-wrap:wrap;gap:8px}
+.planbar .chip{background:var(--white);border-radius:999px;padding:4px 12px;font-size:14px;font-weight:600;color:var(--navy-ink)}
+.acard .unit{font-size:14.5px;color:var(--ink);line-height:1.3}
+.acard .badges{display:flex;gap:6px;flex-wrap:wrap}
+.badge.soft{background:var(--navy-soft);color:var(--navy)}
+.badge.sim{background:var(--s5)}
+.extra{border:1.5px dashed var(--line);border-radius:12px;padding:14px 18px}
+.extra summary{color:var(--navy-ink)}
+.extra ul{margin:10px 0 0;padding-left:20px;display:grid;gap:4px;font-size:15px}
+.rest{background:var(--band);border-radius:12px;padding:12px 16px;color:var(--ink-2);font-size:15px}
+</style></head><body>
+
+<header class="top">
+  <div class="wrap">
+    <a class="mark" href="#" aria-label="Tramo Final, inicio">
+      <svg width="40" height="40" viewBox="0 0 40 40" aria-hidden="true"><rect x="2" y="24" width="8" height="12" rx="2" fill="#14a3dc"/><rect x="12" y="18" width="8" height="18" rx="2" fill="#8cc63f"/><rect x="22" y="11" width="8" height="25" rx="2" fill="#f7941d"/><rect x="32" y="4" width="6" height="32" rx="2" fill="#e5097f"/></svg>
+      <span><b>Tramo Final</b><small>Preparación para el bachillerato</small></span>
+    </a>
+    <div class="today" id="today"></div>
+  </div>
+  <div class="stripe" aria-hidden="true"><i></i><i></i><i></i><i></i><i></i></div>
+</header>
+
+<section class="hero wrap">
+  <h1>Tu plan de práctica</h1>
+  <p>Decinos cuándo podés estudiar y cuánto tiempo tenés. El plan reparte los ejercicios de las cuatro áreas en tus días, y deja los simulacros para el final.</p>
+</section>
+
+<section class="band" id="band">
+  <div class="wrap">
+    <div>
+      <h2 class="sec-title">Fechas de la prueba</h2>
+      <div class="dates" id="dates"></div>
+      <div class="note" id="datesnote"></div>
+    </div>
+    <div>
+      <h2 class="sec-title">Tu progreso</h2>
+      <div class="prog" id="prog"></div>
+    </div>
+  </div>
+</section>
+
+<main class="wrap" id="main"></main>
+
+<footer>
+  <div class="wrap">
+    <div>
+      <div class="mark"><svg width="34" height="34" viewBox="0 0 40 40" aria-hidden="true"><rect x="2" y="24" width="8" height="12" rx="2" fill="#14a3dc"/><rect x="12" y="18" width="8" height="18" rx="2" fill="#8cc63f"/><rect x="22" y="11" width="8" height="25" rx="2" fill="#f7941d"/><rect x="32" y="4" width="6" height="32" rx="2" fill="#e5097f"/></svg><span><b style="font-size:20px">Tramo Final</b></span></div>
+      <div class="rule"></div>
+    </div>
+    <div>
+      <p><b>Proyecto personal de práctica.</b> No es un sitio oficial ni está vinculado a ninguna institución educativa.</p>
+      <p>Los ejercicios y textos fueron escritos para practicar. Tu plan y tu progreso se guardan solo en este navegador.</p>
+      <p><a href="descargar/tramo-final.html" download style="color:#fff;font-weight:700">Descargar para usar sin internet</a> (un solo archivo, se abre con doble clic en la computadora).</p>
+    </div>
+  </div>
+</footer>
+
+<script>
+(() => {
+/* ================= datos fijos ================= */
+const AREAS = [
+  {k:"mat", name:"Matemática", long:"Resolución de problemas matemáticos", c:"--mat", ci:"--mat-ink", cs:"--mat-soft", j:1, icon:'<svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><rect x="5" y="3" width="14" height="18" rx="2"/><path d="M8 7h8M8 11h.01M12 11h.01M16 11h.01M8 15h.01M12 15h.01M16 15v3M8 18h.01M12 18h.01"/></svg>'},
+  {k:"cie", name:"Cultura Científica", long:"Cultura científica", c:"--cie", ci:"--cie-ink", cs:"--cie-soft", j:1, icon:'<svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M9 3h6M10 3v6L4.5 18.5A1.7 1.7 0 0 0 6 21h12a1.7 1.7 0 0 0 1.5-2.5L14 9V3"/><path d="M7.5 15h9"/></svg>'},
+  {k:"lec", name:"Comprensión Lectora", long:"Comprensión lectora", c:"--lec", ci:"--lec-ink", cs:"--lec-soft", j:2, icon:'<svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M2 5h6a4 4 0 0 1 4 4v11a3 3 0 0 0-3-3H2zM22 5h-6a4 4 0 0 0-4 4v11a3 3 0 0 1 3-3h7z"/></svg>'},
+  {k:"esc", name:"Escritura", long:"Escritura argumentativa", c:"--esc", ci:"--esc-ink", cs:"--esc-soft", j:2, icon:'<svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M12 20h9"/><path d="M16.5 3.5a2.1 2.1 0 0 1 3 3L7 19l-4 1 1-4z"/></svg>'},
+];
+const NWEEKS = 7;
+const MONTHS = ["enero","febrero","marzo","abril","mayo","junio","julio","agosto","setiembre","octubre","noviembre","diciembre"];
+const DOWS = ["domingo","lunes","martes","miércoles","jueves","viernes","sábado"];
+const DOW_SHORT = ["Dom","Lun","Mar","Mié","Jue","Vie","Sáb"];
+const DOW_ORDER = [1,2,3,4,5,6,0];
+const LEVELS = [{k:"hard",label:"Me cuesta",w:1.5},{k:"mid",label:"Normal",w:1},{k:"easy",label:"La domino",w:0.6}];
+const CHECK = '<svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.6" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M5 12.5l4.5 4.5L19 7.5"/></svg>';
+const GENERAL_TIPS = ["Leé cada consigna completa antes de responder.","Si una actividad te traba, seguí y volvé al final.","Anotá en tu cuaderno de errores lo que te salió mal y por qué."];
+
+/* ================= utilidades ================= */
+const store = {
+  get(k, d){ try{ const v = localStorage.getItem("tf:"+k); return v==null? d : JSON.parse(v);}catch(e){return d} },
+  set(k, v){ try{ localStorage.setItem("tf:"+k, JSON.stringify(v)); }catch(e){} },
+  del(k){ try{ localStorage.removeItem("tf:"+k);}catch(e){} }
+};
+const $ = s => document.querySelector(s);
+const el = (tag, attrs={}, html) => { const e = document.createElement(tag); for (const [k,v] of Object.entries(attrs)){ if(k==="class") e.className=v; else if(k.startsWith("on")) e.addEventListener(k.slice(2), v); else if(v!==false && v!=null) e.setAttribute(k, v===true?"":v);} if(html!=null) e.innerHTML = html; return e; };
+const today = () => { const d = new Date(); return new Date(d.getFullYear(), d.getMonth(), d.getDate()); };
+const parseD = s => { const [y,m,d] = s.split("-").map(Number); return new Date(y, m-1, d); };
+const iso = d => `${d.getFullYear()}-${String(d.getMonth()+1).padStart(2,"0")}-${String(d.getDate()).padStart(2,"0")}`;
+const addDays = (d,n) => new Date(d.getFullYear(), d.getMonth(), d.getDate()+n);
+const shortDate = d => `${DOW_SHORT[d.getDay()]} ${d.getDate()}/${d.getMonth()+1}`;
+const longDate = d => `${DOWS[d.getDay()][0].toUpperCase()+DOWS[d.getDay()].slice(1)} ${d.getDate()} de ${MONTHS[d.getMonth()]}`;
+const areaOf = k => AREAS.find(a=>a.k===k);
+const cssVars = a => `--c:var(${a.c});--ci:var(${a.ci});--cs:var(${a.cs})`;
+const fmtMin = m => { const h = Math.floor(m/60), r = Math.round(m%60); return h ? (r ? `${h} h ${r} min` : `${h} h`) : `${r} min`; };
+const fmtHours = h => (Number.isInteger(h) ? h : String(h).replace(".",",")) + (h===1 ? " hora" : " horas");
+
+/* ================= biblioteca de contenido ================= */
+let LIB = null;
+async function loadLibrary(){
+  if (LIB) return LIB;
+  const weeks = [];
+  for (let n=1; n<=NWEEKS; n++){
+    try{ const r = await fetch(`data/semana-${n}.json`); if (r.ok) weeks.push(await r.json()); }catch(e){}
+  }
+  const units = [];
+  weeks.forEach(w => w.days.forEach(day => {
+    const stage = w.semana === 1 ? "diag" : w.semana >= 6 ? "final" : "core";
+    AREAS.forEach(a => {
+      const data = day.areas[a.k]; if (!data) return;
+      units.push({ id:`${day.id}.${a.k}`, dayId:day.id, week:w.semana, area:a.k, data, nota:day.nota, stage,
+        min: data.minutos || (data.tarea && data.tarea.minutos) || 40,
+        title: data.titulo, order: units.length });
+    });
+  }));
+  LIB = {units, byId:Object.fromEntries(units.map(u=>[u.id,u]))};
+  return LIB;
+}
+
+/* ================= progreso ================= */
+const itemKey = (dayId, area, i) => `${dayId}.${area}.${i}`;
+function unitProgress(u){
+  let done=0, ok=0; const items = u.data.items||[];
+  items.forEach((_,i)=>{ const r = store.get(itemKey(u.dayId,u.area,i)); if (r && r.checked){ done++; if (r.ok) ok++; } });
+  let total = items.length;
+  if (u.data.tarea){ total++; const t = store.get(`${u.dayId}.${u.area}.tarea`); if (t && t.sent) done++; }
+  return {done,total,ok};
+}
+const unitDone = u => { const p = unitProgress(u); return p.total>0 && p.done===p.total; };
+
+/* ================= configuración ================= */
+const DEFAULTS = () => ({ exam1:"2026-11-28", exam2:"2026-12-05", start: iso(today()), days:[2,3,4], hours:3, rest:true, levels:{mat:"mid",cie:"mid",lec:"mid",esc:"mid"} });
+let settings = store.get("settings", null);
+let editing = !settings;
+
+/* ================= armado del plan ================= */
+function datesBetween(from, to, dows, excludeISO){
+  const out = []; for (let d = from; d < to; d = addDays(d,1)) if (dows.includes(d.getDay()) && !excludeISO.has(iso(d))) out.push(d); return out;
+}
+function buildPlan(s, lib){
+  const warnings = [];
+  const start = parseD(s.start), e1 = parseD(s.exam1), e2 = s.exam2 ? parseD(s.exam2) : null;
+  const rest = new Set(); if (s.rest){ rest.add(iso(addDays(e1,-1))); if (e2) rest.add(iso(addDays(e2,-1))); }
+  const cap = Math.round(s.hours*60);
+  const d1 = datesBetween(start, e1, s.days, rest);
+  const d2 = e2 ? datesBetween(addDays(e1,1), e2, s.days, rest) : [];
+  const weight = k => LEVELS.find(l=>l.k===s.levels[k]).w;
+  const U = lib.units;
+  const j1 = u => areaOf(u.area).j===1;
+
+  // Fase 1: todo menos los simulacros de la 2ª jornada (que van entre una prueba y otra, si hay días)
+  const p1 = U.filter(u => !(u.week===7 && e2 && d2.length));
+  const p2 = U.filter(u => !p1.includes(u));
+  const r1 = schedulePhase(d1, p1, cap, weight);
+  let leftover2 = r1.dropped.filter(u => !j1(u) && e2);
+  const r2 = schedulePhase(d2, [...leftover2, ...p2].sort((a,b)=>a.order-b.order), cap, weight);
+  const days = [...r1.days, ...r2.days];
+  const dropped = [...r1.dropped.filter(u => !leftover2.includes(u)), ...r2.dropped];
+  if (!d1.length) warnings.push("No hay días de estudio antes de la primera jornada con esta configuración.");
+  return {days, dropped, cap, d1:d1.length, d2:d2.length, warnings};
+}
+function schedulePhase(dates, units, cap, weight){
+  if (!dates.length) return {days:[], dropped:units.slice()};
+  const finals = units.filter(u=>u.stage==="final");
+  const diag = units.filter(u=>u.stage==="diag");
+  let core = units.filter(u=>u.stage==="core");
+  const capacity = dates.length * cap;
+  // simulacros: se agrupan como en el plan original (un día de simulacro = un grupo) y van al final
+  let groups = [];
+  finals.forEach(u => { let g = groups.find(x=>x.dayId===u.dayId); if (!g){ g = {dayId:u.dayId, u:[], min:0, sim:false}; groups.push(g); } g.u.push(u); g.min += u.min; if (/simulacro/i.test(u.title)) g.sim = true; });
+  const hasCore = diag.length + core.length > 0;
+  let nFinalDays = hasCore ? Math.min(groups.length, Math.max(1, Math.round(dates.length*0.25)), dates.length-1) : Math.min(groups.length, dates.length);
+  let dropped = [];
+  // si no hay días suficientes: primero se sacan los días de repaso, después se juntan simulacros
+  while (groups.length > nFinalDays && groups.some(g=>!g.sim)){ const i = groups.map(g=>g.sim).lastIndexOf(false); dropped.push(...groups[i].u); groups.splice(i,1); }
+  while (groups.length > nFinalDays && groups.length > 1){ const g = groups.shift(); groups[0].u.unshift(...g.u); groups[0].min += g.min; }
+  if (nFinalDays === 0){ dropped.push(...groups.flatMap(g=>g.u)); groups = []; }
+  const finalGroups = groups;
+  const coreDates = dates.slice(0, dates.length - finalGroups.length);
+  const coreCap = coreDates.length * cap;
+  // recortar el núcleo si no entra: cada área recibe tiempo según su peso
+  let need = [...diag, ...core].reduce((s,u)=>s+u.min,0);
+  if (need > coreCap){
+    const byArea = {}; AREAS.forEach(a=>byArea[a.k]=core.filter(u=>u.area===a.k));
+    let budget = coreCap - diag.reduce((s,u)=>s+u.min,0);
+    const keep = new Set();
+    // reparto proporcional al peso, con redistribución del sobrante
+    let active = AREAS.map(a=>a.k).filter(k=>byArea[k].length);
+    const used = Object.fromEntries(AREAS.map(a=>[a.k,0]));
+    const ptr = Object.fromEntries(AREAS.map(a=>[a.k,0]));
+    let progress = true;
+    while (budget > 0 && progress){
+      progress = false;
+      // elegir el área con menor tiempo usado / peso que todavía tenga unidades que entren
+      const cands = active.filter(k => ptr[k] < byArea[k].length && byArea[k][ptr[k]].min <= budget);
+      if (!cands.length) break;
+      cands.sort((x,y)=> used[x]/weight(x) - used[y]/weight(y));
+      const k = cands[0]; const u = byArea[k][ptr[k]++];
+      keep.add(u); used[k]+=u.min; budget -= u.min; progress = true;
+    }
+    dropped = dropped.concat(core.filter(u=>!keep.has(u)));
+    core = core.filter(u=>keep.has(u));
+  }
+  // intercalar el núcleo por área, dando prioridad a las áreas con más peso
+  const queues = {}; AREAS.forEach(a=>queues[a.k]=core.filter(u=>u.area===a.k));
+  const seq = []; const given = Object.fromEntries(AREAS.map(a=>[a.k,0]));
+  while (AREAS.some(a=>queues[a.k].length)){
+    const ks = AREAS.map(a=>a.k).filter(k=>queues[k].length);
+    ks.sort((x,y)=> (given[x]/weight(x)) - (given[y]/weight(y)) || queues[y].length - queues[x].length);
+    const u = queues[ks[0]].shift(); seq.push(u); given[u.area] += u.min / (u.min || 1);
+  }
+  // repartir en los días: carga pareja, sin pasarse del tiempo diario
+  const days = coreDates.map(d=>({date:d, units:[], min:0}));
+  const totalCore = [...diag, ...seq].reduce((s,u)=>s+u.min,0);
+  const target = days.length ? Math.min(cap, Math.max(Math.ceil(totalCore / days.length), 1)) : 0;
+  let di = 0;
+  const place = (u) => {
+    while (di < days.length && days[di].units.length && days[di].min + u.min > target) di++;
+    if (di >= days.length){
+      const best = days.filter(d=>d.min + u.min <= cap).sort((a,b)=>a.min-b.min)[0];
+      if (!best) return false; best.units.push(u); best.min += u.min; return true;
+    }
+    days[di].units.push(u); days[di].min += u.min; return true;
+  };
+  // diagnóstico solo el primer día
+  if (diag.length && days.length){ diag.forEach(u=>{ if (days[0].min + u.min <= cap || !days[0].units.length){ days[0].units.push(u); days[0].min+=u.min; } else place(u); }); if (days[0].min >= target) di = 1; }
+  seq.forEach(u=>{ if (!place(u)) dropped.push(u); });
+  finalGroups.forEach((g,i)=> days.push({date:dates[coreDates.length+i], units:g.u, min:g.min}));
+  return {days: days.filter(d=>d.units.length), dropped};
+}
+
+/* ================= estado de vista ================= */
+let PLAN = null;
+let view = { date: null, unit: store.get("unit", null) };
+let timer = null;
+
+/* ================= render: fechas y progreso ================= */
+function renderDates(){
+  const t = today();
+  $("#today").textContent = longDate(t);
+  const s = settings || DEFAULTS();
+  const box = $("#dates"); box.innerHTML = "";
+  const exams = [{d:s.exam1, what: s.exam2 ? "Matemática y Cultura Científica" : "Las cuatro áreas"}];
+  if (s.exam2) exams.push({d:s.exam2, what:"Comprensión Lectora y Escritura"});
+  exams.forEach(ex => {
+    const d = parseD(ex.d); const n = Math.round((d - t)/86400000);
+    const left = n > 1 ? `Faltan ${n} días` : n === 1 ? "Es mañana" : n === 0 ? "Es hoy" : "Ya pasó";
+    box.append(el("div",{class:"date"},`<div class="dow">${DOWS[d.getDay()].toUpperCase()}</div><div class="day">${d.getDate()}</div><div class="mon">${MONTHS[d.getMonth()]}</div><div class="what">${ex.what}</div><span class="left">${left}</span>`));
+  });
+  $("#datesnote").innerHTML = s.exam2 ? `<b>Tenés que ir los dos días.</b> Es presencial y en computadora, así que practicá también escribiendo en el teclado.` : `<b>Es presencial y en computadora.</b> Practicá también escribiendo en el teclado.`;
+}
+function renderProgress(){
+  const box = $("#prog"); box.innerHTML = "";
+  if (!PLAN){ box.append(el("p",{style:"margin:0;color:var(--ink-2)"},"Cuando armes tu plan, acá vas a ver cuánto llevás hecho en cada área.")); return; }
+  const per = {}; AREAS.forEach(a=>per[a.k]={d:0,t:0});
+  PLAN.days.forEach(day => day.units.forEach(u => { const p = unitProgress(u); per[u.area].d+=p.done; per[u.area].t+=p.total; }));
+  const D = Object.values(per).reduce((s,x)=>s+x.d,0), T = Object.values(per).reduce((s,x)=>s+x.t,0);
+  const pct = T ? Math.round(100*D/T) : 0;
+  box.append(el("div",{class:"big"},`<b>${pct} %</b><span>de tu plan · ${D} de ${T} actividades</span>`));
+  box.append(el("div",{class:"bar"},`<i style="width:${pct}%"></i>`));
+  const rows = el("div",{class:"arows"});
+  AREAS.forEach(a=>{ const p = per[a.k]; const v = p.t? Math.round(100*p.d/p.t):0; rows.append(el("div",{class:"arow",style:cssVars(a)},`<span>${a.name}</span><div class="bar"><i style="width:${v}%"></i></div><span>${v} %</span>`)); });
+  box.append(rows);
+  const t = today();
+  const next = PLAN.days.find(d => d.date >= t && d.units.some(u=>!unitDone(u))) || PLAN.days.find(d => d.units.some(u=>!unitDone(u)));
+  if (next){ const b = el("button",{class:"btn",onclick:()=>{ view.date = iso(next.date); view.unit = null; renderPlan(); $("#main").scrollIntoView({behavior:"smooth",block:"start"}); }}, `Ir a la próxima sesión: ${shortDate(next.date)}`); b.style.justifySelf="start"; box.append(b); }
+}
+
+/* ================= render: configuración ================= */
+function renderSetup(){
+  const s = JSON.parse(JSON.stringify(settings || DEFAULTS()));
+  const main = $("#main"); main.innerHTML = "";
+  const box = el("section",{class:"setup"});
+  box.append(el("div",{},`<h2>${settings ? "Editá tu plan" : "Armá tu plan"}</h2><p class="lead">Completá tus datos y el plan se ajusta solo. Podés cambiarlo cuando quieras: lo que ya hiciste no se pierde.</p>`));
+  const grid = el("div",{class:"fgrid"});
+
+  // fechas
+  const f1 = el("div",{class:"field"},`<label for="f-e1">Primer día de prueba</label><input type="date" id="f-e1" value="${s.exam1}"><p class="help">Matemática y Cultura Científica.</p>`);
+  const f2 = el("div",{class:"field"},`<label for="f-e2">Segundo día de prueba</label><input type="date" id="f-e2" value="${s.exam2||""}"><p class="help">Comprensión Lectora y Escritura. Si es todo en un día, dejalo vacío.</p>`);
+  const f3 = el("div",{class:"field"},`<label for="f-st">Empiezo a estudiar el</label><input type="date" id="f-st" value="${s.start}">`);
+  const f4 = el("div",{class:"field"},`<span class="lbl">Descanso</span><label class="check" for="f-rest"><input type="checkbox" id="f-rest" ${s.rest?"checked":""}><span>No estudiar el día antes de cada prueba</span></label>`);
+
+  // días
+  const f5 = el("div",{class:"field"},`<span class="lbl" id="l-dows">¿Qué días podés estudiar?</span>`);
+  const dows = el("div",{class:"dows",role:"group","aria-labelledby":"l-dows"});
+  DOW_ORDER.forEach(d => { const b = el("button",{class:"dowbtn",type:"button","aria-pressed":String(s.days.includes(d))}, DOW_SHORT[d]); b.onclick = () => { s.days = s.days.includes(d) ? s.days.filter(x=>x!==d) : [...s.days, d]; b.setAttribute("aria-pressed", String(s.days.includes(d))); update(); }; dows.append(b); });
+  f5.append(dows);
+
+  // horas
+  const f6 = el("div",{class:"field"},`<label for="f-h">¿Cuántas horas por día?</label>`);
+  const rg = el("div",{class:"range"},`<input type="range" id="f-h" min="0.5" max="8" step="0.5" value="${s.hours}"><output for="f-h"></output>`);
+  f6.append(rg, el("p",{class:"help"},"Contá solo el tiempo de estudio, sin pausas."));
+  const out = rg.querySelector("output"); const hIn = rg.querySelector("input");
+  const showH = () => out.textContent = fmtHours(s.hours);
+  hIn.oninput = () => { s.hours = Number(hIn.value); showH(); update(); }; showH();
+
+  grid.append(f1,f2,f3,f4,f5,f6);
+  box.append(grid);
+
+  // niveles
+  const lv = el("div",{class:"field"},`<span class="lbl">¿Cómo te sentís en cada área?</span><p class="help">Las áreas que te cuestan reciben más tiempo si no entra todo, y aparecen antes en cada día.</p>`);
+  const levels = el("div",{class:"levels"});
+  AREAS.forEach(a => {
+    const row = el("div",{class:"lvrow",style:cssVars(a)},`<span class="nm"><i></i>${a.name}</span>`);
+    const seg = el("div",{class:"seg",role:"group","aria-label":a.name});
+    LEVELS.forEach(L => { const b = el("button",{type:"button","aria-pressed":String(s.levels[a.k]===L.k)}, L.label); b.onclick = () => { s.levels[a.k] = L.k; seg.querySelectorAll("button").forEach((x,i)=>x.setAttribute("aria-pressed", String(LEVELS[i].k===L.k))); update(); }; seg.append(b); });
+    row.append(seg); levels.append(row);
+  });
+  lv.append(levels); box.append(lv);
+
+  const preview = el("div",{class:"preview","aria-live":"polite"});
+  box.append(preview);
+  const actions = el("div",{class:"actions"});
+  const save = el("button",{class:"btn",type:"button"}, settings ? "Guardar cambios" : "Armar mi plan");
+  actions.append(save);
+  if (settings) actions.append(el("button",{class:"btn line",type:"button",onclick:()=>{ editing=false; renderPlan(); }},"Cancelar"));
+  box.append(actions);
+  main.append(box);
+
+  ["f-e1","f-e2","f-st"].forEach(id => box.querySelector("#"+id).addEventListener("change", update));
+  box.querySelector("#f-rest").addEventListener("change", update);
+
+  function read(){
+    s.exam1 = box.querySelector("#f-e1").value; s.exam2 = box.querySelector("#f-e2").value || ""; s.start = box.querySelector("#f-st").value; s.rest = box.querySelector("#f-rest").checked;
+  }
+  function validate(){
+    if (!s.exam1) return "Elegí la fecha del primer día de prueba.";
+    if (!s.start) return "Elegí desde qué día empezás.";
+    if (s.exam2 && parseD(s.exam2) <= parseD(s.exam1)) return "El segundo día de prueba tiene que ser después del primero.";
+    if (parseD(s.start) >= parseD(s.exam1)) return "La fecha de inicio tiene que ser antes de la prueba.";
+    if (!s.days.length) return "Elegí al menos un día de la semana para estudiar.";
+    return null;
+  }
+  function update(){
+    read();
+    const err = validate();
+    preview.innerHTML = "";
+    save.disabled = !!err;
+    if (err){ preview.append(el("div",{class:"err"},err)); return; }
+    const p = buildPlan(s, LIB);
+    const total = LIB.units.reduce((a,u)=>a+u.min,0);
+    const planned = p.days.reduce((a,d)=>a+d.min,0);
+    const sessions = p.days.length;
+    const avail = (p.d1 + p.d2) * p.cap;
+    preview.append(el("div",{class:"nums"},`<div><b>${p.d1 + p.d2}</b><span>días de estudio</span></div><div><b>${fmtMin(avail)}</b><span>de tiempo disponible</span></div><div><b>${fmtMin(total)}</b><span>lleva todo el material</span></div><div><b>${sessions ? fmtMin(Math.round(planned/sessions)) : "—"}</b><span>por sesión, en promedio</span></div>`));
+    if (p.dropped.length){
+      const byA = AREAS.map(a=>[a.name, p.dropped.filter(u=>u.area===a.k).length]).filter(x=>x[1]);
+      preview.append(el("div",{class:"warn"},`<b>No entra todo el material.</b> Quedan ${p.dropped.length} bloques como práctica extra (${byA.map(x=>`${x[0]}: ${x[1]}`).join(", ")}). Para que entre todo, sumá días u horas.`));
+    } else if (avail > total * 1.4){
+      preview.append(el("p",{},`Te sobra tiempo: el material entra con holgura. Las sesiones van a ser más cortas que el máximo que elegiste, y podés usar el resto para repasar tu cuaderno de errores.`));
+    } else preview.append(el("p",{},`El material completo entra en tu calendario. Los simulacros quedan para los últimos días antes de cada prueba.`));
+    p.warnings.forEach(w => preview.append(el("div",{class:"err"},w)));
+  }
+  save.onclick = () => { read(); if (validate()) return; settings = s; store.set("settings", s); editing = false; view = {date:null, unit:null}; boot(); };
+  update();
+}
+
+/* ================= render: plan ================= */
+function weeksOf(plan){
+  const weeks = [];
+  plan.days.forEach(d => {
+    const monday = addDays(d.date, -((d.date.getDay()+6)%7));
+    const k = iso(monday); let w = weeks.find(x=>x.k===k);
+    if (!w){ w = {k, monday, days:[]}; weeks.push(w); }
+    w.days.push(d);
+  });
+  return weeks;
+}
+function renderPlan(){
+  const main = $("#main"); main.innerHTML = "";
+  if (!PLAN || !PLAN.days.length){ main.append(el("div",{class:"soon"},`<h3>Tu plan no tiene sesiones</h3><p>Revisá las fechas y los días de estudio.</p>`)); main.append(el("button",{class:"btn",onclick:()=>{editing=true; renderSetup();}},"Editar mi plan")); return; }
+  const s = settings;
+  const bar = el("div",{class:"planbar"});
+  const chips = el("div",{class:"chips"});
+  chips.append(el("span",{class:"chip"}, DOW_ORDER.filter(d=>s.days.includes(d)).map(d=>DOW_SHORT[d]).join(", ")));
+  chips.append(el("span",{class:"chip"}, `${fmtHours(s.hours)} por día`));
+  chips.append(el("span",{class:"chip"}, `${PLAN.days.length} sesiones`));
+  bar.append(chips, el("button",{class:"btn line small",onclick:()=>{ editing=true; renderSetup(); window.scrollTo({top:$("#main").offsetTop-10,behavior:"smooth"}); }},"Editar mi plan"));
+  main.append(bar);
+
+  const weeks = weeksOf(PLAN);
+  const t = today();
+  if (!view.date || !PLAN.days.find(d=>iso(d.date)===view.date)){
+    const nd = PLAN.days.find(d=>d.date >= t) || PLAN.days[PLAN.days.length-1]; view.date = iso(nd.date);
+  }
+  const curWeek = weeks.find(w => w.days.some(d=>iso(d.date)===view.date));
+  const nav = el("nav",{class:"weeks",role:"tablist","aria-label":"Semanas"});
+  weeks.forEach((w,i) => {
+    const first = w.days[0].date, last = w.days[w.days.length-1].date;
+    const range = first.getMonth()===last.getMonth() ? (first.getDate()===last.getDate() ? `${first.getDate()}/${first.getMonth()+1}` : `${first.getDate()} al ${last.getDate()}/${last.getMonth()+1}`) : `${first.getDate()}/${first.getMonth()+1} al ${last.getDate()}/${last.getMonth()+1}`;
+    const hasFinal = w.days.some(d=>d.units.some(u=>u.stage==="final"));
+    nav.append(el("button",{class:"wk",role:"tab","aria-selected":String(w===curWeek),onclick:()=>{ view.date = iso(w.days[0].date); view.unit=null; renderPlan(); }},`<b>Semana ${i+1}</b><small>${range}${hasFinal?" · simulacros":""}</small>`));
+  });
+  main.append(nav);
+
+  // días de la semana
+  let idx = 0; for (const w of weeks){ if (w===curWeek) break; idx += w.days.length; }
+  const daysBox = el("div",{class:"days"});
+  curWeek.days.forEach((d,i) => {
+    let D=0,T=0; d.units.forEach(u=>{ const p = unitProgress(u); D+=p.done; T+=p.total; });
+    const pct = T ? Math.round(100*D/T) : 0;
+    daysBox.append(el("button",{class:"dcard","aria-pressed":String(iso(d.date)===view.date),onclick:()=>{ view.date = iso(d.date); view.unit=null; renderPlan(); }},
+      `<span class="num ${pct===100?"done":""}">${pct===100? CHECK.replace('stroke="currentColor"','stroke="#fff"') : idx+i+1}</span><span><small>Sesión ${idx+i+1} · ${fmtMin(d.min)}</small><b>${shortDate(d.date)}</b></span><span class="pct">${pct} %</span>`));
+  });
+  main.append(daysBox);
+
+  const day = PLAN.days.find(d=>iso(d.date)===view.date);
+  // descanso / prueba cerca
+  const e1 = parseD(s.exam1), e2 = s.exam2 ? parseD(s.exam2) : null;
+  const dh = el("div",{class:"dhead"},`<h2>${longDate(day.date)}</h2><p>${day.units.length} ${day.units.length===1?"bloque":"bloques"} · ${fmtMin(day.min)} en total${day.units.some(u=>u.stage==="final")?" · día de simulacro":""}</p>`);
+  main.append(dh);
+
+  // ordenar bloques: primero áreas que cuestan
+  const weightOf = k => LEVELS.find(l=>l.k===s.levels[k]).w;
+  const units = day.units.slice().sort((a,b)=> (b.stage==="diag") - (a.stage==="diag") || weightOf(b.area)-weightOf(a.area) || a.order-b.order);
+  if (!view.unit || !units.find(u=>u.id===view.unit)) view.unit = (units.find(u=>!unitDone(u)) || units[0]).id;
+  const areas = el("div",{class:"areas",role:"tablist","aria-label":"Bloques del día"});
+  areas.id = "areas";
+  units.forEach(u => {
+    const a = areaOf(u.area); const p = unitProgress(u); const pct = p.total ? Math.round(100*p.done/p.total) : 0;
+    const count = (u.data.items?.length||0) + (u.data.tarea?1:0);
+    const isSim = u.stage==="final" && /simulacro/i.test(u.title);
+    areas.append(el("button",{class:"acard",role:"tab","aria-selected":String(view.unit===u.id),style:cssVars(a),onclick:()=>{ view.unit=u.id; store.set("unit",u.id); renderPlan(); document.getElementById("helpers").scrollIntoView({behavior:"smooth",block:"start"}); }},
+      `<div class="h">${a.icon}<span>${a.name}</span></div><div class="unit">${u.title}</div><div class="badges"><span class="badge">${u.data.tarea && !u.data.items?.length ? "1 texto" : count+" actividades"}</span><span class="badge soft">${fmtMin(u.min)}</span>${isSim?`<span class="badge sim">Simulacro</span>`:""}</div><div class="bar"><i style="width:${pct}%"></i></div><div class="meta">${p.done} de ${p.total} ${p.total===1?"hecha":"hechas"}${p.done?` · ${p.ok} bien`:""}</div>`));
+  });
+  main.append(areas);
+
+  const helpers = el("div",{class:"helpers",id:"helpers"}); main.append(helpers);
+  const sheet = el("section",{class:"sheet",id:"sheet",role:"tabpanel"}); main.append(sheet);
+
+  // práctica extra
+  if (PLAN.dropped.length){
+    const ex = el("details",{class:"extra"});
+    ex.append(el("summary",{},`Práctica extra: ${PLAN.dropped.length} bloques que no entraron en tu calendario`));
+    const ul = el("ul");
+    PLAN.dropped.forEach(u => { const li = el("li"); const b = el("button",{class:"btn line small",style:"margin-right:8px"},"Abrir"); b.onclick = () => { openExtra(u); }; li.append(b, document.createTextNode(`${areaOf(u.area).name}: ${u.title} (${fmtMin(u.min)})`)); ul.append(li); });
+    ex.append(ul); main.append(ex);
+  }
+  renderUnit(LIB.byId[view.unit]);
+  renderProgress();
+}
+function openExtra(u){
+  view.unit = u.id;
+  document.querySelectorAll("#areas .acard").forEach(x=>x.setAttribute("aria-selected","false"));
+  renderUnit(u);
+  document.getElementById("helpers").scrollIntoView({behavior:"smooth",block:"start"});
+}
+
+/* ================= render: bloque (ejercicios) ================= */
+function stopTimer(){ if (timer){ clearInterval(timer.h); timer=null; } }
+function fmt(s){ const h=Math.floor(s/3600), m=Math.floor(s%3600/60), x=s%60; return (h? h+":"+String(m).padStart(2,"0") : String(m)) + ":" + String(x).padStart(2,"0"); }
+function renderHelpers(u){
+  stopTimer();
+  const box = $("#helpers"); box.innerHTML="";
+  const list = [u.nota, ...GENERAL_TIPS].filter(Boolean);
+  box.append(el("div",{class:"tips"},`<h3>Antes de empezar</h3><ul>${list.map((t,i)=>`<li>${CHECK}<span>${i===0&&u.nota?`<b>${t}</b>`:t}</span></li>`).join("")}</ul>`));
+  const mins = u.min;
+  const clock = el("div",{class:"clock"},`<h3>Cronómetro</h3><div class="t" aria-live="off">${fmt(mins*60)}</div><p>Tiempo sugerido para este bloque: ${fmtMin(mins)}.</p>`);
+  const t = clock.querySelector(".t");
+    const row = el("div",{style:"display:flex;gap:8px;flex-wrap:wrap"});
+    const bMain = el("button",{class:"btn small"},"Iniciar");
+    const bReset = el("button",{class:"btn small",hidden:true},"Reiniciar");
+    let left = mins*60, running = false;
+    const paint = () => { t.textContent = left > 0 ? fmt(left) : "Tiempo"; t.classList.toggle("low", left <= 300 && left < mins*60); };
+    const tick = () => { left--; paint(); if (left <= 0){ stopTimer(); running = false; bMain.hidden = true; } };
+    bMain.onclick = () => {
+      if (running){ stopTimer(); running = false; bMain.textContent = "Reanudar"; }
+      else { stopTimer(); running = true; timer = {h:setInterval(tick,1000)}; bMain.textContent = "Pausar"; bReset.hidden = false; }
+    };
+    bReset.onclick = () => { stopTimer(); running = false; left = mins*60; paint(); bMain.hidden = false; bMain.textContent = "Iniciar"; bReset.hidden = true; };
+    row.append(bMain, bReset); clock.append(row); box.append(clock);
+}
+
+let samplePromise = null;
+function getSample(){ if (!samplePromise) samplePromise = (window.claude && window.claude.use) ? window.claude.use("sample").catch(()=>null) : Promise.resolve(null); return samplePromise; }
+const errCopy = c => ({not_granted:"No diste permiso para usar Claude en esta página.",rate_limited:"Demasiados pedidos seguidos. Probá de nuevo en unos minutos.",session_expired:"Tenés que volver a iniciar sesión.",refused:"Claude no pudo responder a este texto.",invalid_json:"La devolución llegó incompleta. Tocá el botón de nuevo."}[c] || "No se pudo obtener la devolución. Probá de nuevo.");
+const EXAM_CTX = "una prueba nacional de Uruguay que acredita la Educación Media Superior (bachillerato) para personas adultas";
+
+async function renderUnit(u){
+  const a = areaOf(u.area); const area = u.data;
+  renderHelpers(u);
+  const sh = $("#sheet"); sh.innerHTML=""; sh.setAttribute("style", cssVars(a));
+  const head = el("div",{class:"shead"});
+  head.append(el("div",{},`<div class="eyebrow">${a.long}</div><h3>${area.titulo}</h3>${area.intro?`<p>${area.intro}</p>`:""}`));
+  const tools = el("div",{class:"stools"});
+  const scoreEl = el("span",{class:"score",hidden:true});
+  if (area.items && area.items.length){
+    tools.append(scoreEl, el("button",{class:"btn line small",onclick:()=>{ area.items.forEach((_,i)=>store.del(itemKey(u.dayId,u.area,i))); renderUnit(u); updateCards(); }},"Borrar respuestas"));
+  }
+  head.append(tools); sh.append(head);
+  const hasText = !!(area.textos && area.textos.length);
+  const split = el("div",{class:"split"+(hasText?" has-text":"")});
+  if (hasText){
+    const rd = el("div",{class:"reading"});
+    area.textos.forEach((t,ti) => {
+      const tipo = t.tipo || "Texto";
+      let html = `<div class="kicker">${tipo}${area.textos.length>1 && !/^Texto \d/.test(tipo) ? ` · texto ${ti+1}`:""}</div><h4>${t.titulo}</h4>${t.autor?`<p class="by">${t.autor}</p>`:""}`;
+      (t.parrafos||[]).forEach((p,i)=>{ html += `<p>${t.numerar!==false?`<span class="n">${i+1}</span>`:""}${p}</p>`; });
+      if (t.html) html += t.html;
+      rd.append(el("article",{},html));
+    });
+    split.append(rd);
+  }
+  const right = el("div",{class:"items"});
+  (area.items||[]).forEach((it,i)=> right.append(renderItem(it, itemKey(u.dayId,u.area,i), onChange)));
+  if (area.tarea) right.append(await renderTask(area.tarea, `${u.dayId}.${u.area}.tarea`, onChange));
+  split.append(right); sh.append(split);
+  function onChange(){
+    if (area.items && area.items.length){
+      let done=0, ok=0; area.items.forEach((_,i)=>{ const r=store.get(itemKey(u.dayId,u.area,i)); if(r&&r.checked){done++; if(r.ok) ok++;} });
+      const auto = area.items.filter(x=>x.t!=="open").length;
+      scoreEl.hidden = !done; scoreEl.textContent = `${ok} de ${auto} correctas`;
+    }
+    updateCards();
+  }
+  onChange();
+}
+function updateCards(){
+  // refresca barras de las tarjetas de bloque, días y progreso sin rehacer la hoja
+  if (!PLAN) return;
+  const day = PLAN.days.find(d=>iso(d.date)===view.date); if (!day) return;
+  const weightOf = k => LEVELS.find(l=>l.k===settings.levels[k]).w;
+  const units = day.units.slice().sort((a,b)=> (b.stage==="diag") - (a.stage==="diag") || weightOf(b.area)-weightOf(a.area) || a.order-b.order);
+  document.querySelectorAll("#areas .acard").forEach((card,i)=>{ const u = units[i]; if (!u) return; const p = unitProgress(u); const pct = p.total? Math.round(100*p.done/p.total):0; card.querySelector(".bar i").style.width = pct+"%"; card.querySelector(".meta").textContent = `${p.done} de ${p.total} ${p.total===1?"hecha":"hechas"}${p.done?` · ${p.ok} bien`:""}`; });
+  renderProgress();
+}
+
+function shuffled(n, seedStr){
+  let h = 2166136261; for (const ch of seedStr){ h ^= ch.charCodeAt(0); h = Math.imul(h, 16777619); }
+  const rnd = () => { h ^= h << 13; h ^= h >>> 17; h ^= h << 5; return ((h >>> 0) % 100000) / 100000; };
+  const arr = [...Array(n).keys()];
+  for (let i = n - 1; i > 0; i--){ const j = Math.floor(rnd() * (i + 1)); [arr[i], arr[j]] = [arr[j], arr[i]]; }
+  return arr;
+}
+function toNum(v){
+  let s = String(v).replace(/\s|\$|%/g,"");
+  if (s.includes(",")) s = s.replace(/\./g,"").replace(",",".");
+  else if (/^-?\d{1,3}(\.\d{3})+$/.test(s)) s = s.replace(/\./g,"");
+  return s === "" ? NaN : Number(s);
+}
+const TYPE_LABEL = {single:"Selección única", multi:"Selección múltiple", vf:"Verdadero o falso", num:"Respuesta numérica", match:"Correlación", open:"Respuesta abierta"};
+const fmtNum = n => String(n).replace(".",",");
+
+function renderItem(it, key, onChange){
+  const saved = store.get(key, null);
+  const box = el("div",{class:"item"});
+  box.append(el("div",{class:"qhead"},`<span class="qn"></span><p class="q">${it.q}</p><span class="qtype">${TYPE_LABEL[it.t]||""}</span>`));
+  if (it.ctx) box.append(el("div",{class:"ctx"}, it.ctx));
+  const foot = el("div",{class:"qfoot"});
+  const verdict = el("span",{class:"verdict"});
+  const exp = el("div",{class:"exp",hidden:true}, it.exp ? `<p>${it.exp}</p>` : "");
+  let read, show;
+
+  if (it.t==="single" || it.t==="multi"){
+    const opts = el("div",{class:"opts"});
+    const type = it.t==="single" ? "radio" : "checkbox";
+    shuffled(it.opts.length, key).forEach(j=>{ const id = key+"-"+j; opts.append(el("label",{class:"opt",for:id},`<input type="${type}" name="${key}" id="${id}" value="${j}"><span>${it.opts[j]}</span>`)); });
+    box.append(opts);
+    if (it.t==="multi") box.append(el("p",{class:"hint",style:"margin:0"},"Puede haber más de una opción correcta."));
+    read = () => [...opts.querySelectorAll("input")].filter(x=>x.checked).map(x=>+x.value);
+    const ans = it.t==="single" ? [it.a] : it.a;
+    show = (val) => { opts.querySelectorAll(".opt").forEach(lab=>{ const inp = lab.querySelector("input"); const j = +inp.value; lab.classList.remove("right","wrong"); const chosen = val.includes(j); if (ans.includes(j)) lab.classList.add("right"); else if (chosen) lab.classList.add("wrong"); inp.checked = chosen; }); };
+    box._grade = v => { const s = new Set(v); return v.length===ans.length && ans.every(x=>s.has(x)); };
+  }
+  else if (it.t==="vf"){
+    const rows = el("div",{class:"vf"});
+    it.stmts.forEach((s,j)=>{ rows.append(el("div",{class:"vfrow"},`<span>${s.s}</span><select id="${key}-${j}" aria-label="Verdadero o falso"><option value="">Elegí</option><option value="v">Verdadero</option><option value="f">Falso</option></select>`)); });
+    box.append(rows);
+    read = () => [...rows.querySelectorAll("select")].map(x=>x.value);
+    show = (val) => { rows.querySelectorAll(".vfrow").forEach((r,j)=>{ r.querySelector("select").value = val[j]||""; r.classList.remove("right","wrong"); r.classList.add(((it.stmts[j].a?"v":"f")===val[j])?"right":"wrong"); }); };
+    box._grade = v => v.every((x,j)=> x === (it.stmts[j].a?"v":"f"));
+  }
+  else if (it.t==="match"){
+    const rows = el("div",{class:"vf"});
+    const optsHtml = `<option value="">Elegí</option>` + shuffled(it.right.length, key+"r").map(j=>`<option value="${j}">${it.right[j]}</option>`).join("");
+    it.left.forEach((l,j)=> rows.append(el("div",{class:"vfrow"},`<span>${l}</span><select id="${key}-${j}" aria-label="Relacionar">${optsHtml}</select>`)));
+    box.append(rows);
+    read = () => [...rows.querySelectorAll("select")].map(x=>x.value===""? -1 : +x.value);
+    show = (val) => { rows.querySelectorAll(".vfrow").forEach((r,j)=>{ r.querySelector("select").value = val[j]>=0? String(val[j]) : ""; r.classList.remove("right","wrong"); r.classList.add(val[j]===it.a[j]?"right":"wrong"); }); };
+    box._grade = v => v.every((x,j)=>x===it.a[j]);
+  }
+  else if (it.t==="num"){
+    const row = el("div",{class:"numrow"},`<input type="text" inputmode="decimal" id="${key}-n" aria-label="Tu respuesta" autocomplete="off" placeholder="Ej.: 12,5">${it.unidad?`<span>${it.unidad}</span>`:""}`);
+    box.append(row);
+    const inp = row.querySelector("input");
+    read = () => inp.value.trim();
+    show = (val) => { inp.value = val; };
+    box._grade = v => { const n = toNum(v); if (isNaN(n)) return false; const tol = it.tol!=null ? it.tol : Math.max(0.01, Math.abs(it.a)*0.005); return Math.abs(n-it.a) <= tol; };
+    if (!it.exp) exp.innerHTML = `<p>Respuesta: ${fmtNum(it.a)}${it.unidad?" "+it.unidad:""}</p>`;
+  }
+  else if (it.t==="open"){
+    const ta = el("textarea",{id:key+"-o","aria-label":"Tu respuesta",placeholder:"Escribí tu respuesta…"});
+    box.append(ta);
+    ta.addEventListener("input", ()=>{ const r = store.get(key,{}); r.val = ta.value; store.set(key,r); });
+    const model = el("div",{class:"model",hidden:true},`<b>Respuesta modelo</b><br>${it.modelo}`);
+    const ai = el("div",{class:"ai",hidden:true});
+    const bModel = el("button",{class:"btn small"},"Ver respuesta modelo");
+    bModel.onclick = () => { model.hidden=false; exp.hidden = !it.exp; const r = store.get(key,{}); r.checked=true; r.ok=false; r.val=ta.value; store.set(key,r); onChange(); };
+    const bAI = el("button",{class:"btn line small",hidden:true},"Pedir devolución a Claude");
+    getSample().then(s => { if (s) bAI.hidden = false; });
+    bAI.onclick = async () => {
+      const s = await getSample(); if (!s) return;
+      if (!ta.value.trim()){ ai.hidden=false; ai.textContent="Escribí tu respuesta primero."; return; }
+      bAI.disabled = true; ai.hidden=false; ai.textContent = "Pensando…";
+      const ctxText = (it.ctx||"").replace(/<[^>]+>/g," ");
+      const prompt = `Sos docente y preparás a un adulto para ${EXAM_CTX}. Corregí su respuesta abierta en español rioplatense, de forma breve y concreta (máximo 120 palabras). Decí si la respuesta es suficiente, qué le falta respecto de la respuesta modelo y una sugerencia para mejorarla. No uses markdown.\n\nCONTEXTO: ${ctxText}\nPREGUNTA: ${it.q}\nRESPUESTA MODELO: ${it.modelo}\nRESPUESTA DEL ESTUDIANTE: ${ta.value}`;
+      try{ await s(prompt,{modelTier:"quick", onText:({text})=>{ ai.textContent=text; }}); }
+      catch(e){ ai.textContent = e.text || errCopy(e.code); if (e.code==="not_granted") bAI.hidden=true; }
+      finally{ bAI.disabled=false; }
+    };
+    foot.append(bModel, bAI);
+    box.append(foot, model, ai, exp);
+    if (saved){ ta.value = saved.val || ""; if (saved.checked){ model.hidden=false; exp.hidden=!it.exp; } }
+    return box;
+  }
+
+  const bCheck = el("button",{class:"btn small"},"Comprobar");
+  bCheck.onclick = () => {
+    const v = read();
+    const empty = Array.isArray(v) ? (v.length===0 || v.some(x=>x===""||x===-1)) : !v;
+    if (empty){ verdict.className="verdict bad"; verdict.textContent = "Completá tu respuesta antes de comprobar."; return; }
+    const ok = box._grade(v);
+    store.set(key,{checked:true, ok, val:v});
+    apply(v, ok); onChange();
+  };
+  const bRetry = el("button",{class:"btn line small",hidden:true},"Intentar de nuevo");
+  bRetry.onclick = () => { store.del(key); box.replaceWith(renderItem(it,key,onChange)); onChange(); };
+  foot.append(bCheck, bRetry, verdict);
+  box.append(foot, exp);
+  function apply(v, ok){
+    show(v);
+    box.classList.toggle("ok", ok); box.classList.toggle("bad", !ok);
+    verdict.className = "verdict " + (ok?"ok":"bad");
+    verdict.textContent = ok ? "Correcto" : (it.t==="num" ? `Incorrecto. La respuesta es ${fmtNum(it.a)}${it.unidad?" "+it.unidad:""}.` : "Incorrecto");
+    exp.hidden = !exp.innerHTML; bCheck.hidden = true; bRetry.hidden = false;
+    box.querySelectorAll("input,select").forEach(x=>x.disabled=true);
+  }
+  if (saved && saved.checked) apply(saved.val, saved.ok);
+  return box;
+}
+
+async function renderTask(t, key, onDone){
+  const saved = store.get(key, {text:"", checks:[], sent:false, fb:null});
+  const box = el("div",{class:"task"});
+  box.append(el("div",{class:"consigna"},`<h4>Consigna</h4>${t.consigna.map(p=>`<p>${p}</p>`).join("")}<div class="tags"><span class="tag">Género: ${t.genero}</span><span class="tag">${t.min} a ${t.max} palabras</span><span class="tag">${t.minutos} minutos</span></div>`));
+  const ed = el("div",{class:"editor"});
+  const ta = el("textarea",{id:key+"-txt","aria-label":"Tu texto",spellcheck:"false",placeholder:"Escribí acá tu texto. El corrector ortográfico está apagado, como en la prueba."});
+  ta.value = saved.text || "";
+  const wc = el("p",{class:"wc"});
+  const count = () => { const n = (ta.value.trim().match(/\S+/g)||[]).length; wc.textContent = `${n} palabras`; wc.className = "wc " + (n>=t.min && n<=t.max ? "ok" : n ? "bad" : ""); return n; };
+  ta.addEventListener("input",()=>{ const s = store.get(key,saved); s.text = ta.value; store.set(key,s); count(); });
+  ed.append(ta, wc); count(); box.append(ed);
+
+  const cl = el("div",{},`<b>Antes de entregar, revisá:</b>`);
+  const ul = el("ul",{class:"checklist"});
+  t.revision.forEach((r,i)=>{ const id = `${key}-c${i}`; const li = el("li",{},`<label for="${id}"><input type="checkbox" id="${id}" ${saved.checks&&saved.checks[i]?"checked":""}><span>${r}</span></label>`); li.querySelector("input").onchange = e => { const s = store.get(key,saved); s.checks = s.checks||[]; s.checks[i] = e.target.checked; store.set(key,s); }; ul.append(li); });
+  cl.append(ul); box.append(cl);
+
+  const actions = el("div",{class:"qfoot"});
+  const bDone = el("button",{class:"btn small"}, saved.sent ? "Marcado como hecho" : "Marcar como hecho");
+  bDone.onclick = () => { const s = store.get(key,saved); s.sent = true; s.text = ta.value; store.set(key,s); bDone.textContent="Marcado como hecho"; onDone && onDone(); };
+  const bAI = el("button",{class:"btn line small",hidden:true},"Pedir devolución a Claude");
+  const bModel = el("button",{class:"btn line small"},"Ver texto modelo");
+  actions.append(bDone, bAI, bModel); box.append(actions);
+  const model = el("div",{class:"model",hidden:true},`<b>Un texto modelo posible</b>${t.modelo.map(p=>`<p style="margin:8px 0 0">${p}</p>`).join("")}`);
+  bModel.onclick = () => { model.hidden = !model.hidden; bModel.textContent = model.hidden ? "Ver texto modelo" : "Ocultar texto modelo"; };
+  const fb = el("div",{class:"fb",hidden:true});
+  box.append(fb, model);
+  if (saved.fb) showFb(saved.fb);
+
+  const s = await getSample();
+  if (s){
+    bAI.hidden = false;
+    bAI.onclick = async () => {
+      const n = count();
+      if (n < 40){ fb.hidden=false; fb.innerHTML = `<p class="hint">Escribí al menos un borrador completo antes de pedir la devolución.</p>`; return; }
+      bAI.disabled = true; fb.hidden = false; fb.innerHTML = `<p class="hint">Claude está leyendo tu texto… puede tardar un minuto.</p>`;
+      const prompt = `Sos corrector de la parte de Escritura Argumentativa de ${EXAM_CTX}. Evaluá el texto con tres dimensiones:
+1) Dimensión discursiva: adecuación a la situación comunicativa (quién escribe, destinatario, propósito, contexto) y al género pedido; postura clara.
+2) Dimensión textual: organización en párrafos (introducción con postura, desarrollo con argumentos desarrollados con ejemplos, explicaciones, evidencias o experiencias, y cierre), coherencia, conectores, oraciones bien construidas; si incorpora y responde una postura contraria, valoralo.
+3) Convenciones del código escrito: ortografía (incluidas tildes) y puntuación.
+No se evalúa la opinión, sino cómo se fundamenta. Extensión pedida: ${t.min}-${t.max} palabras (el texto tiene ${n}).
+Respondé en español rioplatense, con tono de docente exigente pero amable. Respondé SOLO con JSON con esta forma:
+{"nivel":"Insuficiente|Próximo a la suficiencia|Suficiente","resumen":"una oración","discursiva":"2-3 oraciones","textual":"2-3 oraciones","convenciones":"1-2 oraciones","errores":[{"original":"fragmento con error","correccion":"cómo va","motivo":"regla breve"}],"mejora":"la UNA cosa que más subiría el nivel"}
+Incluí como máximo 8 errores, los más importantes.
+
+CONSIGNA: ${t.consigna.join(" ")}
+GÉNERO: ${t.genero}
+
+TEXTO DEL ESTUDIANTE:
+${ta.value}`;
+      try{ const r = await s.json(prompt,{cache:false}); const st = store.get(key,saved); st.fb = r; store.set(key,st); showFb(r); }
+      catch(e){ fb.innerHTML = `<p class="hint">${errCopy(e.code)}</p>`; if (e.code==="not_granted") bAI.hidden = true; }
+      finally{ bAI.disabled = false; }
+    };
+  }
+  function showFb(r){
+    fb.hidden=false;
+    const esc = x => String(x==null?"":x).replace(/[&<>]/g,c=>({"&":"&amp;","<":"&lt;",">":"&gt;"}[c]));
+    const lv = esc(r.nivel); const col = /^Suf/.test(lv) ? "var(--ok)" : /^Pr/.test(lv) ? "var(--mat-ink)" : "var(--bad)";
+    fb.innerHTML = `<div class="lvl" style="color:${col}">Nivel estimado: ${lv}</div><p style="margin:0">${esc(r.resumen)}</p>
+      <div class="dim"><b>Dimensión discursiva</b>${esc(r.discursiva)}</div>
+      <div class="dim"><b>Dimensión textual</b>${esc(r.textual)}</div>
+      <div class="dim"><b>Ortografía y puntuación</b>${esc(r.convenciones)}${Array.isArray(r.errores)&&r.errores.length?`<ul>${r.errores.map(e=>`<li><s>${esc(e.original)}</s> → <b>${esc(e.correccion)}</b> <span class="hint">(${esc(e.motivo)})</span></li>`).join("")}</ul>`:""}</div>
+      <div class="dim" style="border-color:var(--navy)"><b>Lo que más te subiría el nivel</b>${esc(r.mejora)}</div>
+      <p class="hint" style="margin:0">Es una estimación orientativa, no una nota oficial.</p>`;
+  }
+  return box;
+}
+
+
+
+/* ================= arranque ================= */
+async function boot(){
+  await loadLibrary();
+  renderDates();
+  if (editing || !settings){ PLAN = settings ? buildPlan(settings, LIB) : null; renderProgress(); renderSetup(); return; }
+  PLAN = buildPlan(settings, LIB);
+  renderPlan();
+}
+boot();
+})();
+</script>
+</body></html>

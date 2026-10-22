@@ -1,0 +1,859 @@
+{
+ "semana": 6,
+ "days": [
+  {
+   "id": "s6-mar",
+   "label": "Mar 24/11",
+   "fecha": "2026-11-24",
+   "titulo": "Martes 24/11 · Simulacro de Matemática",
+   "nota": "Hacelo como el sábado: 1 h 30, calculadora científica, sin celular y sin mirar las explicaciones hasta terminar. Si una actividad te traba, seguí y volvé al final.",
+   "areas": {
+    "mat": {
+     "titulo": "Simulacro: Resolución de Problemas Matemáticos",
+     "intro": "27 actividades de todos los núcleos, en el orden en que podrían aparecer. Tiempo: 1 hora 30 minutos.",
+     "minutos": 90,
+     "items": [
+      {
+       "t": "num",
+       "q": "La factura de agua de un hogar tiene un cargo fijo de $420 y cobra $65 por cada m³ consumido. Este mes se consumieron 18 m³. ¿Cuánto hay que pagar?",
+       "a": 1590,
+       "unidad": "$",
+       "exp": "420 + 65 × 18 = 420 + 1.170 = 1.590."
+      },
+      {
+       "t": "single",
+       "q": "Una tienda ofrece «llevá 2 y el segundo a mitad de precio». Si comprás dos unidades iguales, ¿qué descuento total obtenés sobre lo que pagarías sin oferta?",
+       "opts": [
+        "25 %",
+        "50 %",
+        "20 %",
+        "33 %"
+       ],
+       "a": 0,
+       "exp": "Sin oferta pagás 2 unidades; con oferta, 1,5. Ahorrás 0,5 de 2: 0,5 ÷ 2 = 25 %."
+      },
+      {
+       "t": "num",
+       "q": "Un producto cuesta $3.660 con el 22 % de IVA incluido. ¿Cuál es su precio sin IVA?",
+       "a": 3000,
+       "unidad": "$",
+       "exp": "3.660 ÷ 1,22 = 3.000."
+      },
+      {
+       "t": "num",
+       "q": "Una canasta de productos cuesta $12.000. En un mes sube un 4 % y al mes siguiente un 3 %. ¿Cuánto cuesta después de los dos aumentos? Redondeá a los centésimos.",
+       "a": 12854.4,
+       "tol": 0.5,
+       "unidad": "$",
+       "exp": "12.000 × 1,04 × 1,03 = 12.854,40."
+      },
+      {
+       "t": "num",
+       "q": "Con 250 g de azúcar se hacen 20 galletas. ¿Cuántos gramos de azúcar se necesitan para 48 galletas?",
+       "a": 600,
+       "unidad": "g",
+       "exp": "250 ÷ 20 = 12,5 g por galleta. 12,5 × 48 = 600 g."
+      },
+      {
+       "t": "num",
+       "q": "Con 5 canillas abiertas, un tanque se llena en 12 horas. ¿En cuántas horas se llena con 8 canillas iguales?",
+       "a": 7.5,
+       "unidad": "horas",
+       "exp": "Proporcionalidad inversa: 5 × 12 = 60. 60 ÷ 8 = 7,5 horas."
+      },
+      {
+       "t": "num",
+       "q": "Resolvé 4(x + 3) − 2x = 30. ¿Cuánto vale x?",
+       "a": 9,
+       "exp": "4x + 12 − 2x = 30 → 2x = 18 → x = 9."
+      },
+      {
+       "t": "num",
+       "q": "En un teatro, 3 entradas de adulto y 2 de niño cuestan $1.150. Una de adulto y una de niño cuestan $450. ¿Cuánto cuesta una entrada de adulto?",
+       "a": 250,
+       "unidad": "$",
+       "exp": "Si a + n = 450, entonces n = 450 − a. Reemplazando: 3a + 2(450 − a) = 1.150 → a + 900 = 1.150 → a = 250. La de niño cuesta 200."
+      },
+      {
+       "t": "single",
+       "ctx": "<p>Con palitos de fósforo se arman cuadrados en fila, compartiendo los lados: 1 cuadrado usa 4 palitos, 2 cuadrados usan 7, 3 cuadrados usan 10.</p>",
+       "q": "¿Qué expresión da la cantidad de palitos para n cuadrados?",
+       "opts": [
+        "3n + 1",
+        "4n",
+        "n + 3",
+        "4n − 1"
+       ],
+       "a": 0,
+       "exp": "Cada cuadrado nuevo agrega 3 palitos. Comprobación: n = 1 → 4; n = 2 → 7; n = 3 → 10."
+      },
+      {
+       "t": "num",
+       "q": "¿Cuántos palitos se necesitan para 20 cuadrados en fila?",
+       "a": 61,
+       "unidad": "palitos",
+       "exp": "3 × 20 + 1 = 61."
+      },
+      {
+       "t": "num",
+       "q": "Alquilar un auto cuesta $1.500 por día más $12 por kilómetro recorrido. ¿Cuánto cuesta alquilarlo 3 días y recorrer 250 km?",
+       "a": 7500,
+       "unidad": "$",
+       "exp": "1.500 × 3 + 12 × 250 = 4.500 + 3.000 = 7.500."
+      },
+      {
+       "t": "single",
+       "ctx": "<p>Distancia recorrida por una ciclista desde que salió:</p><table class='data'><tr><th>Tiempo (h)</th><td>0</td><td>1</td><td>2</td><td>3</td><td>4</td></tr><tr><th>Distancia (km)</th><td>0</td><td>15</td><td>30</td><td>30</td><td>50</td></tr></table>",
+       "q": "¿Qué pasó entre la hora 2 y la hora 3?",
+       "opts": [
+        "La ciclista se detuvo.",
+        "Fue a su mayor velocidad.",
+        "Volvió hacia el punto de partida.",
+        "Recorrió 30 km."
+       ],
+       "a": 0,
+       "exp": "La distancia no cambió (30 km): estuvo parada. Si hubiera vuelto, la distancia al punto de partida bajaría."
+      },
+      {
+       "t": "num",
+       "q": "¿Cuál fue la velocidad media de la ciclista en las 4 horas?",
+       "a": 12.5,
+       "unidad": "km/h",
+       "exp": "50 km ÷ 4 h = 12,5 km/h, contando la hora en que estuvo parada."
+      },
+      {
+       "t": "num",
+       "q": "Un celular pierde el 20 % de su valor cada año. Hoy vale $30.000. ¿Cuánto valdrá dentro de 2 años?",
+       "a": 19200,
+       "unidad": "$",
+       "exp": "30.000 × 0,8 × 0,8 = 30.000 × 0,64 = 19.200."
+      },
+      {
+       "t": "num",
+       "q": "Se depositan $100.000 al 5 % anual de interés compuesto durante 3 años. ¿Cuál es el monto final? Redondeá a los centésimos.",
+       "a": 115762.5,
+       "tol": 0.5,
+       "unidad": "$",
+       "exp": "100.000 × 1,05³ = 100.000 × 1,157625 = 115.762,50."
+      },
+      {
+       "t": "single",
+       "q": "Una heladera cuesta $11.000 al contado o 10 cuotas de $1.300. ¿Cuál es, aproximadamente, el recargo de pagar en cuotas?",
+       "opts": [
+        "18 %",
+        "13 %",
+        "30 %",
+        "2 %"
+       ],
+       "a": 0,
+       "exp": "En cuotas: 13.000. Recargo: 2.000 ÷ 11.000 ≈ 0,18 = 18 %. Siempre se compara con el precio de contado."
+      },
+      {
+       "t": "num",
+       "q": "Una escalera de 6,5 m está apoyada en una pared, con el pie a 2,5 m de la pared. ¿A qué altura llega?",
+       "a": 6,
+       "unidad": "m",
+       "exp": "√(6,5² − 2,5²) = √(42,25 − 6,25) = √36 = 6 m."
+      },
+      {
+       "t": "num",
+       "q": "Un cantero circular tiene 4 m de radio. ¿Cuál es su área? Usá π ≈ 3,14.",
+       "a": 50.24,
+       "tol": 0.1,
+       "unidad": "m²",
+       "exp": "3,14 × 4² = 3,14 × 16 = 50,24 m²."
+      },
+      {
+       "t": "num",
+       "q": "Una piscina mide 8 m de largo, 4 m de ancho y 1,5 m de profundidad. ¿Cuántos litros de agua le entran?",
+       "a": 48000,
+       "unidad": "L",
+       "exp": "8 × 4 × 1,5 = 48 m³ = 48.000 L."
+      },
+      {
+       "t": "num",
+       "q": "En un mapa de escala 1:200.000, dos ciudades están separadas por 3,5 cm. ¿Cuál es la distancia real en km?",
+       "a": 7,
+       "unidad": "km",
+       "exp": "3,5 × 200.000 = 700.000 cm = 7.000 m = 7 km."
+      },
+      {
+       "t": "num",
+       "q": "Un ómnibus va a 90 km/h. ¿A cuántos metros por segundo equivale?",
+       "a": 25,
+       "unidad": "m/s",
+       "exp": "90 ÷ 3,6 = 25 m/s."
+      },
+      {
+       "t": "num",
+       "q": "Las notas de Valentina en el año fueron 6, 8, 9, 7 y 10. ¿Cuál es su promedio?",
+       "a": 8,
+       "exp": "(6 + 8 + 9 + 7 + 10) ÷ 5 = 40 ÷ 5 = 8."
+      },
+      {
+       "t": "num",
+       "q": "Los sueldos de 5 empleados de un comercio son: $30.000, $32.000, $35.000, $38.000 y $120.000. ¿Cuál es la mediana?",
+       "a": 35000,
+       "unidad": "$",
+       "exp": "Ordenados, el del medio es 35.000. La media sería 51.000, muy influida por el sueldo de 120.000."
+      },
+      {
+       "t": "num",
+       "q": "Una ruleta tiene los números del 0 al 36, todos con la misma probabilidad. ¿Cuál es la probabilidad de que salga un número mayor que 30? Respondé en porcentaje con un decimal.",
+       "a": 16.2,
+       "tol": 0.1,
+       "unidad": "%",
+       "exp": "Hay 37 números (del 0 al 36). Mayores que 30: del 31 al 36, son 6. 6 ÷ 37 ≈ 16,2 %. Error frecuente: olvidarse del 0 y dividir entre 36."
+      },
+      {
+       "t": "num",
+       "ctx": "<p>Encuesta a 300 personas sobre si usan la bicicleta para trasladarse:</p><table class='data'><tr><th></th><th>Usa bicicleta</th><th>No usa</th><th>Total</th></tr><tr><th>Menores de 30 años</th><td>60</td><td>90</td><td>150</td></tr><tr><th>30 años o más</th><td>30</td><td>120</td><td>150</td></tr></table>",
+       "q": "Entre los menores de 30 años, ¿qué porcentaje usa bicicleta?",
+       "a": 40,
+       "unidad": "%",
+       "exp": "60 de 150 = 40 %. Es una probabilidad condicional: el total son solo los menores de 30."
+      },
+      {
+       "t": "vf",
+       "q": "Indicá si cada afirmación es verdadera o falsa.",
+       "stmts": [
+        {
+         "s": "El 20 % de 50 es igual al 50 % de 20.",
+         "a": true
+        },
+        {
+         "s": "Un triángulo con lados de 6, 8 y 10 cm es rectángulo.",
+         "a": true
+        },
+        {
+         "s": "Si se triplica el radio de un cilindro, su volumen se triplica.",
+         "a": false
+        },
+        {
+         "s": "La probabilidad de sacar un 7 con un dado común es 1/7.",
+         "a": false
+        }
+       ],
+       "exp": "1) Los dos dan 10. 2) 36 + 64 = 100. 3) El volumen depende del radio al cuadrado: se multiplica por 9. 4) Un dado común no tiene 7: la probabilidad es 0."
+      },
+      {
+       "t": "open",
+       "q": "Un gimnasio ofrece: A) $1.800 por mes; B) $15.000 por todo el año, pagando por adelantado. ¿A partir de cuántos meses de uso conviene el plan B? Justificá.",
+       "modelo": "Con A, m meses cuestan 1.800m. B conviene cuando 1.800m > 15.000, o sea m > 8,33. Si vas 9 meses o más conviene B (9 meses con A = $16.200). Si vas 8 meses o menos conviene A (8 meses = $14.400). Hay que pensar si realmente vas a ir todo el año antes de pagar por adelantado."
+      }
+     ]
+    },
+    "lec": {
+     "titulo": "Mantenimiento: un texto instructivo",
+     "intro": "Para no perder el ritmo de lectura. Un texto breve, 20 minutos.",
+     "minutos": 20,
+     "textos": [
+      {
+       "tipo": "Texto instructivo",
+       "titulo": "Ola de calor: cómo cuidarte y cuidar a los demás",
+       "autor": "Texto escrito para esta práctica",
+       "numerar": false,
+       "parrafos": [
+        "Se considera ola de calor cuando, durante varios días seguidos, las temperaturas máximas y mínimas superan los valores habituales para la época. El riesgo no está solo en el calor del mediodía: las noches calurosas impiden que el cuerpo se recupere."
+       ],
+       "html": "<p><b>Qué hacer</b></p><ul style='margin:0 0 12px;padding-left:22px'><li>Tomá agua con frecuencia, aunque no tengas sed. Evitá el alcohol y las bebidas muy azucaradas.</li><li>Evitá la exposición al sol entre las 11 y las 17 horas.</li><li>Usá ropa liviana y de colores claros, sombrero y protector solar.</li><li>De día, mantené cerradas las cortinas de las ventanas que reciben sol; ventilá la casa de noche.</li><li>Comé liviano: frutas, verduras y comidas frescas.</li></ul><p><b>A quiénes prestar atención</b></p><p>Bebés y niños pequeños, personas mayores, personas con enfermedades crónicas y quienes trabajan al aire libre. Si vive cerca alguien mayor que está solo, visitalo o llamalo al menos una vez por día.</p><p><b>Señales de alarma</b></p><p>Piel muy caliente y seca, dolor de cabeza intenso, mareos, confusión o vómitos pueden indicar un golpe de calor. En ese caso, llevá a la persona a un lugar fresco, aflojale la ropa, mojale la piel con agua fresca y llamá a emergencias.</p>"
+      }
+     ],
+     "items": [
+      {
+       "t": "single",
+       "q": "Según el texto, ¿cuándo se considera que hay una ola de calor?",
+       "opts": [
+        "Cuando durante varios días seguidos las máximas y las mínimas superan los valores habituales para la época.",
+        "Cuando un día supera los 35 grados.",
+        "Cuando hace calor al mediodía.",
+        "Cuando no llueve durante una semana."
+       ],
+       "a": 0,
+       "exp": "Lectura literal: el primer párrafo da la definición. Fijate que incluye las temperaturas mínimas, no solo las máximas."
+      },
+      {
+       "t": "single",
+       "q": "¿Por qué el texto recomienda cerrar las cortinas de día y ventilar de noche?",
+       "opts": [
+        "Para evitar que entre el calor del sol y aprovechar el aire más fresco de la noche.",
+        "Para ahorrar luz eléctrica.",
+        "Para que no entren mosquitos.",
+        "Para que la casa esté más oscura y se pueda dormir de día."
+       ],
+       "a": 0,
+       "exp": "Lectura inferencial: el texto no da el motivo, pero se deduce de lo que dice sobre el sol y las noches."
+      },
+      {
+       "t": "multi",
+       "q": "¿Qué señales pueden indicar un golpe de calor?",
+       "opts": [
+        "Piel muy caliente y seca",
+        "Dolor de cabeza intenso",
+        "Confusión",
+        "Mucha sed sin otros síntomas",
+        "Piel fría y húmeda"
+       ],
+       "a": [
+        0,
+        1,
+        2
+       ],
+       "exp": "La lista del texto incluye también mareos y vómitos. La sed sola no aparece como señal de alarma."
+      },
+      {
+       "t": "single",
+       "q": "Un vecino de 80 años vive solo. ¿Qué recomienda el texto?",
+       "opts": [
+        "Visitarlo o llamarlo al menos una vez por día.",
+        "Llevarlo a la playa.",
+        "Llamar a emergencias.",
+        "Darle alcohol para que se relaje."
+       ],
+       "a": 0,
+       "exp": "Párrafo «A quiénes prestar atención». Llamar a emergencias corresponde solo si hay señales de alarma."
+      },
+      {
+       "t": "single",
+       "q": "¿Cuál es la intención principal de este texto?",
+       "opts": [
+        "Dar instrucciones para prevenir y actuar ante los efectos del calor.",
+        "Explicar por qué ocurre el cambio climático.",
+        "Opinar sobre las políticas de salud.",
+        "Contar una historia sobre un verano."
+       ],
+       "a": 0,
+       "exp": "Es un texto instructivo: usa verbos en imperativo (tomá, evitá, usá) y está organizado para que el lector actúe."
+      }
+     ]
+    }
+   }
+  },
+  {
+   "id": "s6-mie",
+   "label": "Mié 25/11",
+   "fecha": "2026-11-25",
+   "titulo": "Miércoles 25/11 · Simulacro de Cultura Científica",
+   "nota": "1 h 30, como el sábado. Leé cada situación completa antes de responder: la información está en los textos, tablas y gráficos.",
+   "areas": {
+    "cie": {
+     "titulo": "Simulacro: Cultura Científica",
+     "intro": "Seis situaciones con varias actividades cada una. Tiempo: 1 hora 30 minutos.",
+     "minutos": 90,
+     "items": [
+      {
+       "t": "single",
+       "ctx": "<p><b>Situación 1: El agua del pozo.</b> Una familia rural usa agua de un pozo cercano a un campo cultivado. Mandan analizar una muestra.</p><table class='data'><tr><th>Parámetro</th><th>Resultado</th><th>Valor máximo recomendado para agua potable</th></tr><tr><td>Nitratos</td><td>68 mg/L</td><td>50 mg/L</td></tr><tr><td>Coliformes fecales</td><td>Presentes</td><td>Ausentes</td></tr><tr><td>pH</td><td>7,2</td><td>Entre 6,5 y 8,5</td></tr></table>",
+       "q": "Según el análisis, ¿es apta el agua para tomar?",
+       "opts": [
+        "No, porque los nitratos superan el máximo y hay coliformes fecales.",
+        "Sí, porque el pH es correcto.",
+        "Sí, porque los nitratos están cerca del máximo.",
+        "No se puede saber con estos datos."
+       ],
+       "a": 0,
+       "exp": "Alcanza con que un parámetro no cumpla para que el agua no sea apta. Acá fallan dos."
+      },
+      {
+       "t": "single",
+       "q": "Situación 1. ¿Cuál es una explicación posible para el exceso de nitratos?",
+       "opts": [
+        "El uso de fertilizantes en el campo cercano, que llegan al agua subterránea.",
+        "El pH del agua.",
+        "La temperatura del agua.",
+        "La profundidad del pozo, sin otra causa."
+       ],
+       "a": 0,
+       "exp": "Los nitratos suelen venir de fertilizantes o de desechos animales que se filtran en el suelo. Es una hipótesis: habría que comprobarla."
+      },
+      {
+       "t": "single",
+       "q": "Situación 1. La presencia de coliformes fecales indica que…",
+       "opts": [
+        "el agua estuvo en contacto con materia fecal y puede transmitir enfermedades.",
+        "el agua tiene demasiados minerales.",
+        "el agua es muy ácida.",
+        "el agua tiene restos de fertilizante."
+       ],
+       "a": 0,
+       "exp": "Son bacterias que viven en el intestino: su presencia indica contaminación con heces, por ejemplo de un pozo negro cercano. Hervir el agua elimina las bacterias, pero no los nitratos."
+      },
+      {
+       "t": "num",
+       "ctx": "<p><b>Situación 2: La levadura.</b> Para hacer pan se usa levadura, un hongo que produce dióxido de carbono. Un estudiante pone en 4 botellas la misma cantidad de agua, azúcar y levadura, cada una a distinta temperatura, y les coloca un globo en el pico. Después de 30 minutos mide el diámetro de cada globo.</p><table class='data'><tr><th>Temperatura</th><th>10 °C</th><th>25 °C</th><th>37 °C</th><th>60 °C</th></tr><tr><th>Diámetro del globo</th><td>3 cm</td><td>9 cm</td><td>15 cm</td><td>2 cm</td></tr></table>",
+       "q": "Situación 2. ¿Cuántos centímetros más de diámetro tiene el globo a 37 °C que el de 25 °C?",
+       "a": 6,
+       "unidad": "cm",
+       "exp": "15 − 9 = 6 cm."
+      },
+      {
+       "t": "single",
+       "q": "Situación 2. ¿Cuál es la variable dependiente?",
+       "opts": [
+        "El diámetro del globo",
+        "La temperatura",
+        "La cantidad de azúcar",
+        "El tipo de botella"
+       ],
+       "a": 0,
+       "exp": "Es lo que se mide para ver el efecto de la temperatura. El diámetro es una medida indirecta del CO₂ producido."
+      },
+      {
+       "t": "single",
+       "q": "Situación 2. ¿Qué hipótesis explica el resultado a 60 °C?",
+       "opts": [
+        "La temperatura alta dañó o mató a la levadura.",
+        "A 60 °C la levadura produce más gas, pero el globo se pinchó.",
+        "El azúcar se evaporó.",
+        "A 60 °C no hay dióxido de carbono en el aire."
+       ],
+       "a": 0,
+       "exp": "La levadura es un ser vivo: funciona mejor a temperaturas templadas y el calor excesivo la daña. Por eso al hacer pan no se usa agua muy caliente."
+      },
+      {
+       "t": "single",
+       "q": "Situación 2. ¿Qué cambio haría más confiable el experimento?",
+       "opts": [
+        "Repetir cada temperatura con varias botellas y promediar los resultados.",
+        "Usar distinta cantidad de azúcar en cada botella.",
+        "Medir solo la botella de 37 °C.",
+        "Usar globos de distintos tamaños."
+       ],
+       "a": 0,
+       "exp": "Las repeticiones reducen el efecto del azar o de un error en una botella. Cambiar el azúcar agregaría otra variable y arruinaría la comparación."
+      },
+      {
+       "t": "open",
+       "q": "Situación 2. ¿Se puede concluir que 37 °C es la temperatura ideal para la levadura? Justificá.",
+       "modelo": "No con seguridad. Entre las temperaturas probadas fue la que dio más gas, pero no se probaron valores intermedios (por ejemplo 30 o 45 °C), y la ideal podría ser otra. Además, con una sola botella por temperatura el resultado puede deberse al azar. Se puede decir que la actividad fue mayor a 37 °C que a las otras temperaturas probadas."
+      },
+      {
+       "t": "num",
+       "ctx": "<p><b>Situación 3: La factura de luz.</b> Consumo de algunos aparatos de una casa.</p><table class='data'><tr><th>Aparato</th><th>Potencia</th><th>Uso diario</th></tr><tr><td>Calefón</td><td>1.500 W</td><td>3 h</td></tr><tr><td>Heladera</td><td>150 W</td><td>24 h (funciona a intervalos; consumo equivalente a 8 h)</td></tr><tr><td>Televisor</td><td>100 W</td><td>5 h</td></tr><tr><td>Lámparas LED (6)</td><td>9 W cada una</td><td>5 h</td></tr></table>",
+       "q": "Situación 3. ¿Cuántos kWh consume el calefón por día?",
+       "a": 4.5,
+       "unidad": "kWh",
+       "exp": "1.500 W × 3 h = 4.500 Wh = 4,5 kWh."
+      },
+      {
+       "t": "single",
+       "q": "Situación 3. ¿Qué aparato consume más energía por día?",
+       "opts": [
+        "El calefón",
+        "La heladera",
+        "El televisor",
+        "Las lámparas"
+       ],
+       "a": 0,
+       "exp": "Calefón 4,5 kWh; heladera 150 × 8 = 1,2 kWh; televisor 0,5 kWh; lámparas 6 × 9 × 5 = 0,27 kWh."
+      },
+      {
+       "t": "single",
+       "q": "Situación 3. ¿Qué medida reduciría más la factura?",
+       "opts": [
+        "Bajar la temperatura del calefón y acortar las duchas.",
+        "Desenchufar las lámparas LED.",
+        "Apagar el televisor 10 minutos antes.",
+        "Cambiar la heladera de lugar."
+       ],
+       "a": 0,
+       "exp": "Conviene actuar sobre el aparato que más consume. Las lámparas LED ya consumen muy poco."
+      },
+      {
+       "t": "single",
+       "ctx": "<p><b>Situación 4: Dengue.</b> Casos de dengue notificados en una región y temperatura media mensual.</p><table class='data'><tr><th>Mes</th><th>Ene</th><th>Feb</th><th>Mar</th><th>Abr</th><th>May</th><th>Jun</th></tr><tr><th>Temperatura media (°C)</th><td>24</td><td>23</td><td>21</td><td>18</td><td>14</td><td>11</td></tr><tr><th>Casos</th><td>40</td><td>95</td><td>120</td><td>60</td><td>8</td><td>0</td></tr></table>",
+       "q": "Situación 4. ¿Qué relación muestran los datos?",
+       "opts": [
+        "Los casos son más en los meses cálidos y caen hasta desaparecer en los meses fríos.",
+        "Cuanto más calor, siempre hay más casos.",
+        "La temperatura no tiene ninguna relación con los casos.",
+        "Los casos aumentan cuando hace frío."
+       ],
+       "a": 0,
+       "exp": "La tendencia general es clara, pero no es exacta: enero es el mes más cálido y no tiene más casos que marzo. Puede haber un retraso: el mosquito necesita semanas para multiplicarse y el virus para propagarse."
+      },
+      {
+       "t": "single",
+       "q": "Situación 4. ¿Por qué los casos pueden ser máximos en marzo, aunque el mes más cálido sea enero?",
+       "opts": [
+        "Porque las poblaciones de mosquitos y los contagios tardan semanas en crecer después de que empieza el calor.",
+        "Porque en marzo empiezan las clases.",
+        "Porque en marzo hace más calor.",
+        "Porque los datos están mal."
+       ],
+       "a": 0,
+       "exp": "Es una hipótesis razonable que explica el desfase. Para comprobarla habría que estudiar la población de mosquitos mes a mes."
+      },
+      {
+       "t": "single",
+       "q": "Situación 4. ¿Qué medida de prevención actúa sobre la causa de la transmisión?",
+       "opts": [
+        "Eliminar recipientes con agua estancada donde se crían los mosquitos.",
+        "Tomar antibióticos en verano.",
+        "Vacunar a las mascotas.",
+        "Evitar salir cuando llueve."
+       ],
+       "a": 0,
+       "exp": "El dengue lo transmite el mosquito Aedes aegypti. Los antibióticos no sirven contra virus."
+      },
+      {
+       "t": "single",
+       "ctx": "<p><b>Situación 5: Las horas de luz.</b> Duración aproximada del día (desde que sale hasta que se pone el sol) en Montevideo.</p><table class='data'><tr><th>Fecha</th><th>21 dic</th><th>21 mar</th><th>21 jun</th><th>23 set</th></tr><tr><th>Horas de luz</th><td>14 h 25 min</td><td>12 h 10 min</td><td>9 h 50 min</td><td>12 h 5 min</td></tr></table>",
+       "q": "Situación 5. ¿Cuál es la diferencia entre el día más largo y el más corto?",
+       "opts": [
+        "4 h 35 min",
+        "4 h 15 min",
+        "5 h",
+        "2 h 15 min"
+       ],
+       "a": 0,
+       "exp": "14 h 25 min − 9 h 50 min = 4 h 35 min. Cuidado al restar minutos: 14:25 − 9:50 = 13:85 − 9:50 = 4:35."
+      },
+      {
+       "t": "single",
+       "q": "Situación 5. ¿A qué se debe esa diferencia?",
+       "opts": [
+        "A la inclinación del eje de la Tierra.",
+        "A que en diciembre la Tierra está más cerca del Sol.",
+        "A los cambios de hora.",
+        "A la cantidad de nubes."
+       ],
+       "a": 0,
+       "exp": "Por la inclinación del eje, en diciembre el hemisferio sur está más expuesto al Sol: días más largos y rayos más directos."
+      },
+      {
+       "t": "single",
+       "q": "Situación 5. En Madrid, en el hemisferio norte, ¿cómo será el día del 21 de diciembre?",
+       "opts": [
+        "Será uno de los más cortos del año.",
+        "Será uno de los más largos del año.",
+        "Durará exactamente 12 horas.",
+        "Durará lo mismo que en Montevideo."
+       ],
+       "a": 0,
+       "exp": "Las estaciones están invertidas entre hemisferios: nuestro solsticio de verano es su solsticio de invierno."
+      },
+      {
+       "t": "single",
+       "ctx": "<p><b>Situación 6: Productos de limpieza.</b> La etiqueta de una lavandina dice: «Contiene hipoclorito de sodio. No mezclar con otros productos de limpieza, en especial con los que contienen amoníaco o ácidos (como el vinagre o los antisarros). Para desinfectar superficies, diluir 1 parte de lavandina en 50 partes de agua».</p>",
+       "q": "Situación 6. ¿Por qué no se debe mezclar la lavandina con otros productos?",
+       "opts": [
+        "Porque puede producir una reacción química que libera gases tóxicos.",
+        "Porque pierde el olor.",
+        "Porque se congela.",
+        "Porque se vuelve más concentrada."
+       ],
+       "a": 0,
+       "exp": "La mezcla de hipoclorito con ácidos libera cloro gaseoso, y con amoníaco forma cloraminas. Los dos gases son tóxicos al respirarlos. Es un cambio químico con productos peligrosos."
+      },
+      {
+       "t": "num",
+       "q": "Situación 6. Para preparar desinfectante según la etiqueta, ¿cuántos mL de lavandina hay que agregar a 1 litro (1.000 mL) de agua?",
+       "a": 20,
+       "unidad": "mL",
+       "exp": "1 parte de lavandina cada 50 de agua: 1.000 ÷ 50 = 20 mL."
+      },
+      {
+       "t": "vf",
+       "q": "Indicá si cada afirmación es verdadera o falsa.",
+       "stmts": [
+        {
+         "s": "Hervir el agua del pozo de la situación 1 elimina los nitratos.",
+         "a": false
+        },
+        {
+         "s": "En la situación 2, la levadura es un ser vivo.",
+         "a": true
+        },
+        {
+         "s": "En la situación 4, los datos prueban que el calor por sí solo causa el dengue.",
+         "a": false
+        },
+        {
+         "s": "En la situación 6, diluir la lavandina es un cambio físico.",
+         "a": true
+        }
+       ],
+       "exp": "1) Hervir mata bacterias pero concentra los nitratos. 3) El calor favorece al mosquito, pero sin el mosquito y el virus no hay dengue: es un factor, no la causa única. 4) Al diluir no se forman sustancias nuevas."
+      },
+      {
+       "t": "open",
+       "q": "Elegí una de las seis situaciones y explicá qué decisión tomarías como ciudadano a partir de los datos, considerando al menos dos dimensiones (salud, ambiente, economía, social).",
+       "modelo": "Situación 1: dejaría de tomar agua del pozo y usaría agua potable de red o envasada mientras tanto (salud). Además, hablaría con el productor del campo vecino y con la intendencia para revisar el uso de fertilizantes cerca del pozo, porque el problema afecta también a otros vecinos y al agua subterránea de la zona (ambiente y social). Construir un pozo nuevo y más profundo tendría un costo (economía), pero la salud de la familia lo justifica."
+      }
+     ]
+    },
+    "esc": {
+     "titulo": "Mantenimiento: un texto completo",
+     "intro": "Para no perder la mano antes de la 2ª jornada. 45 minutos, en la computadora.",
+     "tarea": {
+      "consigna": [
+       "Un portal de noticias abre un debate entre sus lectores. Escribí una columna de opinión para ese portal sobre el siguiente tema:",
+       "¿Deberían los supermercados estar obligados a donar los alimentos que no venden y que todavía están en condiciones de consumirse?",
+       "Tomá una postura clara y fundamentala para convencer a los lectores."
+      ],
+      "genero": "Columna de opinión",
+      "min": 250,
+      "max": 300,
+      "minutos": 45,
+      "revision": [
+       "Mi postura se entiende desde el primer párrafo.",
+       "Desarrollé al menos dos argumentos con ejemplos, datos, explicaciones o experiencias.",
+       "Respondí a una postura contraria.",
+       "El cierre retoma la postura.",
+       "El tono es adecuado para los lectores de un portal.",
+       "Usé conectores variados.",
+       "Revisé tildes, mayúsculas y puntuación.",
+       "El texto tiene entre 250 y 300 palabras."
+      ],
+      "modelo": [
+       "<b>Lo que sobra en la góndola falta en la mesa</b>",
+       "Cada noche, en muchos supermercados, se tiran al contenedor yogures a punto de vencer, frutas con algún golpe y pan del día anterior. Al mismo tiempo, comedores y merenderos buscan cómo llenar sus ollas. Creo que los supermercados deberían estar obligados a donar los alimentos aptos que no venden.",
+       "En primer lugar, es una cuestión de sentido común. Un alimento que todavía se puede comer tiene valor, aunque ya no se pueda vender. Tirarlo es desperdiciar el agua, la energía y el trabajo que costó producirlo, y además genera residuos que terminan en los rellenos sanitarios.",
+       "En segundo lugar, la donación tendría un impacto social inmediato. Los comedores comunitarios trabajan con recursos muy escasos; recibir de forma regular verduras, lácteos o pan les permitiría alimentar a más personas y con mejor calidad. Lo que para una empresa es un sobrante, para un merendero puede ser la merienda de una semana.",
+       "Es cierto que donar implica costos para las empresas: hay que clasificar, guardar y transportar los productos, y existe el temor a ser responsables si alguien se enferma. Sin embargo, estos problemas tienen solución. La ley podría proteger a quien dona de buena fe, y las organizaciones sociales podrían encargarse de retirar los alimentos. Algunas cadenas ya lo hacen de forma voluntaria, lo que demuestra que es posible.",
+       "Por eso, la obligación no debería verse como un castigo, sino como una regla básica de convivencia: lo que todavía sirve para comer no puede terminar en la basura mientras haya personas que pasan hambre."
+      ]
+     }
+    }
+   }
+  },
+  {
+   "id": "s6-jue",
+   "label": "Jue 26/11",
+   "fecha": "2026-11-26",
+   "titulo": "Jueves 26/11 · Repaso final de la 1ª jornada",
+   "nota": "Día liviano. Repasá tu cuaderno de errores y estas trampas típicas. Terminá temprano y descansá: el viernes es libre.",
+   "areas": {
+    "mat": {
+     "titulo": "Las trampas más comunes",
+     "intro": "Diez errores que se repiten en los problemas de la prueba. Si acertás todos, estás listo.",
+     "minutos": 25,
+     "items": [
+      {
+       "t": "num",
+       "q": "Un precio sube 20 % y después baja 20 %. ¿En qué porcentaje quedó respecto del original? (Escribí, por ejemplo, 100 si quedó igual.)",
+       "a": 96,
+       "unidad": "%",
+       "exp": "1,2 × 0,8 = 0,96: quedó en el 96 %, un 4 % más barato. Subir y bajar el mismo porcentaje no vuelve al precio original."
+      },
+      {
+       "t": "num",
+       "q": "Un producto cuesta $1.220 con IVA del 22 %. ¿Cuánto cuesta sin IVA?",
+       "a": 1000,
+       "unidad": "$",
+       "exp": "1.220 ÷ 1,22 = 1.000. No es 1.220 − 22 % = 951,60."
+      },
+      {
+       "t": "num",
+       "q": "Un viaje de 1 hora y 45 minutos, ¿cuántas horas son en número decimal?",
+       "a": 1.75,
+       "unidad": "h",
+       "exp": "45 minutos = 45/60 = 0,75 h. No es 1,45."
+      },
+      {
+       "t": "num",
+       "q": "Vas a un lugar a 30 km/h y volvés a 60 km/h por el mismo camino. ¿Cuál es tu velocidad media en todo el viaje?",
+       "a": 40,
+       "unidad": "km/h",
+       "exp": "Probá con 60 km: ida 2 h, vuelta 1 h, total 120 km en 3 h = 40 km/h. No es 45."
+      },
+      {
+       "t": "num",
+       "q": "Necesitás 230 litros de pintura y se venden en baldes de 20 L. ¿Cuántos baldes tenés que comprar?",
+       "a": 12,
+       "unidad": "baldes",
+       "exp": "230 ÷ 20 = 11,5, pero no se compra medio balde: hacen falta 12."
+      },
+      {
+       "t": "num",
+       "q": "Un mapa tiene escala 1:1.000. Un terreno mide 5 cm × 4 cm en el mapa. ¿Cuál es su área real en m²?",
+       "a": 2000,
+       "unidad": "m²",
+       "exp": "5 cm → 50 m; 4 cm → 40 m. Área: 50 × 40 = 2.000 m². Error frecuente: calcular 20 cm² × 1.000."
+      },
+      {
+       "t": "num",
+       "q": "¿Cuántos cm² hay en 1 m²?",
+       "a": 10000,
+       "unidad": "cm²",
+       "exp": "1 m² = 100 cm × 100 cm = 10.000 cm²."
+      },
+      {
+       "t": "num",
+       "q": "Calculá −3² (sin paréntesis).",
+       "a": -9,
+       "exp": "Sin paréntesis, la potencia afecta solo al 3: −(3²) = −9. En cambio, (−3)² = 9."
+      },
+      {
+       "t": "num",
+       "q": "Una moneda salió cara 4 veces seguidas. ¿Cuál es la probabilidad de que la próxima salga cara? Respondé en porcentaje.",
+       "a": 50,
+       "unidad": "%",
+       "exp": "Cada tirada es independiente: sigue siendo 50 %."
+      },
+      {
+       "t": "single",
+       "q": "Datos: 2, 3, 3, 4, 100. ¿Qué medida representa mejor al valor típico?",
+       "opts": [
+        "La mediana (3)",
+        "La media (22,4)",
+        "El rango (98)",
+        "Ninguna"
+       ],
+       "a": 0,
+       "exp": "El 100 es un valor extremo que distorsiona la media. La mediana no se ve afectada."
+      }
+     ]
+    },
+    "cie": {
+     "titulo": "Conceptos que no pueden fallar",
+     "intro": "Repaso rápido de las ideas que más aparecen en la prueba.",
+     "minutos": 25,
+     "items": [
+      {
+       "t": "match",
+       "q": "Relacioná cada concepto con su definición.",
+       "left": [
+        "Variable independiente",
+        "Variable dependiente",
+        "Variable controlada",
+        "Grupo de control"
+       ],
+       "right": [
+        "La que el investigador cambia a propósito",
+        "La que se mide para ver el efecto",
+        "La que se mantiene igual en todos los casos",
+        "El grupo que no recibe el tratamiento, para comparar"
+       ],
+       "a": [
+        0,
+        1,
+        2,
+        3
+       ],
+       "exp": "Es la base de casi todas las preguntas sobre diseño de investigaciones."
+      },
+      {
+       "t": "single",
+       "q": "Dos fenómenos aparecen juntos en los datos. ¿Qué se puede concluir?",
+       "opts": [
+        "Que están relacionados, pero no necesariamente que uno cause el otro.",
+        "Que uno causa al otro.",
+        "Que no tienen relación.",
+        "Que los datos están mal."
+       ],
+       "a": 0,
+       "exp": "Correlación no es causalidad. Puede haber un tercer factor o ser casualidad."
+      },
+      {
+       "t": "match",
+       "q": "¿Cambio físico o químico?",
+       "left": [
+        "Fundir hielo",
+        "Cocinar un huevo",
+        "Disolver sal en agua",
+        "Fermentar la leche para hacer yogur"
+       ],
+       "right": [
+        "Cambio físico",
+        "Cambio químico"
+       ],
+       "a": [
+        0,
+        1,
+        0,
+        1
+       ],
+       "exp": "En los cambios químicos se forman sustancias nuevas y, en general, no se puede volver atrás fácilmente."
+      },
+      {
+       "t": "single",
+       "q": "«La energía se gastó». ¿Qué pasó realmente con ella?",
+       "opts": [
+        "Se transformó en otras formas, sobre todo calor.",
+        "Desapareció.",
+        "Se convirtió en materia.",
+        "Volvió a la central eléctrica."
+       ],
+       "a": 0,
+       "exp": "Principio de conservación de la energía."
+      },
+      {
+       "t": "single",
+       "q": "¿Contra qué sirven los antibióticos?",
+       "opts": [
+        "Contra las bacterias",
+        "Contra los virus",
+        "Contra todos los microorganismos",
+        "Contra el dolor"
+       ],
+       "a": 0,
+       "exp": "La gripe, el resfrío, el dengue y el COVID-19 son virus: los antibióticos no sirven contra ellos."
+      },
+      {
+       "t": "single",
+       "q": "¿Por qué hay estaciones?",
+       "opts": [
+        "Por la inclinación del eje terrestre",
+        "Por la distancia al Sol",
+        "Por la Luna",
+        "Por las corrientes marinas"
+       ],
+       "a": 0,
+       "exp": "Si fuera por la distancia, sería verano en los dos hemisferios al mismo tiempo."
+      },
+      {
+       "t": "single",
+       "q": "¿Qué produce la fotosíntesis?",
+       "opts": [
+        "Glucosa y oxígeno",
+        "Dióxido de carbono y agua",
+        "Solo oxígeno",
+        "Nitratos"
+       ],
+       "a": 0,
+       "exp": "Usa luz, agua y CO₂."
+      },
+      {
+       "t": "single",
+       "q": "¿Qué diferencia hay entre masa y peso?",
+       "opts": [
+        "La masa es la cantidad de materia; el peso es la fuerza con que la gravedad la atrae.",
+        "Son lo mismo.",
+        "El peso es la cantidad de materia.",
+        "La masa cambia en la Luna."
+       ],
+       "a": 0,
+       "exp": "Masa en kg, peso en newtons (N)."
+      },
+      {
+       "t": "single",
+       "q": "Una conclusión dice: «Este suplemento mejora la memoria de todas las personas». El estudio se hizo con 15 estudiantes. ¿Qué problema tiene?",
+       "opts": [
+        "Generaliza más allá de lo que permiten los datos.",
+        "Ninguno.",
+        "Usa pocos suplementos.",
+        "Es demasiado prudente."
+       ],
+       "a": 0,
+       "exp": "Revisá siempre que la conclusión no exceda lo que muestran las evidencias. Es una de las estrategias que recomiendan las orientaciones oficiales."
+      },
+      {
+       "t": "single",
+       "q": "¿Cuál de estas preguntas se puede investigar científicamente?",
+       "opts": [
+        "¿Las plantas regadas con agua de lluvia crecen más que las regadas con agua de canilla?",
+        "¿Las plantas son más lindas que las flores?",
+        "¿Es correcto tener plantas en casa?",
+        "¿Las plantas tienen derecho a vivir?"
+       ],
+       "a": 0,
+       "exp": "Una pregunta investigable se puede responder midiendo y comparando."
+      }
+     ]
+    }
+   }
+  }
+ ]
+}

@@ -1,0 +1,1218 @@
+{
+ "semana": 3,
+ "days": [
+  {
+   "id": "s3-mar",
+   "label": "Mar 3/11",
+   "fecha": "2026-11-03",
+   "titulo": "Martes 3/11 · Gráficos de funciones y energía",
+   "nota": "En la prueba muchas preguntas de funciones se responden leyendo el gráfico, sin hacer cuentas.",
+   "areas": {
+    "mat": {
+     "titulo": "Leer gráficos y función lineal",
+     "intro": "Máximos, mínimos, crecimiento, pendiente como tasa de cambio y modelos lineales.",
+     "minutos": 50,
+     "items": [
+      {
+       "t": "single",
+       "ctx": "<p>Temperatura registrada en una ciudad durante un día de octubre (cada 3 horas).</p><svg viewBox='0 0 460 250' width='100%' style='max-width:460px;display:block' role='img' aria-label='Gráfico de temperatura según la hora'><line x1='44' x2='444' y1='210.0' y2='210.0' stroke='var(--line)'/><text x='36' y='214.0' text-anchor='end' font-size='12' fill='var(--ink-2)'>0</text><line x1='44' x2='444' y1='170.8' y2='170.8' stroke='var(--line)'/><text x='36' y='174.8' text-anchor='end' font-size='12' fill='var(--ink-2)'>5</text><line x1='44' x2='444' y1='131.6' y2='131.6' stroke='var(--line)'/><text x='36' y='135.6' text-anchor='end' font-size='12' fill='var(--ink-2)'>10</text><line x1='44' x2='444' y1='92.4' y2='92.4' stroke='var(--line)'/><text x='36' y='96.4' text-anchor='end' font-size='12' fill='var(--ink-2)'>15</text><line x1='44' x2='444' y1='53.2' y2='53.2' stroke='var(--line)'/><text x='36' y='57.2' text-anchor='end' font-size='12' fill='var(--ink-2)'>20</text><line x1='44' x2='444' y1='14.0' y2='14.0' stroke='var(--line)'/><text x='36' y='18.0' text-anchor='end' font-size='12' fill='var(--ink-2)'>25</text><line x1='44.0' x2='44.0' y1='14' y2='210' stroke='var(--line)'/><text x='44.0' y='226' text-anchor='middle' font-size='12' fill='var(--ink-2)'>0</text><line x1='94.0' x2='94.0' y1='14' y2='210' stroke='var(--line)'/><text x='94.0' y='226' text-anchor='middle' font-size='12' fill='var(--ink-2)'>3</text><line x1='144.0' x2='144.0' y1='14' y2='210' stroke='var(--line)'/><text x='144.0' y='226' text-anchor='middle' font-size='12' fill='var(--ink-2)'>6</text><line x1='194.0' x2='194.0' y1='14' y2='210' stroke='var(--line)'/><text x='194.0' y='226' text-anchor='middle' font-size='12' fill='var(--ink-2)'>9</text><line x1='244.0' x2='244.0' y1='14' y2='210' stroke='var(--line)'/><text x='244.0' y='226' text-anchor='middle' font-size='12' fill='var(--ink-2)'>12</text><line x1='294.0' x2='294.0' y1='14' y2='210' stroke='var(--line)'/><text x='294.0' y='226' text-anchor='middle' font-size='12' fill='var(--ink-2)'>15</text><line x1='344.0' x2='344.0' y1='14' y2='210' stroke='var(--line)'/><text x='344.0' y='226' text-anchor='middle' font-size='12' fill='var(--ink-2)'>18</text><line x1='394.0' x2='394.0' y1='14' y2='210' stroke='var(--line)'/><text x='394.0' y='226' text-anchor='middle' font-size='12' fill='var(--ink-2)'>21</text><line x1='444.0' x2='444.0' y1='14' y2='210' stroke='var(--line)'/><text x='444.0' y='226' text-anchor='middle' font-size='12' fill='var(--ink-2)'>24</text><polyline points='44.0,115.9 94.0,131.6 144.0,139.4 194.0,108.1 244.0,61.0 294.0,37.5 344.0,68.9 394.0,92.4 444.0,108.1' fill='none' stroke='var(--c)' stroke-width='2.5'/><circle cx='44.0' cy='115.9' r='3.5' fill='var(--c)'/><circle cx='94.0' cy='131.6' r='3.5' fill='var(--c)'/><circle cx='144.0' cy='139.4' r='3.5' fill='var(--c)'/><circle cx='194.0' cy='108.1' r='3.5' fill='var(--c)'/><circle cx='244.0' cy='61.0' r='3.5' fill='var(--c)'/><circle cx='294.0' cy='37.5' r='3.5' fill='var(--c)'/><circle cx='344.0' cy='68.9' r='3.5' fill='var(--c)'/><circle cx='394.0' cy='92.4' r='3.5' fill='var(--c)'/><circle cx='444.0' cy='108.1' r='3.5' fill='var(--c)'/><text x='244.0' y='244' text-anchor='middle' font-size='12' fill='var(--ink-2)'>Hora del día</text><text x='12' y='112.0' font-size='12' fill='var(--ink-2)' transform='rotate(-90 12 112.0)' text-anchor='middle'>Temperatura (°C)</text></svg>",
+       "q": "¿A qué hora se registró la temperatura máxima?",
+       "opts": [
+        "A las 15",
+        "A las 12",
+        "A las 18",
+        "A las 24"
+       ],
+       "a": 0,
+       "exp": "El punto más alto del gráfico está en las 15 horas, con 22 °C."
+      },
+      {
+       "t": "num",
+       "q": "Según el gráfico, ¿cuál fue la temperatura mínima del día?",
+       "a": 9,
+       "unidad": "°C",
+       "exp": "El punto más bajo está a las 6 de la mañana: 9 °C."
+      },
+      {
+       "t": "single",
+       "q": "¿En qué intervalo de horas la temperatura aumentó todo el tiempo?",
+       "opts": [
+        "De las 6 a las 15",
+        "De las 0 a las 6",
+        "De las 15 a las 24",
+        "De las 12 a las 18"
+       ],
+       "a": 0,
+       "exp": "Entre las 6 y las 15 la línea sube sin interrupciones: la función es creciente en ese intervalo. De 0 a 6 baja y de 15 a 24 también baja."
+      },
+      {
+       "t": "num",
+       "q": "¿Cuántos grados subió la temperatura entre las 6 y las 15 horas?",
+       "a": 13,
+       "unidad": "°C",
+       "exp": "22 − 9 = 13 °C."
+      },
+      {
+       "t": "single",
+       "q": "Un tanque tiene 500 litros de agua y pierde 20 litros por hora. ¿Qué fórmula da el volumen V después de t horas?",
+       "opts": [
+        "V = 500 − 20t",
+        "V = 500 + 20t",
+        "V = 20 − 500t",
+        "V = 500t − 20"
+       ],
+       "a": 0,
+       "exp": "Empieza con 500 y en cada hora se restan 20. La pendiente es −20 porque el volumen disminuye."
+      },
+      {
+       "t": "num",
+       "q": "Con la fórmula anterior, ¿en cuántas horas se vacía el tanque?",
+       "a": 25,
+       "unidad": "horas",
+       "exp": "Se vacía cuando V = 0: 500 − 20t = 0, t = 25 horas. Es la raíz de la función."
+      },
+      {
+       "t": "single",
+       "q": "Un plan de celular cuesta C = 350 + 2,5m pesos, donde m son los megas extra usados en el mes. ¿Qué representa el 2,5?",
+       "opts": [
+        "Lo que cuesta cada mega extra",
+        "El costo fijo del plan",
+        "La cantidad de megas incluidos",
+        "El total a pagar"
+       ],
+       "a": 0,
+       "exp": "El número que multiplica a la variable es la pendiente: cuánto aumenta el costo por cada mega extra. El 350 es el costo fijo (la ordenada en el origen)."
+      },
+      {
+       "t": "num",
+       "q": "¿Cuál es la pendiente de la recta que pasa por los puntos (1, 3) y (4, 12)?",
+       "a": 3,
+       "exp": "Pendiente = (12 − 3) ÷ (4 − 1) = 9 ÷ 3 = 3. Por cada unidad que avanza x, y aumenta 3."
+      },
+      {
+       "t": "match",
+       "q": "Relacioná cada situación con la forma de su gráfico.",
+       "left": [
+        "La altura de una pelota lanzada hacia arriba, según el tiempo",
+        "El precio de la nafta según los litros cargados",
+        "El costo de un taxi con bajada de bandera, según los kilómetros",
+        "La temperatura de un café que se enfría, según el tiempo"
+       ],
+       "right": [
+        "Recta que pasa por el origen",
+        "Recta que no pasa por el origen",
+        "Curva que baja cada vez más despacio",
+        "Parábola"
+       ],
+       "a": [
+        3,
+        0,
+        1,
+        2
+       ],
+       "exp": "Sin litros no se paga nada (pasa por el origen); el taxi arranca con un costo fijo; el café se enfría rápido al principio y después cada vez más lento; la pelota sube, se frena y baja."
+      },
+      {
+       "t": "vf",
+       "ctx": "<table class='data'><tr><th>x</th><td>−2</td><td>−1</td><td>0</td><td>1</td><td>2</td></tr><tr><th>f(x)</th><td>4</td><td>1</td><td>0</td><td>1</td><td>4</td></tr></table>",
+       "q": "Mirá la tabla de la función f e indicá si cada afirmación es verdadera o falsa.",
+       "stmts": [
+        {
+         "s": "f(0) = 0",
+         "a": true
+        },
+        {
+         "s": "f es creciente en todos los valores de la tabla.",
+         "a": false
+        },
+        {
+         "s": "f(−2) = f(2)",
+         "a": true
+        },
+        {
+         "s": "f tiene un mínimo en x = 0.",
+         "a": true
+        }
+       ],
+       "exp": "Los valores bajan de 4 a 0 y vuelven a subir a 4: la función decrece y después crece, con mínimo en x = 0. Es la tabla de f(x) = x², que es simétrica."
+      },
+      {
+       "t": "open",
+       "q": "La remisería A cobra $100 fijos más $30 por km. La B cobra $50 por km, sin costo fijo. ¿Para qué distancia cuestan lo mismo? ¿Cuál conviene para viajes largos? Justificá.",
+       "modelo": "Cuestan lo mismo cuando 100 + 30k = 50k, o sea 100 = 20k, k = 5 km (las dos cobran $250). Para viajes de más de 5 km conviene A, porque cobra menos por cada km extra (30 contra 50): por ejemplo, para 10 km A cobra 400 y B 500. En el gráfico, las dos rectas se cortan en el punto (5, 250)."
+      }
+     ]
+    },
+    "cie": {
+     "titulo": "Energía",
+     "intro": "Formas de energía, transformaciones, conservación, eficiencia y consumo eléctrico.",
+     "minutos": 45,
+     "items": [
+      {
+       "t": "match",
+       "q": "Relacioná cada aparato con la transformación de energía principal.",
+       "left": [
+        "Represa hidroeléctrica",
+        "Panel solar",
+        "Estufa a leña",
+        "Licuadora"
+       ],
+       "right": [
+        "Luminosa → eléctrica",
+        "Eléctrica → cinética (movimiento)",
+        "Química → térmica",
+        "Potencial gravitatoria → eléctrica"
+       ],
+       "a": [
+        3,
+        0,
+        2,
+        1
+       ],
+       "exp": "La represa aprovecha el agua que cae desde una altura; el panel convierte luz en electricidad; la leña libera energía química al quemarse; el motor de la licuadora convierte electricidad en movimiento."
+      },
+      {
+       "t": "single",
+       "q": "¿Qué dice el principio de conservación de la energía?",
+       "opts": [
+        "La energía no se crea ni se destruye: se transforma de una forma a otra.",
+        "La energía se gasta y desaparece cuando se usa.",
+        "Solo la energía eléctrica se conserva.",
+        "Hay que ahorrar energía para que no se termine."
+       ],
+       "a": 0,
+       "exp": "Cuando decimos que «gastamos» energía, en realidad la transformamos en formas menos útiles, por ejemplo en calor. Ahorrar energía es una buena práctica, pero no es el principio físico."
+      },
+      {
+       "t": "num",
+       "q": "Un motor recibe 2.000 J de energía eléctrica y entrega 1.500 J de energía mecánica. ¿Cuál es su eficiencia en porcentaje?",
+       "a": 75,
+       "unidad": "%",
+       "exp": "Eficiencia = energía útil ÷ energía recibida = 1.500 ÷ 2.000 = 0,75 = 75 %. Los 500 J restantes se transforman en calor y sonido."
+      },
+      {
+       "t": "num",
+       "q": "Una estufa eléctrica de 2.000 W funciona 3 horas por día durante 30 días. Si el kWh cuesta $8, ¿cuánto suma a la factura?",
+       "a": 1440,
+       "unidad": "$",
+       "exp": "Energía = 2.000 W × 3 h × 30 ÷ 1.000 = 180 kWh. Costo: 180 × 8 = $1.440."
+      },
+      {
+       "t": "single",
+       "q": "¿Cuál de estas fuentes de energía NO es renovable?",
+       "opts": [
+        "El gas natural",
+        "El viento",
+        "El sol",
+        "La biomasa (restos forestales)"
+       ],
+       "a": 0,
+       "exp": "El gas natural es un combustible fósil: se formó durante millones de años y se agota. Uruguay genera la mayor parte de su electricidad con fuentes renovables: agua, viento, biomasa y sol."
+      },
+      {
+       "t": "single",
+       "q": "¿Por qué un país que usa mucha energía eólica necesita también otras fuentes?",
+       "opts": [
+        "Porque el viento no sopla siempre con la misma fuerza.",
+        "Porque los molinos contaminan mucho.",
+        "Porque la energía eólica no es renovable.",
+        "Porque los molinos solo funcionan de noche."
+       ],
+       "a": 0,
+       "exp": "La producción eólica es variable: depende del viento. Por eso se combina con fuentes que se pueden regular, como las represas, que guardan agua para generar cuando hace falta."
+      },
+      {
+       "t": "vf",
+       "q": "Indicá si cada afirmación es verdadera o falsa.",
+       "stmts": [
+        {
+         "s": "Cuando un auto frena, su energía cinética se transforma en calor en los frenos.",
+         "a": true
+        },
+        {
+         "s": "Una pila almacena energía química.",
+         "a": true
+        },
+        {
+         "s": "Es común que un aparato tenga 100 % de eficiencia.",
+         "a": false
+        },
+        {
+         "s": "Un televisor en modo de espera (stand-by) consume algo de energía.",
+         "a": true
+        }
+       ],
+       "exp": "Ningún aparato real tiene 100 % de eficiencia: siempre una parte de la energía se transforma en calor no deseado."
+      },
+      {
+       "t": "open",
+       "q": "Una heladera con etiqueta de eficiencia A cuesta más que una de clase C con el mismo tamaño. ¿Por qué podría convenir comprar la A? Usá argumentos económicos y ambientales.",
+       "modelo": "Porque consume menos energía eléctrica para hacer el mismo trabajo. Como la heladera funciona todo el día durante muchos años, el ahorro en las facturas puede compensar la diferencia de precio. Además, consumir menos electricidad reduce la demanda de generación y su impacto ambiental."
+      }
+     ]
+    },
+    "lec": {
+     "titulo": "Lectura inferencial: idea central y vocabulario",
+     "intro": "Un texto de extensión media. Practicá deducir el significado de las palabras por el contexto y reconocer cómo se relacionan los párrafos.",
+     "minutos": 40,
+     "textos": [
+      {
+       "tipo": "Artículo de divulgación",
+       "titulo": "De basura a recurso: la economía circular",
+       "autor": "Texto escrito para esta práctica",
+       "parrafos": [
+        "Durante más de un siglo, la economía funcionó como una línea recta: se extraen materias primas, se fabrican productos, se usan y se tiran. Este modelo, al que los especialistas llaman «lineal», permitió producir mucho y barato, pero tiene un problema evidente: el planeta no es infinito, ni como fuente de recursos ni como depósito de residuos.",
+        "La economía circular propone otra lógica. En lugar de pensar en el fin de la vida de un producto, se pregunta cómo hacer para que sus materiales vuelvan a usarse una y otra vez. Eso empieza en el diseño: un celular que se puede abrir para cambiarle la batería, un envase pensado para ser reciclado, una prenda hecha con un solo tipo de fibra para que sea más fácil recuperarla.",
+        "El reciclaje es la parte más conocida, pero no la más importante. Reciclar consume energía y, en muchos casos, el material pierde calidad en cada vuelta: el papel reciclado tiene fibras más cortas y el plástico se degrada. Por eso los defensores del modelo circular insisten en un orden de prioridades: primero reducir lo que se consume, después reutilizar y reparar, y recién al final reciclar.",
+        "Algunas experiencias muestran que el cambio es posible. En varias ciudades funcionan «bibliotecas de herramientas», donde los vecinos piden prestado un taladro en lugar de comprar uno que usarían pocas veces en su vida. Hay talleres gratuitos que enseñan a arreglar una tostadora o una bicicleta. Y algunas empresas dejaron de vender lavarropas para alquilarlos: como siguen siendo dueñas del aparato, les conviene fabricarlo para que dure.",
+        "Los obstáculos, sin embargo, no son pocos. A menudo reparar cuesta más que comprar algo nuevo, los repuestos son difíciles de conseguir y muchos productos están diseñados para durar poco, una práctica conocida como obsolescencia programada. Además, los consumidores estamos acostumbrados a cambiar de teléfono o de ropa con frecuencia, aunque lo que tenemos todavía funcione.",
+        "En el caso de los residuos orgánicos, que representan una parte importante de lo que se tira en los hogares, la solución puede ser tan simple como una compostera en el fondo de la casa. Los restos de frutas y verduras se transforman en abono para la huerta, y lo que antes ocupaba lugar en el contenedor vuelve a la tierra.",
+        "La economía circular no es una receta mágica ni depende solo de las decisiones individuales. Requiere leyes que obliguen a los fabricantes a hacerse cargo de sus productos, incentivos para la reparación y una recolección de residuos que funcione. Pero también supone un cambio de mirada: dejar de ver la basura como algo que desaparece al cerrar la bolsa y empezar a verla como lo que es, un recurso en el lugar equivocado."
+       ]
+      }
+     ],
+     "items": [
+      {
+       "t": "single",
+       "q": "¿Cuál es la idea central del texto?",
+       "opts": [
+        "La economía circular busca que los materiales se vuelvan a usar, priorizando reducir y reparar antes que reciclar.",
+        "El reciclaje resuelve el problema de la basura.",
+        "Las empresas de lavarropas son las que más contaminan.",
+        "Hay que poner una compostera en cada casa."
+       ],
+       "a": 0,
+       "exp": "La idea central recorre todo el texto. Las otras opciones son detalles (la compostera, los lavarropas) o contradicen al texto: dice que el reciclaje no es lo más importante."
+      },
+      {
+       "t": "single",
+       "q": "En el párrafo 1, ¿a qué se refiere el modelo «lineal»?",
+       "opts": [
+        "A extraer, fabricar, usar y tirar, en una sola dirección.",
+        "A fabricar productos en línea, por internet.",
+        "A producir siempre la misma cantidad.",
+        "A reciclar los productos en orden."
+       ],
+       "a": 0,
+       "exp": "El propio párrafo lo explica con la imagen de «una línea recta»: los materiales van en una sola dirección y terminan en la basura. Lo opuesto es el círculo, donde vuelven al inicio."
+      },
+      {
+       "t": "single",
+       "q": "Según el párrafo 4, ¿por qué a una empresa que alquila lavarropas le conviene fabricarlos para que duren?",
+       "opts": [
+        "Porque sigue siendo dueña del aparato y, si se rompe, el costo es suyo.",
+        "Porque la ley la obliga.",
+        "Porque los clientes pagan más por un lavarropas duradero.",
+        "Porque así recicla menos."
+       ],
+       "a": 0,
+       "exp": "Relación causa-consecuencia: «como siguen siendo dueñas del aparato, les conviene fabricarlo para que dure». Si se rompe pronto, tienen que reponerlo ellas."
+      },
+      {
+       "t": "single",
+       "q": "¿Por qué el texto afirma que el reciclaje «no es lo más importante»?",
+       "opts": [
+        "Porque consume energía y el material pierde calidad en cada vuelta.",
+        "Porque nadie recicla.",
+        "Porque es más caro que tirar la basura.",
+        "Porque solo sirve para el papel."
+       ],
+       "a": 0,
+       "exp": "Lectura literal del párrafo 3, que da las dos razones."
+      },
+      {
+       "t": "single",
+       "q": "¿Qué relación tiene el párrafo 5 con el párrafo 4?",
+       "opts": [
+        "Presenta las dificultades, después de que el párrafo 4 mostró experiencias positivas.",
+        "Da más ejemplos del mismo tipo.",
+        "Repite la idea del párrafo 4 con otras palabras.",
+        "Cuenta la historia de la economía lineal."
+       ],
+       "a": 0,
+       "exp": "El conector «sin embargo» marca el contraste: después de mostrar que el cambio es posible, el autor reconoce los obstáculos."
+      },
+      {
+       "t": "single",
+       "q": "Según el contexto, ¿qué es la «obsolescencia programada»?",
+       "opts": [
+        "Diseñar productos para que duren poco.",
+        "Un programa para reparar aparatos.",
+        "Un tipo de reciclaje.",
+        "La costumbre de cambiar de celular."
+       ],
+       "a": 0,
+       "exp": "El texto la define al nombrarla: «muchos productos están diseñados para durar poco, una práctica conocida como obsolescencia programada». La costumbre de cambiar de celular aparece después, pero es un problema distinto: depende del consumidor."
+      },
+      {
+       "t": "single",
+       "q": "¿Qué quiere decir el autor con que la basura es «un recurso en el lugar equivocado»?",
+       "opts": [
+        "Que los residuos tienen valor si se llevan a donde pueden volver a usarse.",
+        "Que la basura está mal ubicada en los contenedores.",
+        "Que hay que mover los basureros de lugar.",
+        "Que la basura no existe."
+       ],
+       "a": 0,
+       "exp": "Es una metáfora que resume la idea del texto: lo que tiramos todavía puede ser útil (abono, materiales), pero termina donde no se aprovecha."
+      },
+      {
+       "t": "open",
+       "q": "¿Cuál de las propuestas del texto te parece más fácil de aplicar en tu casa o en tu barrio? Justificá con información del texto y con tu experiencia.",
+       "modelo": "La compostera me parece la más fácil, porque según el texto los residuos orgánicos son una parte importante de lo que se tira y solo hace falta un espacio en el fondo. En mi casa tiramos muchas cáscaras de fruta y yerba, que podrían convertirse en abono. En cambio, la biblioteca de herramientas necesita que los vecinos se organicen."
+      }
+     ]
+    },
+    "esc": {
+     "titulo": "Tipos de argumentos",
+     "intro": "No alcanza con opinar: cada argumento se sostiene con un ejemplo, un dato, una explicación o una experiencia.",
+     "minutos": 40,
+     "items": [
+      {
+       "t": "match",
+       "q": "Tema: «El transporte público debería ser gratuito para los estudiantes». Relacioná cada argumento con el recurso que usa.",
+       "left": [
+        "Mi sobrina deja de ir a algunas clases a fin de mes porque no le alcanza para el boleto.",
+        "Según una encuesta del centro de estudiantes, 4 de cada 10 alumnos faltan alguna vez por el costo del transporte.",
+        "Si viajar es gratis, más jóvenes pueden llegar a estudiar a lugares lejos de su casa, y eso amplía sus oportunidades.",
+        "En algunas ciudades del país ya existen boletos gratuitos para estudiantes de liceo."
+       ],
+       "right": [
+        "Experiencia personal",
+        "Dato o evidencia",
+        "Explicación (causa y consecuencia)",
+        "Ejemplo de otro caso"
+       ],
+       "a": [
+        0,
+        1,
+        2,
+        3
+       ],
+       "exp": "Un buen texto combina recursos distintos. La experiencia acerca el tema al lector, el dato le da peso, la explicación muestra el porqué y el ejemplo demuestra que es posible."
+      },
+      {
+       "t": "single",
+       "q": "¿Cuál de estos es un argumento desarrollado y no solo una opinión?",
+       "opts": [
+        "Hay que limitar la velocidad en la rambla a 45 km/h, porque a menor velocidad el conductor tiene más tiempo para frenar y los choques son menos graves.",
+        "Hay que limitar la velocidad en la rambla porque sí.",
+        "La velocidad en la rambla es un tema muy importante.",
+        "Yo creo que hay que limitar la velocidad, es mi opinión."
+       ],
+       "a": 0,
+       "exp": "La oración sobre la rambla da una razón y la explica (más tiempo para frenar, choques menos graves). Las otras afirman o repiten la opinión sin fundamentarla."
+      },
+      {
+       "t": "single",
+       "q": "¿Cuál de estos argumentos es más débil?",
+       "opts": [
+        "Todo el mundo sabe que los videojuegos son malos.",
+        "Pasar muchas horas frente a la pantalla puede reducir las horas de sueño, según varios estudios sobre adolescentes.",
+        "Algunos videojuegos se usan en escuelas para enseñar matemáticas.",
+        "En mi casa, cuando limitamos las pantallas de noche, mis hijos se duermen antes."
+       ],
+       "a": 0,
+       "exp": "«Todo el mundo sabe» generaliza sin dar ninguna prueba. Es una falacia frecuente: presentar una opinión como si fuera algo obvio."
+      },
+      {
+       "t": "open",
+       "q": "Escribí un párrafo de 4 a 6 oraciones que defienda esta postura: «Los liceos deberían enseñar educación financiera». Usá al menos dos recursos distintos (ejemplo, dato, explicación o experiencia).",
+       "modelo": "Los liceos deberían enseñar educación financiera, porque muchas decisiones importantes de la vida adulta dependen de entender el dinero. Por ejemplo, quien no sabe calcular el recargo de una compra en cuotas puede terminar pagando mucho más de lo que pensaba. En mi primer trabajo, varios compañeros sacaban préstamos sin mirar la tasa de interés y después no podían pagarlos. Si el liceo enseñara a armar un presupuesto y a comparar créditos, los jóvenes llegarían más preparados y caerían menos en deudas difíciles de salir."
+      },
+      {
+       "t": "open",
+       "q": "Ahora escribí un párrafo que responda a una postura contraria: «Algunos dicen que la educación financiera es responsabilidad de las familias, no del liceo». Reconocé la objeción y respondela.",
+       "modelo": "Es cierto que muchas familias enseñan a manejar el dinero en casa, y eso es valioso. Sin embargo, no todas tienen la información o el tiempo para hacerlo, y dejarlo solo en manos de la familia aumenta las desigualdades. El liceo, en cambio, llega a todos por igual: por eso es el lugar adecuado para garantizar que cada joven tenga estas herramientas."
+      }
+     ]
+    }
+   }
+  },
+  {
+   "id": "s3-mie",
+   "label": "Mié 4/11",
+   "fecha": "2026-11-04",
+   "titulo": "Miércoles 4/11 · Crecimiento, fuerzas y conectores",
+   "nota": "Hoy aparecen la función cuadrática y la exponencial. Fijate en la diferencia entre sumar lo mismo y multiplicar por lo mismo.",
+   "areas": {
+    "mat": {
+     "titulo": "Función cuadrática y exponencial",
+     "intro": "Tiro de objetos, áreas máximas, crecimiento de poblaciones, depreciación e interés compuesto.",
+     "minutos": 50,
+     "items": [
+      {
+       "t": "num",
+       "q": "La altura (en metros) de una pelota lanzada hacia arriba está dada por h(t) = −5t² + 20t, con t en segundos. ¿Cuál es la altura máxima que alcanza?",
+       "a": 20,
+       "unidad": "m",
+       "exp": "El vértice de la parábola está en t = −b ÷ (2a) = −20 ÷ (2 × −5) = 2 s. Altura: h(2) = −5 × 4 + 20 × 2 = −20 + 40 = 20 m."
+      },
+      {
+       "t": "num",
+       "q": "Con la misma fórmula, ¿a los cuántos segundos vuelve la pelota al suelo?",
+       "a": 4,
+       "unidad": "s",
+       "exp": "Toca el suelo cuando h = 0: −5t² + 20t = 0 → t(−5t + 20) = 0 → t = 0 (cuando se lanza) o t = 4 s. Por simetría, tarda lo mismo en subir (2 s) que en bajar (2 s)."
+      },
+      {
+       "t": "single",
+       "q": "¿Por qué la gráfica de h(t) = −5t² + 20t tiene forma de parábola «hacia abajo»?",
+       "opts": [
+        "Porque el coeficiente de t² es negativo.",
+        "Porque el 20 es positivo.",
+        "Porque no tiene término independiente.",
+        "Porque t es el tiempo."
+       ],
+       "a": 0,
+       "exp": "En y = ax² + bx + c, si a > 0 la parábola abre hacia arriba (tiene un mínimo) y si a < 0 abre hacia abajo (tiene un máximo)."
+      },
+      {
+       "t": "num",
+       "q": "Con 40 metros de alambre se quiere cercar una huerta rectangular. ¿Cuál es el área máxima que se puede cercar?",
+       "a": 100,
+       "unidad": "m²",
+       "exp": "Si un lado mide x, el otro mide 20 − x (la mitad del perímetro menos x). Área = x(20 − x), una parábola con máximo en x = 10. Es un cuadrado de 10 × 10 = 100 m²."
+      },
+      {
+       "t": "num",
+       "q": "Un cultivo empieza con 500 bacterias y la cantidad se duplica cada hora. ¿Cuántas bacterias habrá a las 5 horas?",
+       "a": 16000,
+       "unidad": "bacterias",
+       "exp": "500 × 2⁵ = 500 × 32 = 16.000. Hora a hora: 1.000, 2.000, 4.000, 8.000, 16.000."
+      },
+      {
+       "t": "single",
+       "q": "¿Qué fórmula da la cantidad N de bacterias después de t horas?",
+       "opts": [
+        "N = 500 · 2ᵗ",
+        "N = 500 + 2t",
+        "N = 500 · 2t",
+        "N = 2 · 500ᵗ"
+       ],
+       "a": 0,
+       "exp": "En el crecimiento exponencial se multiplica por el mismo factor en cada período: el tiempo va en el exponente. 500 + 2t y 500 · 2t son lineales."
+      },
+      {
+       "t": "num",
+       "q": "Un pueblo de 10.000 habitantes crece un 3 % por año. ¿Cuántos habitantes tendrá dentro de 2 años?",
+       "a": 10609,
+       "tol": 1,
+       "unidad": "habitantes",
+       "exp": "Cada año se multiplica por 1,03: 10.000 × 1,03² = 10.000 × 1,0609 = 10.609. No son 10.600: el segundo año el 3 % se calcula sobre 10.300."
+      },
+      {
+       "t": "single",
+       "q": "Un auto pierde el 15 % de su valor cada año. Si hoy vale V₀, ¿qué fórmula da su valor después de t años?",
+       "opts": [
+        "V = V₀ · 0,85ᵗ",
+        "V = V₀ · 0,15ᵗ",
+        "V = V₀ − 0,15t",
+        "V = V₀ · 1,15ᵗ"
+       ],
+       "a": 0,
+       "exp": "Perder el 15 % es conservar el 85 %: cada año se multiplica por 0,85. Es un decrecimiento exponencial."
+      },
+      {
+       "t": "single",
+       "q": "¿Cuál de estas tablas muestra un crecimiento exponencial?",
+       "opts": [
+        "x: 0, 1, 2, 3 → y: 3, 6, 12, 24",
+        "x: 0, 1, 2, 3 → y: 3, 6, 9, 12",
+        "x: 0, 1, 2, 3 → y: 3, 4, 7, 12",
+        "x: 0, 1, 2, 3 → y: 24, 12, 6, 3"
+       ],
+       "a": 0,
+       "exp": "En 3, 6, 12, 24 cada valor es el doble del anterior (× 2): exponencial creciente. En 3, 6, 9, 12 se suma 3 cada vez (lineal). En 24, 12, 6, 3 se divide entre 2: exponencial, pero decreciente."
+      },
+      {
+       "t": "vf",
+       "q": "Indicá si cada afirmación es verdadera o falsa.",
+       "stmts": [
+        {
+         "s": "En una función exponencial creciente, los valores aumentan cada vez más rápido.",
+         "a": true
+        },
+        {
+         "s": "Una función lineal aumenta lo mismo en intervalos del mismo tamaño.",
+         "a": true
+        },
+        {
+         "s": "La parábola y = x² tiene su vértice en el punto (0, 0).",
+         "a": true
+        },
+        {
+         "s": "2ˣ puede dar un resultado negativo.",
+         "a": false
+        }
+       ],
+       "exp": "Una potencia de base positiva siempre da un resultado positivo: 2⁻³ = 1/8, no −8. Por eso la gráfica de 2ˣ nunca cruza el eje x."
+      },
+      {
+       "t": "open",
+       "q": "Te ofrecen dos premios: A) $1.000 por día durante 30 días; B) $1 el primer día, $2 el segundo, $4 el tercero, y así duplicando cada día durante 20 días. ¿Cuál conviene? Justificá con cálculos.",
+       "modelo": "A da 1.000 × 30 = $30.000. B el día 20 da 2¹⁹ = $524.288, y sumando los 20 días: 2²⁰ − 1 = $1.048.575. Conviene B, aunque empieza con montos ridículos, porque crece de forma exponencial: a partir del día 15 ya da más de $16.000 por día."
+      }
+     ]
+    },
+    "cie": {
+     "titulo": "Fuerzas y movimiento",
+     "intro": "Velocidad, aceleración, las tres leyes de Newton, masa y peso. Situaciones de tránsito y de la vida diaria.",
+     "minutos": 45,
+     "items": [
+      {
+       "t": "num",
+       "q": "Una corredora hace 10 km en 50 minutos. ¿Cuál es su velocidad media en km/h?",
+       "a": 12,
+       "unidad": "km/h",
+       "exp": "50 minutos son 50/60 de hora. Velocidad = 10 ÷ (50/60) = 10 × 60 ÷ 50 = 12 km/h."
+      },
+      {
+       "t": "num",
+       "q": "Un auto pasa de 0 a 20 m/s en 8 segundos. ¿Cuál es su aceleración media en m/s²?",
+       "a": 2.5,
+       "unidad": "m/s²",
+       "exp": "Aceleración = cambio de velocidad ÷ tiempo = 20 ÷ 8 = 2,5 m/s². Cada segundo, la velocidad aumenta 2,5 m/s."
+      },
+      {
+       "t": "single",
+       "q": "Cuando un ómnibus frena de golpe, los pasajeros parados se van hacia adelante. ¿Qué lo explica?",
+       "opts": [
+        "La inercia: los cuerpos tienden a mantener su movimiento.",
+        "Una fuerza que empuja a los pasajeros hacia adelante.",
+        "La gravedad.",
+        "El rozamiento con el piso."
+       ],
+       "a": 0,
+       "exp": "Primera ley de Newton: el cuerpo de los pasajeros venía a la misma velocidad que el ómnibus y tiende a seguir así. No hay una fuerza que los empuje: es el ómnibus el que se frena."
+      },
+      {
+       "t": "single",
+       "q": "Al nadar, empujás el agua hacia atrás y avanzás hacia adelante. ¿Qué ley lo explica?",
+       "opts": [
+        "La tercera ley de Newton: acción y reacción",
+        "La primera ley de Newton: inercia",
+        "La ley de conservación de la masa",
+        "La ley de Ohm"
+       ],
+       "a": 0,
+       "exp": "Si ejercés una fuerza sobre el agua hacia atrás, el agua ejerce sobre vos una fuerza igual hacia adelante. Así funcionan también los cohetes y las hélices."
+      },
+      {
+       "t": "num",
+       "q": "¿Qué fuerza neta se necesita para que un auto de 1.200 kg acelere a 2 m/s²?",
+       "a": 2400,
+       "unidad": "N",
+       "exp": "Segunda ley de Newton: F = m × a = 1.200 × 2 = 2.400 N."
+      },
+      {
+       "t": "num",
+       "q": "¿Cuál es el peso en la Tierra de una persona de 70 kg de masa? Usá g = 9,8 m/s².",
+       "a": 686,
+       "unidad": "N",
+       "exp": "Peso = m × g = 70 × 9,8 = 686 N. La masa (70 kg) es la cantidad de materia; el peso es la fuerza con que la Tierra la atrae."
+      },
+      {
+       "t": "vf",
+       "q": "Indicá si cada afirmación es verdadera o falsa.",
+       "stmts": [
+        {
+         "s": "La masa de una persona cambia si viaja a la Luna.",
+         "a": false
+        },
+        {
+         "s": "El peso de un cuerpo depende de la gravedad del lugar donde está.",
+         "a": true
+        },
+        {
+         "s": "Sin rozamiento, un objeto en movimiento seguiría moviéndose.",
+         "a": true
+        },
+        {
+         "s": "En el vacío, un objeto pesado cae más rápido que uno liviano.",
+         "a": false
+        }
+       ],
+       "exp": "En la Luna la masa es la misma, pero el peso es unas 6 veces menor. En el vacío, sin resistencia del aire, todos los objetos caen con la misma aceleración: una pluma y un martillo llegan juntos."
+      },
+      {
+       "t": "single",
+       "ctx": "<p>Distancia aproximada de frenado de un auto en asfalto seco:</p><table class='data'><tr><th>Velocidad</th><td>30 km/h</td><td>60 km/h</td><td>90 km/h</td></tr><tr><th>Distancia de frenado</th><td>9 m</td><td>36 m</td><td>81 m</td></tr></table>",
+       "q": "Según la tabla, ¿qué pasa con la distancia de frenado si la velocidad se duplica?",
+       "opts": [
+        "Se multiplica por 4.",
+        "Se duplica.",
+        "Se mantiene igual.",
+        "Se triplica."
+       ],
+       "a": 0,
+       "exp": "De 30 a 60 km/h la velocidad se duplica y la distancia pasa de 9 a 36 m: × 4. La distancia de frenado depende del cuadrado de la velocidad. Por eso un pequeño exceso de velocidad aumenta mucho el riesgo."
+      },
+      {
+       "t": "open",
+       "q": "Explicá, usando la idea de inercia, por qué el cinturón de seguridad salva vidas en un choque.",
+       "modelo": "En un choque el auto se detiene de golpe, pero por inercia el cuerpo de los ocupantes sigue moviéndose a la misma velocidad que tenía. Sin cinturón, la persona sigue de largo hasta golpear el volante, el parabrisas o salir despedida. El cinturón aplica una fuerza que la frena junto con el auto, repartida sobre partes fuertes del cuerpo."
+      }
+     ]
+    },
+    "lec": {
+     "titulo": "Lectura inferencial: voces y paradojas",
+     "intro": "Una crónica con distintas voces. Prestá atención a quién dice cada cosa y a lo que se sugiere sin decirse.",
+     "minutos": 40,
+     "textos": [
+      {
+       "tipo": "Crónica",
+       "titulo": "Nadie me manda, pero el teléfono decide todo",
+       "autor": "Texto escrito para esta práctica (las personas son inventadas)",
+       "parrafos": [
+        "Son las ocho de la noche de un viernes y en la puerta de una hamburguesería de un barrio de Montevideo hay seis bicicletas y dos motos apoyadas contra la vereda. Sus dueños esperan con la mochila térmica en la espalda y el celular en la mano. Cuando una pantalla vibra, alguien sale disparado. Los demás siguen mirando.",
+        "El reparto a domicilio por aplicaciones creció con fuerza en los últimos años y hoy es una fuente de ingresos para miles de personas. Muchos son jóvenes; otros, migrantes recién llegados; otros, trabajadores que completan con el reparto un sueldo que no alcanza. Lo que los une es una relación laboral difícil de clasificar.",
+        "Las empresas sostienen que los repartidores no son empleados, sino trabajadores independientes: eligen cuándo conectarse, cuántos pedidos aceptar y pueden trabajar para varias plataformas a la vez. Esa flexibilidad, dicen, es justamente lo que buscan quienes se suman.",
+        "Para Matías, de 24 años, la flexibilidad tiene dos caras. «Puedo cursar en la facultad de mañana y salir a repartir de tarde. Eso un trabajo común no me lo da», cuenta. «Pero si llueve y no salgo, no cobro. Si me caigo y me lesiono, tampoco. Y no tengo aguinaldo ni licencia».",
+        "Ese es el centro del debate. Al no ser considerados empleados, los repartidores no acceden automáticamente a derechos como el salario mínimo, las vacaciones pagas o el seguro por accidentes. A la vez, la aplicación fija las tarifas, asigna los pedidos y puede desactivar una cuenta si considera que el repartidor rechaza demasiados viajes. Para los sindicatos, eso demuestra que existe una relación de dependencia encubierta.",
+        "Varios países discuten cómo regular esta actividad. Algunas propuestas buscan una figura intermedia: mantener la libertad de horarios, pero garantizar un ingreso mínimo por hora conectada, un seguro obligatorio y transparencia sobre cómo el algoritmo reparte el trabajo.",
+        "Mientras tanto, en la puerta de la hamburguesería, otro celular vibra. Esta vez es el de Lucía, que reparte desde hace dos años en una moto que todavía está pagando. Se acomoda el casco y, antes de arrancar, resume la paradoja: «Nadie me manda, pero el teléfono decide todo»."
+       ]
+      }
+     ],
+     "items": [
+      {
+       "t": "single",
+       "q": "¿Qué argumento dan las empresas para decir que los repartidores no son empleados?",
+       "opts": [
+        "Que eligen cuándo conectarse y pueden trabajar para varias plataformas.",
+        "Que ganan más que un empleado.",
+        "Que la mayoría son estudiantes.",
+        "Que no usan uniforme."
+       ],
+       "a": 0,
+       "exp": "Lectura literal, párrafo 3."
+      },
+      {
+       "t": "single",
+       "q": "¿Qué quiere decir Matías con que la flexibilidad «tiene dos caras»?",
+       "opts": [
+        "Que le permite organizar su horario, pero sin cobro ni protección cuando no puede trabajar.",
+        "Que trabaja para dos aplicaciones.",
+        "Que reparte de mañana y de tarde.",
+        "Que a veces le gusta y a veces no le gusta repartir."
+       ],
+       "a": 0,
+       "exp": "Lectura inferencial: la «cara» positiva es poder estudiar; la negativa, que si no sale no cobra y no tiene aguinaldo, licencia ni seguro."
+      },
+      {
+       "t": "multi",
+       "q": "Según el texto, ¿a qué derechos no acceden automáticamente los repartidores?",
+       "opts": [
+        "Salario mínimo",
+        "Vacaciones pagas",
+        "Seguro por accidentes",
+        "Libertad de horarios",
+        "Trabajar para varias aplicaciones"
+       ],
+       "a": [
+        0,
+        1,
+        2
+       ],
+       "exp": "Párrafo 5. La libertad de horarios y trabajar para varias aplicaciones son, justamente, lo que sí tienen."
+      },
+      {
+       "t": "single",
+       "q": "¿En qué se basan los sindicatos para hablar de una «dependencia encubierta»?",
+       "opts": [
+        "En que la aplicación fija tarifas, asigna pedidos y puede desactivar cuentas.",
+        "En que los repartidores usan moto.",
+        "En que los repartidores son jóvenes.",
+        "En que las empresas son extranjeras."
+       ],
+       "a": 0,
+       "exp": "«Encubierta» significa oculta: aunque formalmente son independientes, en la práctica la aplicación controla aspectos centrales de su trabajo, como lo haría un empleador."
+      },
+      {
+       "t": "single",
+       "q": "¿Para qué el texto empieza y termina con escenas en la puerta de la hamburguesería?",
+       "opts": [
+        "Para enmarcar la información con una situación concreta que el lector pueda imaginar.",
+        "Para hacer publicidad del local.",
+        "Para contar una historia inventada sin relación con el tema.",
+        "Para dar datos sobre la cantidad de repartidores."
+       ],
+       "a": 0,
+       "exp": "Es un recurso típico de la crónica: abrir y cerrar con una escena real que vuelve concreto un tema abstracto."
+      },
+      {
+       "t": "single",
+       "q": "¿Qué paradoja expresa la frase de Lucía?",
+       "opts": [
+        "No tiene un jefe humano, pero la aplicación controla su trabajo.",
+        "Trabaja mucho pero gana poco.",
+        "Le gusta su trabajo pero quiere dejarlo.",
+        "Usa el teléfono para todo menos para trabajar."
+       ],
+       "a": 0,
+       "exp": "Una paradoja une dos ideas que parecen contradictorias. «Nadie me manda» y «el teléfono decide todo» resumen la tensión de todo el texto."
+      },
+      {
+       "t": "single",
+       "q": "¿Cuál es la posición del autor del texto?",
+       "opts": [
+        "Presenta las posturas de empresas, trabajadores y sindicatos sin dar una opinión explícita.",
+        "Defiende abiertamente a las empresas.",
+        "Pide que se prohíban las aplicaciones de reparto.",
+        "Critica a los repartidores por no organizarse."
+       ],
+       "a": 0,
+       "exp": "Lectura crítica: el autor cede la palabra a distintas voces y describe propuestas, sin decir cuál prefiere. Igual, elegir abrir y cerrar con trabajadores le da peso a su mirada."
+      },
+      {
+       "t": "open",
+       "q": "¿Te parece justa la «figura intermedia» que mencionan algunas propuestas? Fundamentá tu respuesta con información del texto.",
+       "modelo": "Me parece justa porque conserva lo que los repartidores valoran, la libertad de horarios que menciona Matías para poder estudiar, y a la vez cubre los riesgos que hoy quedan a su cargo, como no cobrar si se lesionan. El seguro obligatorio y el ingreso mínimo por hora conectada responden a las quejas del párrafo 4 sin transformar la actividad en un empleo tradicional."
+      }
+     ]
+    },
+    "esc": {
+     "titulo": "Conectores y puntuación",
+     "intro": "Los conectores muestran cómo se relacionan las ideas. Los correctores los miran en la dimensión textual.",
+     "minutos": 35,
+     "items": [
+      {
+       "t": "match",
+       "q": "Relacioná cada conector con la relación que expresa.",
+       "left": [
+        "además",
+        "sin embargo",
+        "por lo tanto",
+        "por ejemplo",
+        "en conclusión",
+        "ya que"
+       ],
+       "right": [
+        "Suma una idea",
+        "Opone una idea",
+        "Indica una consecuencia",
+        "Introduce un ejemplo",
+        "Cierra el texto",
+        "Indica una causa"
+       ],
+       "a": [
+        0,
+        1,
+        2,
+        3,
+        4,
+        5
+       ],
+       "exp": "Otros de cada grupo: suma (también, asimismo); oposición (pero, no obstante); consecuencia (por eso, en consecuencia); ejemplo (como, tal es el caso de); cierre (en definitiva, para concluir); causa (porque, dado que)."
+      },
+      {
+       "t": "single",
+       "q": "Completá: «Las bicisendas reducen los accidentes; ______, la ciudad debería construir más».",
+       "opts": [
+        "por lo tanto",
+        "sin embargo",
+        "por ejemplo",
+        "aunque"
+       ],
+       "a": 0,
+       "exp": "La segunda idea es una consecuencia de la primera: si reducen accidentes, hay que construir más."
+      },
+      {
+       "t": "single",
+       "q": "Completá: «Las bicisendas reducen los accidentes; ______, su construcción quita lugares de estacionamiento».",
+       "opts": [
+        "sin embargo",
+        "por lo tanto",
+        "además",
+        "es decir"
+       ],
+       "a": 0,
+       "exp": "Ahora la segunda idea se opone a la primera: es una desventaja frente a una ventaja."
+      },
+      {
+       "t": "single",
+       "q": "¿Qué oración está mejor puntuada?",
+       "opts": [
+        "En primer lugar, el transporte público reduce el tránsito; en segundo lugar, contamina menos.",
+        "En primer lugar el transporte público, reduce el tránsito, en segundo lugar contamina menos.",
+        "En primer lugar, el transporte público reduce, el tránsito en segundo lugar contamina menos.",
+        "En primer lugar el transporte público reduce el tránsito en segundo lugar contamina menos."
+       ],
+       "a": 0,
+       "exp": "Coma después de los ordenadores («en primer lugar,») y punto y coma para separar dos ideas completas relacionadas. Nunca coma entre sujeto y verbo."
+      },
+      {
+       "t": "single",
+       "q": "¿Qué oración tiene un error de puntuación?",
+       "opts": [
+        "Los jóvenes, necesitan más espacios de participación.",
+        "Los jóvenes necesitan más espacios de participación.",
+        "Muchos jóvenes, sobre todo en el interior, necesitan más espacios.",
+        "Los jóvenes necesitan espacios, recursos y tiempo."
+       ],
+       "a": 0,
+       "exp": "No se pone coma entre el sujeto («Los jóvenes») y el verbo («necesitan»). En «Muchos jóvenes, sobre todo en el interior, necesitan…», las comas encierran una aclaración, que se puede sacar sin que la oración pierda sentido."
+      },
+      {
+       "t": "open",
+       "q": "Uní estas oraciones en un solo párrafo usando al menos tres conectores distintos: «Leer en papel cansa menos la vista. Los libros digitales son más baratos. Ocupan menos espacio. Cada uno puede elegir según sus necesidades.»",
+       "modelo": "Leer en papel cansa menos la vista; sin embargo, los libros digitales son más baratos y, además, ocupan menos espacio. Por lo tanto, no hay un formato mejor que otro: cada uno puede elegir según sus necesidades."
+      }
+     ]
+    }
+   }
+  },
+  {
+   "id": "s3-jue",
+   "label": "Jue 5/11",
+   "fecha": "2026-11-05",
+   "titulo": "Jueves 5/11 · Finanzas, ondas y calor, y una carta",
+   "nota": "Hoy escribís el texto 2: una carta al director. Cambia el destinatario, así que también cambia el tono.",
+   "areas": {
+    "mat": {
+     "titulo": "Matemática financiera",
+     "intro": "Interés simple y compuesto, compras en cuotas, préstamos y presupuesto familiar.",
+     "minutos": 50,
+     "items": [
+      {
+       "t": "num",
+       "q": "Se depositan $50.000 a plazo fijo al 8 % anual de interés compuesto. ¿Cuánto dinero habrá al cabo de 3 años? Redondeá a los centésimos.",
+       "a": 62985.6,
+       "tol": 1,
+       "unidad": "$",
+       "exp": "Monto = 50.000 × 1,08³ = 50.000 × 1,259712 = 62.985,60."
+      },
+      {
+       "t": "num",
+       "q": "En el ejercicio anterior, ¿cuántos pesos de interés se ganaron en total?",
+       "a": 12985.6,
+       "tol": 1,
+       "unidad": "$",
+       "exp": "62.985,60 − 50.000 = 12.985,60. Con interés simple habrían sido 50.000 × 0,08 × 3 = 12.000: la diferencia son los intereses de los intereses."
+      },
+      {
+       "t": "num",
+       "q": "Un televisor cuesta $24.000 al contado o 12 cuotas de $2.300. ¿Qué porcentaje de recargo tiene la compra en cuotas?",
+       "a": 15,
+       "unidad": "%",
+       "exp": "En cuotas se paga 12 × 2.300 = 27.600. Recargo: 27.600 − 24.000 = 3.600, y 3.600 ÷ 24.000 = 0,15 = 15 %."
+      },
+      {
+       "t": "num",
+       "q": "Una bicicleta tiene un precio de lista de $18.000. Pagando al contado hay un 10 % de descuento; en 6 cuotas sin recargo se paga el precio de lista. ¿Cuánto se ahorra pagando al contado?",
+       "a": 1800,
+       "unidad": "$",
+       "exp": "El 10 % de 18.000 es 1.800. Al contado se paga 16.200."
+      },
+      {
+       "t": "num",
+       "q": "Un hogar tiene ingresos de $45.000 por mes. Destina el 30 % al alquiler y el 25 % a la comida. ¿Cuánto le queda para el resto de los gastos?",
+       "a": 20250,
+       "unidad": "$",
+       "exp": "Alquiler y comida suman el 55 %. Queda el 45 %: 45.000 × 0,45 = 20.250."
+      },
+      {
+       "t": "num",
+       "q": "Si alguien ahorra $3.000 por mes, ¿cuántos meses necesita como mínimo para juntar $40.000?",
+       "a": 14,
+       "unidad": "meses",
+       "exp": "40.000 ÷ 3.000 = 13,33. Con 13 meses junta 39.000, que no alcanza: necesita 14 meses. Cuando el resultado es un número de meses o de objetos, hay que pensar si se redondea hacia arriba."
+      },
+      {
+       "t": "single",
+       "q": "Pedís un préstamo de $10.000 y al año devolvés $11.200 en un solo pago. ¿Qué tasa de interés anual pagaste?",
+       "opts": [
+        "12 %",
+        "1,2 %",
+        "11,2 %",
+        "112 %"
+       ],
+       "a": 0,
+       "exp": "El interés fue 1.200, y 1.200 ÷ 10.000 = 0,12 = 12 %."
+      },
+      {
+       "t": "vf",
+       "q": "Indicá si cada afirmación es verdadera o falsa.",
+       "stmts": [
+        {
+         "s": "Con interés compuesto, los intereses generan nuevos intereses.",
+         "a": true
+        },
+        {
+         "s": "Una tasa del 2 % mensual compuesta equivale exactamente a un 24 % anual.",
+         "a": false
+        },
+        {
+         "s": "Comprar en cuotas sin recargo cuesta lo mismo que pagar el precio de lista al contado.",
+         "a": true
+        },
+        {
+         "s": "Si la inflación es mayor que la tasa de interés, el dinero ahorrado pierde poder de compra.",
+         "a": true
+        }
+       ],
+       "exp": "2) 1,02¹² ≈ 1,268: equivale a un 26,8 % anual, porque cada mes el interés se calcula sobre un monto mayor."
+      },
+      {
+       "t": "open",
+       "q": "Para un préstamo de $10.000 te ofrecen: A) 12 cuotas de $1.000; B) 24 cuotas de $560. ¿Cuál te cuesta menos en total? ¿En qué caso podría convenir la otra opción?",
+       "modelo": "A: 12 × 1.000 = $12.000 en total (pagás 2.000 de intereses). B: 24 × 560 = $13.440 (pagás 3.440 de intereses). En total A es más barata. B podría convenir si la cuota de 1.000 no entra en el presupuesto mensual: la cuota es más baja, pero se paga durante más tiempo y el total es mayor."
+      }
+     ]
+    },
+    "cie": {
+     "titulo": "Ondas, calor y electricidad",
+     "intro": "Sonido y luz, transferencia de calor, circuitos y seguridad eléctrica en casa.",
+     "minutos": 45,
+     "items": [
+      {
+       "t": "single",
+       "q": "¿Por qué en el espacio exterior no se escucharía una explosión?",
+       "opts": [
+        "Porque el sonido necesita un medio material para propagarse y en el vacío no hay.",
+        "Porque hace mucho frío.",
+        "Porque la luz llega antes.",
+        "Porque no hay gravedad."
+       ],
+       "a": 0,
+       "exp": "El sonido es una onda mecánica: viaja haciendo vibrar las partículas de un medio (aire, agua, sólidos). La luz, en cambio, sí viaja en el vacío."
+      },
+      {
+       "t": "num",
+       "q": "Ves un relámpago y escuchás el trueno 6 segundos después. Si el sonido viaja a 340 m/s, ¿a cuántos metros cayó el rayo?",
+       "a": 2040,
+       "unidad": "m",
+       "exp": "La luz llega casi instantáneamente. Distancia = 340 × 6 = 2.040 m, unos 2 km."
+      },
+      {
+       "t": "match",
+       "q": "Relacioná cada situación con la forma en que se transmite el calor.",
+       "left": [
+        "Sentir el calor del sol en la piel",
+        "El agua que circula dentro de una olla al hervir",
+        "Una cuchara de metal que se calienta en un té",
+        "Una estufa que calienta el aire de una habitación"
+       ],
+       "right": [
+        "Conducción",
+        "Convección",
+        "Radiación"
+       ],
+       "a": [
+        2,
+        1,
+        0,
+        1
+       ],
+       "exp": "Conducción: por contacto, dentro de un sólido. Convección: el fluido caliente sube y el frío baja, formando corrientes. Radiación: ondas que no necesitan medio, como la del sol."
+      },
+      {
+       "t": "single",
+       "q": "¿Por qué un termo mantiene caliente el agua?",
+       "opts": [
+        "Porque está hecho para reducir la transferencia de calor con el exterior.",
+        "Porque produce calor.",
+        "Porque el agua caliente no se enfría nunca.",
+        "Porque es de color oscuro."
+       ],
+       "a": 0,
+       "exp": "El termo tiene doble pared con vacío o con material aislante entre ellas, que reduce la conducción y la convección, y la tapa evita que el calor se escape por arriba."
+      },
+      {
+       "t": "num",
+       "q": "Un aparato conectado a 220 V tiene una resistencia de 44 Ω. ¿Qué corriente circula? Usá I = V ÷ R.",
+       "a": 5,
+       "unidad": "A",
+       "exp": "I = 220 ÷ 44 = 5 amperes (ley de Ohm)."
+      },
+      {
+       "t": "num",
+       "q": "¿Qué potencia consume ese aparato? Usá P = V × I.",
+       "a": 1100,
+       "unidad": "W",
+       "exp": "P = 220 × 5 = 1.100 W."
+      },
+      {
+       "t": "single",
+       "q": "¿Para qué sirve la llave diferencial (disyuntor) del tablero eléctrico de una casa?",
+       "opts": [
+        "Para cortar la corriente si detecta una fuga, por ejemplo cuando una persona recibe una descarga.",
+        "Para medir el consumo de la casa.",
+        "Para aumentar el voltaje.",
+        "Para ahorrar energía."
+       ],
+       "a": 0,
+       "exp": "El diferencial compara la corriente que entra y la que sale. Si hay diferencia, parte de la corriente se está escapando, por ejemplo a través de una persona, y corta en milésimas de segundo."
+      },
+      {
+       "t": "vf",
+       "q": "Indicá si cada afirmación es verdadera o falsa.",
+       "stmts": [
+        {
+         "s": "La luz viaja más rápido que el sonido.",
+         "a": true
+        },
+        {
+         "s": "El eco es un sonido reflejado.",
+         "a": true
+        },
+        {
+         "s": "Vemos un objeto rojo porque refleja la luz roja.",
+         "a": true
+        },
+        {
+         "s": "El cobre es un buen aislante eléctrico.",
+         "a": false
+        }
+       ],
+       "exp": "El cobre es un excelente conductor. Los aislantes son materiales como el plástico, la goma o la madera seca: por eso cubren los cables."
+      },
+      {
+       "t": "open",
+       "q": "En verano, ¿por qué una remera negra al sol da más calor que una blanca?",
+       "modelo": "Porque los colores oscuros absorben la mayor parte de la radiación del sol que reciben y la transforman en calor, mientras que los colores claros reflejan gran parte de esa radiación. Por eso la remera negra se calienta más."
+      }
+     ]
+    },
+    "lec": {
+     "titulo": "Lectura crítica: un texto de opinión",
+     "intro": "Un texto que toma partido. Identificá qué sostiene el autor, cómo lo fundamenta y qué tan sólidos son sus argumentos.",
+     "minutos": 40,
+     "textos": [
+      {
+       "tipo": "Columna de opinión",
+       "titulo": "La bolsa que pagamos",
+       "autor": "Texto escrito para esta práctica",
+       "parrafos": [
+        "Desde 2019, en Uruguay las bolsas plásticas de los comercios dejaron de ser gratis: hay que pagarlas, y además tienen que ser biodegradables o compostables. Al principio hubo quejas en las cajas de los supermercados. Poco tiempo después, era común ver a la gente llegar con su bolsa de tela, una mochila o el changuito.",
+        "Creo que la medida fue un acierto. Pero también creo que se quedó a mitad de camino.",
+        "Fue un acierto porque mostró algo que las campañas de concientización no habían logrado en años: que un costo pequeño cambia los hábitos más que muchos discursos. Nadie se arruina por pagar unos pesos por una bolsa, pero ese gesto obliga a preguntarse si realmente la necesita. Y la respuesta, muchas veces, es que no.",
+        "Ahora bien, la bolsa del supermercado era apenas una parte del plástico que sale de un carrito. Los productos siguen viniendo en bandejas de espuma plástica, envueltos en film o en botellas de un solo uso. Muchas familias que antes usaban las bolsas del súper para la basura ahora compran bolsas de residuos, que también son de plástico. Si miramos el total, el cambio fue más visible que profundo.",
+        "Algunos sostienen que la medida solo sirvió para que los comercios cobraran algo que antes regalaban. Es cierto que alguien recibe ese dinero, pero el objetivo nunca fue recaudar, sino reducir. Y en eso funcionó: lo que antes se usaba sin pensar empezó a usarse con cuidado.",
+        "El paso siguiente debería apuntar a los envases. Sistemas de depósito y devolución de botellas, como los que existieron durante décadas con los envases de vidrio, o incentivos para que los comercios vendan a granel, permitirían reducir mucho más que cualquier bolsa. La experiencia de 2019 demuestra que los uruguayos podemos cambiar costumbres cuando hay reglas claras. Sería una pena quedarnos en la caja del supermercado."
+       ]
+      }
+     ],
+     "items": [
+      {
+       "t": "single",
+       "q": "¿Cuál es la postura del autor sobre el cobro de las bolsas?",
+       "opts": [
+        "Fue un acierto, pero insuficiente.",
+        "Fue un error que hay que corregir.",
+        "Fue una medida para que los comercios ganaran dinero.",
+        "Resolvió el problema del plástico."
+       ],
+       "a": 0,
+       "exp": "La postura está en el párrafo 2, breve y separado para destacarse: «fue un acierto» y «se quedó a mitad de camino»."
+      },
+      {
+       "t": "single",
+       "q": "¿Qué significa en el texto la expresión «se quedó a mitad de camino»?",
+       "opts": [
+        "Que dio un primer paso, pero no avanzó con otras medidas necesarias.",
+        "Que se aplicó solo en la mitad del país.",
+        "Que la mitad de la gente no la cumple.",
+        "Que se suspendió antes de terminar."
+       ],
+       "a": 0,
+       "exp": "Lectura inferencial: los párrafos 4 y 6 explican qué faltó (los envases)."
+      },
+      {
+       "t": "single",
+       "q": "Según el autor, ¿por qué el cobro funcionó mejor que las campañas de concientización?",
+       "opts": [
+        "Porque un costo pequeño obliga a preguntarse si la bolsa es necesaria.",
+        "Porque las bolsas se volvieron muy caras.",
+        "Porque las campañas estaban mal hechas.",
+        "Porque la gente dejó de ir al supermercado."
+       ],
+       "a": 0,
+       "exp": "Párrafo 3: «nadie se arruina por pagar unos pesos», pero el gesto hace pensar."
+      },
+      {
+       "t": "single",
+       "q": "¿Qué recurso usa el autor en el párrafo 5?",
+       "opts": [
+        "Presenta una objeción y la responde.",
+        "Cita una estadística.",
+        "Cuenta una experiencia personal.",
+        "Da una definición."
+       ],
+       "a": 0,
+       "exp": "«Algunos sostienen que…» presenta la postura contraria; «Es cierto que… pero…» la reconoce en parte y la refuta. Es la misma estructura que conviene usar en tu escritura."
+      },
+      {
+       "t": "multi",
+       "q": "¿Qué propone el autor como paso siguiente?",
+       "opts": [
+        "Sistemas de depósito y devolución de botellas",
+        "Incentivos para vender a granel",
+        "Prohibir todos los plásticos",
+        "Aumentar el precio de las bolsas"
+       ],
+       "a": [
+        0,
+        1
+       ],
+       "exp": "Párrafo 6. Ni la prohibición total ni el aumento del precio aparecen en el texto."
+      },
+      {
+       "t": "single",
+       "q": "El párrafo 4 dice que el cambio fue «más visible que profundo». ¿Qué argumento lo sostiene?",
+       "opts": [
+        "Que muchos plásticos siguen llegando en envases y que se compran bolsas de residuos.",
+        "Que la gente se quejó en las cajas.",
+        "Que las bolsas ahora son compostables.",
+        "Que la medida empezó en 2019."
+       ],
+       "a": 0,
+       "exp": "El autor dice que lo que se ve (menos bolsas en la caja) es una parte chica del total de plástico."
+      },
+      {
+       "t": "open",
+       "q": "¿Te parece que el autor fundamenta bien su postura? Señalá una fortaleza y una debilidad de su argumentación.",
+       "modelo": "Fortaleza: usa ejemplos cotidianos fáciles de reconocer (la bolsa de tela, las bandejas de espuma, las bolsas de residuos) y responde a una objeción. Debilidad: no da ningún dato que muestre cuánto se redujo el uso de bolsas ni cuánto plástico representan los envases; sus afirmaciones se basan en observaciones generales."
+      }
+     ]
+    },
+    "esc": {
+     "titulo": "Texto 2: carta al director",
+     "intro": "Una carta al director se dirige al director de un medio, pero la leen todos sus lectores. Empieza con un saludo formal y termina con una firma.",
+     "tarea": {
+      "consigna": [
+       "El diario de tu departamento publica cada semana cartas de lectores. Escribí una carta al director en la que plantees un problema de tu barrio o de tu ciudad y defiendas una solución.",
+       "Tema: la falta de frecuencias de ómnibus de noche entre los barrios y el centro. Tu postura debe ser clara y estar fundamentada con argumentos, para convencer a los lectores del diario y a las autoridades que puedan leerla.",
+       "Recordá el formato: saludo al director, cuerpo argumentativo y firma con nombre y barrio."
+      ],
+      "genero": "Carta al director",
+      "min": 250,
+      "max": 300,
+      "minutos": 45,
+      "revision": [
+       "Empecé con un saludo formal al director.",
+       "Presenté el problema y mi postura en el primer párrafo.",
+       "Desarrollé al menos dos argumentos con ejemplos, datos o experiencias.",
+       "Respondí a una objeción posible (por ejemplo, el costo).",
+       "Propuse una solución concreta.",
+       "Usé un registro formal, sin expresiones coloquiales.",
+       "Cerré con una despedida y la firma.",
+       "Revisé tildes, mayúsculas y puntuación."
+      ],
+      "modelo": [
+       "Señor director:",
+       "Me dirijo a usted como vecina del barrio Las Delicias para plantear un problema que afecta a cientos de trabajadores y estudiantes: después de las 22 horas, el ómnibus que nos une con el centro pasa una sola vez por hora. Creo que es urgente aumentar esa frecuencia, y sé que muchos vecinos compartimos esta preocupación.",
+       "Quienes trabajamos en comercios y restaurantes salimos tarde. Muchas noches, perder un ómnibus por dos minutos significa esperar una hora en una parada oscura, con frío y con la preocupación de volver sola. Lo mismo les pasa a los estudiantes del turno nocturno del liceo, que llegan a sus casas pasada la medianoche. Algunos ya dejaron de inscribirse en cursos nocturnos por este motivo.",
+       "Además, la falta de transporte empuja a muchos a pagar un taxi o una aplicación que no pueden costear, o directamente a dejar de estudiar. Un servicio público debería garantizar que vivir lejos del centro no sea una desventaja.",
+       "Es cierto que de noche viajan menos pasajeros y que agregar frecuencias tiene un costo. Sin embargo, no se trata de duplicar el servicio, sino de pasar a un ómnibus cada media hora entre las 22 y la 1. Además, una frecuencia más previsible atraería pasajeros que hoy, por desconfianza, no lo usan. Una prueba de seis meses permitiría medir si la demanda crece.",
+       "Por todo esto, solicito a las autoridades del departamento que estudien esta propuesta. Moverse de noche con seguridad no es un lujo: es una condición para trabajar y estudiar.",
+       "Lo saluda atentamente,",
+       "Andrea Pereira, barrio Las Delicias"
+      ]
+     }
+    }
+   }
+  }
+ ]
+}
